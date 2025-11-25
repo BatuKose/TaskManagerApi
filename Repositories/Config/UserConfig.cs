@@ -15,7 +15,7 @@ namespace Repositories.Config
         {
             builder.HasData
                 (
-                    new User(){Id=1,UserName="Batuhan",Email="batuhankose36@gmail.com",Password="12345",RoleId=1}
+                    new User(){Id=1,UserName="Batuhan",Email="batuhankose36@gmail.com",Password="12345",RoleId=1,aktifMi=true}
                 );
         }
     }

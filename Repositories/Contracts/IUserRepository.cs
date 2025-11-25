@@ -12,5 +12,7 @@ namespace Repositories.Contracts
     {
 
         void CreateUser(User user);
+        Task <bool> EmailExistsAsync(string email);
+        Task<bool> PassWordExistsAsync(string password);
     }
 }

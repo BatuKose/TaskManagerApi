@@ -21,7 +21,7 @@ namespace TaskManagerApi.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("Entites.Role", b =>
+            modelBuilder.Entity("Entites.Models.Role", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -50,7 +50,7 @@ namespace TaskManagerApi.Migrations
                         });
                 });
 
-            modelBuilder.Entity("Entites.User", b =>
+            modelBuilder.Entity("Entites.Models.User", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -73,6 +73,9 @@ namespace TaskManagerApi.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool>("aktifMi")
+                        .HasColumnType("bit");
+
                     b.HasKey("Id");
 
                     b.HasIndex("RoleId");
@@ -86,13 +89,14 @@ namespace TaskManagerApi.Migrations
                             Email = "batuhankose36@gmail.com",
                             Password = "12345",
                             RoleId = 1,
-                            UserName = "Batuhan"
+                            UserName = "Batuhan",
+                            aktifMi = false
                         });
                 });
 
-            modelBuilder.Entity("Entites.User", b =>
+            modelBuilder.Entity("Entites.Models.User", b =>
                 {
-                    b.HasOne("Entites.Role", "Role")
+                    b.HasOne("Entites.Models.Role", "Role")
                         .WithMany("Users")
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -101,7 +105,7 @@ namespace TaskManagerApi.Migrations
                     b.Navigation("Role");
                 });
 
-            modelBuilder.Entity("Entites.Role", b =>
+            modelBuilder.Entity("Entites.Models.Role", b =>
                 {
                     b.Navigation("Users");
                 });

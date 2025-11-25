@@ -5,31 +5,14 @@ using TaskManagerApi.Extensions;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.ConfigureSqlContext(builder.Configuration);
-builder.Services.AddControllers();
+builder.Services.AddControllers().AddApplicationPart(typeof(Presentation.AssemblyReference).Assembly);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.ConfigureRepositoryManager();
 builder.Services.ConfigureServiceManager();
 
 var app = builder.Build();
-//using (var scope = app.Services.CreateScope())
-//{
-//    var serviceManager = scope.ServiceProvider.GetRequiredService<IServiceManager>();
 
-//    var dto = new CreateUserDto
-//    {
-//        userName = "Spartan",
-//        Email = "spartan@test.com",
-//        Password = "123456",
-//        RoleId = 1,
-//        id=1
-//    };
-
-  
-//    await serviceManager.UserService.CreateUserAsync(dto);
-
-//    Console.WriteLine("Debug: User oluþturuldu.");
-//}
 
 if (app.Environment.IsDevelopment())
 {
