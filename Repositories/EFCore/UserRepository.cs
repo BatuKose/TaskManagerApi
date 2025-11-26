@@ -1,4 +1,5 @@
 ﻿using Entites.Data_Transfer_object;
+using Entites.Data_Transfer_object.User;
 using Entites.Models;
 using Microsoft.EntityFrameworkCore;
 using Repositories.Contracts;
@@ -34,6 +35,30 @@ namespace Repositories.EFCore
         public async Task<bool> PassWordExistsAsync(string password)
         {
             return await _context.users.AnyAsync(x=>x.Password==password);
+        }
+        public async Task<GetUserWithRoleDto> getUserWithRoleAsync(string username)
+        {
+            var result = await
+                (
+                    from u in _context.users
+                    join r in _context.roles
+                    on u.RoleId equals r.Id
+                    where u.UserName.ToLower() == username.ToLower() && u.aktifMi==true
+                    select new GetUserWithRoleDto
+                    {
+                        Username = u.UserName,
+                        Email = u.Email,
+                        RoleName = r.RoleName
+                    }
+                ).FirstOrDefaultAsync();
+
+            return result;
+        }
+
+        public  async Task<User> GetUserByidAsync(int id)
+        {
+             var result = await _context.users.SingleOrDefaultAsync(u => u.Id==id);
+            return result;
         }
     }
 }
