@@ -1,6 +1,7 @@
 ﻿using Entites.Data_Transfer_object;
 using Entites.Data_Transfer_object.User;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore.Query.Internal;
 using Services.Contracts;
 using System;
 using System.Collections.Generic;
@@ -38,6 +39,19 @@ namespace Presentation.Controllers
             if(!ModelState.IsValid) return BadRequest(ModelState); 
             var result= await _ServiceManager.UserService.getUserByIdAsync(id);
             return Ok(result);
+        }
+        [HttpPatch("softdelete")]
+        public async Task<IActionResult> UserSoftDelete([FromQuery(Name ="id")] int id)
+        {
+          await  _ServiceManager.UserService.UserSoftDeleteAsync(id);
+            return NoContent();
+        }
+        [HttpPatch("updateUser")]
+        public async Task<IActionResult> UpdateUserAsync([FromQuery ] int id,[FromBody] UpdateUserDto userDto)
+        {
+           if(!ModelState.IsValid) return BadRequest(ModelState);
+           await _ServiceManager.UserService.UpdateUserAsync(id, userDto);
+            return Ok(userDto);
         }
     }
 }

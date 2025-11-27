@@ -15,7 +15,10 @@ namespace Repositories.Contracts
         void CreateUser(User user);
         Task <bool> EmailExistsAsync(string email);
         Task<bool> PassWordExistsAsync(string password);
+        Task<bool> UsernameExistsAsync(string username);
         Task<GetUserWithRoleDto> getUserWithRoleAsync(string username);
         Task<User> GetUserByidAsync(int id);
+        Task<User> SoftDeleteAsync(int id);
+        Task<User>UpdateUserAsync(User user);
     }
 }

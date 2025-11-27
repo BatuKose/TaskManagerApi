@@ -1,5 +1,6 @@
 ﻿using Entites.Data_Transfer_object;
 using Entites.Data_Transfer_object.User;
+using Entites.Exceptions;
 using Entites.Models;
 using Microsoft.EntityFrameworkCore;
 using Repositories.Contracts;
@@ -36,6 +37,10 @@ namespace Repositories.EFCore
         {
             return await _context.users.AnyAsync(x=>x.Password==password);
         }
+        public async Task<bool> UsernameExistsAsync(string username)
+        {
+            return await _context.users.AnyAsync(x=>x.UserName==username);
+        }
         public async Task<GetUserWithRoleDto> getUserWithRoleAsync(string username)
         {
             var result = await
@@ -60,5 +65,33 @@ namespace Repositories.EFCore
              var result = await _context.users.SingleOrDefaultAsync(u => u.Id==id);
             return result;
         }
+
+        public async Task<User> SoftDeleteAsync(int id)
+        {
+            
+            var user = await _context.users.FindAsync(id);
+            if (user is null) throw new UserNotFoundException();
+            if(user.aktifMi)
+            {
+                user.aktifMi=false;
+
+            }
+            else 
+            {
+                user.aktifMi=true;
+            }
+                _context.SaveChanges();
+            return user;
+
+        }
+
+        public async Task<User> UpdateUserAsync(User user)
+        {
+              _context.users.Update(user);
+              await _context.SaveChangesAsync();
+              return user;
+        }
+
+
     }
 }

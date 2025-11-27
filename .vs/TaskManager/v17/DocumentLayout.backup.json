@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\Task Manager\\TaskManager\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CDC29FC0-ACB9-48EB-880C-24AAAFB03053}|Presentation\\Presentation.csproj|c:\\users\\batuhan\\desktop\\desktop\\itsoftware\\asp.net web api\\projeler\\task manager\\taskmanager\\presentation\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CDC29FC0-ACB9-48EB-880C-24AAAFB03053}|Presentation\\Presentation.csproj|solutionrelative:presentation\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DBF95191-984E-4693-8E5D-587F32E99A1A}|Services\\Services.csproj|c:\\users\\batuhan\\desktop\\desktop\\itsoftware\\asp.net web api\\projeler\\task manager\\taskmanager\\services\\usermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DBF95191-984E-4693-8E5D-587F32E99A1A}|Services\\Services.csproj|solutionrelative:services\\usermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DBF95191-984E-4693-8E5D-587F32E99A1A}|Services\\Services.csproj|c:\\users\\batuhan\\desktop\\desktop\\itsoftware\\asp.net web api\\projeler\\task manager\\taskmanager\\services\\services.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{DBF95191-984E-4693-8E5D-587F32E99A1A}|Services\\Services.csproj|solutionrelative:services\\services.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,41 +22,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "UserManager.cs",
               "DocumentMoniker": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\Task Manager\\TaskManager\\Services\\UserManager.cs",
               "RelativeDocumentMoniker": "Services\\UserManager.cs",
               "ToolTip": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\Task Manager\\TaskManager\\Services\\UserManager.cs",
               "RelativeToolTip": "Services\\UserManager.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAAADEAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAAAEMAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T19:11:15.006Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Services",
-              "DocumentMoniker": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\Task Manager\\TaskManager\\Services\\Services.csproj",
-              "RelativeDocumentMoniker": "Services\\Services.csproj",
-              "ToolTip": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\Task Manager\\TaskManager\\Services\\Services.csproj",
-              "RelativeToolTip": "Services\\Services.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-11-26T19:11:02.393Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\Task Manager\\TaskManager\\Presentation\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "Presentation\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\Task Manager\\TaskManager\\Presentation\\Controllers\\UserController.cs",
-              "RelativeToolTip": "Presentation\\Controllers\\UserController.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAACUAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T19:08:55.453Z",
+              "WhenOpened": "2025-11-27T19:09:38.496Z",
               "EditorCaption": ""
             }
           ]
