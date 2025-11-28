@@ -24,10 +24,12 @@ namespace TaskManagerApi.Extensions
         {
             services.AddScoped<IRepositoryManager, RepositoryManager>();
             services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IRoleRepository, RoleReposity>();
         }
         public static void ConfigureServiceManager(this IServiceCollection services)
         {
             services.AddScoped<IServiceManager,ServiceManager>();
+            services.AddScoped<IRoleManager, RoleManager>();
         }
     }
 }

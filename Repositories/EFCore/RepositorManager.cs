@@ -12,14 +12,17 @@ namespace Repositories.EFCore
     {
         private readonly RepositoryContext _context;
         private readonly IUserRepository _userRepository;
-
-        public RepositoryManager(RepositoryContext context, IUserRepository userRepository)
+        private readonly IRoleRepository _roleRepository;
+        public RepositoryManager(RepositoryContext context, IUserRepository userRepository, IRoleRepository roleRepository)
         {
             _context = context;
             _userRepository = userRepository;
+            _roleRepository=roleRepository;
         }
 
         public IUserRepository UserRepository => _userRepository;
+
+        public IRoleRepository RoleRepository => _roleRepository;
 
         public  async Task saveAsyc()
         {
