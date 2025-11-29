@@ -4,6 +4,7 @@ using TaskManagerApi.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.AddSerilogLogging();
 builder.Services.ConfigureSqlContext(builder.Configuration);
 builder.Services.AddControllers().AddApplicationPart(typeof(Presentation.AssemblyReference).Assembly);
 builder.Services.AddEndpointsApiExplorer();
@@ -11,8 +12,10 @@ builder.Services.AddSwaggerGen();
 builder.Services.ConfigureRepositoryManager();
 builder.Services.ConfigureServiceManager();
 
+
 var app = builder.Build();
 
+app.UseGlobalExceptionMiddleware();
 
 if (app.Environment.IsDevelopment())
 {

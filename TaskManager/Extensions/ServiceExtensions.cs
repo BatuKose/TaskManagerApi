@@ -1,13 +1,14 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Repositories.Contracts;
 using Repositories.EFCore;
+using Serilog;
 using Services;
 using Services.Contracts;
 using System.Security.Cryptography.X509Certificates;
 
 namespace TaskManagerApi.Extensions
 {
-    public static class ServiceExtensions
+    public static partial class ServiceExtensions
     {   
         public static void ConfigureSqlContext(this IServiceCollection services,IConfiguration configuration)
         {   
@@ -31,5 +32,21 @@ namespace TaskManagerApi.Extensions
             services.AddScoped<IServiceManager,ServiceManager>();
             services.AddScoped<IRoleManager, RoleManager>();
         }
+
+        public static void AddSerilogLogging(this WebApplicationBuilder builder)
+        {
+            Log.Logger = new LoggerConfiguration()
+                .WriteTo.Console()
+                .WriteTo.File("logs/log-.txt", rollingInterval: RollingInterval.Day)
+                .MinimumLevel.Debug()
+                .CreateLogger();
+
+            builder.Host.UseSerilog();
+        }
+        public static void UseGlobalExceptionMiddleware(this IApplicationBuilder app)
+        {
+            app.UseMiddleware<GlobalExceptionMiddleware>();
+        }
+
     }
 }

@@ -36,5 +36,17 @@ namespace Repositories.EFCore
              await _Context.SaveChangesAsync();
             return role;
         }
+
+        public async Task<bool> RoleExistsAsync(string Role)
+        {
+          return await _Context.roles.AnyAsync(x => x.RoleName.Equals(Role));
+        }
+
+        public async Task<Role> UpdateRoleAsync(Role role)
+        {
+           _Context.roles.Update(role);
+            await _Context.SaveChangesAsync();
+            return role;
+        }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using Entites.Data_Transfer_object.Role;
 using Entites.Models;
+using Microsoft.EntityFrameworkCore.Query;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,8 +11,9 @@ namespace Services.Contracts
 {
     public interface IRoleManager
     {
-        Task<InsertRoleDTO>InsertRoleAsync(InsertRoleDTO roleDTO);
+        Task<InsertOrUpdateRoleDTO> InsertRoleAsync(InsertOrUpdateRoleDTO roleDTO);
         Task<GetRoleDto> GetRoleByİdAsync(int id);
         Task<Role> DeleteRoleAsync(int id);
+        Task<InsertOrUpdateRoleDTO> UpdateRoleAsync(int id,InsertOrUpdateRoleDTO dto);
     }
 }

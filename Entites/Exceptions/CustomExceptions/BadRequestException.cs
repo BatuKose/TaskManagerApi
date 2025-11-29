@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Entites.Exceptions
+namespace Entites.Exceptions.CustomExceptions
 {
     public class BadRequestException : Exception
     {

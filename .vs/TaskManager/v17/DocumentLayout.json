@@ -1,12 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\Task Manager\\TaskManager\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{DBF95191-984E-4693-8E5D-587F32E99A1A}|Services\\Services.csproj|c:\\users\\batuhan\\desktop\\desktop\\itsoftware\\asp.net web api\\projeler\\task manager\\taskmanager\\services\\rolemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DBF95191-984E-4693-8E5D-587F32E99A1A}|Services\\Services.csproj|solutionrelative:services\\rolemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -14,24 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RoleManager.cs",
-              "DocumentMoniker": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\Task Manager\\TaskManager\\Services\\RoleManager.cs",
-              "RelativeDocumentMoniker": "Services\\RoleManager.cs",
-              "ToolTip": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\Task Manager\\TaskManager\\Services\\RoleManager.cs",
-              "RelativeToolTip": "Services\\RoleManager.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAAAB4AAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T21:10:51.107Z",
-              "EditorCaption": ""
             }
           ]
         }

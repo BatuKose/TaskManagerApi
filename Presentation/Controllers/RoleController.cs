@@ -21,7 +21,7 @@ namespace Presentation.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> InserDto([FromBody] InsertRoleDTO insertRoleDTO)
+        public async Task<IActionResult> InserDto([FromBody] InsertOrUpdateRoleDTO insertRoleDTO)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
@@ -29,7 +29,7 @@ namespace Presentation.Controllers
             return Ok(result);
         }
         [HttpGet]
-        public async Task<IActionResult> GetUserById([FromQuery] int id)
+        public async Task<IActionResult> GetRoleById([FromQuery] int id)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
@@ -43,5 +43,17 @@ namespace Presentation.Controllers
             await serviceManager.RoleManager.DeleteRoleAsync(id);
             return Ok("Rol silindi");
         }
+        [HttpPut("{id:int}")]
+        public async Task<ActionResult<InsertOrUpdateRoleDTO>> UpdateRoleAsync([FromRoute] int id,[FromBody] InsertOrUpdateRoleDTO dto)
+        {
+            if (!ModelState.IsValid) return BadRequest(ModelState);
+            var updated = await serviceManager.RoleManager.UpdateRoleAsync(id, dto);
+            return Ok(new
+            {
+                Message = "Rol başarıyla güncellendi.",
+                Data = updated
+            });
+        }
+
     }
 }

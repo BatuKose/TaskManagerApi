@@ -94,7 +94,7 @@
     "Parameters": [
       {
         "Name": "insertRoleDTO",
-        "Type": "Entites.Data_Transfer_object.Role.InsertRoleDTO",
+        "Type": "Entites.Data_Transfer_object.Role.InsertOrUpdateRoleDTO",
         "IsRequired": true
       }
     ],
@@ -102,7 +102,7 @@
   },
   {
     "ContainingType": "Presentation.Controllers.RoleController",
-    "Method": "GetUserById",
+    "Method": "GetRoleById",
     "RelativePath": "Role",
     "HttpMethod": "GET",
     "IsController": true,
@@ -131,5 +131,36 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.RoleController",
+    "Method": "UpdateRoleAsync",
+    "RelativePath": "Role/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "Entites.Data_Transfer_object.Role.InsertOrUpdateRoleDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Entites.Data_Transfer_object.Role.InsertOrUpdateRoleDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   }
 ]

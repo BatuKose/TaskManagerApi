@@ -1,6 +1,7 @@
 ﻿using Entites.Data_Transfer_object;
 using Entites.Data_Transfer_object.User;
 using Entites.Exceptions;
+using Entites.Exceptions.CustomExceptions;
 using Entites.Models;
 using Microsoft.EntityFrameworkCore;
 using Repositories.Contracts;
@@ -70,8 +71,8 @@ namespace Repositories.EFCore
         {
             
             var user = await _context.users.FindAsync(id);
-            if (user is null) throw new UserNotFoundException();
-            if(user.aktifMi)
+            if (user is null) throw new NotFoundException("Kullanıcı bilgileri bulunamadı.");
+            if (user.aktifMi)
             {
                 user.aktifMi=false;
 

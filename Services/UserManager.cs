@@ -1,15 +1,9 @@
 ﻿using Entites.Data_Transfer_object;
 using Entites.Data_Transfer_object.User;
-using Entites.Exceptions;
+using Entites.Exceptions.CustomExceptions;
 using Entites.Models;
 using Repositories.Contracts;
 using Services.Contracts;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace Services
 {
     public class UserManager : IUserService
@@ -30,7 +24,7 @@ namespace Services
                Password=createUser.Password,
                RoleId=createUser.RoleId              
             };
-            if (userDto is null) throw new UserNotFoundException();
+            if (userDto is null) throw new NotFoundException("Kullanıcı bilgileri bulunamadı.");
             if (!userDto.Email.Contains("@")) throw new BadRequestException("E-posta formatı hatalı.");
             bool emailExists = await _repositoryManager.UserRepository.EmailExistsAsync(userDto.Email);
             if (emailExists) throw new BadRequestException("Mevcut e-posta sistemde kayıtlıdır.");
@@ -44,7 +38,7 @@ namespace Services
         {
             
             var result= await _repositoryManager.UserRepository.GetUserByidAsync(id);
-            if (result is null) throw new UserNotFoundException();
+            if (result is null) throw new NotFoundException("Kullanıcı bilgileri bulunamadı.");
             var dto = new GetUserDto
             {
                 Id=result.Id,
@@ -60,7 +54,7 @@ namespace Services
         {
             var  result = username;
             var sonuc= await _repositoryManager.UserRepository.getUserWithRoleAsync(result.ToLower());
-            if (sonuc is null) throw new UserNotFoundException();
+            if (sonuc is null) throw new NotFoundException("Kullanıcı bilgileri bulunamadı.");
             return sonuc;
         }
 
@@ -68,7 +62,7 @@ namespace Services
         {
             if (id < 0) throw new BadRequestException("Gelen kullanıcı bilgisi sıfırdan küçük olamaz");
             var result= await _repositoryManager.UserRepository.GetUserByidAsync(id);
-            if (result is null) throw new UserNotFoundException();
+            if (result is null) throw new NotFoundException("Kullanıcı bilgileri bulunamadı.");
             if (!userDto.Email.Contains("@")) throw new BadRequestException("E-posta formatı hatalı.");
             bool emailExists = await _repositoryManager.UserRepository.EmailExistsAsync(userDto.Email);
             if (emailExists) throw new BadRequestException("Mevcut e-posta sistemde kayıtlıdır.");

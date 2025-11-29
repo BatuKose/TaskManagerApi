@@ -1,0 +1,895 @@
+2025-11-29 21:00:58.928 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-11-29 21:00:59.157 +03:00 [DBG] Hosting starting
+2025-11-29 21:00:59.631 +03:00 [DBG] Using development certificate: CN=localhost (Thumbprint: F4DEE4AC2C2B055664ACF8E61A42A18476693035)
+2025-11-29 21:00:59.787 +03:00 [INF] Now listening on: https://localhost:7026
+2025-11-29 21:00:59.791 +03:00 [INF] Now listening on: http://localhost:5292
+2025-11-29 21:00:59.794 +03:00 [DBG] Loaded hosting startup assembly TaskManagerApi
+2025-11-29 21:00:59.797 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2025-11-29 21:00:59.799 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-11-29 21:00:59.801 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-11-29 21:00:59.997 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-29 21:01:00.000 +03:00 [INF] Hosting environment: Development
+2025-11-29 21:01:00.002 +03:00 [INF] Content root path: C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\Task Manager\TaskManager\TaskManager\
+2025-11-29 21:01:00.005 +03:00 [DBG] Hosting started
+2025-11-29 21:01:00.044 +03:00 [DBG] Connection id "0HNHFE50EUVV0" received FIN.
+2025-11-29 21:01:00.044 +03:00 [DBG] Connection id "0HNHFE50EUVV1" received FIN.
+2025-11-29 21:01:00.074 +03:00 [DBG] Connection id "0HNHFE50EUVV0" accepted.
+2025-11-29 21:01:00.074 +03:00 [DBG] Connection id "0HNHFE50EUVV1" accepted.
+2025-11-29 21:01:00.079 +03:00 [DBG] Connection id "0HNHFE50EUVV0" started.
+2025-11-29 21:01:00.081 +03:00 [DBG] Connection id "0HNHFE50EUVV1" started.
+2025-11-29 21:01:00.127 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, Boolean isApm, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-11-29 21:01:00.127 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, Boolean isApm, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-11-29 21:01:00.213 +03:00 [DBG] Connection id "0HNHFE50EUVV0" stopped.
+2025-11-29 21:01:00.213 +03:00 [DBG] Connection id "0HNHFE50EUVV1" stopped.
+2025-11-29 21:01:00.235 +03:00 [DBG] Connection id "0HNHFE50EUVV0" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-29 21:01:00.235 +03:00 [DBG] Connection id "0HNHFE50EUVV1" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-29 21:01:02.185 +03:00 [DBG] Connection id "0HNHFE50EUVV2" accepted.
+2025-11-29 21:01:05.259 +03:00 [DBG] Connection id "0HNHFE50EUVV2" started.
+2025-11-29 21:01:05.437 +03:00 [DBG] Connection 0HNHFE50EUVV2 established using the following protocol: "Tls13"
+2025-11-29 21:01:05.756 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7026/swagger/index.html - -
+2025-11-29 21:01:06.391 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-11-29 21:01:06.479 +03:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-11-29 21:01:06.483 +03:00 [DBG] Request did not match any endpoints
+2025-11-29 21:01:06.781 +03:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2025-11-29 21:01:06.829 +03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2025-11-29 21:01:06.938 +03:00 [DBG] Response markup was updated to include Browser Link script injection.
+2025-11-29 21:01:07.061 +03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2025-11-29 21:01:07.096 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7026/swagger/index.html - - - 200 - text/html;charset=utf-8 1354.2555ms
+2025-11-29 21:01:07.315 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7026/_vs/browserLink - -
+2025-11-29 21:01:07.319 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7026/_framework/aspnetcore-browser-refresh.js - -
+2025-11-29 21:01:07.358 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7026/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 38.2869ms
+2025-11-29 21:01:07.736 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7026/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 420.8136ms
+2025-11-29 21:01:08.369 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7026/swagger/v1/swagger.json - -
+2025-11-29 21:01:08.374 +03:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-11-29 21:01:08.377 +03:00 [DBG] Request did not match any endpoints
+2025-11-29 21:01:08.411 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7026/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 41.7753ms
+2025-11-29 21:01:23.961 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7026/api/users/id:int?id=4145545 - -
+2025-11-29 21:01:23.970 +03:00 [DBG] 1 candidate(s) found for the request path '/api/users/id:int'
+2025-11-29 21:01:23.981 +03:00 [DBG] Endpoint 'Presentation.Controllers.UserController.GetUserByid (Presentation)' with route pattern 'api/users/id:int' is valid for the request path '/api/users/id:int'
+2025-11-29 21:01:23.986 +03:00 [DBG] Request matched endpoint 'Presentation.Controllers.UserController.GetUserByid (Presentation)'
+2025-11-29 21:01:23.991 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-11-29 21:01:23.999 +03:00 [INF] Executing endpoint 'Presentation.Controllers.UserController.GetUserByid (Presentation)'
+2025-11-29 21:01:24.065 +03:00 [INF] Route matched with {action = "GetUserByid", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUserByid(Int32) on controller Presentation.Controllers.UserController (Presentation).
+2025-11-29 21:01:24.072 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-11-29 21:01:24.077 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-11-29 21:01:24.081 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-11-29 21:01:24.088 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-11-29 21:01:24.093 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-11-29 21:01:24.099 +03:00 [DBG] Executing controller factory for controller Presentation.Controllers.UserController (Presentation)
+2025-11-29 21:01:24.377 +03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-11-29 21:01:24.424 +03:00 [DBG] Executed controller factory for controller Presentation.Controllers.UserController (Presentation)
+2025-11-29 21:01:24.453 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' ...
+2025-11-29 21:01:24.459 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2025-11-29 21:01:24.464 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2025-11-29 21:01:24.467 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2025-11-29 21:01:24.471 +03:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2025-11-29 21:01:24.477 +03:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2025-11-29 21:01:26.013 +03:00 [INF] Entity Framework Core 6.0.10 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: MigrationsAssembly=TaskManagerApi 
+2025-11-29 21:01:26.173 +03:00 [DBG] Compiling query expression: 
+'DbSet<User>()
+    .SingleOrDefault(u => u.Id == __id_0)'
+2025-11-29 21:01:26.730 +03:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<User>(
+    asyncEnumerable: new SingleQueryingEnumerable<User>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.SelectExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: User.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: User.Email (string) Required, 1], [Property: User.Password (string) Required, 2], [Property: User.RoleId (int) Required FK Index, 3], [Property: User.UserName (string) Required, 4], [Property: User.aktifMi (bool) Required, 5] }
+            SELECT TOP(2) u.Id, u.Email, u.Password, u.RoleId, u.UserName, u.aktifMi
+            FROM users AS u
+            WHERE u.Id == @__id_0), 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, User>, 
+        Repositories.EFCore.RepositoryContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2025-11-29 21:01:26.825 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-11-29 21:01:26.902 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (71ms).
+2025-11-29 21:01:26.959 +03:00 [DBG] Opening connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-29 21:01:27.470 +03:00 [DBG] Opened connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-29 21:01:27.501 +03:00 [DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[Email], [u].[Password], [u].[RoleId], [u].[UserName], [u].[aktifMi]
+FROM [users] AS [u]
+WHERE [u].[Id] = @__id_0
+2025-11-29 21:01:27.674 +03:00 [INF] Executed DbCommand (183ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[Email], [u].[Password], [u].[RoleId], [u].[UserName], [u].[aktifMi]
+FROM [users] AS [u]
+WHERE [u].[Id] = @__id_0
+2025-11-29 21:01:27.715 +03:00 [DBG] A data reader was disposed.
+2025-11-29 21:01:27.729 +03:00 [DBG] Closing connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-29 21:01:27.744 +03:00 [DBG] Closed connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-29 21:01:28.022 +03:00 [INF] Executed action Presentation.Controllers.UserController.GetUserByid (Presentation) in 3913.5649ms
+2025-11-29 21:01:28.035 +03:00 [INF] Executed endpoint 'Presentation.Controllers.UserController.GetUserByid (Presentation)'
+2025-11-29 21:01:28.232 +03:00 [ERR] Kullanıcı bilgileri bulunamadı.
+Entites.Exceptions.CustomExceptions.UserNotFoundException: Kullanıcı bilgileri bulunamadı.
+   at Services.UserManager.getUserByIdAsync(Int32 id) in C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\Task Manager\TaskManager\Services\UserManager.cs:line 41
+   at Presentation.Controllers.UserController.GetUserByid(Int32 id) in C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\Task Manager\TaskManager\Presentation\Controllers\UserController.cs:line 40
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\Task Manager\TaskManager\Entites\Exceptions\Middleware\GlobalExceptionMiddleware.cs:line 22
+2025-11-29 21:01:28.315 +03:00 [DBG] 'RepositoryContext' disposed.
+2025-11-29 21:01:28.325 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7026/api/users/id:int?id=4145545 - - - 500 - application/json 4365.2494ms
+2025-11-29 21:02:34.070 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-11-29 21:02:34.608 +03:00 [DBG] Hosting starting
+2025-11-29 21:02:34.962 +03:00 [DBG] Using development certificate: CN=localhost (Thumbprint: F4DEE4AC2C2B055664ACF8E61A42A18476693035)
+2025-11-29 21:02:35.072 +03:00 [DBG] Connection id "0HNHFE5SP7E54" received FIN.
+2025-11-29 21:02:35.072 +03:00 [DBG] Connection id "0HNHFE5SP7E53" received FIN.
+2025-11-29 21:02:35.080 +03:00 [INF] Now listening on: https://localhost:7026
+2025-11-29 21:02:35.083 +03:00 [INF] Now listening on: http://localhost:5292
+2025-11-29 21:02:35.086 +03:00 [DBG] Loaded hosting startup assembly TaskManagerApi
+2025-11-29 21:02:35.088 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2025-11-29 21:02:35.090 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-11-29 21:02:35.093 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-11-29 21:02:35.096 +03:00 [DBG] Connection id "0HNHFE5SP7E54" accepted.
+2025-11-29 21:02:35.096 +03:00 [DBG] Connection id "0HNHFE5SP7E53" accepted.
+2025-11-29 21:02:35.102 +03:00 [DBG] Connection id "0HNHFE5SP7E54" started.
+2025-11-29 21:02:35.103 +03:00 [DBG] Connection id "0HNHFE5SP7E53" started.
+2025-11-29 21:02:35.151 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, Boolean isApm, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-11-29 21:02:35.151 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, Boolean isApm, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-11-29 21:02:35.238 +03:00 [DBG] Connection id "0HNHFE5SP7E53" stopped.
+2025-11-29 21:02:35.238 +03:00 [DBG] Connection id "0HNHFE5SP7E54" stopped.
+2025-11-29 21:02:35.257 +03:00 [DBG] Connection id "0HNHFE5SP7E53" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-29 21:02:35.257 +03:00 [DBG] Connection id "0HNHFE5SP7E54" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-29 21:02:35.410 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-29 21:02:35.413 +03:00 [INF] Hosting environment: Development
+2025-11-29 21:02:35.416 +03:00 [INF] Content root path: C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\Task Manager\TaskManager\TaskManager\
+2025-11-29 21:02:35.419 +03:00 [DBG] Hosting started
+2025-11-29 21:02:37.074 +03:00 [DBG] Connection id "0HNHFE5SP7E55" accepted.
+2025-11-29 21:02:37.917 +03:00 [DBG] Connection id "0HNHFE5SP7E55" started.
+2025-11-29 21:02:38.072 +03:00 [DBG] Connection 0HNHFE5SP7E55 established using the following protocol: "Tls13"
+2025-11-29 21:02:38.590 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7026/swagger/index.html - -
+2025-11-29 21:02:39.884 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-11-29 21:02:39.969 +03:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-11-29 21:02:39.977 +03:00 [DBG] Request did not match any endpoints
+2025-11-29 21:02:40.344 +03:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2025-11-29 21:02:40.413 +03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2025-11-29 21:02:40.489 +03:00 [DBG] Response markup was updated to include Browser Link script injection.
+2025-11-29 21:02:40.528 +03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2025-11-29 21:02:40.622 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7026/swagger/index.html - - - 200 - text/html;charset=utf-8 2049.8596ms
+2025-11-29 21:02:40.765 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7026/_vs/browserLink - -
+2025-11-29 21:02:40.767 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7026/_framework/aspnetcore-browser-refresh.js - -
+2025-11-29 21:02:40.801 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7026/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 33.9994ms
+2025-11-29 21:02:41.009 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7026/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 244.2482ms
+2025-11-29 21:02:41.296 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7026/swagger/v1/swagger.json - -
+2025-11-29 21:02:41.312 +03:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-11-29 21:02:41.317 +03:00 [DBG] Request did not match any endpoints
+2025-11-29 21:02:41.336 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7026/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 39.7309ms
+2025-11-29 21:02:51.076 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7026/api/users/id:int?id=545 - -
+2025-11-29 21:02:51.087 +03:00 [DBG] 1 candidate(s) found for the request path '/api/users/id:int'
+2025-11-29 21:02:51.100 +03:00 [DBG] Endpoint 'Presentation.Controllers.UserController.GetUserByid (Presentation)' with route pattern 'api/users/id:int' is valid for the request path '/api/users/id:int'
+2025-11-29 21:02:51.106 +03:00 [DBG] Request matched endpoint 'Presentation.Controllers.UserController.GetUserByid (Presentation)'
+2025-11-29 21:02:51.111 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-11-29 21:02:51.117 +03:00 [INF] Executing endpoint 'Presentation.Controllers.UserController.GetUserByid (Presentation)'
+2025-11-29 21:02:51.174 +03:00 [INF] Route matched with {action = "GetUserByid", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUserByid(Int32) on controller Presentation.Controllers.UserController (Presentation).
+2025-11-29 21:02:51.180 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-11-29 21:02:51.183 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-11-29 21:02:51.187 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-11-29 21:02:51.191 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-11-29 21:02:51.195 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-11-29 21:02:51.200 +03:00 [DBG] Executing controller factory for controller Presentation.Controllers.UserController (Presentation)
+2025-11-29 21:02:51.438 +03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-11-29 21:02:51.487 +03:00 [DBG] Executed controller factory for controller Presentation.Controllers.UserController (Presentation)
+2025-11-29 21:02:51.511 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' ...
+2025-11-29 21:02:51.515 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2025-11-29 21:02:51.520 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2025-11-29 21:02:51.523 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2025-11-29 21:02:51.525 +03:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2025-11-29 21:02:51.529 +03:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2025-11-29 21:02:53.012 +03:00 [INF] Entity Framework Core 6.0.10 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: MigrationsAssembly=TaskManagerApi 
+2025-11-29 21:02:53.168 +03:00 [DBG] Compiling query expression: 
+'DbSet<User>()
+    .SingleOrDefault(u => u.Id == __id_0)'
+2025-11-29 21:02:53.651 +03:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<User>(
+    asyncEnumerable: new SingleQueryingEnumerable<User>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.SelectExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: User.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: User.Email (string) Required, 1], [Property: User.Password (string) Required, 2], [Property: User.RoleId (int) Required FK Index, 3], [Property: User.UserName (string) Required, 4], [Property: User.aktifMi (bool) Required, 5] }
+            SELECT TOP(2) u.Id, u.Email, u.Password, u.RoleId, u.UserName, u.aktifMi
+            FROM users AS u
+            WHERE u.Id == @__id_0), 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, User>, 
+        Repositories.EFCore.RepositoryContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2025-11-29 21:02:53.749 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-11-29 21:02:53.813 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (58ms).
+2025-11-29 21:02:53.866 +03:00 [DBG] Opening connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-29 21:02:54.361 +03:00 [DBG] Opened connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-29 21:02:54.390 +03:00 [DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[Email], [u].[Password], [u].[RoleId], [u].[UserName], [u].[aktifMi]
+FROM [users] AS [u]
+WHERE [u].[Id] = @__id_0
+2025-11-29 21:02:54.527 +03:00 [INF] Executed DbCommand (148ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[Email], [u].[Password], [u].[RoleId], [u].[UserName], [u].[aktifMi]
+FROM [users] AS [u]
+WHERE [u].[Id] = @__id_0
+2025-11-29 21:02:54.566 +03:00 [DBG] A data reader was disposed.
+2025-11-29 21:02:54.578 +03:00 [DBG] Closing connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-29 21:02:54.596 +03:00 [DBG] Closed connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-29 21:02:54.794 +03:00 [INF] Executed action Presentation.Controllers.UserController.GetUserByid (Presentation) in 3586.6557ms
+2025-11-29 21:02:54.799 +03:00 [INF] Executed endpoint 'Presentation.Controllers.UserController.GetUserByid (Presentation)'
+2025-11-29 21:02:54.976 +03:00 [ERR] Kullanıcı bilgileri bulunamadı.
+Entites.Exceptions.CustomExceptions.UserNotFoundException: Kullanıcı bilgileri bulunamadı.
+   at Services.UserManager.getUserByIdAsync(Int32 id) in C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\Task Manager\TaskManager\Services\UserManager.cs:line 41
+   at Presentation.Controllers.UserController.GetUserByid(Int32 id) in C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\Task Manager\TaskManager\Presentation\Controllers\UserController.cs:line 40
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\Task Manager\TaskManager\Entites\Exceptions\GlobalExceptionMiddleware.cs:line 22
+2025-11-29 21:02:55.088 +03:00 [DBG] 'RepositoryContext' disposed.
+2025-11-29 21:02:55.105 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7026/api/users/id:int?id=545 - - - 500 - application/json 4028.6440ms
+2025-11-29 21:04:00.003 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-11-29 21:04:00.189 +03:00 [DBG] Hosting starting
+2025-11-29 21:04:00.401 +03:00 [DBG] Using development certificate: CN=localhost (Thumbprint: F4DEE4AC2C2B055664ACF8E61A42A18476693035)
+2025-11-29 21:04:00.510 +03:00 [INF] Now listening on: https://localhost:7026
+2025-11-29 21:04:00.512 +03:00 [INF] Now listening on: http://localhost:5292
+2025-11-29 21:04:00.515 +03:00 [DBG] Loaded hosting startup assembly TaskManagerApi
+2025-11-29 21:04:00.518 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2025-11-29 21:04:00.520 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-11-29 21:04:00.523 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-11-29 21:04:00.754 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-29 21:04:00.761 +03:00 [INF] Hosting environment: Development
+2025-11-29 21:04:00.767 +03:00 [INF] Content root path: C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\Task Manager\TaskManager\TaskManager\
+2025-11-29 21:04:00.770 +03:00 [DBG] Hosting started
+2025-11-29 21:04:01.000 +03:00 [DBG] Connection id "0HNHFE6MCLQPL" received FIN.
+2025-11-29 21:04:01.007 +03:00 [DBG] Connection id "0HNHFE6MCLQPM" accepted.
+2025-11-29 21:04:01.000 +03:00 [DBG] Connection id "0HNHFE6MCLQPM" received FIN.
+2025-11-29 21:04:01.007 +03:00 [DBG] Connection id "0HNHFE6MCLQPL" accepted.
+2025-11-29 21:04:01.019 +03:00 [DBG] Connection id "0HNHFE6MCLQPM" started.
+2025-11-29 21:04:01.036 +03:00 [DBG] Connection id "0HNHFE6MCLQPL" started.
+2025-11-29 21:04:01.092 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, Boolean isApm, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-11-29 21:04:01.092 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, Boolean isApm, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-11-29 21:04:01.166 +03:00 [DBG] Connection id "0HNHFE6MCLQPM" stopped.
+2025-11-29 21:04:01.166 +03:00 [DBG] Connection id "0HNHFE6MCLQPL" stopped.
+2025-11-29 21:04:01.176 +03:00 [DBG] Connection id "0HNHFE6MCLQPL" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-29 21:04:01.176 +03:00 [DBG] Connection id "0HNHFE6MCLQPM" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-29 21:04:02.685 +03:00 [DBG] Connection id "0HNHFE6MCLQPN" accepted.
+2025-11-29 21:04:03.661 +03:00 [DBG] Connection id "0HNHFE6MCLQPN" started.
+2025-11-29 21:04:03.829 +03:00 [DBG] Connection 0HNHFE6MCLQPN established using the following protocol: "Tls13"
+2025-11-29 21:04:04.402 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7026/swagger/index.html - -
+2025-11-29 21:04:04.938 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-11-29 21:04:05.043 +03:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-11-29 21:04:05.062 +03:00 [DBG] Request did not match any endpoints
+2025-11-29 21:04:05.364 +03:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2025-11-29 21:04:05.375 +03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2025-11-29 21:04:05.470 +03:00 [DBG] Response markup was updated to include Browser Link script injection.
+2025-11-29 21:04:05.481 +03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2025-11-29 21:04:05.506 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7026/swagger/index.html - - - 200 - text/html;charset=utf-8 1118.2878ms
+2025-11-29 21:04:05.750 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7026/_vs/browserLink - -
+2025-11-29 21:04:05.751 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7026/_framework/aspnetcore-browser-refresh.js - -
+2025-11-29 21:04:05.776 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7026/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 24.7690ms
+2025-11-29 21:04:05.976 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7026/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 225.6246ms
+2025-11-29 21:04:06.207 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7026/swagger/v1/swagger.json - -
+2025-11-29 21:04:06.218 +03:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-11-29 21:04:06.229 +03:00 [DBG] Request did not match any endpoints
+2025-11-29 21:04:06.257 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7026/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 50.3935ms
+2025-11-29 21:04:13.734 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7026/api/users/id:int?id=452 - -
+2025-11-29 21:04:13.742 +03:00 [DBG] 1 candidate(s) found for the request path '/api/users/id:int'
+2025-11-29 21:04:13.754 +03:00 [DBG] Endpoint 'Presentation.Controllers.UserController.GetUserByid (Presentation)' with route pattern 'api/users/id:int' is valid for the request path '/api/users/id:int'
+2025-11-29 21:04:13.759 +03:00 [DBG] Request matched endpoint 'Presentation.Controllers.UserController.GetUserByid (Presentation)'
+2025-11-29 21:04:13.764 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-11-29 21:04:13.769 +03:00 [INF] Executing endpoint 'Presentation.Controllers.UserController.GetUserByid (Presentation)'
+2025-11-29 21:04:13.826 +03:00 [INF] Route matched with {action = "GetUserByid", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUserByid(Int32) on controller Presentation.Controllers.UserController (Presentation).
+2025-11-29 21:04:13.832 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-11-29 21:04:13.835 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-11-29 21:04:13.838 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-11-29 21:04:13.843 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-11-29 21:04:13.847 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-11-29 21:04:13.852 +03:00 [DBG] Executing controller factory for controller Presentation.Controllers.UserController (Presentation)
+2025-11-29 21:04:14.128 +03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-11-29 21:04:14.173 +03:00 [DBG] Executed controller factory for controller Presentation.Controllers.UserController (Presentation)
+2025-11-29 21:04:14.201 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' ...
+2025-11-29 21:04:14.206 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2025-11-29 21:04:14.212 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2025-11-29 21:04:14.215 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2025-11-29 21:04:14.218 +03:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2025-11-29 21:04:14.223 +03:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2025-11-29 21:04:15.583 +03:00 [INF] Entity Framework Core 6.0.10 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: MigrationsAssembly=TaskManagerApi 
+2025-11-29 21:04:15.691 +03:00 [DBG] Compiling query expression: 
+'DbSet<User>()
+    .SingleOrDefault(u => u.Id == __id_0)'
+2025-11-29 21:04:16.160 +03:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<User>(
+    asyncEnumerable: new SingleQueryingEnumerable<User>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.SelectExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: User.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: User.Email (string) Required, 1], [Property: User.Password (string) Required, 2], [Property: User.RoleId (int) Required FK Index, 3], [Property: User.UserName (string) Required, 4], [Property: User.aktifMi (bool) Required, 5] }
+            SELECT TOP(2) u.Id, u.Email, u.Password, u.RoleId, u.UserName, u.aktifMi
+            FROM users AS u
+            WHERE u.Id == @__id_0), 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, User>, 
+        Repositories.EFCore.RepositoryContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2025-11-29 21:04:16.255 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-11-29 21:04:16.317 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (56ms).
+2025-11-29 21:04:16.369 +03:00 [DBG] Opening connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-29 21:04:16.815 +03:00 [DBG] Opened connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-29 21:04:16.847 +03:00 [DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[Email], [u].[Password], [u].[RoleId], [u].[UserName], [u].[aktifMi]
+FROM [users] AS [u]
+WHERE [u].[Id] = @__id_0
+2025-11-29 21:04:16.975 +03:00 [INF] Executed DbCommand (137ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[Email], [u].[Password], [u].[RoleId], [u].[UserName], [u].[aktifMi]
+FROM [users] AS [u]
+WHERE [u].[Id] = @__id_0
+2025-11-29 21:04:17.017 +03:00 [DBG] A data reader was disposed.
+2025-11-29 21:04:17.029 +03:00 [DBG] Closing connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-29 21:04:17.046 +03:00 [DBG] Closed connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-29 21:04:17.187 +03:00 [INF] Executed action Presentation.Controllers.UserController.GetUserByid (Presentation) in 3331.5184ms
+2025-11-29 21:04:17.193 +03:00 [INF] Executed endpoint 'Presentation.Controllers.UserController.GetUserByid (Presentation)'
+2025-11-29 21:04:17.202 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Entites.Exceptions.CustomExceptions.UserNotFoundException: Kullanıcı bilgileri bulunamadı.
+   at Services.UserManager.getUserByIdAsync(Int32 id) in C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\Task Manager\TaskManager\Services\UserManager.cs:line 41
+   at Presentation.Controllers.UserController.GetUserByid(Int32 id) in C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\Task Manager\TaskManager\Presentation\Controllers\UserController.cs:line 40
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2025-11-29 21:04:17.261 +03:00 [DBG] 'RepositoryContext' disposed.
+2025-11-29 21:04:17.273 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7026/api/users/id:int?id=452 - - - 500 - text/plain;+charset=utf-8 3538.1531ms
+2025-11-29 21:07:50.226 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-11-29 21:07:50.368 +03:00 [DBG] Hosting starting
+2025-11-29 21:07:50.602 +03:00 [DBG] Using development certificate: CN=localhost (Thumbprint: F4DEE4AC2C2B055664ACF8E61A42A18476693035)
+2025-11-29 21:07:50.716 +03:00 [DBG] Connection id "0HNHFE8QRE2A1" received FIN.
+2025-11-29 21:07:50.723 +03:00 [INF] Now listening on: https://localhost:7026
+2025-11-29 21:07:50.726 +03:00 [INF] Now listening on: http://localhost:5292
+2025-11-29 21:07:50.729 +03:00 [DBG] Loaded hosting startup assembly TaskManagerApi
+2025-11-29 21:07:50.732 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2025-11-29 21:07:50.734 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-11-29 21:07:50.737 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-11-29 21:07:50.746 +03:00 [DBG] Connection id "0HNHFE8QRE2A1" accepted.
+2025-11-29 21:07:50.752 +03:00 [DBG] Connection id "0HNHFE8QRE2A1" started.
+2025-11-29 21:07:50.810 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, Boolean isApm, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-11-29 21:07:50.937 +03:00 [DBG] Connection id "0HNHFE8QRE2A1" stopped.
+2025-11-29 21:07:50.953 +03:00 [DBG] Connection id "0HNHFE8QRE2A1" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-29 21:07:51.146 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-29 21:07:51.156 +03:00 [INF] Hosting environment: Development
+2025-11-29 21:07:51.159 +03:00 [INF] Content root path: C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\Task Manager\TaskManager\TaskManager\
+2025-11-29 21:07:51.161 +03:00 [DBG] Hosting started
+2025-11-29 21:07:51.958 +03:00 [DBG] Connection id "0HNHFE8QRE2A2" accepted.
+2025-11-29 21:07:53.232 +03:00 [DBG] Connection id "0HNHFE8QRE2A2" started.
+2025-11-29 21:07:53.571 +03:00 [DBG] Connection 0HNHFE8QRE2A2 established using the following protocol: "Tls13"
+2025-11-29 21:07:54.041 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7026/swagger/index.html - -
+2025-11-29 21:07:54.750 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-11-29 21:07:54.856 +03:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-11-29 21:07:54.914 +03:00 [DBG] Request did not match any endpoints
+2025-11-29 21:07:55.357 +03:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2025-11-29 21:07:55.377 +03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2025-11-29 21:07:55.495 +03:00 [DBG] Response markup was updated to include Browser Link script injection.
+2025-11-29 21:07:55.542 +03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2025-11-29 21:07:55.643 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7026/swagger/index.html - - - 200 - text/html;charset=utf-8 1646.9254ms
+2025-11-29 21:07:55.796 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7026/_vs/browserLink - -
+2025-11-29 21:07:55.798 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7026/_framework/aspnetcore-browser-refresh.js - -
+2025-11-29 21:07:55.859 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7026/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 61.0538ms
+2025-11-29 21:07:56.051 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7026/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 254.9006ms
+2025-11-29 21:07:56.387 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7026/swagger/v1/swagger.json - -
+2025-11-29 21:07:56.459 +03:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-11-29 21:07:56.467 +03:00 [DBG] Request did not match any endpoints
+2025-11-29 21:07:56.490 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7026/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 103.3917ms
+2025-11-29 21:08:11.396 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7026/api/users/id:int?id=111 - -
+2025-11-29 21:08:11.406 +03:00 [DBG] 1 candidate(s) found for the request path '/api/users/id:int'
+2025-11-29 21:08:11.418 +03:00 [DBG] Endpoint 'Presentation.Controllers.UserController.GetUserByid (Presentation)' with route pattern 'api/users/id:int' is valid for the request path '/api/users/id:int'
+2025-11-29 21:08:11.423 +03:00 [DBG] Request matched endpoint 'Presentation.Controllers.UserController.GetUserByid (Presentation)'
+2025-11-29 21:08:11.427 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-11-29 21:08:11.435 +03:00 [INF] Executing endpoint 'Presentation.Controllers.UserController.GetUserByid (Presentation)'
+2025-11-29 21:08:11.500 +03:00 [INF] Route matched with {action = "GetUserByid", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUserByid(Int32) on controller Presentation.Controllers.UserController (Presentation).
+2025-11-29 21:08:11.507 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-11-29 21:08:11.512 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-11-29 21:08:11.516 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-11-29 21:08:11.521 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-11-29 21:08:11.527 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-11-29 21:08:11.532 +03:00 [DBG] Executing controller factory for controller Presentation.Controllers.UserController (Presentation)
+2025-11-29 21:08:11.800 +03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-11-29 21:08:11.837 +03:00 [DBG] Executed controller factory for controller Presentation.Controllers.UserController (Presentation)
+2025-11-29 21:08:11.859 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' ...
+2025-11-29 21:08:11.864 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2025-11-29 21:08:11.868 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2025-11-29 21:08:11.871 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2025-11-29 21:08:11.873 +03:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2025-11-29 21:08:11.878 +03:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2025-11-29 21:08:12.886 +03:00 [INF] Entity Framework Core 6.0.10 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: MigrationsAssembly=TaskManagerApi 
+2025-11-29 21:08:12.986 +03:00 [DBG] Compiling query expression: 
+'DbSet<User>()
+    .SingleOrDefault(u => u.Id == __id_0)'
+2025-11-29 21:08:13.459 +03:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<User>(
+    asyncEnumerable: new SingleQueryingEnumerable<User>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.SelectExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: User.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: User.Email (string) Required, 1], [Property: User.Password (string) Required, 2], [Property: User.RoleId (int) Required FK Index, 3], [Property: User.UserName (string) Required, 4], [Property: User.aktifMi (bool) Required, 5] }
+            SELECT TOP(2) u.Id, u.Email, u.Password, u.RoleId, u.UserName, u.aktifMi
+            FROM users AS u
+            WHERE u.Id == @__id_0), 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, User>, 
+        Repositories.EFCore.RepositoryContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2025-11-29 21:08:13.585 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-11-29 21:08:13.657 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (68ms).
+2025-11-29 21:08:13.710 +03:00 [DBG] Opening connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-29 21:08:14.194 +03:00 [DBG] Opened connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-29 21:08:14.222 +03:00 [DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[Email], [u].[Password], [u].[RoleId], [u].[UserName], [u].[aktifMi]
+FROM [users] AS [u]
+WHERE [u].[Id] = @__id_0
+2025-11-29 21:08:14.351 +03:00 [INF] Executed DbCommand (139ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[Email], [u].[Password], [u].[RoleId], [u].[UserName], [u].[aktifMi]
+FROM [users] AS [u]
+WHERE [u].[Id] = @__id_0
+2025-11-29 21:08:14.398 +03:00 [DBG] A data reader was disposed.
+2025-11-29 21:08:14.413 +03:00 [DBG] Closing connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-29 21:08:14.434 +03:00 [DBG] Closed connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-29 21:08:14.629 +03:00 [INF] Executed action Presentation.Controllers.UserController.GetUserByid (Presentation) in 3092.7936ms
+2025-11-29 21:08:14.637 +03:00 [INF] Executed endpoint 'Presentation.Controllers.UserController.GetUserByid (Presentation)'
+2025-11-29 21:08:14.804 +03:00 [WRN] KULLANICI BULUNUMADI
+Entites.Exceptions.CustomExceptions.NotFoundException: KULLANICI BULUNUMADI
+   at Services.UserManager.getUserByIdAsync(Int32 id) in C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\Task Manager\TaskManager\Services\UserManager.cs:line 41
+   at Presentation.Controllers.UserController.GetUserByid(Int32 id) in C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\Task Manager\TaskManager\Presentation\Controllers\UserController.cs:line 40
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\Task Manager\TaskManager\Entites\Exceptions\GlobalExceptionMiddleware.cs:line 22
+2025-11-29 21:08:14.879 +03:00 [DBG] 'RepositoryContext' disposed.
+2025-11-29 21:08:14.890 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7026/api/users/id:int?id=111 - - - 404 - application/json 3494.8435ms
+2025-11-29 21:10:03.824 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-11-29 21:10:03.995 +03:00 [DBG] Hosting starting
+2025-11-29 21:10:04.314 +03:00 [DBG] Using development certificate: CN=localhost (Thumbprint: F4DEE4AC2C2B055664ACF8E61A42A18476693035)
+2025-11-29 21:10:04.418 +03:00 [INF] Now listening on: https://localhost:7026
+2025-11-29 21:10:04.420 +03:00 [INF] Now listening on: http://localhost:5292
+2025-11-29 21:10:04.423 +03:00 [DBG] Loaded hosting startup assembly TaskManagerApi
+2025-11-29 21:10:04.424 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2025-11-29 21:10:04.426 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-11-29 21:10:04.428 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-11-29 21:10:04.729 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-29 21:10:04.734 +03:00 [INF] Hosting environment: Development
+2025-11-29 21:10:04.740 +03:00 [INF] Content root path: C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\Task Manager\TaskManager\TaskManager\
+2025-11-29 21:10:04.748 +03:00 [DBG] Hosting started
+2025-11-29 21:10:04.753 +03:00 [DBG] Connection id "0HNHFEA2PN0RM" received FIN.
+2025-11-29 21:10:04.753 +03:00 [DBG] Connection id "0HNHFEA2PN0RN" received FIN.
+2025-11-29 21:10:04.785 +03:00 [DBG] Connection id "0HNHFEA2PN0RM" accepted.
+2025-11-29 21:10:04.785 +03:00 [DBG] Connection id "0HNHFEA2PN0RN" accepted.
+2025-11-29 21:10:04.790 +03:00 [DBG] Connection id "0HNHFEA2PN0RM" started.
+2025-11-29 21:10:04.792 +03:00 [DBG] Connection id "0HNHFEA2PN0RN" started.
+2025-11-29 21:10:04.842 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, Boolean isApm, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-11-29 21:10:04.842 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, Boolean isApm, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-11-29 21:10:04.912 +03:00 [DBG] Connection id "0HNHFEA2PN0RM" stopped.
+2025-11-29 21:10:04.912 +03:00 [DBG] Connection id "0HNHFEA2PN0RN" stopped.
+2025-11-29 21:10:04.931 +03:00 [DBG] Connection id "0HNHFEA2PN0RM" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-29 21:10:04.931 +03:00 [DBG] Connection id "0HNHFEA2PN0RN" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-29 21:10:07.281 +03:00 [DBG] Connection id "0HNHFEA2PN0RO" accepted.
+2025-11-29 21:10:07.592 +03:00 [DBG] Connection id "0HNHFEA2PN0RO" started.
+2025-11-29 21:10:08.731 +03:00 [DBG] Connection 0HNHFEA2PN0RO established using the following protocol: "Tls13"
+2025-11-29 21:10:09.172 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7026/swagger/index.html - -
+2025-11-29 21:10:09.722 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-11-29 21:10:09.816 +03:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-11-29 21:10:09.821 +03:00 [DBG] Request did not match any endpoints
+2025-11-29 21:10:10.156 +03:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2025-11-29 21:10:10.166 +03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2025-11-29 21:10:10.264 +03:00 [DBG] Response markup was updated to include Browser Link script injection.
+2025-11-29 21:10:10.277 +03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2025-11-29 21:10:10.322 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7026/swagger/index.html - - - 200 - text/html;charset=utf-8 1168.9469ms
+2025-11-29 21:10:10.596 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7026/_vs/browserLink - -
+2025-11-29 21:10:10.596 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7026/_framework/aspnetcore-browser-refresh.js - -
+2025-11-29 21:10:10.609 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7026/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 12.5336ms
+2025-11-29 21:10:11.153 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7026/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 557.0534ms
+2025-11-29 21:10:11.361 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7026/swagger/v1/swagger.json - -
+2025-11-29 21:10:11.366 +03:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-11-29 21:10:11.372 +03:00 [DBG] Request did not match any endpoints
+2025-11-29 21:10:11.403 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7026/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 42.3193ms
+2025-11-29 21:10:20.519 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7026/api/users/id:int?id=111 - -
+2025-11-29 21:10:20.533 +03:00 [DBG] 1 candidate(s) found for the request path '/api/users/id:int'
+2025-11-29 21:10:20.547 +03:00 [DBG] Endpoint 'Presentation.Controllers.UserController.GetUserByid (Presentation)' with route pattern 'api/users/id:int' is valid for the request path '/api/users/id:int'
+2025-11-29 21:10:20.551 +03:00 [DBG] Request matched endpoint 'Presentation.Controllers.UserController.GetUserByid (Presentation)'
+2025-11-29 21:10:20.555 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-11-29 21:10:20.561 +03:00 [INF] Executing endpoint 'Presentation.Controllers.UserController.GetUserByid (Presentation)'
+2025-11-29 21:10:20.635 +03:00 [INF] Route matched with {action = "GetUserByid", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUserByid(Int32) on controller Presentation.Controllers.UserController (Presentation).
+2025-11-29 21:10:20.640 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-11-29 21:10:20.644 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-11-29 21:10:20.648 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-11-29 21:10:20.653 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-11-29 21:10:20.656 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-11-29 21:10:20.661 +03:00 [DBG] Executing controller factory for controller Presentation.Controllers.UserController (Presentation)
+2025-11-29 21:10:21.016 +03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-11-29 21:10:21.064 +03:00 [DBG] Executed controller factory for controller Presentation.Controllers.UserController (Presentation)
+2025-11-29 21:10:21.091 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' ...
+2025-11-29 21:10:21.097 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2025-11-29 21:10:21.102 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2025-11-29 21:10:21.105 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2025-11-29 21:10:21.107 +03:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2025-11-29 21:10:21.113 +03:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2025-11-29 21:10:22.939 +03:00 [INF] Entity Framework Core 6.0.10 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: MigrationsAssembly=TaskManagerApi 
+2025-11-29 21:10:23.080 +03:00 [DBG] Compiling query expression: 
+'DbSet<User>()
+    .SingleOrDefault(u => u.Id == __id_0)'
+2025-11-29 21:10:23.558 +03:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<User>(
+    asyncEnumerable: new SingleQueryingEnumerable<User>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.SelectExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: User.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: User.Email (string) Required, 1], [Property: User.Password (string) Required, 2], [Property: User.RoleId (int) Required FK Index, 3], [Property: User.UserName (string) Required, 4], [Property: User.aktifMi (bool) Required, 5] }
+            SELECT TOP(2) u.Id, u.Email, u.Password, u.RoleId, u.UserName, u.aktifMi
+            FROM users AS u
+            WHERE u.Id == @__id_0), 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, User>, 
+        Repositories.EFCore.RepositoryContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2025-11-29 21:10:23.676 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-11-29 21:10:23.745 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (65ms).
+2025-11-29 21:10:23.797 +03:00 [DBG] Opening connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-29 21:10:24.313 +03:00 [DBG] Opened connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-29 21:10:24.357 +03:00 [DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[Email], [u].[Password], [u].[RoleId], [u].[UserName], [u].[aktifMi]
+FROM [users] AS [u]
+WHERE [u].[Id] = @__id_0
+2025-11-29 21:10:24.506 +03:00 [INF] Executed DbCommand (174ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[Email], [u].[Password], [u].[RoleId], [u].[UserName], [u].[aktifMi]
+FROM [users] AS [u]
+WHERE [u].[Id] = @__id_0
+2025-11-29 21:10:24.549 +03:00 [DBG] A data reader was disposed.
+2025-11-29 21:10:24.563 +03:00 [DBG] Closing connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-29 21:10:24.581 +03:00 [DBG] Closed connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-29 21:10:24.753 +03:00 [INF] Executed action Presentation.Controllers.UserController.GetUserByid (Presentation) in 4088.6407ms
+2025-11-29 21:10:24.759 +03:00 [INF] Executed endpoint 'Presentation.Controllers.UserController.GetUserByid (Presentation)'
+2025-11-29 21:10:24.891 +03:00 [WRN] Kullanıcı bilgileri bulunamadı.
+Entites.Exceptions.CustomExceptions.NotFoundException: Kullanıcı bilgileri bulunamadı.
+   at Services.UserManager.getUserByIdAsync(Int32 id) in C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\Task Manager\TaskManager\Services\UserManager.cs:line 41
+   at Presentation.Controllers.UserController.GetUserByid(Int32 id) in C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\Task Manager\TaskManager\Presentation\Controllers\UserController.cs:line 40
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\Task Manager\TaskManager\Entites\Exceptions\GlobalExceptionMiddleware.cs:line 22
+2025-11-29 21:10:24.989 +03:00 [DBG] 'RepositoryContext' disposed.
+2025-11-29 21:10:25.000 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7026/api/users/id:int?id=111 - - - 404 - application/json 4480.6597ms
+2025-11-29 21:12:07.506 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-11-29 21:12:07.651 +03:00 [DBG] Hosting starting
+2025-11-29 21:12:07.889 +03:00 [DBG] Using development certificate: CN=localhost (Thumbprint: F4DEE4AC2C2B055664ACF8E61A42A18476693035)
+2025-11-29 21:12:08.006 +03:00 [INF] Now listening on: https://localhost:7026
+2025-11-29 21:12:08.008 +03:00 [INF] Now listening on: http://localhost:5292
+2025-11-29 21:12:08.010 +03:00 [DBG] Loaded hosting startup assembly TaskManagerApi
+2025-11-29 21:12:08.012 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2025-11-29 21:12:08.014 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-11-29 21:12:08.016 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-11-29 21:12:08.249 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-29 21:12:08.253 +03:00 [INF] Hosting environment: Development
+2025-11-29 21:12:08.255 +03:00 [INF] Content root path: C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\Task Manager\TaskManager\TaskManager\
+2025-11-29 21:12:08.257 +03:00 [DBG] Hosting started
+2025-11-29 21:12:08.295 +03:00 [DBG] Connection id "0HNHFEB7JT6KR" received FIN.
+2025-11-29 21:12:08.295 +03:00 [DBG] Connection id "0HNHFEB7JT6KQ" received FIN.
+2025-11-29 21:12:08.316 +03:00 [DBG] Connection id "0HNHFEB7JT6KR" accepted.
+2025-11-29 21:12:08.316 +03:00 [DBG] Connection id "0HNHFEB7JT6KQ" accepted.
+2025-11-29 21:12:08.322 +03:00 [DBG] Connection id "0HNHFEB7JT6KQ" started.
+2025-11-29 21:12:08.322 +03:00 [DBG] Connection id "0HNHFEB7JT6KR" started.
+2025-11-29 21:12:08.377 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, Boolean isApm, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-11-29 21:12:08.377 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, Boolean isApm, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-11-29 21:12:08.450 +03:00 [DBG] Connection id "0HNHFEB7JT6KQ" stopped.
+2025-11-29 21:12:08.450 +03:00 [DBG] Connection id "0HNHFEB7JT6KR" stopped.
+2025-11-29 21:12:08.460 +03:00 [DBG] Connection id "0HNHFEB7JT6KR" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-29 21:12:08.460 +03:00 [DBG] Connection id "0HNHFEB7JT6KQ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-29 21:12:09.969 +03:00 [DBG] Connection id "0HNHFEB7JT6KS" accepted.
+2025-11-29 21:12:09.996 +03:00 [DBG] Connection id "0HNHFEB7JT6KS" started.
+2025-11-29 21:12:10.498 +03:00 [DBG] Connection 0HNHFEB7JT6KS established using the following protocol: "Tls13"
+2025-11-29 21:12:11.961 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7026/swagger/index.html - -
+2025-11-29 21:12:12.689 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-11-29 21:12:12.795 +03:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-11-29 21:12:12.809 +03:00 [DBG] Request did not match any endpoints
+2025-11-29 21:12:13.187 +03:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2025-11-29 21:12:13.203 +03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2025-11-29 21:12:13.312 +03:00 [DBG] Response markup was updated to include Browser Link script injection.
+2025-11-29 21:12:13.318 +03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2025-11-29 21:12:13.339 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7026/swagger/index.html - - - 200 - text/html;charset=utf-8 1392.5335ms
+2025-11-29 21:12:13.603 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7026/_vs/browserLink - -
+2025-11-29 21:12:13.603 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7026/_framework/aspnetcore-browser-refresh.js - -
+2025-11-29 21:12:13.643 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7026/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 39.3783ms
+2025-11-29 21:12:13.819 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7026/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 215.7764ms
+2025-11-29 21:12:14.074 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7026/swagger/v1/swagger.json - -
+2025-11-29 21:12:14.081 +03:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-11-29 21:12:14.086 +03:00 [DBG] Request did not match any endpoints
+2025-11-29 21:12:14.117 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7026/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 42.4806ms
+2025-11-29 21:12:21.853 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7026/Role?id=11 - -
+2025-11-29 21:12:21.870 +03:00 [DBG] 1 candidate(s) found for the request path '/Role'
+2025-11-29 21:12:21.885 +03:00 [DBG] Endpoint 'Presentation.Controllers.RoleController.GetRoleById (Presentation)' with route pattern 'Role' is valid for the request path '/Role'
+2025-11-29 21:12:21.888 +03:00 [DBG] Request matched endpoint 'Presentation.Controllers.RoleController.GetRoleById (Presentation)'
+2025-11-29 21:12:21.895 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-11-29 21:12:21.901 +03:00 [INF] Executing endpoint 'Presentation.Controllers.RoleController.GetRoleById (Presentation)'
+2025-11-29 21:12:21.996 +03:00 [INF] Route matched with {action = "GetRoleById", controller = "Role"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRoleById(Int32) on controller Presentation.Controllers.RoleController (Presentation).
+2025-11-29 21:12:22.002 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-11-29 21:12:22.006 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-11-29 21:12:22.010 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-11-29 21:12:22.015 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-11-29 21:12:22.019 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-11-29 21:12:22.024 +03:00 [DBG] Executing controller factory for controller Presentation.Controllers.RoleController (Presentation)
+2025-11-29 21:12:22.334 +03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-11-29 21:12:22.386 +03:00 [DBG] Executed controller factory for controller Presentation.Controllers.RoleController (Presentation)
+2025-11-29 21:12:22.415 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' ...
+2025-11-29 21:12:22.422 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2025-11-29 21:12:22.428 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2025-11-29 21:12:22.430 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2025-11-29 21:12:22.433 +03:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2025-11-29 21:12:22.438 +03:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2025-11-29 21:12:24.753 +03:00 [INF] Entity Framework Core 6.0.10 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: MigrationsAssembly=TaskManagerApi 
+2025-11-29 21:12:24.932 +03:00 [DBG] Compiling query expression: 
+'DbSet<Role>()
+    .SingleOrDefault(x => x.Id == __id_0)'
+2025-11-29 21:12:25.554 +03:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<Role>(
+    asyncEnumerable: new SingleQueryingEnumerable<Role>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.SelectExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Role.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Role.RoleName (string) Required, 1] }
+            SELECT TOP(2) r.Id, r.RoleName
+            FROM roles AS r
+            WHERE r.Id == @__id_0), 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Role>, 
+        Repositories.EFCore.RepositoryContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2025-11-29 21:12:25.718 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-11-29 21:12:25.781 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (59ms).
+2025-11-29 21:12:25.836 +03:00 [DBG] Opening connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-29 21:12:26.383 +03:00 [DBG] Opened connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-29 21:12:26.418 +03:00 [DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [r].[Id], [r].[RoleName]
+FROM [roles] AS [r]
+WHERE [r].[Id] = @__id_0
+2025-11-29 21:12:26.617 +03:00 [INF] Executed DbCommand (215ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [r].[Id], [r].[RoleName]
+FROM [roles] AS [r]
+WHERE [r].[Id] = @__id_0
+2025-11-29 21:12:26.669 +03:00 [DBG] A data reader was disposed.
+2025-11-29 21:12:26.683 +03:00 [DBG] Closing connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-29 21:12:26.704 +03:00 [DBG] Closed connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-29 21:12:26.932 +03:00 [INF] Executed action Presentation.Controllers.RoleController.GetRoleById (Presentation) in 4902.6717ms
+2025-11-29 21:12:26.938 +03:00 [INF] Executed endpoint 'Presentation.Controllers.RoleController.GetRoleById (Presentation)'
+2025-11-29 21:12:27.147 +03:00 [WRN] Rol bilgileri bulunamadı
+Entites.Exceptions.CustomExceptions.NotFoundException: Rol bilgileri bulunamadı
+   at Services.RoleManager.GetRoleByİdAsync(Int32 id) in C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\Task Manager\TaskManager\Services\RoleManager.cs:line 34
+   at Presentation.Controllers.RoleController.GetRoleById(Int32 id) in C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\Task Manager\TaskManager\Presentation\Controllers\RoleController.cs:line 36
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\Task Manager\TaskManager\Entites\Exceptions\GlobalExceptionMiddleware.cs:line 22
+2025-11-29 21:12:27.233 +03:00 [DBG] 'RepositoryContext' disposed.
+2025-11-29 21:12:27.242 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7026/Role?id=11 - - - 404 - application/json 5389.7543ms
+2025-11-29 21:13:33.356 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-11-29 21:13:33.564 +03:00 [DBG] Hosting starting
+2025-11-29 21:13:33.787 +03:00 [DBG] Using development certificate: CN=localhost (Thumbprint: F4DEE4AC2C2B055664ACF8E61A42A18476693035)
+2025-11-29 21:13:33.909 +03:00 [INF] Now listening on: https://localhost:7026
+2025-11-29 21:13:33.911 +03:00 [INF] Now listening on: http://localhost:5292
+2025-11-29 21:13:33.914 +03:00 [DBG] Loaded hosting startup assembly TaskManagerApi
+2025-11-29 21:13:33.917 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2025-11-29 21:13:33.920 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-11-29 21:13:33.922 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-11-29 21:13:33.989 +03:00 [DBG] Connection id "0HNHFEC1520G3" accepted.
+2025-11-29 21:13:33.989 +03:00 [DBG] Connection id "0HNHFEC1520G4" accepted.
+2025-11-29 21:13:33.992 +03:00 [DBG] Connection id "0HNHFEC1520G3" received FIN.
+2025-11-29 21:13:33.995 +03:00 [DBG] Connection id "0HNHFEC1520G3" started.
+2025-11-29 21:13:33.995 +03:00 [DBG] Connection id "0HNHFEC1520G4" started.
+2025-11-29 21:13:33.991 +03:00 [DBG] Connection id "0HNHFEC1520G4" received FIN.
+2025-11-29 21:13:34.034 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, Boolean isApm, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-11-29 21:13:34.034 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, Boolean isApm, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-11-29 21:13:34.122 +03:00 [DBG] Connection id "0HNHFEC1520G3" stopped.
+2025-11-29 21:13:34.122 +03:00 [DBG] Connection id "0HNHFEC1520G4" stopped.
+2025-11-29 21:13:34.131 +03:00 [DBG] Connection id "0HNHFEC1520G3" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-29 21:13:34.131 +03:00 [DBG] Connection id "0HNHFEC1520G4" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-11-29 21:13:34.223 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-29 21:13:34.232 +03:00 [INF] Hosting environment: Development
+2025-11-29 21:13:34.235 +03:00 [INF] Content root path: C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\Task Manager\TaskManager\TaskManager\
+2025-11-29 21:13:34.237 +03:00 [DBG] Hosting started
+2025-11-29 21:13:34.971 +03:00 [DBG] Connection id "0HNHFEC1520G5" accepted.
+2025-11-29 21:13:36.868 +03:00 [DBG] Connection id "0HNHFEC1520G5" started.
+2025-11-29 21:13:37.339 +03:00 [DBG] Connection 0HNHFEC1520G5 established using the following protocol: "Tls13"
+2025-11-29 21:13:37.736 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7026/swagger/index.html - -
+2025-11-29 21:13:38.256 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-11-29 21:13:38.340 +03:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-11-29 21:13:38.354 +03:00 [DBG] Request did not match any endpoints
+2025-11-29 21:13:38.641 +03:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2025-11-29 21:13:38.664 +03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2025-11-29 21:13:38.768 +03:00 [DBG] Response markup was updated to include Browser Link script injection.
+2025-11-29 21:13:38.788 +03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2025-11-29 21:13:38.813 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7026/swagger/index.html - - - 200 - text/html;charset=utf-8 1097.1636ms
+2025-11-29 21:13:39.041 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7026/_vs/browserLink - -
+2025-11-29 21:13:39.043 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7026/_framework/aspnetcore-browser-refresh.js - -
+2025-11-29 21:13:39.067 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7026/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 24.1184ms
+2025-11-29 21:13:39.333 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7026/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 292.1857ms
+2025-11-29 21:13:39.631 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7026/swagger/v1/swagger.json - -
+2025-11-29 21:13:39.650 +03:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-11-29 21:13:39.678 +03:00 [DBG] Request did not match any endpoints
+2025-11-29 21:13:39.712 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7026/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 80.5098ms
+2025-11-29 21:14:06.782 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7026/api/users application/json 92
+2025-11-29 21:14:06.795 +03:00 [DBG] 1 candidate(s) found for the request path '/api/users'
+2025-11-29 21:14:06.805 +03:00 [DBG] Endpoint 'Presentation.Controllers.UserController.CreateUserAsync (Presentation)' with route pattern 'api/users' is valid for the request path '/api/users'
+2025-11-29 21:14:06.810 +03:00 [DBG] Request matched endpoint 'Presentation.Controllers.UserController.CreateUserAsync (Presentation)'
+2025-11-29 21:14:06.813 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-11-29 21:14:06.818 +03:00 [INF] Executing endpoint 'Presentation.Controllers.UserController.CreateUserAsync (Presentation)'
+2025-11-29 21:14:06.873 +03:00 [INF] Route matched with {action = "CreateUser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateUserAsync(Entites.Data_Transfer_object.CreateUserDto) on controller Presentation.Controllers.UserController (Presentation).
+2025-11-29 21:14:06.879 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-11-29 21:14:06.883 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-11-29 21:14:06.888 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-11-29 21:14:06.893 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-11-29 21:14:06.899 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-11-29 21:14:06.905 +03:00 [DBG] Executing controller factory for controller Presentation.Controllers.UserController (Presentation)
+2025-11-29 21:14:07.155 +03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-11-29 21:14:07.192 +03:00 [DBG] Executed controller factory for controller Presentation.Controllers.UserController (Presentation)
+2025-11-29 21:14:07.215 +03:00 [DBG] Attempting to bind parameter 'userDto' of type 'Entites.Data_Transfer_object.CreateUserDto' ...
+2025-11-29 21:14:07.223 +03:00 [DBG] Attempting to bind parameter 'userDto' of type 'Entites.Data_Transfer_object.CreateUserDto' using the name '' in request data ...
+2025-11-29 21:14:07.228 +03:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-11-29 21:14:07.246 +03:00 [DBG] Connection id "0HNHFEC1520G5", Request id "0HNHFEC1520G5:00000009": started reading request body.
+2025-11-29 21:14:07.249 +03:00 [DBG] Connection id "0HNHFEC1520G5", Request id "0HNHFEC1520G5:00000009": done reading request body.
+2025-11-29 21:14:07.290 +03:00 [DBG] JSON input formatter succeeded, deserializing to type 'Entites.Data_Transfer_object.CreateUserDto'
+2025-11-29 21:14:07.293 +03:00 [DBG] Done attempting to bind parameter 'userDto' of type 'Entites.Data_Transfer_object.CreateUserDto'.
+2025-11-29 21:14:07.295 +03:00 [DBG] Done attempting to bind parameter 'userDto' of type 'Entites.Data_Transfer_object.CreateUserDto'.
+2025-11-29 21:14:07.298 +03:00 [DBG] Attempting to validate the bound parameter 'userDto' of type 'Entites.Data_Transfer_object.CreateUserDto' ...
+2025-11-29 21:14:07.311 +03:00 [DBG] Done attempting to validate the bound parameter 'userDto' of type 'Entites.Data_Transfer_object.CreateUserDto'.
+2025-11-29 21:14:07.465 +03:00 [INF] Executed action Presentation.Controllers.UserController.CreateUserAsync (Presentation) in 554.4285ms
+2025-11-29 21:14:07.472 +03:00 [INF] Executed endpoint 'Presentation.Controllers.UserController.CreateUserAsync (Presentation)'
+2025-11-29 21:14:07.502 +03:00 [WRN] E-posta formatı hatalı.
+Entites.Exceptions.CustomExceptions.BadRequestException: E-posta formatı hatalı.
+   at Services.UserManager.CreateUserAsync(CreateUserDto createUser) in C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\Task Manager\TaskManager\Services\UserManager.cs:line 28
+   at Presentation.Controllers.UserController.CreateUserAsync(CreateUserDto userDto) in C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\Task Manager\TaskManager\Presentation\Controllers\UserController.cs:line 27
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\Task Manager\TaskManager\Entites\Exceptions\GlobalExceptionMiddleware.cs:line 22
+2025-11-29 21:14:07.567 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7026/api/users application/json 92 - 400 - application/json 784.9472ms

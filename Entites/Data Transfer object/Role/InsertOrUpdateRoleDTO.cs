@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Entites.Data_Transfer_object.Role
 {
-    public class InsertRoleDTO
+    public class InsertOrUpdateRoleDTO
     {
         [Required(ErrorMessage ="Role adı boş bırakılamaz")]
         [MinLength(3,ErrorMessage ="role adı üç karakterden küçük olamaz")]

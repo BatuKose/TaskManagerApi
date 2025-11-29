@@ -14,17 +14,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/InsertRoleDTO"
+                "$ref": "#/components/schemas/InsertOrUpdateRoleDTO"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/InsertRoleDTO"
+                "$ref": "#/components/schemas/InsertOrUpdateRoleDTO"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/InsertRoleDTO"
+                "$ref": "#/components/schemas/InsertOrUpdateRoleDTO"
               }
             }
           }
@@ -72,6 +72,65 @@
         "responses": {
           "200": {
             "description": "Success"
+          }
+        }
+      }
+    },
+    "/Role/{id}": {
+      "put": {
+        "tags": [
+          "Role"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/InsertOrUpdateRoleDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/InsertOrUpdateRoleDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/InsertOrUpdateRoleDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/InsertOrUpdateRoleDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/InsertOrUpdateRoleDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/InsertOrUpdateRoleDTO"
+                }
+              }
+            }
           }
         }
       }
@@ -254,7 +313,7 @@
         },
         "additionalProperties": false
       },
-      "InsertRoleDTO": {
+      "InsertOrUpdateRoleDTO": {
         "required": [
           "roleName"
         ],
