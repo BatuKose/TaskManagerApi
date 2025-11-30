@@ -10,5 +10,7 @@ namespace Services.Contracts
     {
         IUserService UserService { get; }
         IRoleManager RoleManager { get; }
+        IJobHeaderService JobHeaderService { get; }
+
     }
 }

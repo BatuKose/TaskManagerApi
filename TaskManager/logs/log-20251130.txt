@@ -1,0 +1,218 @@
+2025-11-30 17:35:35.651 +03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-11-30 17:35:36.548 +03:00 [INF] Entity Framework Core 6.0.10 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: MigrationsAssembly=TaskManagerApi 
+2025-11-30 17:35:36.751 +03:00 [DBG] Context 'RepositoryContext' started tracking 'Role' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-30 17:35:36.752 +03:00 [DBG] Context 'RepositoryContext' started tracking 'Role' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-30 17:35:36.775 +03:00 [DBG] Context 'RepositoryContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-30 17:35:36.793 +03:00 [DBG] Context 'RepositoryContext' started tracking 'Role' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-30 17:35:36.793 +03:00 [DBG] Context 'RepositoryContext' started tracking 'Role' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-30 17:35:36.813 +03:00 [DBG] Context 'RepositoryContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-30 17:35:36.834 +03:00 [DBG] An entity of type 'Role' tracked by 'RepositoryContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-30 17:35:36.840 +03:00 [DBG] An entity of type 'Role' tracked by 'RepositoryContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-30 17:35:36.840 +03:00 [DBG] An entity of type 'User' tracked by 'RepositoryContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-30 17:35:36.848 +03:00 [DBG] An entity of type 'User' tracked by 'RepositoryContext' changed state from '"Unchanged"' to '"Modified"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-30 17:35:36.861 +03:00 [DBG] DetectChanges starting for 'RepositoryContext'.
+2025-11-30 17:35:36.872 +03:00 [DBG] DetectChanges completed for 'RepositoryContext'.
+2025-11-30 17:35:36.873 +03:00 [DBG] DetectChanges starting for 'RepositoryContext'.
+2025-11-30 17:35:36.874 +03:00 [DBG] DetectChanges completed for 'RepositoryContext'.
+2025-11-30 17:35:36.918 +03:00 [DBG] Context 'RepositoryContext' started tracking 'Role' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-30 17:35:36.918 +03:00 [DBG] Context 'RepositoryContext' started tracking 'Role' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-30 17:35:36.918 +03:00 [DBG] Context 'RepositoryContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-30 17:35:36.918 +03:00 [DBG] Context 'RepositoryContext' started tracking 'Role' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-30 17:35:36.918 +03:00 [DBG] Context 'RepositoryContext' started tracking 'Role' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-30 17:35:36.918 +03:00 [DBG] Context 'RepositoryContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-30 17:35:36.918 +03:00 [DBG] An entity of type 'Role' tracked by 'RepositoryContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-30 17:35:36.918 +03:00 [DBG] An entity of type 'Role' tracked by 'RepositoryContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-30 17:35:36.919 +03:00 [DBG] An entity of type 'User' tracked by 'RepositoryContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-30 17:35:36.919 +03:00 [DBG] An entity of type 'User' tracked by 'RepositoryContext' changed state from '"Unchanged"' to '"Modified"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-30 17:35:36.919 +03:00 [DBG] DetectChanges starting for 'RepositoryContext'.
+2025-11-30 17:35:36.919 +03:00 [DBG] DetectChanges completed for 'RepositoryContext'.
+2025-11-30 17:35:36.919 +03:00 [DBG] DetectChanges starting for 'RepositoryContext'.
+2025-11-30 17:35:36.919 +03:00 [DBG] DetectChanges completed for 'RepositoryContext'.
+2025-11-30 17:35:37.029 +03:00 [DBG] 'RepositoryContext' disposed.
+2025-11-30 17:35:56.834 +03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-11-30 17:35:57.472 +03:00 [INF] Entity Framework Core 6.0.10 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: MigrationsAssembly=TaskManagerApi 
+2025-11-30 17:35:57.544 +03:00 [DBG] Migrating using database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-30 17:35:57.550 +03:00 [DBG] Opening connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-30 17:35:57.853 +03:00 [DBG] Opened connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-30 17:35:57.861 +03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-11-30 17:35:57.868 +03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (6ms).
+2025-11-30 17:35:57.876 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-11-30 17:35:57.898 +03:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-11-30 17:35:57.900 +03:00 [DBG] Closing connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-30 17:35:57.903 +03:00 [DBG] Closed connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-30 17:35:57.910 +03:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-11-30 17:35:57.910 +03:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2025-11-30 17:35:57.910 +03:00 [DBG] Opening connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-30 17:35:57.911 +03:00 [DBG] Opened connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-30 17:35:57.911 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-11-30 17:35:57.931 +03:00 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-11-30 17:35:57.931 +03:00 [DBG] Closing connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-30 17:35:57.932 +03:00 [DBG] Closed connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-30 17:35:57.933 +03:00 [DBG] Opening connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-30 17:35:57.934 +03:00 [DBG] Opened connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-30 17:35:57.934 +03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-11-30 17:35:57.934 +03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2025-11-30 17:35:57.934 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-11-30 17:35:57.935 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-11-30 17:35:57.935 +03:00 [DBG] Closing connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-30 17:35:57.936 +03:00 [DBG] Closed connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-30 17:35:57.936 +03:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-11-30 17:35:57.936 +03:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2025-11-30 17:35:57.936 +03:00 [DBG] Opening connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-30 17:35:57.936 +03:00 [DBG] Opened connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-30 17:35:57.936 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-11-30 17:35:57.936 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-11-30 17:35:57.936 +03:00 [DBG] Closing connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-30 17:35:57.936 +03:00 [DBG] Closed connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-30 17:35:57.962 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-11-30 17:35:57.962 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-11-30 17:35:57.962 +03:00 [DBG] Opening connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-30 17:35:57.962 +03:00 [DBG] Opened connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-30 17:35:57.963 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-11-30 17:35:57.966 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-11-30 17:35:57.968 +03:00 [DBG] A data reader was disposed.
+2025-11-30 17:35:57.968 +03:00 [DBG] Closing connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-30 17:35:57.968 +03:00 [DBG] Closed connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-30 17:35:57.981 +03:00 [INF] Applying migration '20251130143536_JobHeader'.
+2025-11-30 17:35:58.043 +03:00 [DBG] Opening connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-30 17:35:58.043 +03:00 [DBG] Opened connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-30 17:35:58.045 +03:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2025-11-30 17:35:58.052 +03:00 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2025-11-30 17:35:58.053 +03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-11-30 17:35:58.053 +03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2025-11-30 17:35:58.053 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [jobHeaders] (
+    [Id] int NOT NULL IDENTITY,
+    [Title] nvarchar(max) NOT NULL,
+    [ManagerId] int NOT NULL,
+    [AssignedUserId] int NOT NULL,
+    [Status] int NOT NULL,
+    [Deadline] datetime2 NOT NULL,
+    [CreatedDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_jobHeaders] PRIMARY KEY ([Id])
+);
+2025-11-30 17:35:58.060 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [jobHeaders] (
+    [Id] int NOT NULL IDENTITY,
+    [Title] nvarchar(max) NOT NULL,
+    [ManagerId] int NOT NULL,
+    [AssignedUserId] int NOT NULL,
+    [Status] int NOT NULL,
+    [Deadline] datetime2 NOT NULL,
+    [CreatedDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_jobHeaders] PRIMARY KEY ([Id])
+);
+2025-11-30 17:35:58.061 +03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-11-30 17:35:58.061 +03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2025-11-30 17:35:58.061 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [users] SET [aktifMi] = CAST(1 AS bit)
+WHERE [Id] = 1;
+SELECT @@ROWCOUNT;
+2025-11-30 17:35:58.064 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+UPDATE [users] SET [aktifMi] = CAST(1 AS bit)
+WHERE [Id] = 1;
+SELECT @@ROWCOUNT;
+2025-11-30 17:35:58.064 +03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-11-30 17:35:58.064 +03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2025-11-30 17:35:58.064 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20251130143536_JobHeader', N'6.0.10');
+2025-11-30 17:35:58.065 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20251130143536_JobHeader', N'6.0.10');
+2025-11-30 17:35:58.067 +03:00 [DBG] Committing transaction.
+2025-11-30 17:35:58.071 +03:00 [DBG] Committed transaction.
+2025-11-30 17:35:58.073 +03:00 [DBG] Disposing transaction.
+2025-11-30 17:35:58.073 +03:00 [DBG] Closing connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-30 17:35:58.073 +03:00 [DBG] Closed connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-30 17:35:58.075 +03:00 [DBG] 'RepositoryContext' disposed.
+2025-11-30 17:47:00.557 +03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-11-30 17:47:01.219 +03:00 [INF] Entity Framework Core 6.0.10 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: MigrationsAssembly=TaskManagerApi 
+2025-11-30 17:47:01.351 +03:00 [DBG] Context 'RepositoryContext' started tracking 'Role' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-30 17:47:01.352 +03:00 [DBG] Context 'RepositoryContext' started tracking 'Role' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-30 17:47:01.375 +03:00 [DBG] Context 'RepositoryContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-30 17:47:01.395 +03:00 [DBG] Context 'RepositoryContext' started tracking 'Role' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-30 17:47:01.396 +03:00 [DBG] Context 'RepositoryContext' started tracking 'Role' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-30 17:47:01.414 +03:00 [DBG] Context 'RepositoryContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-30 17:47:01.435 +03:00 [DBG] An entity of type 'Role' tracked by 'RepositoryContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-30 17:47:01.441 +03:00 [DBG] An entity of type 'Role' tracked by 'RepositoryContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-30 17:47:01.441 +03:00 [DBG] An entity of type 'User' tracked by 'RepositoryContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-11-30 17:47:01.459 +03:00 [DBG] DetectChanges starting for 'RepositoryContext'.
+2025-11-30 17:47:01.467 +03:00 [DBG] DetectChanges completed for 'RepositoryContext'.
+2025-11-30 17:47:01.468 +03:00 [DBG] DetectChanges starting for 'RepositoryContext'.
+2025-11-30 17:47:01.468 +03:00 [DBG] DetectChanges completed for 'RepositoryContext'.
+2025-11-30 17:47:01.528 +03:00 [DBG] 'RepositoryContext' disposed.
+2025-11-30 17:49:56.442 +03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-11-30 17:49:57.357 +03:00 [INF] Entity Framework Core 6.0.10 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: MigrationsAssembly=TaskManagerApi 
+2025-11-30 17:49:57.455 +03:00 [DBG] Migrating using database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-30 17:49:57.464 +03:00 [DBG] Opening connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-30 17:49:57.776 +03:00 [DBG] Opened connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-30 17:49:57.789 +03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-11-30 17:49:57.800 +03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (11ms).
+2025-11-30 17:49:57.813 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-11-30 17:49:57.852 +03:00 [INF] Executed DbCommand (39ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-11-30 17:49:57.855 +03:00 [DBG] Closing connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-30 17:49:57.860 +03:00 [DBG] Closed connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-30 17:49:57.872 +03:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-11-30 17:49:57.872 +03:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2025-11-30 17:49:57.873 +03:00 [DBG] Opening connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-30 17:49:57.874 +03:00 [DBG] Opened connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-30 17:49:57.875 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-11-30 17:49:57.922 +03:00 [INF] Executed DbCommand (47ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-11-30 17:49:57.922 +03:00 [DBG] Closing connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-30 17:49:57.924 +03:00 [DBG] Closed connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-30 17:49:57.927 +03:00 [DBG] Opening connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-30 17:49:57.927 +03:00 [DBG] Opened connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-30 17:49:57.927 +03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-11-30 17:49:57.927 +03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2025-11-30 17:49:57.928 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-11-30 17:49:57.936 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-11-30 17:49:57.936 +03:00 [DBG] Closing connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-30 17:49:57.936 +03:00 [DBG] Closed connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-30 17:49:57.936 +03:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-11-30 17:49:57.936 +03:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2025-11-30 17:49:57.936 +03:00 [DBG] Opening connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-30 17:49:57.937 +03:00 [DBG] Opened connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-30 17:49:57.937 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-11-30 17:49:57.942 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-11-30 17:49:57.942 +03:00 [DBG] Closing connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-30 17:49:57.942 +03:00 [DBG] Closed connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-30 17:49:58.005 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-11-30 17:49:58.005 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-11-30 17:49:58.005 +03:00 [DBG] Opening connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-30 17:49:58.005 +03:00 [DBG] Opened connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-30 17:49:58.006 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-11-30 17:49:58.012 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-11-30 17:49:58.016 +03:00 [DBG] A data reader was disposed.
+2025-11-30 17:49:58.016 +03:00 [DBG] Closing connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-30 17:49:58.017 +03:00 [DBG] Closed connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2025-11-30 17:49:58.062 +03:00 [INF] No migrations were applied. The database is already up to date.
+2025-11-30 17:49:58.065 +03:00 [DBG] 'RepositoryContext' disposed.

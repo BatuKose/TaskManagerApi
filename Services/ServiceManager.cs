@@ -13,15 +13,19 @@ namespace Services
     {
         private readonly Lazy<IUserService> _userService;
         private readonly Lazy<IRoleManager> _roleManager;
-
+        private readonly Lazy<IJobHeaderService> _jobHeaderManager;
+        
         public ServiceManager(IRepositoryManager repositoryManager)
         {
             _userService = new Lazy<IUserService>(() => new UserManager(repositoryManager));
             _roleManager = new Lazy<IRoleManager>(() => new RoleManager(repositoryManager));
+            _jobHeaderManager = new Lazy<IJobHeaderService>(() => new JobHeaderManager(repositoryManager));
+ 
         }
-
         public IUserService UserService => _userService.Value;
         public IRoleManager RoleManager => _roleManager.Value;
+
+        public IJobHeaderService JobHeaderService => _jobHeaderManager.Value;
     }
 
 }

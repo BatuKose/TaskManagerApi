@@ -26,11 +26,13 @@ namespace TaskManagerApi.Extensions
             services.AddScoped<IRepositoryManager, RepositoryManager>();
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IRoleRepository, RoleReposity>();
+            services.AddScoped<IJobHeaderRepository, JobHeaderRepository>();
         }
         public static void ConfigureServiceManager(this IServiceCollection services)
         {
             services.AddScoped<IServiceManager,ServiceManager>();
             services.AddScoped<IRoleManager, RoleManager>();
+            services.AddScoped<IUserService,UserManager>();
         }
 
         public static void AddSerilogLogging(this WebApplicationBuilder builder)
