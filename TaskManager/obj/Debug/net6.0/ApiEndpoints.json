@@ -1,5 +1,21 @@
 [
   {
+    "ContainingType": "Presentation.Controllers.JobController",
+    "Method": "CreateJobAsync",
+    "RelativePath": "api/Job",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "jobDto",
+        "Type": "Entites.Data_Transfer_object.JobHeader.CreateJobHeaderDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Presentation.Controllers.UserController",
     "Method": "CreateUserAsync",
     "RelativePath": "api/users",

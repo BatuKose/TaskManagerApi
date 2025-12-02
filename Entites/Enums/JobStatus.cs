@@ -10,11 +10,11 @@ namespace Entites.Enums
     {
         public enum JobStatus
         {
-            Bekleniyor = 0,
-            Karşılandı = 1,
-            Done = 2,
-            iptal = 3,
-            Cezalı=4    
+            Bekleniyor = 1,
+            Karşılandı = 2,
+            Done = 3,
+            iptal = 4,
+            Cezalı=5    
         }
     }
 }

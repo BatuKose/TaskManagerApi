@@ -43,7 +43,6 @@ namespace Services
         public async Task<InsertOrUpdateRoleDTO> InsertRoleAsync(InsertOrUpdateRoleDTO roleDTO)
         {
             if (roleDTO == null) throw new NotFoundException("Rol bilgileri bulunamadı");
-
             if (roleDTO.RoleName.Contains("admin",StringComparison.OrdinalIgnoreCase)) throw new BadRequestException("Admin rolü kullanıcılar tarafından eklenemez");
             var result = new Role()
             {

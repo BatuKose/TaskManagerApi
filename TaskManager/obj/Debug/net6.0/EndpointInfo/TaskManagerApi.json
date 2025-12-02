@@ -5,6 +5,37 @@
     "version": "1.0"
   },
   "paths": {
+    "/api/Job": {
+      "post": {
+        "tags": [
+          "Job"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateJobHeaderDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateJobHeaderDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateJobHeaderDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/Role": {
       "post": {
         "tags": [
@@ -285,6 +316,34 @@
   },
   "components": {
     "schemas": {
+      "CreateJobHeaderDTO": {
+        "required": [
+          "assignedUserId",
+          "deadline",
+          "managerId",
+          "title"
+        ],
+        "type": "object",
+        "properties": {
+          "title": {
+            "minLength": 10,
+            "type": "string"
+          },
+          "managerId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "assignedUserId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "deadline": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
       "CreateUserDto": {
         "required": [
           "email",

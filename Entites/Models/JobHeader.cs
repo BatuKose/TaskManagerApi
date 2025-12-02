@@ -13,7 +13,7 @@ namespace Entites.Models
         public string Title { get; set; }
         public int ManagerId { get; set; }
         public int AssignedUserId { get; set; }
-        public JobStatus Status { get; set; }
+        public JobStatus Status { get; set; } = JobStatus.Bekleniyor;
         public DateTime Deadline { get; set; }
         public DateTime CreatedDate { get; set; }= DateTime.Now;
     }
