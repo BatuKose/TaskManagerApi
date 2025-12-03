@@ -14,5 +14,8 @@ namespace Repositories.Contracts
         Task<bool>FındAdminOrManagerWorkersAsync(int id);
         Task<bool> FındWorkersAsync(int id);
         Task<bool>isUserActive(int id);
+        Task<JobHeader>DeleteHeaderJobAsync(JobHeader jobHeader);
+        Task<JobHeader>FindJobHeaderAsync(int id);
+        SelectJobHeaderDTO SelectJobHeader(int id);
     }
 }

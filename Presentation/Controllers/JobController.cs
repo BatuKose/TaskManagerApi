@@ -28,6 +28,17 @@ namespace Presentation.Controllers
             await _ServiceManager.JobHeaderService.InsertJobInsertJobHeader(jobDto);
             return StatusCode(201);
         }
-
+        [HttpDelete]
+        public async Task<IActionResult> DeleteJobHeaderAsync([FromQuery] int id)
+        {
+            await _ServiceManager.JobHeaderService.DeleteJobHeader(id);
+            return NoContent();
+        }
+        [HttpGet]
+        public IActionResult SelectJob([FromQuery] int id)
+        {
+          var result=  _ServiceManager.JobHeaderService.SelectJobHeader(id);
+            return Ok(result);
+        }
     }
 }

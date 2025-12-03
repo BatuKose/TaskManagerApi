@@ -1,4 +1,5 @@
 ﻿using Entites.Data_Transfer_object.JobHeader;
+using Entites.Enums;
 using Entites.Exceptions.CustomExceptions;
 using Entites.Models;
 using Repositories.Contracts;
@@ -9,6 +10,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static Entites.Enums.JobStatusEnum;
 
 namespace Services
 {
@@ -19,6 +21,16 @@ namespace Services
         public JobHeaderManager(IRepositoryManager repositoryManager)
         {
             _repositoryManager = repositoryManager;
+        }
+
+        public  async Task<JobHeader> DeleteJobHeader(int id)
+        {
+            if (id < 0) throw new BadRequestException("Silinmesi istenilen iş başlık bilgileri boştur");
+            var isVarmi= await _repositoryManager.JobHeaderRepository.FindJobHeaderAsync(id);
+            if (isVarmi == null) throw new NotFoundException("İş başlık bilgileri bulunamadı kontrol ediniz");
+            if (isVarmi.Status!=JobStatus.Bekleniyor) throw new BadRequestException("İşleme alınmış işi silemezsiniz");
+           await _repositoryManager.JobHeaderRepository.DeleteHeaderJobAsync(isVarmi);
+            return isVarmi;
         }
 
         public async Task<CreateJobHeaderDTO> InsertJobInsertJobHeader(CreateJobHeaderDTO jobHeaderDTO)
@@ -54,6 +66,13 @@ namespace Services
                 Deadline=jobHeader.Deadline
             };
 
+        }
+
+        public SelectJobHeaderDTO SelectJobHeader(int id)
+        {
+            if (id < 0) throw new BadRequestException("İş id bilgileri bulunamadı");
+            var result= _repositoryManager.JobHeaderRepository.SelectJobHeader(id);
+            return result;
         }
     }
 

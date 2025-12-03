@@ -19,6 +19,19 @@ namespace Repositories.EFCore
             _Context = repositoryContext;
         }
 
+        public async Task<JobHeader> DeleteHeaderJobAsync(JobHeader jobHeader)
+        {
+           var query=  _Context.jobHeaders.Remove(jobHeader);
+            await _Context.SaveChangesAsync();
+            return jobHeader;
+        }
+
+        public async Task<JobHeader> FindJobHeaderAsync(int id)
+        {
+           var query= await _Context.jobHeaders.SingleOrDefaultAsync(x=>x.Id==id);
+            return query;
+        }
+
         public async Task<bool> FındAdminOrManagerWorkersAsync(int id)
         {
             var query =
@@ -51,6 +64,29 @@ namespace Repositories.EFCore
         {
             var query= await _Context.users.AnyAsync(x=>x.Id == id && x.aktifMi==true);
             return query;
+        }
+
+        public SelectJobHeaderDTO SelectJobHeader(int id)
+        {
+            var query  =
+                from j in _Context.jobHeaders
+                join u in _Context.users on j.AssignedUserId equals u.Id
+                join u2 in _Context.users on j.ManagerId equals u2.Id
+                join r in _Context.roles on u.RoleId equals r.Id
+                join r2 in _Context.roles on u2.Id equals r2.Id
+                where j.Id==id
+                select new SelectJobHeaderDTO 
+                {
+                    Title= j.Title,
+                    ManagerName=u2.UserName,
+                    AssignedUser=u.UserName,
+                    Status=j.Status,
+                    Deadline=j.Deadline,
+                    CreatedDate=j.CreatedDate,
+                    userRoleName=r.RoleName,
+                    managerRoleName=r2.RoleName
+                };
+            return  query.SingleOrDefault();
         }
     }
 }
