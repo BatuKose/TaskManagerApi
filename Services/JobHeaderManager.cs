@@ -8,6 +8,7 @@ using Services.Contracts;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 using static Entites.Enums.JobStatusEnum;
@@ -68,12 +69,60 @@ namespace Services
 
         }
 
+
+
+        public async Task<JobHeader> Iskarsila(int userId, int jobId)
+        {
+            if (userId <= 0 || jobId <= 0)
+                throw new BadRequestException("Parametrelerde eksik bilgiler var");
+            var findJob = await _repositoryManager.JobHeaderRepository.FindJobWithUser(jobId, userId);
+            if (findJob is null)
+                throw new NotFoundException("İş bilgisi bulunamadı");
+
+            if (findJob.AssignedUserId != userId)
+                throw new BadRequestException("Bu iş bu personele atanmış değil. Karşılayamazsın.");
+
+            findJob.Status = JobStatusEnum.JobStatus.Karşılandı;
+            await _repositoryManager.JobHeaderRepository.IsKarsila(findJob);
+           return findJob;
+        }
+
+
         public SelectJobHeaderDTO SelectJobHeader(int id)
         {
             if (id < 0) throw new BadRequestException("İş id bilgileri bulunamadı");
             var result= _repositoryManager.JobHeaderRepository.SelectJobHeader(id);
             return result;
         }
+
+        public async Task<updateJobHeaderDTO> updatejobHeader(int id, updateJobHeaderDTO dto)
+        {
+            if (id <= 0) throw new NotFoundException("İş bilgisi bulunamadı");
+            if (dto.AssignedUserId <=0) throw new BadRequestException("Kullanıcı bilgisi boş geçilemez");
+            bool userVarmi = await _repositoryManager.UserRepository.UserExistsAsync(dto.AssignedUserId);
+            if (!userVarmi) throw new NotFoundException("Aktif kullanıcı bilgisine uluşılamadı ");
+            var job = await _repositoryManager.JobHeaderRepository.SelectJobHeaderById(id);
+            if (job is null)throw new NotFoundException("İş başlık bilgisi bulunamadı");
+            if (job.Status != JobStatus.Bekleniyor)
+                throw new BadRequestException("İşleme alınmış işi güncelleyemezsin");
+            bool isManager = await _repositoryManager.JobHeaderRepository.FındAdminOrManagerWorkersAsync(dto.AssignedUserId);
+            if (isManager)
+            {
+                throw new BadRequestException("Yöneticiye iş devredilmez");
+            }
+            else
+            {
+                job.Title = dto.Title;
+                job.AssignedUserId = dto.AssignedUserId;
+                await _repositoryManager.JobHeaderRepository.UpdateJobHeader(job);
+                return new updateJobHeaderDTO
+                {
+                    Title = job.Title,
+                    AssignedUserId = job.AssignedUserId
+                };
+            }
+        }
+               
     }
 
 }

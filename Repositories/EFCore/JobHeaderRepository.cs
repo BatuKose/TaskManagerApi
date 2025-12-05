@@ -6,7 +6,9 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace Repositories.EFCore
@@ -31,7 +33,7 @@ namespace Repositories.EFCore
            var query= await _Context.jobHeaders.SingleOrDefaultAsync(x=>x.Id==id);
             return query;
         }
-
+            
         public async Task<bool> FındAdminOrManagerWorkersAsync(int id)
         {
             var query =
@@ -59,6 +61,19 @@ namespace Repositories.EFCore
             await _Context.SaveChangesAsync();
             return jobHeader;
         }
+        public async Task<JobHeader>FindJobWithUser(int jobid,int  userId)
+        {
+            return await _Context.jobHeaders
+             .SingleOrDefaultAsync(x => x.Id == jobid && x.AssignedUserId == userId);
+    
+        }
+        public async Task<JobHeader> IsKarsila(JobHeader job)
+        {
+            _Context.jobHeaders.Update(job);
+            await _Context.SaveChangesAsync();
+            return job;
+        }
+
 
         public async Task<bool> isUserActive(int id)
         {
@@ -88,5 +103,19 @@ namespace Repositories.EFCore
                 };
             return  query.SingleOrDefault();
         }
+
+        public async Task<JobHeader> UpdateJobHeader(JobHeader jobHeader)
+        {
+            _Context.jobHeaders.Update(jobHeader);
+            await _Context.SaveChangesAsync();
+            return jobHeader;
+        }
+
+        public async Task<JobHeader> SelectJobHeaderById(int id)
+        {
+            return await _Context.jobHeaders
+                .FirstOrDefaultAsync(x => x.Id == id);
+        }
+
     }
 }

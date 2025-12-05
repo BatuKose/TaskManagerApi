@@ -17,5 +17,10 @@ namespace Repositories.Contracts
         Task<JobHeader>DeleteHeaderJobAsync(JobHeader jobHeader);
         Task<JobHeader>FindJobHeaderAsync(int id);
         SelectJobHeaderDTO SelectJobHeader(int id);
+       Task< JobHeader> IsKarsila(JobHeader job);
+       Task<JobHeader> FindJobWithUser(int jobid, int userId);
+       Task<JobHeader> SelectJobHeaderById(int id);
+        Task<JobHeader> UpdateJobHeader(JobHeader jobHeader);
+
     }
 }

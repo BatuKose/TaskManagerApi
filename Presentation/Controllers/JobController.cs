@@ -1,6 +1,7 @@
 ﻿using Entites.Data_Transfer_object;
 using Entites.Data_Transfer_object.JobHeader;
 using Microsoft.AspNetCore.Mvc;
+using Services;
 using Services.Contracts;
 using System;
 using System.Collections.Generic;
@@ -40,5 +41,25 @@ namespace Presentation.Controllers
           var result=  _ServiceManager.JobHeaderService.SelectJobHeader(id);
             return Ok(result);
         }
+        [HttpPost("karsila")]
+        public async Task<IActionResult> IsKarsila(int userId, int jobId)
+        {
+            var result = await _ServiceManager.JobHeaderService.Iskarsila(userId, jobId);
+
+            return Ok(new
+            {
+                message = "İş karşılandı"
+            });
+        }
+
+        [HttpPut]
+        public async Task<IActionResult> JobHeaderGuncelle([FromQuery] int id, [FromBody] updateJobHeaderDTO dto)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+            var result = await _ServiceManager.JobHeaderService.updatejobHeader(id, dto);
+            return Ok(result);
+        }
+
     }
 }

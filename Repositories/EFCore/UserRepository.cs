@@ -42,6 +42,10 @@ namespace Repositories.EFCore
         {
             return await _context.users.AnyAsync(x=>x.UserName==username);
         }
+        public async Task<bool> UserExistsAsync(int id)
+        {
+            return await _context.users.AnyAsync(x => x.Id == id && x.aktifMi == true);
+        }
         public async Task<GetUserWithRoleDto> getUserWithRoleAsync(string username)
         {
             var result = await

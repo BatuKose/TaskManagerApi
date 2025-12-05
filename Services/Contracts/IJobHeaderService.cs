@@ -13,5 +13,7 @@ namespace Services.Contracts
         Task<CreateJobHeaderDTO>InsertJobInsertJobHeader(CreateJobHeaderDTO jobHeaderDTO);
         Task<JobHeader> DeleteJobHeader(int id);
         SelectJobHeaderDTO SelectJobHeader(int id);
+        Task<JobHeader> Iskarsila(int userId, int jobId);
+        Task<updateJobHeaderDTO> updatejobHeader(int id,updateJobHeaderDTO dto);
     }
 }
