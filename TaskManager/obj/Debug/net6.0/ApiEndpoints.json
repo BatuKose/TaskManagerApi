@@ -90,6 +90,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Presentation.Controllers.JobDeailController",
+    "Method": "InsertJobAsync",
+    "RelativePath": "api/JobDetail",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "jobDto",
+        "Type": "Entites.Data_Transfer_object.JobDetail.InsertJobDetailDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Presentation.Controllers.UserController",
     "Method": "CreateUserAsync",
     "RelativePath": "api/users",

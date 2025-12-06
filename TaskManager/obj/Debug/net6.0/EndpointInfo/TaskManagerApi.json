@@ -145,6 +145,37 @@
         }
       }
     },
+    "/api/JobDetail": {
+      "post": {
+        "tags": [
+          "JobDeail"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/InsertJobDetailDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/InsertJobDetailDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/InsertJobDetailDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/Role": {
       "post": {
         "tags": [
@@ -481,6 +512,34 @@
         },
         "additionalProperties": false
       },
+      "InsertJobDetailDTO": {
+        "required": [
+          "detail",
+          "headerId",
+          "jobDetayStatus",
+          "userId"
+        ],
+        "type": "object",
+        "properties": {
+          "headerId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "detail": {
+            "maxLength": 254,
+            "minLength": 10,
+            "type": "string"
+          },
+          "userId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "jobDetayStatus": {
+            "$ref": "#/components/schemas/JobDetayStatus"
+          }
+        },
+        "additionalProperties": false
+      },
       "InsertOrUpdateRoleDTO": {
         "required": [
           "roleName"
@@ -493,6 +552,15 @@
           }
         },
         "additionalProperties": false
+      },
+      "JobDetayStatus": {
+        "enum": [
+          1,
+          2,
+          3
+        ],
+        "type": "integer",
+        "format": "int32"
       },
       "UpdateUserDto": {
         "required": [

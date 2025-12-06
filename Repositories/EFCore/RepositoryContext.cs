@@ -16,6 +16,7 @@ namespace Repositories.EFCore
         public DbSet<User> users { get; set; }
         public DbSet<Role> roles { get; set; }
         public DbSet<JobHeader> jobHeaders { get; set; }
+        public DbSet<JobDetail> jobDetail { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

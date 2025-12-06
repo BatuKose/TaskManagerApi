@@ -11,6 +11,7 @@ namespace Repositories.Contracts
         IUserRepository UserRepository { get; }
         IRoleRepository RoleRepository { get; }
         IJobHeaderRepository JobHeaderRepository { get; }
+        IjobDetailRepository JobDetailRepository { get; }
         Task saveAsyc();
     }
 }
