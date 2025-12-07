@@ -5,7 +5,7 @@
     "version": "1.0"
   },
   "paths": {
-    "/api/Job": {
+    "/api/Job/iş başlık": {
       "post": {
         "tags": [
           "Job"
@@ -145,10 +145,10 @@
         }
       }
     },
-    "/api/JobDetail": {
+    "/api/Job/iş detay": {
       "post": {
         "tags": [
-          "JobDeail"
+          "Job"
         ],
         "requestBody": {
           "content": {
@@ -169,6 +169,48 @@
             }
           }
         },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Job"
+        ],
+        "parameters": [
+          {
+            "name": "jobDetayId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Job/jobAllDetails": {
+      "get": {
+        "tags": [
+          "Job"
+        ],
+        "parameters": [
+          {
+            "name": "jobHeaderId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "Success"

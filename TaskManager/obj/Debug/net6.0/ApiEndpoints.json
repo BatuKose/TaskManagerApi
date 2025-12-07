@@ -2,7 +2,7 @@
   {
     "ContainingType": "Presentation.Controllers.JobController",
     "Method": "CreateJobAsync",
-    "RelativePath": "api/Job",
+    "RelativePath": "api/Job/i\u015F ba\u015Fl\u0131k",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -18,7 +18,7 @@
   {
     "ContainingType": "Presentation.Controllers.JobController",
     "Method": "DeleteJobHeaderAsync",
-    "RelativePath": "api/Job",
+    "RelativePath": "api/Job/i\u015F ba\u015Fl\u0131k",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -34,7 +34,7 @@
   {
     "ContainingType": "Presentation.Controllers.JobController",
     "Method": "SelectJob",
-    "RelativePath": "api/Job",
+    "RelativePath": "api/Job/i\u015F ba\u015Fl\u0131k",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -50,7 +50,7 @@
   {
     "ContainingType": "Presentation.Controllers.JobController",
     "Method": "JobHeaderGuncelle",
-    "RelativePath": "api/Job",
+    "RelativePath": "api/Job/i\u015F ba\u015Fl\u0131k",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -64,6 +64,54 @@
         "Name": "dto",
         "Type": "Entites.Data_Transfer_object.JobHeader.updateJobHeaderDTO",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.JobController",
+    "Method": "InsertJobAsync",
+    "RelativePath": "api/Job/i\u015F detay",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "jobDto",
+        "Type": "Entites.Data_Transfer_object.JobDetail.InsertJobDetailDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.JobController",
+    "Method": "DeleteJobDetail",
+    "RelativePath": "api/Job/i\u015F detay",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "jobDetayId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.JobController",
+    "Method": "GetJobWithAllDetails",
+    "RelativePath": "api/Job/jobAllDetails",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "jobHeaderId",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -85,22 +133,6 @@
         "Name": "jobId",
         "Type": "System.Int32",
         "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Presentation.Controllers.JobDeailController",
-    "Method": "InsertJobAsync",
-    "RelativePath": "api/JobDetail",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "jobDto",
-        "Type": "Entites.Data_Transfer_object.JobDetail.InsertJobDetailDTO",
-        "IsRequired": true
       }
     ],
     "ReturnTypes": []

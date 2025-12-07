@@ -1,5 +1,9 @@
-﻿using Entites.Models;
+﻿using Entites.Data_Transfer_object.JobDetail;
+using Entites.Enums;
+using Entites.Models;
+using Microsoft.EntityFrameworkCore;
 using Repositories.Contracts;
+using Serilog.Formatting.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,11 +20,70 @@ namespace Repositories.EFCore
             _Context = repositoryContext;
         }
 
+        public async Task<JobDetail> DeleteJobDetailAsync(JobDetail jobDetail)
+        {
+            _Context.jobDetail.Remove(jobDetail);
+            await _Context.SaveChangesAsync();
+            return jobDetail;
+        }
+
+        public bool DetailVarmi(int id)
+        {
+            var result = _Context.jobDetail.Any(x => x.HeaderId==id);
+            return result;
+        }
+
+        public async Task<JobDetail> GetJobDetailByIdAsync(int id)
+        {
+            var result = await _Context.jobDetail.Where(x => x.Id == id).SingleOrDefaultAsync();
+            return result;
+        }
+
+        public bool HeaderVarmi(int id)
+        {
+            var result = _Context.jobHeaders.Any(x => x.Id==id);
+            return result;
+        }
+
         public async Task<JobDetail> InsertJobDetailAsync(JobDetail jobDetail)
         {
             _Context.jobDetail.Add(jobDetail);
             await _Context.SaveChangesAsync();
             return jobDetail;
+        }
+
+        public IQueryable<JobHeader> IsJobDone(int id)
+        {
+            var query = from j in _Context.jobHeaders
+                        join jd in _Context.jobDetail on j.Id equals jd.HeaderId
+                        where jd.Id == id && j.Status == JobStatusEnum.JobStatus.Done
+                        select j;
+            return query;
+        }
+
+        public IQueryable<JobDetayStatusWithHeaderDTO> JobStatusWithHedaer(int id)
+        {
+            var query = from j in _Context.jobHeaders
+                        join jd in _Context.jobDetail on j.Id equals jd.HeaderId
+                        join u in _Context.users on j.AssignedUserId equals u.Id
+                        join u1 in _Context.users on j.ManagerId equals u1.Id
+                        join r in _Context.roles on u.RoleId equals r.Id
+                        join r1 in _Context.roles on u1.RoleId equals r1.Id
+                        where j.Id == id
+                        select new JobDetayStatusWithHeaderDTO()
+                        {
+                            JobHeaderName=j.Title,
+                            WorkCreateTıme=j.CreatedDate,
+                            Deadline=j.Deadline,
+                            ManagerUserName=u1.UserName,
+                            ManagerRole=r1.RoleName,
+                            JobDetayName=jd.Detail,
+                            WorkerUserName=u.UserName,
+                            workerRole=r.RoleName,
+                            jobHeaderStatus=j.Status,
+                            jobDetayStatus=jd.jobDetayStatus
+                        };
+            return query;
         }
     }
 }

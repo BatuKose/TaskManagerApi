@@ -11,6 +11,8 @@ namespace Services.Contracts
     public interface IJobDetailService
     {
         Task<InsertJobDetailDTO> InsertJobDetailAsync(InsertJobDetailDTO detailDTO);
+        Task<JobDetail>DeleteJobDetailAsync(int id);
+        public IQueryable<JobDetayStatusWithHeaderDTO> SelectJobDetaiAllDetail(int id);
        
     }
 }

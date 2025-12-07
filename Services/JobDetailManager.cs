@@ -7,6 +7,7 @@ using Services.Contracts;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -20,6 +21,20 @@ namespace Services
         {
             _repositoryManager = repositoryManager;
         }
+
+        public async Task<JobDetail> DeleteJobDetailAsync(int id)
+        {
+            if (id <= 0) throw new BadRequestException("gelen başlık id bilgisi sıfırdan büyük olmalı.");
+            var jobDetail = await _repositoryManager.JobDetailRepository.GetJobDetailByIdAsync(id);
+            if (jobDetail == null) throw new NotFoundException("İş detayı bulunamadı");
+            var isJobDone = _repositoryManager.JobDetailRepository.IsJobDone(id);
+            if (isJobDone is not null) throw new BadRequestException("İşlemi bitmiş iş silinemez");
+            await _repositoryManager.JobDetailRepository.DeleteJobDetailAsync(jobDetail);
+            return jobDetail;
+        }
+
+
+
 
         public async Task<InsertJobDetailDTO> InsertJobDetailAsync(InsertJobDetailDTO detailDTO)
         {
@@ -46,6 +61,17 @@ namespace Services
                 jobDetayStatus=Insert.jobDetayStatus
             };
             return retunDto;
+        }
+
+        public IQueryable<JobDetayStatusWithHeaderDTO> SelectJobDetaiAllDetail(int id)
+        {
+            if (id<=0) throw new BadRequestException("İş başlık id bilgisi boş olamaz");
+            bool HedarExist=_repositoryManager.JobDetailRepository.HeaderVarmi(id);
+            if (HedarExist==false) throw new  BadRequestException("İş başlık bilgisi bulunamadı");
+            bool DetailExist= _repositoryManager.JobDetailRepository.DetailVarmi(id);
+            if (DetailExist==false) throw new BadRequestException("İş detay bilgisi bulunamadı");
+            var result = _repositoryManager.JobDetailRepository.JobStatusWithHedaer(id);
+            return result;
         }
     }
 }
