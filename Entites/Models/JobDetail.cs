@@ -14,5 +14,6 @@ namespace Entites.Models
         public string Detail { get; set; }
         public int userId { get; set; }
         public JobDetayStatus jobDetayStatus { get; set; }
+        public DateTime JobFinishTime {  get; set; }
     }
 }

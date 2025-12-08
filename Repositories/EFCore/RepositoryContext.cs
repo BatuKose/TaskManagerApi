@@ -1,4 +1,5 @@
 ﻿using Entites.Models;
+using Entites.View;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -17,9 +18,10 @@ namespace Repositories.EFCore
         public DbSet<Role> roles { get; set; }
         public DbSet<JobHeader> jobHeaders { get; set; }
         public DbSet<JobDetail> jobDetail { get; set; }
-
+        public DbSet<CezalıIslerView>CezaliIsler {  get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<CezalıIslerView>().HasNoKey();
             base.OnModelCreating(modelBuilder);
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
         }

@@ -1,6 +1,16 @@
 [
   {
     "ContainingType": "Presentation.Controllers.JobController",
+    "Method": "GetCezaliIsler",
+    "RelativePath": "api/Job/Cezal\u0131\u0130sler",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.JobController",
     "Method": "CreateJobAsync",
     "RelativePath": "api/Job/i\u015F ba\u015Fl\u0131k",
     "HttpMethod": "POST",

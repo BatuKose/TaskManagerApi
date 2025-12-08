@@ -1,5 +1,6 @@
 ﻿using Entites.Data_Transfer_object.JobDetail;
 using Entites.Models;
+using Entites.View;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,5 +18,6 @@ namespace Repositories.Contracts
         IQueryable<JobDetayStatusWithHeaderDTO> JobStatusWithHedaer(int id);
         public bool HeaderVarmi(int id);
         public bool DetailVarmi(int id);
+        public List<CezalıIslerView> GetCezalıİsler();
     }
 }

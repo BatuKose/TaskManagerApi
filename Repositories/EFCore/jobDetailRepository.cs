@@ -1,6 +1,7 @@
 ﻿using Entites.Data_Transfer_object.JobDetail;
 using Entites.Enums;
 using Entites.Models;
+using Entites.View;
 using Microsoft.EntityFrameworkCore;
 using Repositories.Contracts;
 using Serilog.Formatting.Json;
@@ -32,6 +33,30 @@ namespace Repositories.EFCore
             var result = _Context.jobDetail.Any(x => x.HeaderId==id);
             return result;
         }
+
+        public List<CezalıIslerView> GetCezalıİsler()
+        {
+
+            var data = _Context.CezaliIsler
+                .FromSqlRaw(@"
+                WITH CTE AS (
+                SELECT 
+               
+                jh.Title AS JobHeaderName,
+                jh.Deadline,
+                
+                jd.Detail AS JobDetailName,
+                jd.JobFinishTime AS FinishedTime,
+                ROW_NUMBER() OVER (PARTITION BY jh.Id ORDER BY jd.JobFinishTime DESC) AS rn
+                FROM jobDetail jd
+                LEFT JOIN jobHeaders jh ON jd.HeaderId = jh.Id
+                )
+                SELECT *
+                FROM CTE
+                WHERE rn = 1 AND FinishedTime > Deadline
+                ").ToList();
+                return data;
+         }
 
         public async Task<JobDetail> GetJobDetailByIdAsync(int id)
         {

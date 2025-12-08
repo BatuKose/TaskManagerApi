@@ -81,5 +81,11 @@ namespace Presentation.Controllers
             var result= _ServiceManager.JobDetailService.SelectJobDetaiAllDetail(jobHeaderId);
             return Ok(result);
         }
+        [HttpGet("Cezalıİsler")]
+        public IActionResult GetCezaliIsler()
+        {
+            var result=_ServiceManager.JobDetailService.GetCezalıİsler();
+            return Ok(result);
+        }
     }
 }

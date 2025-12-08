@@ -20,5 +20,6 @@ namespace Entites.Data_Transfer_object.JobDetail
         public DateTime Deadline { get; set; }
         public JobDetayStatus jobDetayStatus { get; set; }
         public JobStatus jobHeaderStatus { get; set; }
+        public DateTime JobFinishedTime { get; set; }
     }
 }

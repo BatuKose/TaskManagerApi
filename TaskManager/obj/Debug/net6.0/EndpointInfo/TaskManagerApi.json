@@ -218,6 +218,18 @@
         }
       }
     },
+    "/api/Job/Cezalıİsler": {
+      "get": {
+        "tags": [
+          "Job"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/Role": {
       "post": {
         "tags": [

@@ -2,6 +2,7 @@
 using Entites.Enums;
 using Entites.Exceptions.CustomExceptions;
 using Entites.Models;
+using Entites.View;
 using Repositories.Contracts;
 using Services.Contracts;
 using System;
@@ -33,8 +34,21 @@ namespace Services
             return jobDetail;
         }
 
+        public List<CezalıIslerView> GetCezalıİsler()
+        {
+            try
+            {
+                string newResult = "";
+                var result = _repositoryManager.JobDetailRepository.GetCezalıİsler();  
+                return result;      
+            }
+            catch (Exception)
+            {
 
-
+                throw new Exception("Bir şeyler ters gitti lütfen bir daha deneyin");
+            }
+           
+        }
 
         public async Task<InsertJobDetailDTO> InsertJobDetailAsync(InsertJobDetailDTO detailDTO)
         {
