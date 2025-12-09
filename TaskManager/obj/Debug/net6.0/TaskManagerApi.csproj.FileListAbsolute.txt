@@ -106,3 +106,5 @@ C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\Task Manage
 C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\Task Manager\TaskManager\TaskManager\obj\Debug\net6.0\TaskMana.D9459CD6.Up2Date
 C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\Task Manager\TaskManager\TaskManager\obj\Debug\net6.0\TaskManagerApi.genruntimeconfig.cache
 C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\Task Manager\TaskManager\TaskManager\obj\Debug\net6.0\ref\TaskManagerApi.dll
+C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\Task Manager\TaskManager\TaskManager\bin\Debug\net6.0\AspNetCoreRateLimit.dll
+C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\Task Manager\TaskManager\TaskManager\bin\Debug\net6.0\Newtonsoft.Json.dll

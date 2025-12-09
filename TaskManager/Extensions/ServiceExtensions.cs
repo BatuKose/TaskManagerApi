@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using AspNetCoreRateLimit;
+using Microsoft.EntityFrameworkCore;
 using Repositories.Contracts;
 using Repositories.EFCore;
 using Serilog;
@@ -52,6 +53,19 @@ namespace TaskManagerApi.Extensions
         {
             app.UseMiddleware<GlobalExceptionMiddleware>();
         }
-
+        public static IServiceCollection AddCustomRateLimiting(this IServiceCollection services, IConfiguration configuration)
+        {
+            services.AddMemoryCache();
+            services.Configure<IpRateLimitOptions>(configuration.GetSection("IpRateLimit"));
+            services.Configure<IpRateLimitPolicies>(configuration.GetSection("IpRateLimitPolicies"));
+            services.AddInMemoryRateLimiting();
+            services.AddSingleton<IRateLimitConfiguration, RateLimitConfiguration>();
+            return services;
+        }
+        public static IApplicationBuilder UseCustomRateLimiting(this IApplicationBuilder app)
+        {
+            app.UseIpRateLimiting();
+            return app;
+        }
     }
 }

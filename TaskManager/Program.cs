@@ -11,7 +11,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.ConfigureRepositoryManager();
 builder.Services.ConfigureServiceManager();
-
+builder.Services.AddCustomRateLimiting(builder.Configuration);
 
 var app = builder.Build();
 
@@ -22,7 +22,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
+app.UseCustomRateLimiting();
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
