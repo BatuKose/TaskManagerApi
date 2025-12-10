@@ -15,9 +15,10 @@ namespace Repositories.EFCore
         private readonly IRoleRepository _roleRepository;
         private readonly IJobHeaderRepository _jobHeaderRepository;
         private readonly IjobDetailRepository _jobDetailRepository;
+        private readonly IAuthenticationRepository _authenticationRepository;
         public RepositoryManager(RepositoryContext context, IUserRepository userRepository, 
             IRoleRepository roleRepository, IJobHeaderRepository jobHeaderRepository,
-            IjobDetailRepository jobDetailRepository
+            IjobDetailRepository jobDetailRepository,IAuthenticationRepository authenticationRepository
             )
         {
             _context = context;
@@ -25,6 +26,7 @@ namespace Repositories.EFCore
             _roleRepository=roleRepository;
             _jobHeaderRepository=jobHeaderRepository;
             _jobDetailRepository=jobDetailRepository;
+            _authenticationRepository=authenticationRepository;
         }
 
         public IUserRepository UserRepository => _userRepository;
@@ -32,6 +34,7 @@ namespace Repositories.EFCore
         public IRoleRepository RoleRepository => _roleRepository;
         public IJobHeaderRepository JobHeaderRepository => _jobHeaderRepository;
         public IjobDetailRepository JobDetailRepository => _jobDetailRepository;
+        public IAuthenticationRepository authenticationRepository => _authenticationRepository;
         public  async Task saveAsyc()
         {
             await _context.SaveChangesAsync();

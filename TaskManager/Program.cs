@@ -8,6 +8,7 @@ builder.AddSerilogLogging();
 builder.Services.ConfigureSqlContext(builder.Configuration);
 builder.Services.AddControllers().AddApplicationPart(typeof(Presentation.AssemblyReference).Assembly);
 builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddJwtAuthentication(builder.Configuration);
 builder.Services.AddSwaggerGen();
 builder.Services.ConfigureRepositoryManager();
 builder.Services.ConfigureServiceManager();

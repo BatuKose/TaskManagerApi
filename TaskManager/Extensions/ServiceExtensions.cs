@@ -1,11 +1,14 @@
 ﻿using AspNetCoreRateLimit;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using Repositories.Contracts;
 using Repositories.EFCore;
 using Serilog;
 using Services;
 using Services.Contracts;
 using System.Security.Cryptography.X509Certificates;
+using System.Text;
 
 namespace TaskManagerApi.Extensions
 {
@@ -29,6 +32,7 @@ namespace TaskManagerApi.Extensions
             services.AddScoped<IRoleRepository, RoleReposity>();
             services.AddScoped<IJobHeaderRepository, JobHeaderRepository>();
             services.AddScoped<IjobDetailRepository,jobDetailRepository>();
+            services.AddScoped<IAuthenticationRepository, AuthenticationRepository>();
         }
         public static void ConfigureServiceManager(this IServiceCollection services)
         {
@@ -37,6 +41,7 @@ namespace TaskManagerApi.Extensions
             services.AddScoped<IUserService,UserManager>();
             services.AddScoped<IJobHeaderService,JobHeaderManager>();
             services.AddScoped<IJobDetailService,JobDetailManager>();
+            services.AddScoped<IAuthenticationService,AuthenticationManager>();
         }
 
         public static void AddSerilogLogging(this WebApplicationBuilder builder)
@@ -66,6 +71,29 @@ namespace TaskManagerApi.Extensions
         {
             app.UseIpRateLimiting();
             return app;
+        }
+        public static IServiceCollection AddJwtAuthentication(this IServiceCollection services, IConfiguration configuration)
+        {
+            var jwt = configuration.GetSection("jwt");
+            var Key = Encoding.UTF8.GetBytes(jwt["Key"]);
+
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer
+                (
+                    opt =>
+                    {
+                        opt.TokenValidationParameters= new TokenValidationParameters
+                        {
+                            ValidateIssuer=true,
+                            ValidateAudience=true,
+                            ValidateIssuerSigningKey=true,
+                            ValidateLifetime=true,
+                            ValidIssuer=jwt["Issuer"],
+                            ValidAudience=jwt["Audience"],
+                            IssuerSigningKey= new SymmetricSecurityKey(Key)
+                        };
+                    }
+                );
+            return services;
         }
     }
 }
