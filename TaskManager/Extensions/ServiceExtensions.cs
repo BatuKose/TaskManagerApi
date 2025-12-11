@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
 using Repositories.Contracts;
 using Repositories.EFCore;
 using Serilog;
@@ -93,6 +94,44 @@ namespace TaskManagerApi.Extensions
                         };
                     }
                 );
+            return services;
+        }
+        public static IServiceCollection AddSwaggerWithJwtAuth(this IServiceCollection services)
+        {
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo
+                {
+                    Title = "TaskManager API",
+                    Version = "v1"
+                });
+                var securityScheme = new OpenApiSecurityScheme
+                {
+                    Name = "Authorization",
+                    Description = "JWT Bearer token giriniz. Örnek: Bearer {token}",
+                    In = ParameterLocation.Header,
+                    Type = SecuritySchemeType.Http,
+                    Scheme = "bearer",
+                    BearerFormat = "JWT"
+                };
+                c.AddSecurityDefinition("Bearer", securityScheme);
+                var securityRequirement = new OpenApiSecurityRequirement
+            {
+                {
+                    new OpenApiSecurityScheme
+                    {
+                        Reference = new OpenApiReference
+                        {
+                            Type = ReferenceType.SecurityScheme,
+                            Id = "Bearer"
+                        }
+                    },
+                    Array.Empty<string>()
+                }
+            };
+
+                c.AddSecurityRequirement(securityRequirement);
+            });
             return services;
         }
     }

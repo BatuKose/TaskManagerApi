@@ -233,6 +233,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Presentation.Controllers.AuthenticationController",
+    "Method": "Login",
+    "RelativePath": "Authentication",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "login",
+        "Type": "Entites.Data_Transfer_object.User.LoginDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Presentation.Controllers.RoleController",
     "Method": "InserDto",
     "RelativePath": "Role",

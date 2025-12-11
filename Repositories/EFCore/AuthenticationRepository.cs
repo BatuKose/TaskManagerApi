@@ -1,4 +1,6 @@
-﻿using Repositories.Contracts;
+﻿using Entites.Models;
+using Microsoft.EntityFrameworkCore;
+using Repositories.Contracts;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,5 +17,9 @@ namespace Repositories.EFCore
             _Context = repositoryContext;
         }
 
+        public async Task<User?> GetUserAsync(string username, string password)
+        {
+           return await _Context.users.FirstOrDefaultAsync(x=>x.UserName == username && x.Password == password);
+        }
     }
 }

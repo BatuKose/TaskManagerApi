@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Entites.Data_Transfer_object.User;
+using Serilog;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +10,6 @@ namespace Services.Contracts
 {
     public interface IAuthenticationService
     {
+        Task<string>LoginAsync(LoginDTO login);
     }
 }
