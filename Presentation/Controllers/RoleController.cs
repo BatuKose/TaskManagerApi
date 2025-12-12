@@ -1,4 +1,5 @@
 ﻿using Entites.Data_Transfer_object.Role;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Services.Contracts;
 using System;
@@ -11,6 +12,7 @@ namespace Presentation.Controllers
 {
     [ApiController]
     [Route("Role")]
+    [Authorize(Policy = "Admin")]
     public class RoleController:ControllerBase
     {
         private readonly IServiceManager serviceManager;
@@ -19,7 +21,7 @@ namespace Presentation.Controllers
         {
             this.serviceManager=serviceManager;
         }
-
+        
         [HttpPost]
         public async Task<IActionResult> InserDto([FromBody] InsertOrUpdateRoleDTO insertRoleDTO)
         {

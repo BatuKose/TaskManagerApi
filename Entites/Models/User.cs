@@ -15,6 +15,8 @@ namespace Entites.Models
         public int RoleId { get; set; }
         public Role Role { get; set; }
         public bool aktifMi { get; set; } = true;
+        public int FailedAttemptCount { get; set; }
+        public DateTime BlockedUntil { get; set; }
 
     }
 }

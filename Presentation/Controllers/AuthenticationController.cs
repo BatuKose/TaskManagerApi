@@ -1,5 +1,6 @@
 ﻿using Entites.Data_Transfer_object.User;
 using Entites.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Services.Contracts;
 using System;
@@ -12,6 +13,7 @@ namespace Presentation.Controllers
 {
     [ApiController]
     [Route("Authentication")]
+    [Authorize]
     public class AuthenticationController:ControllerBase
     {
        
@@ -21,7 +23,7 @@ namespace Presentation.Controllers
         {
             this.serviceManager=serviceManager;
         }
-
+        [AllowAnonymous]
         [HttpPost]
         public async Task<IActionResult> Login([FromBody] LoginDTO login)
         {

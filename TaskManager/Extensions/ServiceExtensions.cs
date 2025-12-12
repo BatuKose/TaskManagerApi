@@ -134,5 +134,26 @@ namespace TaskManagerApi.Extensions
             });
             return services;
         }
+        public static IServiceCollection  AddAuthorizationPolicies(this IServiceCollection services)
+        {
+            services.AddAuthorization(options =>
+            {
+                options.AddPolicy("Admin", policy =>
+                    policy.RequireClaim("RoleId", "1"));
+
+                options.AddPolicy("Manager", policy =>
+                    policy.RequireClaim("RoleId", "2","1"));
+                options.AddPolicy("Worker", policy =>
+                    policy.RequireClaim("RoleId", "3", "1"));
+
+                options.AddPolicy("Admin-Manager", policy =>
+                    policy.RequireClaim("RoleId", "1", "2"));
+
+                options.AddPolicy("Worker-Manager", policy =>
+                    policy.RequireClaim("RoleId", "3", "2","1"));
+            });
+            return services;
+        }
+
     }
 }

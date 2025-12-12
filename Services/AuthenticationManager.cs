@@ -33,7 +33,7 @@ namespace Services
             var user= await _repositoryManager.authenticationRepository.GetUserAsync(login.UserName, login.PassWord);
           
             if (user is null) throw new NotFoundException("Kullanıcı bilgileri yanlış tekrar deneyiniz.");
-
+    
             return await GenerateToken(user.UserName,user.RoleId);
         }
 

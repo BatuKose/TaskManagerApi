@@ -1,5 +1,6 @@
 ﻿using Entites.Data_Transfer_object;
 using Entites.Data_Transfer_object.User;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Query.Internal;
 using Services.Contracts;
@@ -13,6 +14,7 @@ namespace Presentation.Controllers
 {
     [ApiController]
     [Route("api/users")]
+    [Authorize]
     public class UserController : ControllerBase
     {
         private readonly IServiceManager _ServiceManager;
@@ -20,6 +22,7 @@ namespace Presentation.Controllers
         {
             _ServiceManager = serviceManager;
         }
+        [Authorize(Policy = "Admin")]
         [HttpPost]
         public async Task<IActionResult> CreateUserAsync([FromBody] CreateUserDto userDto)
         {
@@ -27,12 +30,14 @@ namespace Presentation.Controllers
             await _ServiceManager.UserService.CreateUserAsync(userDto);
             return StatusCode(201);
         }
+        [Authorize(Policy = "Admin-Manage")]
         [HttpPost("GetUserWithRole")]
         public async Task<IActionResult> GetUserWithRole([FromBody] string dto)
         {
             var result = await _ServiceManager.UserService.getUsersAndRoleAsync(dto);
             return Ok(result);
         }
+        [Authorize(Policy = "Admin-Manage")]
         [HttpGet ("id:int")]
         public async Task<IActionResult> GetUserByid([FromQuery(Name ="id")]int id)
         {
@@ -40,12 +45,14 @@ namespace Presentation.Controllers
             var result= await _ServiceManager.UserService.getUserByIdAsync(id);
             return Ok(result);
         }
+        [Authorize(Policy = "Admin")]
         [HttpPatch("softdelete")]
         public async Task<IActionResult> UserSoftDelete([FromQuery(Name ="id")] int id)
         {
           await  _ServiceManager.UserService.UserSoftDeleteAsync(id);
             return NoContent();
         }
+        [Authorize(Policy = "Admin")]
         [HttpPatch("updateUser")]
         public async Task<IActionResult> UpdateUserAsync([FromQuery ] int id,[FromBody] UpdateUserDto userDto)
         {
