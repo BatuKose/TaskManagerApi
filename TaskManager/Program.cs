@@ -20,6 +20,7 @@ builder.Services.ConfigureServiceManager();
 builder.Services.AddCustomRateLimiting(builder.Configuration);
 builder.Services.AddSwaggerWithJwtAuth();
 builder.Services.AddAuthorizationPolicies();
+builder.Services.AddHttpContextAccessor();
 var app = builder.Build();
 app.UseGlobalExceptionMiddleware();
 if (app.Environment.IsDevelopment())

@@ -21,5 +21,12 @@ namespace Repositories.EFCore
         {
            return await _Context.users.FirstOrDefaultAsync(x=>x.UserName == username && x.Password == password);
         }
+
+        public async Task<LoginLog> InsertLog(LoginLog loginLog)
+        {
+             _Context.LoginLogs.AddAsync(loginLog);
+            await _Context.SaveChangesAsync();
+            return loginLog;
+        }
     }
 }

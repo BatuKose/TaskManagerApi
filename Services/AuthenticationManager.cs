@@ -1,5 +1,7 @@
 ﻿using Entites.Data_Transfer_object.User;
 using Entites.Exceptions.CustomExceptions;
+using Entites.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using Repositories.Contracts;
@@ -18,23 +20,49 @@ namespace Services
     {
         private readonly IRepositoryManager _repositoryManager;
         private readonly IConfiguration _configuration;
-
-        public AuthenticationManager(IRepositoryManager repositoryManager,IConfiguration configuration)
+        private readonly IHttpContextAccessor _httpContextAccessor;
+        public AuthenticationManager(IRepositoryManager repositoryManager,IConfiguration configuration, IHttpContextAccessor httpContextAccessor)
         {
             _repositoryManager = repositoryManager;
             _configuration=configuration;
+            _httpContextAccessor = httpContextAccessor;
         }
 
         public async Task<string> LoginAsync(LoginDTO login)
         {
-            if(login.UserName == null) throw new BadRequestException("Kullanıcı adı boş bırakılamaz.");
+            var ip = _httpContextAccessor.HttpContext?.Connection.RemoteIpAddress?.ToString();
+
+            if (login.UserName == null) throw new BadRequestException("Kullanıcı adı boş bırakılamaz.");
             if(login.PassWord == null) throw new BadRequestException("Şifre adı boş bırakılamaz.");
             
             var user= await _repositoryManager.authenticationRepository.GetUserAsync(login.UserName, login.PassWord);
-          
-            if (user is null) throw new NotFoundException("Kullanıcı bilgileri yanlış tekrar deneyiniz.");
-    
-            return await GenerateToken(user.UserName,user.RoleId);
+
+            if (user is null)
+            {
+                var logFile = new LoginLog()
+                {
+                    girisTarihi=DateTime.UtcNow,
+                    userName=login.UserName,
+                    ipAdress=ip.ToString(),
+                    isSuccess=false
+                };
+                await _repositoryManager.authenticationRepository.InsertLog(logFile);
+                throw new NotFoundException("Kullanıcı bilgileri yanlış tekrar deneyiniz.");
+                
+            }
+            else
+            {
+                var logFile = new LoginLog()
+                {
+                    girisTarihi=DateTime.UtcNow,
+                    userName=login.UserName,
+                    ipAdress=ip.ToString(),
+                    isSuccess=true
+                };
+                await _repositoryManager.authenticationRepository.InsertLog(logFile);
+                return await GenerateToken(user.UserName, user.RoleId);
+            }
+               
         }
 
         public async Task<string> GenerateToken(string username,int roleId )

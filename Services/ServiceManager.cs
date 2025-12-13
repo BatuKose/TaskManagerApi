@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Repositories.Contracts;
 using Services.Contracts;
@@ -17,16 +18,17 @@ namespace Services
         private readonly Lazy<IJobHeaderService> _jobHeaderManager;
         private readonly Lazy<IJobDetailService> _jobDetailManager;
         private readonly Lazy<IAuthenticationService> _authenticationService;
-     
-      
-        
-        public ServiceManager(IRepositoryManager repositoryManager,IConfiguration configuration)
+        private readonly Lazy<IHttpContextAccessor> _httpContextAccessor;
+
+
+
+        public ServiceManager(IRepositoryManager repositoryManager,IConfiguration configuration, IHttpContextAccessor httpContextAccessor)
         {
             _userService = new Lazy<IUserService>(() => new UserManager(repositoryManager));
             _roleManager = new Lazy<IRoleManager>(() => new RoleManager(repositoryManager));
             _jobHeaderManager = new Lazy<IJobHeaderService>(() => new JobHeaderManager(repositoryManager));
             _jobDetailManager = new Lazy<IJobDetailService>(() => new JobDetailManager(repositoryManager));
-            _authenticationService = new Lazy<IAuthenticationService>(() => new AuthenticationManager(repositoryManager, configuration));
+            _authenticationService = new Lazy<IAuthenticationService>(() => new AuthenticationManager(repositoryManager, configuration, httpContextAccessor));
         }
         public IUserService UserService => _userService.Value;
         public IRoleManager RoleManager => _roleManager.Value;

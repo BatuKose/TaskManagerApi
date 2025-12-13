@@ -10,5 +10,6 @@ namespace Repositories.Contracts
     public interface IAuthenticationRepository
     {
         Task<User?>GetUserAsync(string username, string password);
+        Task<LoginLog>InsertLog(LoginLog loginLog);
     }
 }
