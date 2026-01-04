@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\Task Manager\\TaskManager\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DBF95191-984E-4693-8E5D-587F32E99A1A}|Services\\Services.csproj|c:\\users\\batuhan\\desktop\\desktop\\itsoftware\\asp.net web api\\projeler\\task manager\\taskmanager\\services\\authenticationmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DBF95191-984E-4693-8E5D-587F32E99A1A}|Services\\Services.csproj|solutionrelative:services\\authenticationmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DBF95191-984E-4693-8E5D-587F32E99A1A}|Services\\Services.csproj|c:\\users\\batuhan\\desktop\\desktop\\itsoftware\\asp.net web api\\projeler\\task manager\\taskmanager\\services\\usermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBF95191-984E-4693-8E5D-587F32E99A1A}|Services\\Services.csproj|solutionrelative:services\\usermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DBF95191-984E-4693-8E5D-587F32E99A1A}|Services\\Services.csproj|c:\\users\\batuhan\\desktop\\desktop\\itsoftware\\asp.net web api\\projeler\\task manager\\taskmanager\\services\\servicemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DBF95191-984E-4693-8E5D-587F32E99A1A}|Services\\Services.csproj|solutionrelative:services\\servicemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{97C5EDCF-476D-4C0B-9352-4D9F488FCF9F}|Repositories\\Repositories.csproj|c:\\users\\batuhan\\desktop\\desktop\\itsoftware\\asp.net web api\\projeler\\task manager\\taskmanager\\repositories\\efcore\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97C5EDCF-476D-4C0B-9352-4D9F488FCF9F}|Repositories\\Repositories.csproj|solutionrelative:repositories\\efcore\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9CBDA63E-0020-4886-A5B7-1CBBE8403DD3}|TaskManager\\TaskManagerApi.csproj|c:\\users\\batuhan\\desktop\\desktop\\itsoftware\\asp.net web api\\projeler\\task manager\\taskmanager\\taskmanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9CBDA63E-0020-4886-A5B7-1CBBE8403DD3}|TaskManager\\TaskManagerApi.csproj|solutionrelative:taskmanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{97C5EDCF-476D-4C0B-9352-4D9F488FCF9F}|Repositories\\Repositories.csproj|c:\\users\\batuhan\\desktop\\desktop\\itsoftware\\asp.net web api\\projeler\\task manager\\taskmanager\\repositories\\efcore\\useriz\u0131nrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97C5EDCF-476D-4C0B-9352-4D9F488FCF9F}|Repositories\\Repositories.csproj|solutionrelative:repositories\\efcore\\useriz\u0131nrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A5756DC-7FE5-433A-8F8C-31E1E54017B0}|Entites\\Entites.csproj|c:\\users\\batuhan\\desktop\\desktop\\itsoftware\\asp.net web api\\projeler\\task manager\\taskmanager\\entites\\models\\loginlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A5756DC-7FE5-433A-8F8C-31E1E54017B0}|Entites\\Entites.csproj|solutionrelative:entites\\models\\loginlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{97C5EDCF-476D-4C0B-9352-4D9F488FCF9F}|Repositories\\Repositories.csproj|c:\\users\\batuhan\\desktop\\desktop\\itsoftware\\asp.net web api\\projeler\\task manager\\taskmanager\\repositories\\contracts\\iuseriz\u0131nrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97C5EDCF-476D-4C0B-9352-4D9F488FCF9F}|Repositories\\Repositories.csproj|solutionrelative:repositories\\contracts\\iuseriz\u0131nrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,57 +34,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "LoginLog.cs",
-              "DocumentMoniker": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\Task Manager\\TaskManager\\Entites\\Models\\LoginLog.cs",
-              "RelativeDocumentMoniker": "Entites\\Models\\LoginLog.cs",
-              "ToolTip": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\Task Manager\\TaskManager\\Entites\\Models\\LoginLog.cs",
-              "RelativeToolTip": "Entites\\Models\\LoginLog.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T17:38:08.124Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AuthenticationManager.cs",
-              "DocumentMoniker": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\Task Manager\\TaskManager\\Services\\AuthenticationManager.cs",
-              "RelativeDocumentMoniker": "Services\\AuthenticationManager.cs",
-              "ToolTip": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\Task Manager\\TaskManager\\Services\\AuthenticationManager.cs",
-              "RelativeToolTip": "Services\\AuthenticationManager.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAAAB8AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T17:42:04.863Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ServiceManager.cs",
-              "DocumentMoniker": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\Task Manager\\TaskManager\\Services\\ServiceManager.cs",
-              "RelativeDocumentMoniker": "Services\\ServiceManager.cs",
-              "ToolTip": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\Task Manager\\TaskManager\\Services\\ServiceManager.cs",
-              "RelativeToolTip": "Services\\ServiceManager.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAowB4AAACbAAAAAAAAAA==",
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\Task Manager\\TaskManager\\Repositories\\EFCore\\UserRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\EFCore\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\Task Manager\\TaskManager\\Repositories\\EFCore\\UserRepository.cs",
+              "RelativeToolTip": "Repositories\\EFCore\\UserRepository.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAnwEkAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T18:04:04.077Z",
-              "IsPinned": true,
+              "WhenOpened": "2026-01-04T18:00:55.144Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IUserIz\u0131nRepository.cs",
+              "DocumentMoniker": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\Task Manager\\TaskManager\\Repositories\\Contracts\\IUserIz\u0131nRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Contracts\\IUserIz\u0131nRepository.cs",
+              "ToolTip": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\Task Manager\\TaskManager\\Repositories\\Contracts\\IUserIz\u0131nRepository.cs",
+              "RelativeToolTip": "Repositories\\Contracts\\IUserIz\u0131nRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T17:53:16.425Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\Task Manager\\TaskManager\\TaskManager\\Program.cs",
-              "RelativeDocumentMoniker": "TaskManager\\Program.cs",
-              "ToolTip": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\Task Manager\\TaskManager\\TaskManager\\Program.cs",
-              "RelativeToolTip": "TaskManager\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAqAAAAAAAAAA==",
+              "Title": "userIz\u0131nRepository.cs",
+              "DocumentMoniker": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\Task Manager\\TaskManager\\Repositories\\EFCore\\userIz\u0131nRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\EFCore\\userIz\u0131nRepository.cs",
+              "ToolTip": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\Task Manager\\TaskManager\\Repositories\\EFCore\\userIz\u0131nRepository.cs",
+              "RelativeToolTip": "Repositories\\EFCore\\userIz\u0131nRepository.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAABQAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T18:01:49.672Z",
+              "WhenOpened": "2026-01-04T17:52:52.772Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserManager.cs",
+              "DocumentMoniker": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\Task Manager\\TaskManager\\Services\\UserManager.cs",
+              "RelativeDocumentMoniker": "Services\\UserManager.cs",
+              "ToolTip": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\Task Manager\\TaskManager\\Services\\UserManager.cs",
+              "RelativeToolTip": "Services\\UserManager.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAAAF4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T17:48:03.149Z",
               "EditorCaption": ""
             }
           ]

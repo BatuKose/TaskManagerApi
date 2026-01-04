@@ -16,6 +16,8 @@ namespace Services.Contracts
         public Task<GetUserDto> getUserByIdAsync(int id);
         public Task<User> UserSoftDeleteAsync(int id);
         public Task<UpdateUserDto> UpdateUserAsync(int id, UpdateUserDto userDto);
-        
+        public Task<UserIzınDto> IzınEkleAsync(int id);
+
+
     }
 }

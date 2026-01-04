@@ -197,6 +197,22 @@
   },
   {
     "ContainingType": "Presentation.Controllers.UserController",
+    "Method": "Iz\u0131nEkleAsync",
+    "RelativePath": "api/users/izinEkle",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.UserController",
     "Method": "UserSoftDelete",
     "RelativePath": "api/users/softdelete",
     "HttpMethod": "PATCH",

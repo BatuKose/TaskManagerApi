@@ -67,7 +67,7 @@ namespace Repositories.EFCore
 
         public  async Task<User> GetUserByidAsync(int id)
         {
-             var result = await _context.users.SingleOrDefaultAsync(u => u.Id==id);
+             var result = await _context.users.SingleOrDefaultAsync(u => u.Id==id && u.aktifMi==true);
             return result;
         }
 
@@ -97,6 +97,6 @@ namespace Repositories.EFCore
               return user;
         }
 
-
+      
     }
 }

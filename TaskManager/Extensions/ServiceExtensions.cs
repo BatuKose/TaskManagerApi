@@ -34,6 +34,8 @@ namespace TaskManagerApi.Extensions
             services.AddScoped<IJobHeaderRepository, JobHeaderRepository>();
             services.AddScoped<IjobDetailRepository,jobDetailRepository>();
             services.AddScoped<IAuthenticationRepository, AuthenticationRepository>();
+            services.AddScoped<IUserIzınRepository, userIzınRepository>();
+         
         }
         public static void ConfigureServiceManager(this IServiceCollection services)
         {

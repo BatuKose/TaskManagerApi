@@ -17,6 +17,8 @@ namespace Entites.Models
         public bool aktifMi { get; set; } = true;
         public int FailedAttemptCount { get; set; }
         public DateTime BlockedUntil { get; set; }
+        public DateTime employmentDate { get; set; }
+        public DateTime dismissalDate { get; set; }
 
     }
 }

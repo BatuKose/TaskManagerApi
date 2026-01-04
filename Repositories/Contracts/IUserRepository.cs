@@ -21,5 +21,7 @@ namespace Repositories.Contracts
         Task<User> SoftDeleteAsync(int id);
         Task<User>UpdateUserAsync(User user);
         Task<bool> UserExistsAsync(int id);
+       
+
     }
 }

@@ -60,5 +60,14 @@ namespace Presentation.Controllers
            await _ServiceManager.UserService.UpdateUserAsync(id, userDto);
             return Ok(userDto);
         }
+        [AllowAnonymous]
+        //[Authorize(Policy = "Admin-Manage")]
+        [HttpPost("izinEkle")]
+        public async Task<IActionResult> IzınEkleAsync([FromQuery(Name ="id")] int id)
+        {
+            if(!ModelState.IsValid) return BadRequest(ModelState);
+            await _ServiceManager.UserService.IzınEkleAsync(id);
+            return Ok("izin eklendi");
+        }
     }
 }

@@ -171,6 +171,12 @@ namespace TaskManagerApi.Migrations
                     b.Property<bool>("aktifMi")
                         .HasColumnType("bit");
 
+                    b.Property<DateTime>("dismissalDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("employmentDate")
+                        .HasColumnType("datetime2");
+
                     b.HasKey("Id");
 
                     b.HasIndex("RoleId");
@@ -187,8 +193,29 @@ namespace TaskManagerApi.Migrations
                             Password = "12345",
                             RoleId = 1,
                             UserName = "Batuhan",
-                            aktifMi = true
+                            aktifMi = true,
+                            dismissalDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            employmentDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         });
+                });
+
+            modelBuilder.Entity("Entites.Models.userIzın", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("HakedilenIzın")
+                        .HasColumnType("int");
+
+                    b.Property<int>("userId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("userIzıns");
                 });
 
             modelBuilder.Entity("Entites.View.CezalıIslerView", b =>
