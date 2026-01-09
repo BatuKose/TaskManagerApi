@@ -199,6 +199,34 @@ namespace TaskManagerApi.Migrations
                         });
                 });
 
+            modelBuilder.Entity("Entites.Models.UserDetayIzın", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<DateTime>("BaslangicTarihi")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("BitisTarihi")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("IzınDetay")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("YoneticiOnay")
+                        .HasColumnType("bit");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("UserDetayIzın");
+                });
+
             modelBuilder.Entity("Entites.Models.userIzın", b =>
                 {
                     b.Property<int>("Id")

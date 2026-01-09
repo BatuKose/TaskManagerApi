@@ -1,5 +1,6 @@
 ﻿using Entites.Data_Transfer_object;
 using Entites.Data_Transfer_object.User;
+using Entites.Data_Transfer_object.UserIzinDetay;
 using Entites.Models;
 using System;
 using System.Collections.Generic;
@@ -17,6 +18,7 @@ namespace Services.Contracts
         public Task<User> UserSoftDeleteAsync(int id);
         public Task<UpdateUserDto> UpdateUserAsync(int id, UpdateUserDto userDto);
         public Task<UserIzınDto> IzınEkleAsync(int id);
+        public Task<UserIzinDetayEkleDTO> UserIzinDetayEkleAsync(UserIzinDetayEkleDTO dto);
 
 
     }

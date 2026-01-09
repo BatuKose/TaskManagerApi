@@ -1,5 +1,7 @@
 ﻿using Entites.Data_Transfer_object;
 using Entites.Data_Transfer_object.User;
+using Entites.Data_Transfer_object.UserIzinDetay;
+using Entites.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Query.Internal;
@@ -60,14 +62,23 @@ namespace Presentation.Controllers
            await _ServiceManager.UserService.UpdateUserAsync(id, userDto);
             return Ok(userDto);
         }
-        [AllowAnonymous]
-        //[Authorize(Policy = "Admin-Manage")]
+        
+        [Authorize(Policy = "Admin-Manage")]
         [HttpPost("izinEkle")]
         public async Task<IActionResult> IzınEkleAsync([FromQuery(Name ="id")] int id)
         {
             if(!ModelState.IsValid) return BadRequest(ModelState);
             await _ServiceManager.UserService.IzınEkleAsync(id);
             return Ok("izin eklendi");
+        }
+        [AllowAnonymous]
+      //  [Authorize(Policy = "Admin-Manage")]
+        [HttpPost("izinDetayEkle")]
+        public async Task<IActionResult> UserDetayIzinEkleAsync([FromBody] UserIzinDetayEkleDTO userIzinDetayEkle  )
+        {
+           if(!ModelState.IsValid) return BadRequest(ModelState);
+           await _ServiceManager.UserService.UserIzinDetayEkleAsync( userIzinDetayEkle);
+            return Ok("İzin Detay Eklendi");
         }
     }
 }

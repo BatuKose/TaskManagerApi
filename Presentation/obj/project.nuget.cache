@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ITyBW736pXc=",
+  "dgSpecHash": "Q2qtDk0+Z3U=",
   "success": true,
-  "projectFilePath": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\Task Manager\\TaskManager\\Presentation\\Presentation.csproj",
+  "projectFilePath": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\Presentation\\Presentation.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\batuhan\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.3.0\\microsoft.aspnetcore.authentication.abstractions.2.3.0.nupkg.sha512",
     "C:\\Users\\batuhan\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.3.0\\microsoft.aspnetcore.authentication.core.2.3.0.nupkg.sha512",

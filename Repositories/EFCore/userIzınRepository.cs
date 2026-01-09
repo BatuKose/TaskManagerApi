@@ -35,5 +35,11 @@ namespace Repositories.EFCore
         {
             throw new NotImplementedException();
         }
+        public async Task<UserDetayIzın>UserDetayIzinEkle(UserDetayIzın izin)
+        {
+            _context.UserDetayIzın.Add(izin);
+            await _context.SaveChangesAsync();
+            return izin;
+        }
     }
 }

@@ -12,5 +12,6 @@ namespace Repositories.Contracts
         Task<userIzın> IzınEkleAsync(userIzın izin);
         Task<userIzın> IzınGuncelleAsync(userIzın izin);
         Task<userIzın> IzınGetirAsync(int userId);
+        Task<UserDetayIzın> UserDetayIzinEkle(UserDetayIzın izin);
     }
 }

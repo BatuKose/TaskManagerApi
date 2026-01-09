@@ -197,6 +197,22 @@
   },
   {
     "ContainingType": "Presentation.Controllers.UserController",
+    "Method": "UserDetayIzinEkleAsync",
+    "RelativePath": "api/users/izinDetayEkle",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userIzinDetayEkle",
+        "Type": "Entites.Data_Transfer_object.UserIzinDetay.UserIzinDetayEkleDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.UserController",
     "Method": "Iz\u0131nEkleAsync",
     "RelativePath": "api/users/izinEkle",
     "HttpMethod": "POST",

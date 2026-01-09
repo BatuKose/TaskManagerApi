@@ -559,6 +559,37 @@
           }
         }
       }
+    },
+    "/api/users/izinDetayEkle": {
+      "post": {
+        "tags": [
+          "User"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserIzinDetayEkleDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserIzinDetayEkleDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserIzinDetayEkleDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
     }
   },
   "components": {
@@ -660,6 +691,19 @@
         },
         "additionalProperties": false
       },
+      "IzınDetayEnum": {
+        "enum": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "type": "integer",
+        "format": "int32"
+      },
       "JobDetayStatus": {
         "enum": [
           1,
@@ -711,6 +755,30 @@
           "roleId": {
             "type": "integer",
             "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UserIzinDetayEkleDTO": {
+        "type": "object",
+        "properties": {
+          "userId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "baslangicTarihi": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "bitisTarihi": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "izınDetay": {
+            "$ref": "#/components/schemas/IzınDetayEnum"
+          },
+          "yoneticiOnay": {
+            "type": "boolean"
           }
         },
         "additionalProperties": false

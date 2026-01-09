@@ -21,6 +21,7 @@ namespace Repositories.EFCore
         public DbSet<CezalıIslerView>CezaliIsler {  get; set; }
         public DbSet<LoginLog>LoginLogs { get; set; }
         public DbSet<userIzın> userIzıns { get; set; }
+        public DbSet<UserDetayIzın>UserDetayIzın  { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<CezalıIslerView>().HasNoKey();

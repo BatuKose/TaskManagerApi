@@ -1,5 +1,6 @@
 ﻿using Entites.Data_Transfer_object;
 using Entites.Data_Transfer_object.User;
+using Entites.Data_Transfer_object.UserIzinDetay;
 using Entites.Exceptions.CustomExceptions;
 using Entites.Models;
 using Repositories.Contracts;
@@ -141,6 +142,38 @@ namespace Services
             {
                 throw new BadRequestException("Kullanıcının izin kaydı mevcut, güncelleme bekleniyor.");
             }
+
+        }
+        public async Task<UserIzinDetayEkleDTO> UserIzinDetayEkleAsync(UserIzinDetayEkleDTO user)
+        {
+            var userExists = await _repositoryManager.UserRepository.UserExistsAsync(user.UserId);
+            if (!userExists) throw new NotFoundException("Kullanıcı bulunamadı.");
+            if(user.BaslangicTarihi<DateTime.Today) throw new BadRequestException("İzin başlangıç tarihi bugünden önce olamaz.");
+            if(user.BitisTarihi<user.BaslangicTarihi) throw new BadRequestException("İzin bitiş tarihi, başlangıç tarihinden önce olamaz.");
+            var izinHakkiVarMi = await _repositoryManager.UserIzınRepository.IzınGetirAsync(user.UserId);
+            if (izinHakkiVarMi.HakedilenIzın<=0) throw new BadRequestException("Kullanıcının yeterli izin hakkı bulunmamaktadır.");
+            int IzinliGunSayisi = (user.BitisTarihi - user.BaslangicTarihi).Days + 1;
+            if(IzinliGunSayisi>izinHakkiVarMi.HakedilenIzın) throw new BadRequestException("Kullanıcının talep ettiği izin günü, kalan izin hakkından fazladır.");
+            int KalaIzin=izinHakkiVarMi.HakedilenIzın- IzinliGunSayisi;
+            // yeni izin sayısı güncellencek
+            var izinDetay = new UserDetayIzın
+            {
+                UserId=user.UserId,
+                BaslangicTarihi=user.BaslangicTarihi,
+                BitisTarihi=user.BitisTarihi,
+                IzınDetay=user.IzınDetay,
+                YoneticiOnay=false
+            };
+            await _repositoryManager.UserIzınRepository.UserDetayIzinEkle(izinDetay);
+            var ReturnDto = new UserIzinDetayEkleDTO
+            {
+                UserId=izinDetay.UserId,
+                BaslangicTarihi=izinDetay.BaslangicTarihi,
+                BitisTarihi=izinDetay.BitisTarihi,
+                IzınDetay=izinDetay.IzınDetay,
+                YoneticiOnay=izinDetay.YoneticiOnay
+            };
+            return ReturnDto;
         }
     }
 }

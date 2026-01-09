@@ -18,3 +18,23 @@ C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\Task Manage
 C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\Task Manager\TaskManager\Presentation\bin\Debug\net6.0\Repositories.pdb
 C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\Task Manager\TaskManager\Presentation\obj\Debug\net6.0\Presentation.csproj.AssemblyReference.cache
 C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\Task Manager\TaskManager\Presentation\obj\Debug\net6.0\Presenta.BC777DBE.Up2Date
+C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManagerApi\Presentation\bin\Debug\net6.0\Presentation.deps.json
+C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManagerApi\Presentation\bin\Debug\net6.0\Presentation.dll
+C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManagerApi\Presentation\bin\Debug\net6.0\Presentation.pdb
+C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManagerApi\Presentation\bin\Debug\net6.0\Entites.dll
+C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManagerApi\Presentation\bin\Debug\net6.0\Repositories.dll
+C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManagerApi\Presentation\bin\Debug\net6.0\Services.dll
+C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManagerApi\Presentation\bin\Debug\net6.0\Entites.pdb
+C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManagerApi\Presentation\bin\Debug\net6.0\Services.pdb
+C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManagerApi\Presentation\bin\Debug\net6.0\Repositories.pdb
+C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManagerApi\Presentation\obj\Debug\net6.0\Presentation.csproj.AssemblyReference.cache
+C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManagerApi\Presentation\obj\Debug\net6.0\Presentation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManagerApi\Presentation\obj\Debug\net6.0\Presentation.AssemblyInfoInputs.cache
+C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManagerApi\Presentation\obj\Debug\net6.0\Presentation.AssemblyInfo.cs
+C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManagerApi\Presentation\obj\Debug\net6.0\Presentation.csproj.CoreCompileInputs.cache
+C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManagerApi\Presentation\obj\Debug\net6.0\Presentation.sourcelink.json
+C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManagerApi\Presentation\obj\Debug\net6.0\Presenta.BC777DBE.Up2Date
+C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManagerApi\Presentation\obj\Debug\net6.0\Presentation.dll
+C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManagerApi\Presentation\obj\Debug\net6.0\refint\Presentation.dll
+C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManagerApi\Presentation\obj\Debug\net6.0\Presentation.pdb
+C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManagerApi\Presentation\obj\Debug\net6.0\ref\Presentation.dll
