@@ -144,6 +144,19 @@ namespace Services
             }
 
         }
+        public async Task<UserIzınDto> UserIzınGuncelle(int id, int izin)
+        {
+            var updated = await _repositoryManager
+                .UserIzınRepository
+                .IzınGuncelleAsync(id, izin);
+
+            return new UserIzınDto
+            {
+                userId = updated.userId,
+                HakedilenIzın = updated.HakedilenIzın
+            };
+        }
+
         public async Task<UserIzinDetayEkleDTO> UserIzinDetayEkleAsync(UserIzinDetayEkleDTO user)
         {
             var userExists = await _repositoryManager.UserRepository.UserExistsAsync(user.UserId);
@@ -155,7 +168,7 @@ namespace Services
             int IzinliGunSayisi = (user.BitisTarihi - user.BaslangicTarihi).Days + 1;
             if(IzinliGunSayisi>izinHakkiVarMi.HakedilenIzın) throw new BadRequestException("Kullanıcının talep ettiği izin günü, kalan izin hakkından fazladır.");
             int KalaIzin=izinHakkiVarMi.HakedilenIzın- IzinliGunSayisi;
-            // yeni izin sayısı güncellencek
+            await  _repositoryManager.UserIzınRepository.IzınGuncelleAsync(user.UserId, KalaIzin);
             var izinDetay = new UserDetayIzın
             {
                 UserId=user.UserId,

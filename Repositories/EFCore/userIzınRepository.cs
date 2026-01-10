@@ -1,4 +1,5 @@
-﻿using Entites.Models;
+﻿using Entites.Exceptions.CustomExceptions;
+using Entites.Models;
 using Microsoft.EntityFrameworkCore;
 using Repositories.Contracts;
 using System;
@@ -31,10 +32,21 @@ namespace Repositories.EFCore
             return izin;
         }
 
-        public Task<userIzın> IzınGuncelleAsync(userIzın izin)
+        public async Task<userIzın> IzınGuncelleAsync(int userId, int yeniIzin)
         {
-            throw new NotImplementedException();
+            var izinEntity = await _context.userIzıns
+                .FirstOrDefaultAsync(x => x.userId == userId);
+
+            if (izinEntity == null)
+                throw new NotFoundException("İzin kaydı bulunamadı.");
+
+            izinEntity.HakedilenIzın = yeniIzin;
+
+            await _context.SaveChangesAsync();
+            return izinEntity;
         }
+
+       
         public async Task<UserDetayIzın>UserDetayIzinEkle(UserDetayIzın izin)
         {
             _context.UserDetayIzın.Add(izin);

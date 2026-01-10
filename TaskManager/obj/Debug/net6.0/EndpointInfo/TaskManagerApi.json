@@ -560,6 +560,51 @@
         }
       }
     },
+    "/api/users/{id}/izin": {
+      "put": {
+        "tags": [
+          "User"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "integer",
+                "format": "int32"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "integer",
+                "format": "int32"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "integer",
+                "format": "int32"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/api/users/izinDetayEkle": {
       "post": {
         "tags": [
@@ -760,6 +805,12 @@
         "additionalProperties": false
       },
       "UserIzinDetayEkleDTO": {
+        "required": [
+          "baslangicTarihi",
+          "bitisTarihi",
+          "izınDetay",
+          "userId"
+        ],
         "type": "object",
         "properties": {
           "userId": {

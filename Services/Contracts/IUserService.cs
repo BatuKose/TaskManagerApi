@@ -19,6 +19,7 @@ namespace Services.Contracts
         public Task<UpdateUserDto> UpdateUserAsync(int id, UpdateUserDto userDto);
         public Task<UserIzınDto> IzınEkleAsync(int id);
         public Task<UserIzinDetayEkleDTO> UserIzinDetayEkleAsync(UserIzinDetayEkleDTO dto);
+        public Task<UserIzınDto> UserIzınGuncelle(int id, int izin);
 
 
     }

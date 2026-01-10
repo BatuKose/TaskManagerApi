@@ -10,8 +10,8 @@ namespace Repositories.Contracts
     public interface IUserIzınRepository
     {
         Task<userIzın> IzınEkleAsync(userIzın izin);
-        Task<userIzın> IzınGuncelleAsync(userIzın izin);
         Task<userIzın> IzınGetirAsync(int userId);
         Task<UserDetayIzın> UserDetayIzinEkle(UserDetayIzın izin);
+        Task<userIzın> IzınGuncelleAsync(int userId, int yeniIzin);
     }
 }

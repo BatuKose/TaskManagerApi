@@ -72,6 +72,16 @@ namespace Presentation.Controllers
             return Ok("izin eklendi");
         }
         [AllowAnonymous]
+        //  [Authorize(Policy = "Admin-Manage")]
+        [HttpPut("{id}/izin")]
+        public async Task<IActionResult> UserIzinGuncelleAsync(int id, [FromBody] int izin)
+        {
+            await _ServiceManager.UserService.UserIzınGuncelle(id, izin);
+            return Ok("İzin güncellendi");
+        }
+
+
+        [AllowAnonymous]
       //  [Authorize(Policy = "Admin-Manage")]
         [HttpPost("izinDetayEkle")]
         public async Task<IActionResult> UserDetayIzinEkleAsync([FromBody] UserIzinDetayEkleDTO userIzinDetayEkle  )
