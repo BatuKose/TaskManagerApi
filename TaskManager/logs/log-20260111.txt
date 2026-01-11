@@ -1,0 +1,1500 @@
+2026-01-11 23:23:24.179 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2026-01-11 23:23:24.456 +03:00 [DBG] Hosting starting
+2026-01-11 23:23:24.568 +03:00 [INF] User profile is available. Using 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-01-11 23:23:24.576 +03:00 [DBG] Reading data from file 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys\key-06314caf-114b-4447-b671-26cff94eef42.xml'.
+2026-01-11 23:23:24.622 +03:00 [DBG] Reading data from file 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys\key-090bb267-211d-492b-a818-8821e0be7068.xml'.
+2026-01-11 23:23:24.648 +03:00 [DBG] Reading data from file 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys\key-48d29924-c2fa-4ef4-a60c-de094dd470d3.xml'.
+2026-01-11 23:23:24.673 +03:00 [DBG] Reading data from file 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys\key-55f98cc5-78aa-424c-bf70-872acedb0f6c.xml'.
+2026-01-11 23:23:24.721 +03:00 [DBG] Found key {06314caf-114b-4447-b671-26cff94eef42}.
+2026-01-11 23:23:24.742 +03:00 [DBG] Found key {090bb267-211d-492b-a818-8821e0be7068}.
+2026-01-11 23:23:24.745 +03:00 [DBG] Found key {48d29924-c2fa-4ef4-a60c-de094dd470d3}.
+2026-01-11 23:23:24.748 +03:00 [DBG] Found key {55f98cc5-78aa-424c-bf70-872acedb0f6c}.
+2026-01-11 23:23:24.767 +03:00 [DBG] Considering key {48d29924-c2fa-4ef4-a60c-de094dd470d3} with expiration date 2026-04-04 17:42:23Z as default key.
+2026-01-11 23:23:24.773 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2026-01-11 23:23:24.783 +03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2026-01-11 23:23:24.787 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2026-01-11 23:23:24.800 +03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2026-01-11 23:23:24.808 +03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2026-01-11 23:23:24.817 +03:00 [DBG] Using key {48d29924-c2fa-4ef4-a60c-de094dd470d3} as the default key.
+2026-01-11 23:23:24.820 +03:00 [DBG] Key ring with default key {48d29924-c2fa-4ef4-a60c-de094dd470d3} was loaded during application startup.
+2026-01-11 23:23:25.262 +03:00 [WRN] Overriding address(es) 'http://localhost:1000'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2026-01-11 23:23:25.355 +03:00 [INF] Now listening on: http://localhost:1000
+2026-01-11 23:23:25.359 +03:00 [DBG] Loaded hosting startup assembly TaskManagerApi
+2026-01-11 23:23:25.362 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2026-01-11 23:23:25.364 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2026-01-11 23:23:25.367 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2026-01-11 23:23:25.794 +03:00 [DBG] Connection id "0HNIH9T35PJ1T" received FIN.
+2026-01-11 23:23:25.873 +03:00 [DBG] Connection id "0HNIH9T35PJ1T" accepted.
+2026-01-11 23:23:25.929 +03:00 [DBG] Connection id "0HNIH9T35PJ1T" started.
+2026-01-11 23:23:26.017 +03:00 [DBG] Connection id "0HNIH9T35PJ1T" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-01-11 23:23:26.126 +03:00 [DBG] Connection id "0HNIH9T35PJ1T" disconnecting.
+2026-01-11 23:23:26.379 +03:00 [DBG] Connection id "0HNIH9T35PJ1T" stopped.
+2026-01-11 23:23:26.755 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-11 23:23:26.776 +03:00 [INF] Hosting environment: Development
+2026-01-11 23:23:26.781 +03:00 [INF] Content root path: C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManagerApi\TaskManager\
+2026-01-11 23:23:26.785 +03:00 [DBG] Hosting started
+2026-01-11 23:23:28.292 +03:00 [DBG] Connection id "0HNIH9T35PJ1U" accepted.
+2026-01-11 23:23:29.297 +03:00 [DBG] Connection id "0HNIH9T35PJ1U" started.
+2026-01-11 23:23:29.856 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:1000/swagger/index.html - -
+2026-01-11 23:23:31.005 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2026-01-11 23:23:31.161 +03:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2026-01-11 23:23:31.166 +03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2026-01-11 23:23:31.234 +03:00 [DBG] Response markup was updated to include Browser Link script injection.
+2026-01-11 23:23:31.239 +03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2026-01-11 23:23:31.281 +03:00 [DBG] Connection id "0HNIH9T35PJ1U" completed keep alive response.
+2026-01-11 23:23:31.316 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:1000/swagger/index.html - - - 200 - text/html;charset=utf-8 1711.4045ms
+2026-01-11 23:23:31.440 +03:00 [DBG] Connection id "0HNIH9T35PJ1V" accepted.
+2026-01-11 23:23:31.443 +03:00 [DBG] Connection id "0HNIH9T35PJ1V" started.
+2026-01-11 23:23:31.447 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:1000/_framework/aspnetcore-browser-refresh.js - -
+2026-01-11 23:23:31.448 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:1000/_vs/browserLink - -
+2026-01-11 23:23:31.463 +03:00 [DBG] Connection id "0HNIH9T35PJ1U" completed keep alive response.
+2026-01-11 23:23:31.469 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:1000/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 21.9033ms
+2026-01-11 23:23:31.640 +03:00 [DBG] Connection id "0HNIH9T35PJ1V" completed keep alive response.
+2026-01-11 23:23:31.643 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:1000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 194.6250ms
+2026-01-11 23:23:32.086 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:1000/swagger/v1/swagger.json - -
+2026-01-11 23:23:32.118 +03:00 [DBG] Connection id "0HNIH9T35PJ1V" completed keep alive response.
+2026-01-11 23:23:32.157 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:1000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 70.9729ms
+2026-01-11 23:23:32.236 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:1000/swagger/favicon-32x32.png - -
+2026-01-11 23:23:32.292 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2026-01-11 23:23:32.300 +03:00 [DBG] Connection id "0HNIH9T35PJ1V" completed keep alive response.
+2026-01-11 23:23:32.303 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:1000/swagger/favicon-32x32.png - - - 200 628 image/png 66.9633ms
+2026-01-11 23:23:38.611 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:1000/api/users/izinDetaySil - 0
+2026-01-11 23:23:38.631 +03:00 [DBG] POST requests are not supported
+2026-01-11 23:23:38.640 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-01-11 23:23:38.707 +03:00 [DBG] 1 candidate(s) found for the request path '/api/users/izinDetaySil'
+2026-01-11 23:23:38.724 +03:00 [DBG] Endpoint 'Presentation.Controllers.UserController.UserDetayIzınSilAsync (Presentation)' with route pattern 'api/users/izinDetaySil' is valid for the request path '/api/users/izinDetaySil'
+2026-01-11 23:23:38.730 +03:00 [DBG] Request matched endpoint 'Presentation.Controllers.UserController.UserDetayIzınSilAsync (Presentation)'
+2026-01-11 23:23:38.905 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2026-01-11 23:23:39.042 +03:00 [INF] Executing endpoint 'Presentation.Controllers.UserController.UserDetayIzınSilAsync (Presentation)'
+2026-01-11 23:23:39.136 +03:00 [INF] Route matched with {action = "UserDetayIzınSil", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UserDetayIzınSilAsync(Int32) on controller Presentation.Controllers.UserController (Presentation).
+2026-01-11 23:23:39.145 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2026-01-11 23:23:39.150 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2026-01-11 23:23:39.156 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2026-01-11 23:23:39.163 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2026-01-11 23:23:39.169 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2026-01-11 23:23:39.177 +03:00 [DBG] Executing controller factory for controller Presentation.Controllers.UserController (Presentation)
+2026-01-11 23:23:39.605 +03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2026-01-11 23:23:39.692 +03:00 [DBG] Executed controller factory for controller Presentation.Controllers.UserController (Presentation)
+2026-01-11 23:23:39.711 +03:00 [DBG] Attempting to bind parameter 'izinId' of type 'System.Int32' ...
+2026-01-11 23:23:39.717 +03:00 [DBG] Attempting to bind parameter 'izinId' of type 'System.Int32' using the name '' in request data ...
+2026-01-11 23:23:39.722 +03:00 [DBG] Could not find a value in the request with name '' for binding parameter 'izinId' of type 'System.Int32'.
+2026-01-11 23:23:39.726 +03:00 [DBG] Done attempting to bind parameter 'izinId' of type 'System.Int32'.
+2026-01-11 23:23:39.730 +03:00 [DBG] Done attempting to bind parameter 'izinId' of type 'System.Int32'.
+2026-01-11 23:23:39.734 +03:00 [DBG] Attempting to validate the bound parameter 'izinId' of type 'System.Int32' ...
+2026-01-11 23:23:39.742 +03:00 [DBG] Done attempting to validate the bound parameter 'izinId' of type 'System.Int32'.
+2026-01-11 23:23:41.787 +03:00 [INF] Entity Framework Core 6.0.10 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: MigrationsAssembly=TaskManagerApi 
+2026-01-11 23:23:41.953 +03:00 [DBG] Compiling query expression: 
+'DbSet<UserDetayIzın>()
+    .FirstOrDefault(x => x.Id == __izinId_0)'
+2026-01-11 23:23:42.534 +03:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<UserDetayIzın>(
+    asyncEnumerable: new SingleQueryingEnumerable<UserDetayIzın>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.SelectExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: UserDetayIzın.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: UserDetayIzın.BaslangicTarihi (DateTime) Required, 1], [Property: UserDetayIzın.BitisTarihi (DateTime) Required, 2], [Property: UserDetayIzın.IzınDetay (IzınDetayEnum) Required, 3], [Property: UserDetayIzın.UserId (int) Required, 4], [Property: UserDetayIzın.YoneticiOnay (bool) Required, 5] }
+            SELECT TOP(1) u.Id, u.BaslangicTarihi, u.BitisTarihi, u.IzınDetay, u.UserId, u.YoneticiOnay
+            FROM UserDetayIzın AS u
+            WHERE u.Id == @__izinId_0), 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, UserDetayIzın>, 
+        Repositories.EFCore.RepositoryContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2026-01-11 23:23:42.671 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-01-11 23:23:42.755 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (82ms).
+2026-01-11 23:23:42.793 +03:00 [DBG] Opening connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:23:43.437 +03:00 [DBG] Opened connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:23:43.475 +03:00 [DBG] Executing DbCommand [Parameters=[@__izinId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[BaslangicTarihi], [u].[BitisTarihi], [u].[IzınDetay], [u].[UserId], [u].[YoneticiOnay]
+FROM [UserDetayIzın] AS [u]
+WHERE [u].[Id] = @__izinId_0
+2026-01-11 23:23:43.671 +03:00 [INF] Executed DbCommand (210ms) [Parameters=[@__izinId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[BaslangicTarihi], [u].[BitisTarihi], [u].[IzınDetay], [u].[UserId], [u].[YoneticiOnay]
+FROM [UserDetayIzın] AS [u]
+WHERE [u].[Id] = @__izinId_0
+2026-01-11 23:23:43.724 +03:00 [DBG] A data reader was disposed.
+2026-01-11 23:23:43.746 +03:00 [DBG] Closing connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:23:43.768 +03:00 [DBG] Closed connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:23:43.995 +03:00 [INF] Executed action Presentation.Controllers.UserController.UserDetayIzınSilAsync (Presentation) in 4812.6278ms
+2026-01-11 23:23:44.004 +03:00 [INF] Executed endpoint 'Presentation.Controllers.UserController.UserDetayIzınSilAsync (Presentation)'
+2026-01-11 23:23:44.223 +03:00 [WRN] Kullanıcının izin bilgisi bulunamadı.
+Entites.Exceptions.CustomExceptions.NotFoundException: Kullanıcının izin bilgisi bulunamadı.
+   at Services.UserManager.UserIzınDetaySilDTOAsync(Int32 id) in C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManagerApi\Services\UserManager.cs:line 194
+   at Presentation.Controllers.UserController.UserDetayIzınSilAsync(Int32 izinId) in C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManagerApi\Presentation\Controllers\UserController.cs:line 98
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManagerApi\Entites\Exceptions\GlobalExceptionMiddleware.cs:line 22
+2026-01-11 23:23:44.437 +03:00 [DBG] Connection id "0HNIH9T35PJ1V" completed keep alive response.
+2026-01-11 23:23:44.450 +03:00 [DBG] 'RepositoryContext' disposed.
+2026-01-11 23:23:44.461 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:1000/api/users/izinDetaySil - 0 - 404 - application/json 5849.9511ms
+2026-01-11 23:25:04.213 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:1000/api/users/izinDetaySil?izinId=7 - 0
+2026-01-11 23:25:04.216 +03:00 [DBG] POST requests are not supported
+2026-01-11 23:25:04.232 +03:00 [DBG] 1 candidate(s) found for the request path '/api/users/izinDetaySil'
+2026-01-11 23:25:04.244 +03:00 [DBG] Endpoint 'Presentation.Controllers.UserController.UserDetayIzınSilAsync (Presentation)' with route pattern 'api/users/izinDetaySil' is valid for the request path '/api/users/izinDetaySil'
+2026-01-11 23:25:04.249 +03:00 [DBG] Request matched endpoint 'Presentation.Controllers.UserController.UserDetayIzınSilAsync (Presentation)'
+2026-01-11 23:25:04.253 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2026-01-11 23:25:04.270 +03:00 [INF] Executing endpoint 'Presentation.Controllers.UserController.UserDetayIzınSilAsync (Presentation)'
+2026-01-11 23:25:04.276 +03:00 [INF] Route matched with {action = "UserDetayIzınSil", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UserDetayIzınSilAsync(Int32) on controller Presentation.Controllers.UserController (Presentation).
+2026-01-11 23:25:04.286 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2026-01-11 23:25:04.291 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2026-01-11 23:25:04.296 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2026-01-11 23:25:04.302 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2026-01-11 23:25:04.308 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2026-01-11 23:25:04.313 +03:00 [DBG] Executing controller factory for controller Presentation.Controllers.UserController (Presentation)
+2026-01-11 23:25:04.319 +03:00 [DBG] Executed controller factory for controller Presentation.Controllers.UserController (Presentation)
+2026-01-11 23:25:04.337 +03:00 [DBG] Attempting to bind parameter 'izinId' of type 'System.Int32' ...
+2026-01-11 23:25:04.344 +03:00 [DBG] Attempting to bind parameter 'izinId' of type 'System.Int32' using the name 'izinId' in request data ...
+2026-01-11 23:25:04.350 +03:00 [DBG] Done attempting to bind parameter 'izinId' of type 'System.Int32'.
+2026-01-11 23:25:04.354 +03:00 [DBG] Done attempting to bind parameter 'izinId' of type 'System.Int32'.
+2026-01-11 23:25:04.359 +03:00 [DBG] Attempting to validate the bound parameter 'izinId' of type 'System.Int32' ...
+2026-01-11 23:25:04.364 +03:00 [DBG] Done attempting to validate the bound parameter 'izinId' of type 'System.Int32'.
+2026-01-11 23:25:04.398 +03:00 [INF] Entity Framework Core 6.0.10 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: MigrationsAssembly=TaskManagerApi 
+2026-01-11 23:25:04.429 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-01-11 23:25:04.435 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (5ms).
+2026-01-11 23:25:04.443 +03:00 [DBG] Opening connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:25:04.450 +03:00 [DBG] Opened connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:25:04.456 +03:00 [DBG] Executing DbCommand [Parameters=[@__izinId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[BaslangicTarihi], [u].[BitisTarihi], [u].[IzınDetay], [u].[UserId], [u].[YoneticiOnay]
+FROM [UserDetayIzın] AS [u]
+WHERE [u].[Id] = @__izinId_0
+2026-01-11 23:25:04.472 +03:00 [INF] Executed DbCommand (16ms) [Parameters=[@__izinId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[BaslangicTarihi], [u].[BitisTarihi], [u].[IzınDetay], [u].[UserId], [u].[YoneticiOnay]
+FROM [UserDetayIzın] AS [u]
+WHERE [u].[Id] = @__izinId_0
+2026-01-11 23:25:04.532 +03:00 [DBG] Context 'RepositoryContext' started tracking 'UserDetayIzın' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-11 23:25:04.604 +03:00 [DBG] A data reader was disposed.
+2026-01-11 23:25:04.607 +03:00 [DBG] Closing connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:25:04.612 +03:00 [DBG] Closed connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:25:04.930 +03:00 [INF] Executed action Presentation.Controllers.UserController.UserDetayIzınSilAsync (Presentation) in 616.818ms
+2026-01-11 23:25:04.935 +03:00 [INF] Executed endpoint 'Presentation.Controllers.UserController.UserDetayIzınSilAsync (Presentation)'
+2026-01-11 23:25:05.085 +03:00 [ERR] The instance of entity type 'UserDetayIzın' cannot be tracked because another instance with the same key value for {'Id'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+System.InvalidOperationException: The instance of entity type 'UserDetayIzın' cannot be tracked because another instance with the same key value for {'Id'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.ThrowIdentityConflict(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry, Boolean updateDuplicate)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.StartTracking(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState oldState, EntityState newState, Boolean acceptChanges, Boolean modifyProperties)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.PaintAction(EntityEntryGraphNode`1 node)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityEntryGraphIterator.TraverseGraph[TState](EntityEntryGraphNode`1 node, Func`2 handleNode)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.AttachGraph(InternalEntityEntry rootEntry, EntityState targetState, EntityState storeGeneratedWithKeySetTargetState, Boolean forceStateWhenUnknownKey)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Remove(TEntity entity)
+   at Repositories.EFCore.userIzınRepository.UserDetayIzınSilAsync(UserDetayIzın izin) in C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManagerApi\Repositories\EFCore\userIzınRepository.cs:line 63
+   at Services.UserManager.UserIzınDetaySilDTOAsync(Int32 id) in C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManagerApi\Services\UserManager.cs:line 200
+   at Presentation.Controllers.UserController.UserDetayIzınSilAsync(Int32 izinId) in C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManagerApi\Presentation\Controllers\UserController.cs:line 98
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManagerApi\Entites\Exceptions\GlobalExceptionMiddleware.cs:line 22
+2026-01-11 23:25:05.129 +03:00 [DBG] Connection id "0HNIH9T35PJ1V" completed keep alive response.
+2026-01-11 23:25:05.132 +03:00 [DBG] 'RepositoryContext' disposed.
+2026-01-11 23:25:05.136 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:1000/api/users/izinDetaySil?izinId=7 - 0 - 500 - application/json 922.6985ms
+2026-01-11 23:25:21.873 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2026-01-11 23:25:22.004 +03:00 [DBG] Hosting starting
+2026-01-11 23:25:22.026 +03:00 [INF] User profile is available. Using 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-01-11 23:25:22.035 +03:00 [DBG] Reading data from file 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys\key-06314caf-114b-4447-b671-26cff94eef42.xml'.
+2026-01-11 23:25:22.046 +03:00 [DBG] Reading data from file 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys\key-090bb267-211d-492b-a818-8821e0be7068.xml'.
+2026-01-11 23:25:22.052 +03:00 [DBG] Reading data from file 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys\key-48d29924-c2fa-4ef4-a60c-de094dd470d3.xml'.
+2026-01-11 23:25:22.057 +03:00 [DBG] Reading data from file 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys\key-55f98cc5-78aa-424c-bf70-872acedb0f6c.xml'.
+2026-01-11 23:25:22.071 +03:00 [DBG] Found key {06314caf-114b-4447-b671-26cff94eef42}.
+2026-01-11 23:25:22.082 +03:00 [DBG] Found key {090bb267-211d-492b-a818-8821e0be7068}.
+2026-01-11 23:25:22.086 +03:00 [DBG] Found key {48d29924-c2fa-4ef4-a60c-de094dd470d3}.
+2026-01-11 23:25:22.091 +03:00 [DBG] Found key {55f98cc5-78aa-424c-bf70-872acedb0f6c}.
+2026-01-11 23:25:22.109 +03:00 [DBG] Considering key {48d29924-c2fa-4ef4-a60c-de094dd470d3} with expiration date 2026-04-04 17:42:23Z as default key.
+2026-01-11 23:25:22.117 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2026-01-11 23:25:22.129 +03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2026-01-11 23:25:22.134 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2026-01-11 23:25:22.145 +03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2026-01-11 23:25:22.153 +03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2026-01-11 23:25:22.161 +03:00 [DBG] Using key {48d29924-c2fa-4ef4-a60c-de094dd470d3} as the default key.
+2026-01-11 23:25:22.165 +03:00 [DBG] Key ring with default key {48d29924-c2fa-4ef4-a60c-de094dd470d3} was loaded during application startup.
+2026-01-11 23:25:22.261 +03:00 [WRN] Overriding address(es) 'http://localhost:1000'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2026-01-11 23:25:22.281 +03:00 [INF] Now listening on: http://localhost:1000
+2026-01-11 23:25:22.286 +03:00 [DBG] Loaded hosting startup assembly TaskManagerApi
+2026-01-11 23:25:22.290 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2026-01-11 23:25:22.295 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2026-01-11 23:25:22.300 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2026-01-11 23:25:22.422 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-11 23:25:22.425 +03:00 [INF] Hosting environment: Development
+2026-01-11 23:25:22.429 +03:00 [INF] Content root path: C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManagerApi\TaskManager\
+2026-01-11 23:25:22.433 +03:00 [DBG] Hosting started
+2026-01-11 23:25:22.611 +03:00 [DBG] Connection id "0HNIH9U5VQ5IM" accepted.
+2026-01-11 23:25:22.611 +03:00 [DBG] Connection id "0HNIH9U5VQ5IN" accepted.
+2026-01-11 23:25:22.615 +03:00 [DBG] Connection id "0HNIH9U5VQ5IM" started.
+2026-01-11 23:25:22.617 +03:00 [DBG] Connection id "0HNIH9U5VQ5IN" started.
+2026-01-11 23:25:22.673 +03:00 [DBG] Connection id "0HNIH9U5VQ5IM" received FIN.
+2026-01-11 23:25:22.673 +03:00 [DBG] Connection id "0HNIH9U5VQ5IN" received FIN.
+2026-01-11 23:25:22.682 +03:00 [DBG] Connection id "0HNIH9U5VQ5IN" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-01-11 23:25:22.680 +03:00 [DBG] Connection id "0HNIH9U5VQ5IM" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-01-11 23:25:22.690 +03:00 [DBG] Connection id "0HNIH9U5VQ5IN" disconnecting.
+2026-01-11 23:25:22.693 +03:00 [DBG] Connection id "0HNIH9U5VQ5IM" disconnecting.
+2026-01-11 23:25:22.702 +03:00 [DBG] Connection id "0HNIH9U5VQ5IN" stopped.
+2026-01-11 23:25:22.703 +03:00 [DBG] Connection id "0HNIH9U5VQ5IM" stopped.
+2026-01-11 23:25:27.251 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2026-01-11 23:25:27.507 +03:00 [DBG] Hosting starting
+2026-01-11 23:25:27.579 +03:00 [INF] User profile is available. Using 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-01-11 23:25:27.592 +03:00 [DBG] Reading data from file 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys\key-06314caf-114b-4447-b671-26cff94eef42.xml'.
+2026-01-11 23:25:27.610 +03:00 [DBG] Reading data from file 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys\key-090bb267-211d-492b-a818-8821e0be7068.xml'.
+2026-01-11 23:25:27.614 +03:00 [DBG] Reading data from file 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys\key-48d29924-c2fa-4ef4-a60c-de094dd470d3.xml'.
+2026-01-11 23:25:27.619 +03:00 [DBG] Reading data from file 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys\key-55f98cc5-78aa-424c-bf70-872acedb0f6c.xml'.
+2026-01-11 23:25:27.633 +03:00 [DBG] Found key {06314caf-114b-4447-b671-26cff94eef42}.
+2026-01-11 23:25:27.646 +03:00 [DBG] Found key {090bb267-211d-492b-a818-8821e0be7068}.
+2026-01-11 23:25:27.649 +03:00 [DBG] Found key {48d29924-c2fa-4ef4-a60c-de094dd470d3}.
+2026-01-11 23:25:27.652 +03:00 [DBG] Found key {55f98cc5-78aa-424c-bf70-872acedb0f6c}.
+2026-01-11 23:25:27.674 +03:00 [DBG] Considering key {48d29924-c2fa-4ef4-a60c-de094dd470d3} with expiration date 2026-04-04 17:42:23Z as default key.
+2026-01-11 23:25:27.681 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2026-01-11 23:25:27.694 +03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2026-01-11 23:25:27.698 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2026-01-11 23:25:27.712 +03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2026-01-11 23:25:27.719 +03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2026-01-11 23:25:27.735 +03:00 [DBG] Using key {48d29924-c2fa-4ef4-a60c-de094dd470d3} as the default key.
+2026-01-11 23:25:27.739 +03:00 [DBG] Key ring with default key {48d29924-c2fa-4ef4-a60c-de094dd470d3} was loaded during application startup.
+2026-01-11 23:25:27.972 +03:00 [WRN] Overriding address(es) 'http://localhost:1000'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2026-01-11 23:25:28.047 +03:00 [INF] Now listening on: http://localhost:1000
+2026-01-11 23:25:28.050 +03:00 [DBG] Loaded hosting startup assembly TaskManagerApi
+2026-01-11 23:25:28.053 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2026-01-11 23:25:28.055 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2026-01-11 23:25:28.058 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2026-01-11 23:25:28.363 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-11 23:25:28.369 +03:00 [INF] Hosting environment: Development
+2026-01-11 23:25:28.371 +03:00 [INF] Content root path: C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManagerApi\TaskManager\
+2026-01-11 23:25:28.374 +03:00 [DBG] Hosting started
+2026-01-11 23:25:28.409 +03:00 [DBG] Connection id "0HNIH9U7N4MCM" received FIN.
+2026-01-11 23:25:28.425 +03:00 [DBG] Connection id "0HNIH9U7N4MCM" accepted.
+2026-01-11 23:25:28.432 +03:00 [DBG] Connection id "0HNIH9U7N4MCM" started.
+2026-01-11 23:25:28.447 +03:00 [DBG] Connection id "0HNIH9U7N4MCM" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-01-11 23:25:28.460 +03:00 [DBG] Connection id "0HNIH9U7N4MCM" disconnecting.
+2026-01-11 23:25:28.483 +03:00 [DBG] Connection id "0HNIH9U7N4MCM" stopped.
+2026-01-11 23:25:29.828 +03:00 [DBG] Connection id "0HNIH9U7N4MCN" accepted.
+2026-01-11 23:25:30.879 +03:00 [DBG] Connection id "0HNIH9U7N4MCN" started.
+2026-01-11 23:25:31.184 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:1000/swagger/index.html - -
+2026-01-11 23:25:31.871 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2026-01-11 23:25:32.118 +03:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2026-01-11 23:25:32.183 +03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2026-01-11 23:25:32.337 +03:00 [DBG] Response markup was updated to include Browser Link script injection.
+2026-01-11 23:25:32.542 +03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2026-01-11 23:25:32.565 +03:00 [DBG] Connection id "0HNIH9U7N4MCN" completed keep alive response.
+2026-01-11 23:25:32.669 +03:00 [DBG] Connection id "0HNIH9U7N4MCO" accepted.
+2026-01-11 23:25:32.770 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:1000/swagger/index.html - - - 200 - text/html;charset=utf-8 1599.0613ms
+2026-01-11 23:25:32.777 +03:00 [DBG] Connection id "0HNIH9U7N4MCO" started.
+2026-01-11 23:25:32.847 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:1000/_vs/browserLink - -
+2026-01-11 23:25:32.848 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:1000/_framework/aspnetcore-browser-refresh.js - -
+2026-01-11 23:25:32.891 +03:00 [DBG] Connection id "0HNIH9U7N4MCN" completed keep alive response.
+2026-01-11 23:25:32.983 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:1000/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 135.1845ms
+2026-01-11 23:25:33.188 +03:00 [DBG] Connection id "0HNIH9U7N4MCO" completed keep alive response.
+2026-01-11 23:25:33.264 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:1000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 416.4454ms
+2026-01-11 23:25:33.328 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:1000/swagger/v1/swagger.json - -
+2026-01-11 23:25:33.467 +03:00 [DBG] Connection id "0HNIH9U7N4MCO" completed keep alive response.
+2026-01-11 23:25:33.552 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:1000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 223.9108ms
+2026-01-11 23:25:41.076 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:1000/api/users/izinDetaySil?izinId=7 - 0
+2026-01-11 23:25:41.083 +03:00 [DBG] POST requests are not supported
+2026-01-11 23:25:41.091 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-01-11 23:25:41.181 +03:00 [DBG] 1 candidate(s) found for the request path '/api/users/izinDetaySil'
+2026-01-11 23:25:41.207 +03:00 [DBG] Endpoint 'Presentation.Controllers.UserController.UserDetayIzınSilAsync (Presentation)' with route pattern 'api/users/izinDetaySil' is valid for the request path '/api/users/izinDetaySil'
+2026-01-11 23:25:41.218 +03:00 [DBG] Request matched endpoint 'Presentation.Controllers.UserController.UserDetayIzınSilAsync (Presentation)'
+2026-01-11 23:25:41.397 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2026-01-11 23:25:41.518 +03:00 [INF] Executing endpoint 'Presentation.Controllers.UserController.UserDetayIzınSilAsync (Presentation)'
+2026-01-11 23:25:41.606 +03:00 [INF] Route matched with {action = "UserDetayIzınSil", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UserDetayIzınSilAsync(Int32) on controller Presentation.Controllers.UserController (Presentation).
+2026-01-11 23:25:41.615 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2026-01-11 23:25:41.621 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2026-01-11 23:25:41.627 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2026-01-11 23:25:41.636 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2026-01-11 23:25:41.641 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2026-01-11 23:25:41.648 +03:00 [DBG] Executing controller factory for controller Presentation.Controllers.UserController (Presentation)
+2026-01-11 23:25:41.977 +03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2026-01-11 23:25:42.033 +03:00 [DBG] Executed controller factory for controller Presentation.Controllers.UserController (Presentation)
+2026-01-11 23:25:42.060 +03:00 [DBG] Attempting to bind parameter 'izinId' of type 'System.Int32' ...
+2026-01-11 23:25:42.071 +03:00 [DBG] Attempting to bind parameter 'izinId' of type 'System.Int32' using the name 'izinId' in request data ...
+2026-01-11 23:25:42.077 +03:00 [DBG] Done attempting to bind parameter 'izinId' of type 'System.Int32'.
+2026-01-11 23:25:42.084 +03:00 [DBG] Done attempting to bind parameter 'izinId' of type 'System.Int32'.
+2026-01-11 23:25:42.089 +03:00 [DBG] Attempting to validate the bound parameter 'izinId' of type 'System.Int32' ...
+2026-01-11 23:25:42.099 +03:00 [DBG] Done attempting to validate the bound parameter 'izinId' of type 'System.Int32'.
+2026-01-11 23:25:58.086 +03:00 [INF] Entity Framework Core 6.0.10 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: MigrationsAssembly=TaskManagerApi 
+2026-01-11 23:26:01.657 +03:00 [DBG] Compiling query expression: 
+'DbSet<UserDetayIzın>()
+    .FirstOrDefault(x => x.Id == __izinId_0)'
+2026-01-11 23:26:02.123 +03:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<UserDetayIzın>(
+    asyncEnumerable: new SingleQueryingEnumerable<UserDetayIzın>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.SelectExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: UserDetayIzın.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: UserDetayIzın.BaslangicTarihi (DateTime) Required, 1], [Property: UserDetayIzın.BitisTarihi (DateTime) Required, 2], [Property: UserDetayIzın.IzınDetay (IzınDetayEnum) Required, 3], [Property: UserDetayIzın.UserId (int) Required, 4], [Property: UserDetayIzın.YoneticiOnay (bool) Required, 5] }
+            SELECT TOP(1) u.Id, u.BaslangicTarihi, u.BitisTarihi, u.IzınDetay, u.UserId, u.YoneticiOnay
+            FROM UserDetayIzın AS u
+            WHERE u.Id == @__izinId_0), 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, UserDetayIzın>, 
+        Repositories.EFCore.RepositoryContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2026-01-11 23:26:02.207 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-01-11 23:26:02.267 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (56ms).
+2026-01-11 23:26:02.311 +03:00 [DBG] Opening connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:26:03.053 +03:00 [DBG] Opened connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:26:03.088 +03:00 [DBG] Executing DbCommand [Parameters=[@__izinId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[BaslangicTarihi], [u].[BitisTarihi], [u].[IzınDetay], [u].[UserId], [u].[YoneticiOnay]
+FROM [UserDetayIzın] AS [u]
+WHERE [u].[Id] = @__izinId_0
+2026-01-11 23:26:03.246 +03:00 [INF] Executed DbCommand (172ms) [Parameters=[@__izinId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[BaslangicTarihi], [u].[BitisTarihi], [u].[IzınDetay], [u].[UserId], [u].[YoneticiOnay]
+FROM [UserDetayIzın] AS [u]
+WHERE [u].[Id] = @__izinId_0
+2026-01-11 23:26:03.299 +03:00 [DBG] Context 'RepositoryContext' started tracking 'UserDetayIzın' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-11 23:26:03.366 +03:00 [DBG] A data reader was disposed.
+2026-01-11 23:26:03.384 +03:00 [DBG] Closing connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:26:03.410 +03:00 [DBG] Closed connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:26:59.124 +03:00 [INF] Executed action Presentation.Controllers.UserController.UserDetayIzınSilAsync (Presentation) in 77468.97ms
+2026-01-11 23:26:59.134 +03:00 [INF] Executed endpoint 'Presentation.Controllers.UserController.UserDetayIzınSilAsync (Presentation)'
+2026-01-11 23:26:59.291 +03:00 [ERR] The instance of entity type 'UserDetayIzın' cannot be tracked because another instance with the same key value for {'Id'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+System.InvalidOperationException: The instance of entity type 'UserDetayIzın' cannot be tracked because another instance with the same key value for {'Id'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.ThrowIdentityConflict(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry, Boolean updateDuplicate)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.StartTracking(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState oldState, EntityState newState, Boolean acceptChanges, Boolean modifyProperties)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.PaintAction(EntityEntryGraphNode`1 node)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityEntryGraphIterator.TraverseGraph[TState](EntityEntryGraphNode`1 node, Func`2 handleNode)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.AttachGraph(InternalEntityEntry rootEntry, EntityState targetState, EntityState storeGeneratedWithKeySetTargetState, Boolean forceStateWhenUnknownKey)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Remove(TEntity entity)
+   at Repositories.EFCore.userIzınRepository.UserDetayIzınSilAsync(UserDetayIzın izin) in C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManagerApi\Repositories\EFCore\userIzınRepository.cs:line 63
+   at Services.UserManager.UserIzınDetaySilDTOAsync(Int32 id) in C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManagerApi\Services\UserManager.cs:line 200
+   at Presentation.Controllers.UserController.UserDetayIzınSilAsync(Int32 izinId) in C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManagerApi\Presentation\Controllers\UserController.cs:line 98
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManagerApi\Entites\Exceptions\GlobalExceptionMiddleware.cs:line 22
+2026-01-11 23:26:59.436 +03:00 [DBG] Connection id "0HNIH9U7N4MCO" completed keep alive response.
+2026-01-11 23:26:59.448 +03:00 [DBG] 'RepositoryContext' disposed.
+2026-01-11 23:26:59.459 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:1000/api/users/izinDetaySil?izinId=7 - 0 - 500 - application/json 78382.2482ms
+2026-01-11 23:28:06.157 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2026-01-11 23:28:06.381 +03:00 [DBG] Hosting starting
+2026-01-11 23:28:06.453 +03:00 [INF] User profile is available. Using 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-01-11 23:28:06.462 +03:00 [DBG] Reading data from file 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys\key-06314caf-114b-4447-b671-26cff94eef42.xml'.
+2026-01-11 23:28:06.478 +03:00 [DBG] Reading data from file 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys\key-090bb267-211d-492b-a818-8821e0be7068.xml'.
+2026-01-11 23:28:06.517 +03:00 [DBG] Reading data from file 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys\key-48d29924-c2fa-4ef4-a60c-de094dd470d3.xml'.
+2026-01-11 23:28:06.529 +03:00 [DBG] Reading data from file 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys\key-55f98cc5-78aa-424c-bf70-872acedb0f6c.xml'.
+2026-01-11 23:28:06.547 +03:00 [DBG] Found key {06314caf-114b-4447-b671-26cff94eef42}.
+2026-01-11 23:28:06.576 +03:00 [DBG] Found key {090bb267-211d-492b-a818-8821e0be7068}.
+2026-01-11 23:28:06.580 +03:00 [DBG] Found key {48d29924-c2fa-4ef4-a60c-de094dd470d3}.
+2026-01-11 23:28:06.583 +03:00 [DBG] Found key {55f98cc5-78aa-424c-bf70-872acedb0f6c}.
+2026-01-11 23:28:06.601 +03:00 [DBG] Considering key {48d29924-c2fa-4ef4-a60c-de094dd470d3} with expiration date 2026-04-04 17:42:23Z as default key.
+2026-01-11 23:28:06.609 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2026-01-11 23:28:06.619 +03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2026-01-11 23:28:06.623 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2026-01-11 23:28:06.634 +03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2026-01-11 23:28:06.640 +03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2026-01-11 23:28:06.651 +03:00 [DBG] Using key {48d29924-c2fa-4ef4-a60c-de094dd470d3} as the default key.
+2026-01-11 23:28:06.658 +03:00 [DBG] Key ring with default key {48d29924-c2fa-4ef4-a60c-de094dd470d3} was loaded during application startup.
+2026-01-11 23:28:06.915 +03:00 [WRN] Overriding address(es) 'http://localhost:1000'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2026-01-11 23:28:06.993 +03:00 [INF] Now listening on: http://localhost:1000
+2026-01-11 23:28:06.996 +03:00 [DBG] Loaded hosting startup assembly TaskManagerApi
+2026-01-11 23:28:06.999 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2026-01-11 23:28:07.002 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2026-01-11 23:28:07.005 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2026-01-11 23:28:07.297 +03:00 [DBG] Connection id "0HNIH9VN2DACR" received FIN.
+2026-01-11 23:28:07.297 +03:00 [DBG] Connection id "0HNIH9VN2DACS" received FIN.
+2026-01-11 23:28:07.327 +03:00 [DBG] Connection id "0HNIH9VN2DACR" accepted.
+2026-01-11 23:28:07.328 +03:00 [DBG] Connection id "0HNIH9VN2DACS" accepted.
+2026-01-11 23:28:07.335 +03:00 [DBG] Connection id "0HNIH9VN2DACR" started.
+2026-01-11 23:28:07.338 +03:00 [DBG] Connection id "0HNIH9VN2DACS" started.
+2026-01-11 23:28:07.355 +03:00 [DBG] Connection id "0HNIH9VN2DACS" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-01-11 23:28:07.355 +03:00 [DBG] Connection id "0HNIH9VN2DACR" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-01-11 23:28:07.367 +03:00 [DBG] Connection id "0HNIH9VN2DACS" disconnecting.
+2026-01-11 23:28:07.367 +03:00 [DBG] Connection id "0HNIH9VN2DACR" disconnecting.
+2026-01-11 23:28:07.385 +03:00 [DBG] Connection id "0HNIH9VN2DACS" stopped.
+2026-01-11 23:28:07.385 +03:00 [DBG] Connection id "0HNIH9VN2DACR" stopped.
+2026-01-11 23:28:07.463 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-11 23:28:07.467 +03:00 [INF] Hosting environment: Development
+2026-01-11 23:28:07.470 +03:00 [INF] Content root path: C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManagerApi\TaskManager\
+2026-01-11 23:28:07.473 +03:00 [DBG] Hosting started
+2026-01-11 23:28:09.184 +03:00 [DBG] Connection id "0HNIH9VN2DACT" accepted.
+2026-01-11 23:28:10.190 +03:00 [DBG] Connection id "0HNIH9VN2DACT" started.
+2026-01-11 23:28:10.834 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:1000/swagger/index.html - -
+2026-01-11 23:28:11.517 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2026-01-11 23:28:11.769 +03:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2026-01-11 23:28:11.826 +03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2026-01-11 23:28:12.078 +03:00 [DBG] Response markup was updated to include Browser Link script injection.
+2026-01-11 23:28:12.151 +03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2026-01-11 23:28:12.173 +03:00 [DBG] Connection id "0HNIH9VN2DACT" completed keep alive response.
+2026-01-11 23:28:12.286 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:1000/swagger/index.html - - - 200 - text/html;charset=utf-8 1467.4006ms
+2026-01-11 23:28:12.587 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:1000/_framework/aspnetcore-browser-refresh.js - -
+2026-01-11 23:28:12.627 +03:00 [DBG] Connection id "0HNIH9VN2DACT" completed keep alive response.
+2026-01-11 23:28:12.635 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:1000/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 48.2467ms
+2026-01-11 23:28:12.666 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:1000/_vs/browserLink - -
+2026-01-11 23:28:12.901 +03:00 [DBG] Connection id "0HNIH9VN2DACT" completed keep alive response.
+2026-01-11 23:28:12.937 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:1000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 271.0034ms
+2026-01-11 23:28:13.360 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:1000/swagger/v1/swagger.json - -
+2026-01-11 23:28:13.392 +03:00 [DBG] Connection id "0HNIH9VN2DACT" completed keep alive response.
+2026-01-11 23:28:13.407 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:1000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 46.8153ms
+2026-01-11 23:28:34.493 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:1000/api/users/izinDetaySil?izinId=7 - 0
+2026-01-11 23:28:34.502 +03:00 [DBG] POST requests are not supported
+2026-01-11 23:28:34.513 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-01-11 23:28:34.623 +03:00 [DBG] 1 candidate(s) found for the request path '/api/users/izinDetaySil'
+2026-01-11 23:28:34.642 +03:00 [DBG] Endpoint 'Presentation.Controllers.UserController.UserDetayIzınSilAsync (Presentation)' with route pattern 'api/users/izinDetaySil' is valid for the request path '/api/users/izinDetaySil'
+2026-01-11 23:28:34.649 +03:00 [DBG] Request matched endpoint 'Presentation.Controllers.UserController.UserDetayIzınSilAsync (Presentation)'
+2026-01-11 23:28:34.829 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2026-01-11 23:28:34.949 +03:00 [INF] Executing endpoint 'Presentation.Controllers.UserController.UserDetayIzınSilAsync (Presentation)'
+2026-01-11 23:28:35.022 +03:00 [INF] Route matched with {action = "UserDetayIzınSil", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UserDetayIzınSilAsync(Int32) on controller Presentation.Controllers.UserController (Presentation).
+2026-01-11 23:28:35.030 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2026-01-11 23:28:35.036 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2026-01-11 23:28:35.042 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2026-01-11 23:28:35.049 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2026-01-11 23:28:35.057 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2026-01-11 23:28:35.063 +03:00 [DBG] Executing controller factory for controller Presentation.Controllers.UserController (Presentation)
+2026-01-11 23:28:35.479 +03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2026-01-11 23:28:35.536 +03:00 [DBG] Executed controller factory for controller Presentation.Controllers.UserController (Presentation)
+2026-01-11 23:28:35.555 +03:00 [DBG] Attempting to bind parameter 'izinId' of type 'System.Int32' ...
+2026-01-11 23:28:35.562 +03:00 [DBG] Attempting to bind parameter 'izinId' of type 'System.Int32' using the name 'izinId' in request data ...
+2026-01-11 23:28:35.567 +03:00 [DBG] Done attempting to bind parameter 'izinId' of type 'System.Int32'.
+2026-01-11 23:28:35.571 +03:00 [DBG] Done attempting to bind parameter 'izinId' of type 'System.Int32'.
+2026-01-11 23:28:35.575 +03:00 [DBG] Attempting to validate the bound parameter 'izinId' of type 'System.Int32' ...
+2026-01-11 23:28:35.583 +03:00 [DBG] Done attempting to validate the bound parameter 'izinId' of type 'System.Int32'.
+2026-01-11 23:28:40.704 +03:00 [INF] Entity Framework Core 6.0.10 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: MigrationsAssembly=TaskManagerApi 
+2026-01-11 23:28:40.816 +03:00 [DBG] Compiling query expression: 
+'DbSet<UserDetayIzın>()
+    .FirstOrDefault(x => x.Id == __izinId_0)'
+2026-01-11 23:28:41.257 +03:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<UserDetayIzın>(
+    asyncEnumerable: new SingleQueryingEnumerable<UserDetayIzın>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.SelectExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: UserDetayIzın.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: UserDetayIzın.BaslangicTarihi (DateTime) Required, 1], [Property: UserDetayIzın.BitisTarihi (DateTime) Required, 2], [Property: UserDetayIzın.IzınDetay (IzınDetayEnum) Required, 3], [Property: UserDetayIzın.UserId (int) Required, 4], [Property: UserDetayIzın.YoneticiOnay (bool) Required, 5] }
+            SELECT TOP(1) u.Id, u.BaslangicTarihi, u.BitisTarihi, u.IzınDetay, u.UserId, u.YoneticiOnay
+            FROM UserDetayIzın AS u
+            WHERE u.Id == @__izinId_0), 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, UserDetayIzın>, 
+        Repositories.EFCore.RepositoryContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2026-01-11 23:28:41.344 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-01-11 23:28:41.425 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (77ms).
+2026-01-11 23:28:41.456 +03:00 [DBG] Opening connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:28:41.977 +03:00 [DBG] Opened connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:28:42.004 +03:00 [DBG] Executing DbCommand [Parameters=[@__izinId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[BaslangicTarihi], [u].[BitisTarihi], [u].[IzınDetay], [u].[UserId], [u].[YoneticiOnay]
+FROM [UserDetayIzın] AS [u]
+WHERE [u].[Id] = @__izinId_0
+2026-01-11 23:28:42.142 +03:00 [INF] Executed DbCommand (139ms) [Parameters=[@__izinId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[BaslangicTarihi], [u].[BitisTarihi], [u].[IzınDetay], [u].[UserId], [u].[YoneticiOnay]
+FROM [UserDetayIzın] AS [u]
+WHERE [u].[Id] = @__izinId_0
+2026-01-11 23:28:42.185 +03:00 [DBG] Context 'RepositoryContext' started tracking 'UserDetayIzın' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-11 23:28:42.246 +03:00 [DBG] A data reader was disposed.
+2026-01-11 23:28:42.259 +03:00 [DBG] Closing connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:28:42.276 +03:00 [DBG] Closed connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:29:15.875 +03:00 [INF] Executed action Presentation.Controllers.UserController.UserDetayIzınSilAsync (Presentation) in 40808.6096ms
+2026-01-11 23:29:15.886 +03:00 [INF] Executed endpoint 'Presentation.Controllers.UserController.UserDetayIzınSilAsync (Presentation)'
+2026-01-11 23:29:16.095 +03:00 [ERR] The instance of entity type 'UserDetayIzın' cannot be tracked because another instance with the same key value for {'Id'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+System.InvalidOperationException: The instance of entity type 'UserDetayIzın' cannot be tracked because another instance with the same key value for {'Id'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.ThrowIdentityConflict(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry, Boolean updateDuplicate)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.StartTracking(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState oldState, EntityState newState, Boolean acceptChanges, Boolean modifyProperties)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.PaintAction(EntityEntryGraphNode`1 node)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityEntryGraphIterator.TraverseGraph[TState](EntityEntryGraphNode`1 node, Func`2 handleNode)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.AttachGraph(InternalEntityEntry rootEntry, EntityState targetState, EntityState storeGeneratedWithKeySetTargetState, Boolean forceStateWhenUnknownKey)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Remove(TEntity entity)
+   at Repositories.EFCore.userIzınRepository.UserDetayIzınSilAsync(UserDetayIzın izin) in C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManagerApi\Repositories\EFCore\userIzınRepository.cs:line 63
+   at Services.UserManager.UserIzınDetaySilDTOAsync(Int32 id) in C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManagerApi\Services\UserManager.cs:line 207
+   at Presentation.Controllers.UserController.UserDetayIzınSilAsync(Int32 izinId) in C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManagerApi\Presentation\Controllers\UserController.cs:line 98
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManagerApi\Entites\Exceptions\GlobalExceptionMiddleware.cs:line 22
+2026-01-11 23:29:16.236 +03:00 [DBG] Connection id "0HNIH9VN2DACT" completed keep alive response.
+2026-01-11 23:29:16.248 +03:00 [DBG] 'RepositoryContext' disposed.
+2026-01-11 23:29:16.257 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:1000/api/users/izinDetaySil?izinId=7 - 0 - 500 - application/json 41763.7101ms
+2026-01-11 23:38:32.116 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2026-01-11 23:38:32.308 +03:00 [DBG] Hosting starting
+2026-01-11 23:38:32.383 +03:00 [INF] User profile is available. Using 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-01-11 23:38:32.391 +03:00 [DBG] Reading data from file 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys\key-06314caf-114b-4447-b671-26cff94eef42.xml'.
+2026-01-11 23:38:32.403 +03:00 [DBG] Reading data from file 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys\key-090bb267-211d-492b-a818-8821e0be7068.xml'.
+2026-01-11 23:38:32.409 +03:00 [DBG] Reading data from file 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys\key-48d29924-c2fa-4ef4-a60c-de094dd470d3.xml'.
+2026-01-11 23:38:32.414 +03:00 [DBG] Reading data from file 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys\key-55f98cc5-78aa-424c-bf70-872acedb0f6c.xml'.
+2026-01-11 23:38:32.432 +03:00 [DBG] Found key {06314caf-114b-4447-b671-26cff94eef42}.
+2026-01-11 23:38:32.444 +03:00 [DBG] Found key {090bb267-211d-492b-a818-8821e0be7068}.
+2026-01-11 23:38:32.449 +03:00 [DBG] Found key {48d29924-c2fa-4ef4-a60c-de094dd470d3}.
+2026-01-11 23:38:32.456 +03:00 [DBG] Found key {55f98cc5-78aa-424c-bf70-872acedb0f6c}.
+2026-01-11 23:38:32.469 +03:00 [DBG] Considering key {48d29924-c2fa-4ef4-a60c-de094dd470d3} with expiration date 2026-04-04 17:42:23Z as default key.
+2026-01-11 23:38:32.479 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2026-01-11 23:38:32.491 +03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2026-01-11 23:38:32.496 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2026-01-11 23:38:32.510 +03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2026-01-11 23:38:32.518 +03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2026-01-11 23:38:32.528 +03:00 [DBG] Using key {48d29924-c2fa-4ef4-a60c-de094dd470d3} as the default key.
+2026-01-11 23:38:32.534 +03:00 [DBG] Key ring with default key {48d29924-c2fa-4ef4-a60c-de094dd470d3} was loaded during application startup.
+2026-01-11 23:38:32.794 +03:00 [WRN] Overriding address(es) 'http://localhost:1000'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2026-01-11 23:38:32.880 +03:00 [DBG] Connection id "0HNIHA5HGE4LC" received FIN.
+2026-01-11 23:38:32.905 +03:00 [INF] Now listening on: http://localhost:1000
+2026-01-11 23:38:32.908 +03:00 [DBG] Loaded hosting startup assembly TaskManagerApi
+2026-01-11 23:38:32.912 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2026-01-11 23:38:32.915 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2026-01-11 23:38:32.916 +03:00 [DBG] Connection id "0HNIHA5HGE4LC" accepted.
+2026-01-11 23:38:32.918 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2026-01-11 23:38:32.923 +03:00 [DBG] Connection id "0HNIHA5HGE4LC" started.
+2026-01-11 23:38:32.944 +03:00 [DBG] Connection id "0HNIHA5HGE4LC" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-01-11 23:38:32.956 +03:00 [DBG] Connection id "0HNIHA5HGE4LC" disconnecting.
+2026-01-11 23:38:32.988 +03:00 [DBG] Connection id "0HNIHA5HGE4LC" stopped.
+2026-01-11 23:38:34.233 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-11 23:38:34.532 +03:00 [DBG] Connection id "0HNIHA5HGE4LD" accepted.
+2026-01-11 23:38:34.814 +03:00 [INF] Hosting environment: Development
+2026-01-11 23:38:35.432 +03:00 [DBG] Connection id "0HNIHA5HGE4LD" started.
+2026-01-11 23:38:35.758 +03:00 [INF] Content root path: C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManagerApi\TaskManager\
+2026-01-11 23:38:35.810 +03:00 [DBG] Hosting started
+2026-01-11 23:38:35.965 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:1000/swagger/index.html - -
+2026-01-11 23:38:37.092 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2026-01-11 23:38:37.403 +03:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2026-01-11 23:38:37.443 +03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2026-01-11 23:38:37.544 +03:00 [DBG] Response markup was updated to include Browser Link script injection.
+2026-01-11 23:38:37.605 +03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2026-01-11 23:38:37.626 +03:00 [DBG] Connection id "0HNIHA5HGE4LD" completed keep alive response.
+2026-01-11 23:38:37.655 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:1000/swagger/index.html - - - 200 - text/html;charset=utf-8 1709.7187ms
+2026-01-11 23:38:37.781 +03:00 [DBG] Connection id "0HNIHA5HGE4LE" accepted.
+2026-01-11 23:38:37.797 +03:00 [DBG] Connection id "0HNIHA5HGE4LE" started.
+2026-01-11 23:38:37.793 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:1000/_framework/aspnetcore-browser-refresh.js - -
+2026-01-11 23:38:37.815 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:1000/_vs/browserLink - -
+2026-01-11 23:38:37.837 +03:00 [DBG] Connection id "0HNIHA5HGE4LD" completed keep alive response.
+2026-01-11 23:38:37.853 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:1000/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 59.6119ms
+2026-01-11 23:38:38.041 +03:00 [DBG] Connection id "0HNIHA5HGE4LE" completed keep alive response.
+2026-01-11 23:38:38.125 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:1000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 309.8594ms
+2026-01-11 23:38:38.238 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:1000/swagger/v1/swagger.json - -
+2026-01-11 23:38:38.372 +03:00 [DBG] Connection id "0HNIHA5HGE4LE" completed keep alive response.
+2026-01-11 23:38:38.427 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:1000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 188.9355ms
+2026-01-11 23:38:48.125 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:1000/api/users/izin-sil?Iz%C4%B1nId=7 - -
+2026-01-11 23:38:48.136 +03:00 [DBG] DELETE requests are not supported
+2026-01-11 23:38:48.144 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-01-11 23:38:48.236 +03:00 [DBG] 1 candidate(s) found for the request path '/api/users/izin-sil'
+2026-01-11 23:38:48.260 +03:00 [DBG] Endpoint 'Presentation.Controllers.UserController.DeleteUserIzin (Presentation)' with route pattern 'api/users/izin-sil' is valid for the request path '/api/users/izin-sil'
+2026-01-11 23:38:48.266 +03:00 [DBG] Request matched endpoint 'Presentation.Controllers.UserController.DeleteUserIzin (Presentation)'
+2026-01-11 23:38:48.482 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2026-01-11 23:38:48.674 +03:00 [INF] Executing endpoint 'Presentation.Controllers.UserController.DeleteUserIzin (Presentation)'
+2026-01-11 23:38:48.774 +03:00 [INF] Route matched with {action = "DeleteUserIzin", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteUserIzin(Entites.Data_Transfer_object.UserIzinDetay.userIzınDetaySılDTO) on controller Presentation.Controllers.UserController (Presentation).
+2026-01-11 23:38:48.781 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2026-01-11 23:38:48.785 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2026-01-11 23:38:48.789 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2026-01-11 23:38:48.794 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2026-01-11 23:38:48.798 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2026-01-11 23:38:48.803 +03:00 [DBG] Executing controller factory for controller Presentation.Controllers.UserController (Presentation)
+2026-01-11 23:38:49.129 +03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2026-01-11 23:38:49.183 +03:00 [DBG] Executed controller factory for controller Presentation.Controllers.UserController (Presentation)
+2026-01-11 23:38:49.206 +03:00 [DBG] Attempting to bind parameter 'dto' of type 'Entites.Data_Transfer_object.UserIzinDetay.userIzınDetaySılDTO' ...
+2026-01-11 23:38:49.214 +03:00 [DBG] Attempting to bind parameter 'dto' of type 'Entites.Data_Transfer_object.UserIzinDetay.userIzınDetaySılDTO' using the name '' in request data ...
+2026-01-11 23:38:49.230 +03:00 [DBG] Attempting to bind property 'Entites.Data_Transfer_object.UserIzinDetay.userIzınDetaySılDTO.IzınId' of type 'System.Int32' using the name 'IzınId' in request data ...
+2026-01-11 23:38:49.240 +03:00 [DBG] Done attempting to bind property 'Entites.Data_Transfer_object.UserIzinDetay.userIzınDetaySılDTO.IzınId' of type 'System.Int32'.
+2026-01-11 23:38:49.252 +03:00 [DBG] Done attempting to bind parameter 'dto' of type 'Entites.Data_Transfer_object.UserIzinDetay.userIzınDetaySılDTO'.
+2026-01-11 23:38:49.258 +03:00 [DBG] Done attempting to bind parameter 'dto' of type 'Entites.Data_Transfer_object.UserIzinDetay.userIzınDetaySılDTO'.
+2026-01-11 23:38:49.263 +03:00 [DBG] Attempting to validate the bound parameter 'dto' of type 'Entites.Data_Transfer_object.UserIzinDetay.userIzınDetaySılDTO' ...
+2026-01-11 23:38:49.283 +03:00 [DBG] Done attempting to validate the bound parameter 'dto' of type 'Entites.Data_Transfer_object.UserIzinDetay.userIzınDetaySılDTO'.
+2026-01-11 23:39:00.382 +03:00 [INF] Entity Framework Core 6.0.10 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: MigrationsAssembly=TaskManagerApi 
+2026-01-11 23:39:00.548 +03:00 [DBG] Compiling query expression: 
+'DbSet<UserDetayIzın>()
+    .FirstOrDefault(x => x.Id == __id_0)'
+2026-01-11 23:39:01.214 +03:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<UserDetayIzın>(
+    asyncEnumerable: new SingleQueryingEnumerable<UserDetayIzın>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.SelectExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: UserDetayIzın.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: UserDetayIzın.BaslangicTarihi (DateTime) Required, 1], [Property: UserDetayIzın.BitisTarihi (DateTime) Required, 2], [Property: UserDetayIzın.IzınDetay (IzınDetayEnum) Required, 3], [Property: UserDetayIzın.UserId (int) Required, 4], [Property: UserDetayIzın.YoneticiOnay (bool) Required, 5] }
+            SELECT TOP(1) u.Id, u.BaslangicTarihi, u.BitisTarihi, u.IzınDetay, u.UserId, u.YoneticiOnay
+            FROM UserDetayIzın AS u
+            WHERE u.Id == @__id_0), 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, UserDetayIzın>, 
+        Repositories.EFCore.RepositoryContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2026-01-11 23:39:01.365 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-01-11 23:39:01.444 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (73ms).
+2026-01-11 23:39:01.482 +03:00 [DBG] Opening connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:39:02.139 +03:00 [DBG] Opened connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:39:02.177 +03:00 [DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[BaslangicTarihi], [u].[BitisTarihi], [u].[IzınDetay], [u].[UserId], [u].[YoneticiOnay]
+FROM [UserDetayIzın] AS [u]
+WHERE [u].[Id] = @__id_0
+2026-01-11 23:39:02.339 +03:00 [INF] Executed DbCommand (173ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[BaslangicTarihi], [u].[BitisTarihi], [u].[IzınDetay], [u].[UserId], [u].[YoneticiOnay]
+FROM [UserDetayIzın] AS [u]
+WHERE [u].[Id] = @__id_0
+2026-01-11 23:39:02.394 +03:00 [DBG] Context 'RepositoryContext' started tracking 'UserDetayIzın' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-11 23:39:02.484 +03:00 [DBG] A data reader was disposed.
+2026-01-11 23:39:02.499 +03:00 [DBG] Closing connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:39:02.521 +03:00 [DBG] Closed connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:39:35.536 +03:00 [DBG] An entity of type 'UserDetayIzın' tracked by 'RepositoryContext' changed state from '"Unchanged"' to '"Deleted"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-11 23:39:36.982 +03:00 [DBG] SaveChanges starting for 'RepositoryContext'.
+2026-01-11 23:39:36.991 +03:00 [DBG] DetectChanges starting for 'RepositoryContext'.
+2026-01-11 23:39:37.021 +03:00 [DBG] DetectChanges completed for 'RepositoryContext'.
+2026-01-11 23:39:37.070 +03:00 [DBG] Opening connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:39:37.079 +03:00 [DBG] Opened connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:39:37.089 +03:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2026-01-11 23:39:37.128 +03:00 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2026-01-11 23:39:37.228 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-01-11 23:39:37.232 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (4ms).
+2026-01-11 23:39:37.239 +03:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [UserDetayIzın]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+2026-01-11 23:39:37.253 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [UserDetayIzın]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+2026-01-11 23:39:37.283 +03:00 [DBG] A data reader was disposed.
+2026-01-11 23:39:37.299 +03:00 [DBG] Committing transaction.
+2026-01-11 23:39:37.314 +03:00 [DBG] Committed transaction.
+2026-01-11 23:39:37.327 +03:00 [DBG] Closing connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:39:37.332 +03:00 [DBG] Closed connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:39:37.346 +03:00 [DBG] Disposing transaction.
+2026-01-11 23:39:37.365 +03:00 [DBG] An entity of type 'UserDetayIzın' tracked by 'RepositoryContext' changed state from '"Deleted"' to '"Detached"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-11 23:39:37.380 +03:00 [DBG] SaveChanges completed for 'RepositoryContext' with 1 entities written to the database.
+2026-01-11 23:39:37.400 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2026-01-11 23:39:37.414 +03:00 [INF] Executed action Presentation.Controllers.UserController.DeleteUserIzin (Presentation) in 48604.9424ms
+2026-01-11 23:39:37.426 +03:00 [INF] Executed endpoint 'Presentation.Controllers.UserController.DeleteUserIzin (Presentation)'
+2026-01-11 23:39:37.444 +03:00 [DBG] Connection id "0HNIHA5HGE4LE" completed keep alive response.
+2026-01-11 23:39:37.456 +03:00 [DBG] 'RepositoryContext' disposed.
+2026-01-11 23:39:37.466 +03:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:1000/api/users/izin-sil?Iz%C4%B1nId=7 - - - 204 - - 49340.8930ms
+2026-01-11 23:48:43.127 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2026-01-11 23:48:43.368 +03:00 [DBG] Hosting starting
+2026-01-11 23:48:43.468 +03:00 [INF] User profile is available. Using 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-01-11 23:48:43.479 +03:00 [DBG] Reading data from file 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys\key-06314caf-114b-4447-b671-26cff94eef42.xml'.
+2026-01-11 23:48:43.496 +03:00 [DBG] Reading data from file 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys\key-090bb267-211d-492b-a818-8821e0be7068.xml'.
+2026-01-11 23:48:43.506 +03:00 [DBG] Reading data from file 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys\key-48d29924-c2fa-4ef4-a60c-de094dd470d3.xml'.
+2026-01-11 23:48:43.510 +03:00 [DBG] Reading data from file 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys\key-55f98cc5-78aa-424c-bf70-872acedb0f6c.xml'.
+2026-01-11 23:48:43.526 +03:00 [DBG] Found key {06314caf-114b-4447-b671-26cff94eef42}.
+2026-01-11 23:48:43.542 +03:00 [DBG] Found key {090bb267-211d-492b-a818-8821e0be7068}.
+2026-01-11 23:48:43.550 +03:00 [DBG] Found key {48d29924-c2fa-4ef4-a60c-de094dd470d3}.
+2026-01-11 23:48:43.557 +03:00 [DBG] Found key {55f98cc5-78aa-424c-bf70-872acedb0f6c}.
+2026-01-11 23:48:43.580 +03:00 [DBG] Considering key {48d29924-c2fa-4ef4-a60c-de094dd470d3} with expiration date 2026-04-04 17:42:23Z as default key.
+2026-01-11 23:48:43.588 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2026-01-11 23:48:43.599 +03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2026-01-11 23:48:43.604 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2026-01-11 23:48:43.617 +03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2026-01-11 23:48:43.625 +03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2026-01-11 23:48:43.634 +03:00 [DBG] Using key {48d29924-c2fa-4ef4-a60c-de094dd470d3} as the default key.
+2026-01-11 23:48:43.637 +03:00 [DBG] Key ring with default key {48d29924-c2fa-4ef4-a60c-de094dd470d3} was loaded during application startup.
+2026-01-11 23:48:43.877 +03:00 [WRN] Overriding address(es) 'http://localhost:1000'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2026-01-11 23:48:43.948 +03:00 [INF] Now listening on: http://localhost:1000
+2026-01-11 23:48:43.951 +03:00 [DBG] Loaded hosting startup assembly TaskManagerApi
+2026-01-11 23:48:43.954 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2026-01-11 23:48:43.956 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2026-01-11 23:48:43.959 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2026-01-11 23:48:44.235 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-11 23:48:44.237 +03:00 [INF] Hosting environment: Development
+2026-01-11 23:48:44.240 +03:00 [INF] Content root path: C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManagerApi\TaskManager\
+2026-01-11 23:48:44.243 +03:00 [DBG] Hosting started
+2026-01-11 23:48:44.352 +03:00 [DBG] Connection id "0HNIHAB7NQRJ5" accepted.
+2026-01-11 23:48:44.358 +03:00 [DBG] Connection id "0HNIHAB7NQRJ5" started.
+2026-01-11 23:48:44.396 +03:00 [DBG] Connection id "0HNIHAB7NQRJ5" received FIN.
+2026-01-11 23:48:44.412 +03:00 [DBG] Connection id "0HNIHAB7NQRJ5" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-01-11 23:48:44.427 +03:00 [DBG] Connection id "0HNIHAB7NQRJ5" disconnecting.
+2026-01-11 23:48:44.438 +03:00 [DBG] Connection id "0HNIHAB7NQRJ5" stopped.
+2026-01-11 23:48:45.795 +03:00 [DBG] Connection id "0HNIHAB7NQRJ6" accepted.
+2026-01-11 23:48:46.931 +03:00 [DBG] Connection id "0HNIHAB7NQRJ6" started.
+2026-01-11 23:48:47.441 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:1000/swagger/index.html - -
+2026-01-11 23:48:48.194 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2026-01-11 23:48:48.464 +03:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2026-01-11 23:48:48.570 +03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2026-01-11 23:48:48.742 +03:00 [DBG] Response markup was updated to include Browser Link script injection.
+2026-01-11 23:48:48.995 +03:00 [DBG] Connection id "0HNIHAB7NQRJ7" accepted.
+2026-01-11 23:48:49.004 +03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2026-01-11 23:48:49.185 +03:00 [DBG] Connection id "0HNIHAB7NQRJ8" accepted.
+2026-01-11 23:48:49.185 +03:00 [DBG] Connection id "0HNIHAB7NQRJ7" started.
+2026-01-11 23:48:49.275 +03:00 [DBG] Connection id "0HNIHAB7NQRJ6" completed keep alive response.
+2026-01-11 23:48:49.311 +03:00 [DBG] Connection id "0HNIHAB7NQRJ8" started.
+2026-01-11 23:48:49.324 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:1000/_framework/aspnetcore-browser-refresh.js - -
+2026-01-11 23:48:49.402 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:1000/_vs/browserLink - -
+2026-01-11 23:48:49.404 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:1000/swagger/index.html - - - 200 - text/html;charset=utf-8 1976.6253ms
+2026-01-11 23:48:49.424 +03:00 [DBG] Connection id "0HNIHAB7NQRJ7" completed keep alive response.
+2026-01-11 23:48:49.486 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:1000/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 161.8991ms
+2026-01-11 23:48:49.686 +03:00 [DBG] Connection id "0HNIHAB7NQRJ8" completed keep alive response.
+2026-01-11 23:48:49.735 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:1000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 328.4535ms
+2026-01-11 23:48:49.900 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:1000/swagger/v1/swagger.json - -
+2026-01-11 23:48:49.995 +03:00 [DBG] Connection id "0HNIHAB7NQRJ8" completed keep alive response.
+2026-01-11 23:48:50.033 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:1000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 133.0464ms
+2026-01-11 23:49:07.149 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:1000/api/users/izin-sil?Iz%C4%B1nId=3 - -
+2026-01-11 23:49:07.167 +03:00 [DBG] DELETE requests are not supported
+2026-01-11 23:49:07.175 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-01-11 23:49:07.236 +03:00 [DBG] 1 candidate(s) found for the request path '/api/users/izin-sil'
+2026-01-11 23:49:07.253 +03:00 [DBG] Endpoint 'Presentation.Controllers.UserController.DeleteUserIzin (Presentation)' with route pattern 'api/users/izin-sil' is valid for the request path '/api/users/izin-sil'
+2026-01-11 23:49:07.258 +03:00 [DBG] Request matched endpoint 'Presentation.Controllers.UserController.DeleteUserIzin (Presentation)'
+2026-01-11 23:49:07.425 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2026-01-11 23:49:07.555 +03:00 [INF] Executing endpoint 'Presentation.Controllers.UserController.DeleteUserIzin (Presentation)'
+2026-01-11 23:49:07.641 +03:00 [INF] Route matched with {action = "DeleteUserIzin", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteUserIzin(Entites.Data_Transfer_object.UserIzinDetay.userIzınDetaySılDTO) on controller Presentation.Controllers.UserController (Presentation).
+2026-01-11 23:49:07.647 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2026-01-11 23:49:07.652 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2026-01-11 23:49:07.657 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2026-01-11 23:49:07.662 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2026-01-11 23:49:07.666 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2026-01-11 23:49:07.675 +03:00 [DBG] Executing controller factory for controller Presentation.Controllers.UserController (Presentation)
+2026-01-11 23:49:08.017 +03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2026-01-11 23:49:08.078 +03:00 [DBG] Executed controller factory for controller Presentation.Controllers.UserController (Presentation)
+2026-01-11 23:49:08.108 +03:00 [DBG] Attempting to bind parameter 'dto' of type 'Entites.Data_Transfer_object.UserIzinDetay.userIzınDetaySılDTO' ...
+2026-01-11 23:49:08.116 +03:00 [DBG] Attempting to bind parameter 'dto' of type 'Entites.Data_Transfer_object.UserIzinDetay.userIzınDetaySılDTO' using the name '' in request data ...
+2026-01-11 23:49:08.130 +03:00 [DBG] Attempting to bind property 'Entites.Data_Transfer_object.UserIzinDetay.userIzınDetaySılDTO.IzınId' of type 'System.Int32' using the name 'IzınId' in request data ...
+2026-01-11 23:49:08.138 +03:00 [DBG] Done attempting to bind property 'Entites.Data_Transfer_object.UserIzinDetay.userIzınDetaySılDTO.IzınId' of type 'System.Int32'.
+2026-01-11 23:49:08.147 +03:00 [DBG] Done attempting to bind parameter 'dto' of type 'Entites.Data_Transfer_object.UserIzinDetay.userIzınDetaySılDTO'.
+2026-01-11 23:49:08.150 +03:00 [DBG] Done attempting to bind parameter 'dto' of type 'Entites.Data_Transfer_object.UserIzinDetay.userIzınDetaySılDTO'.
+2026-01-11 23:49:08.154 +03:00 [DBG] Attempting to validate the bound parameter 'dto' of type 'Entites.Data_Transfer_object.UserIzinDetay.userIzınDetaySılDTO' ...
+2026-01-11 23:49:08.169 +03:00 [DBG] Done attempting to validate the bound parameter 'dto' of type 'Entites.Data_Transfer_object.UserIzinDetay.userIzınDetaySılDTO'.
+2026-01-11 23:49:21.651 +03:00 [INF] Entity Framework Core 6.0.10 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: MigrationsAssembly=TaskManagerApi 
+2026-01-11 23:49:21.786 +03:00 [DBG] Compiling query expression: 
+'DbSet<UserDetayIzın>()
+    .FirstOrDefault(x => x.Id == __id_0)'
+2026-01-11 23:49:22.270 +03:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<UserDetayIzın>(
+    asyncEnumerable: new SingleQueryingEnumerable<UserDetayIzın>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.SelectExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: UserDetayIzın.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: UserDetayIzın.BaslangicTarihi (DateTime) Required, 1], [Property: UserDetayIzın.BitisTarihi (DateTime) Required, 2], [Property: UserDetayIzın.IzınDetay (IzınDetayEnum) Required, 3], [Property: UserDetayIzın.UserId (int) Required, 4], [Property: UserDetayIzın.YoneticiOnay (bool) Required, 5] }
+            SELECT TOP(1) u.Id, u.BaslangicTarihi, u.BitisTarihi, u.IzınDetay, u.UserId, u.YoneticiOnay
+            FROM UserDetayIzın AS u
+            WHERE u.Id == @__id_0), 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, UserDetayIzın>, 
+        Repositories.EFCore.RepositoryContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2026-01-11 23:49:22.407 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-01-11 23:49:22.489 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (81ms).
+2026-01-11 23:49:22.525 +03:00 [DBG] Opening connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:49:23.109 +03:00 [DBG] Opened connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:49:23.148 +03:00 [DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[BaslangicTarihi], [u].[BitisTarihi], [u].[IzınDetay], [u].[UserId], [u].[YoneticiOnay]
+FROM [UserDetayIzın] AS [u]
+WHERE [u].[Id] = @__id_0
+2026-01-11 23:49:23.321 +03:00 [INF] Executed DbCommand (188ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[BaslangicTarihi], [u].[BitisTarihi], [u].[IzınDetay], [u].[UserId], [u].[YoneticiOnay]
+FROM [UserDetayIzın] AS [u]
+WHERE [u].[Id] = @__id_0
+2026-01-11 23:49:23.382 +03:00 [DBG] Context 'RepositoryContext' started tracking 'UserDetayIzın' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-11 23:49:23.471 +03:00 [DBG] A data reader was disposed.
+2026-01-11 23:49:23.490 +03:00 [DBG] Closing connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:49:23.508 +03:00 [DBG] Closed connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:49:53.243 +03:00 [DBG] Compiling query expression: 
+'DbSet<userIzın>()
+    .FirstOrDefault(x => x.userId == __userId_0)'
+2026-01-11 23:49:53.254 +03:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<userIzın>(
+    asyncEnumerable: new SingleQueryingEnumerable<userIzın>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.SelectExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: userIzın.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: userIzın.HakedilenIzın (int) Required, 1], [Property: userIzın.userId (int) Required, 2] }
+            SELECT TOP(1) u.Id, u.HakedilenIzın, u.userId
+            FROM userIzıns AS u
+            WHERE u.userId == @__userId_0), 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, userIzın>, 
+        Repositories.EFCore.RepositoryContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2026-01-11 23:49:53.261 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-01-11 23:49:53.267 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (5ms).
+2026-01-11 23:49:53.273 +03:00 [DBG] Opening connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:49:53.278 +03:00 [DBG] Opened connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:49:53.282 +03:00 [DBG] Executing DbCommand [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[HakedilenIzın], [u].[userId]
+FROM [userIzıns] AS [u]
+WHERE [u].[userId] = @__userId_0
+2026-01-11 23:49:53.298 +03:00 [INF] Executed DbCommand (16ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[HakedilenIzın], [u].[userId]
+FROM [userIzıns] AS [u]
+WHERE [u].[userId] = @__userId_0
+2026-01-11 23:49:53.310 +03:00 [DBG] Context 'RepositoryContext' started tracking 'userIzın' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-11 23:49:53.320 +03:00 [DBG] A data reader was disposed.
+2026-01-11 23:49:53.324 +03:00 [DBG] Closing connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:49:53.330 +03:00 [DBG] Closed connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:49:53.348 +03:00 [DBG] SaveChanges starting for 'RepositoryContext'.
+2026-01-11 23:49:53.356 +03:00 [DBG] DetectChanges starting for 'RepositoryContext'.
+2026-01-11 23:49:53.383 +03:00 [DBG] The unchanged property 'userIzın.HakedilenIzın' was detected as changed and will be marked as modified. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2026-01-11 23:49:53.400 +03:00 [DBG] An entity of type 'userIzın' tracked by 'RepositoryContext' changed state from '"Unchanged"' to '"Modified"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-11 23:49:53.412 +03:00 [DBG] DetectChanges completed for 'RepositoryContext'.
+2026-01-11 23:49:53.441 +03:00 [DBG] Opening connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:49:53.448 +03:00 [DBG] Opened connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:49:53.456 +03:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2026-01-11 23:49:53.484 +03:00 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2026-01-11 23:49:53.564 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-01-11 23:49:53.569 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (5ms).
+2026-01-11 23:49:53.575 +03:00 [DBG] Executing DbCommand [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [userIzıns] SET [HakedilenIzın] = @p0
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;
+2026-01-11 23:49:53.586 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [userIzıns] SET [HakedilenIzın] = @p0
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;
+2026-01-11 23:49:53.613 +03:00 [DBG] A data reader was disposed.
+2026-01-11 23:49:53.626 +03:00 [DBG] Committing transaction.
+2026-01-11 23:49:53.639 +03:00 [DBG] Committed transaction.
+2026-01-11 23:49:53.650 +03:00 [DBG] Closing connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:49:53.656 +03:00 [DBG] Closed connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:49:53.670 +03:00 [DBG] Disposing transaction.
+2026-01-11 23:49:53.685 +03:00 [DBG] An entity of type 'userIzın' tracked by 'RepositoryContext' changed state from '"Modified"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-11 23:49:53.696 +03:00 [DBG] SaveChanges completed for 'RepositoryContext' with 1 entities written to the database.
+2026-01-11 23:50:16.071 +03:00 [DBG] An entity of type 'UserDetayIzın' tracked by 'RepositoryContext' changed state from '"Unchanged"' to '"Deleted"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-11 23:50:16.084 +03:00 [DBG] SaveChanges starting for 'RepositoryContext'.
+2026-01-11 23:50:16.089 +03:00 [DBG] DetectChanges starting for 'RepositoryContext'.
+2026-01-11 23:50:16.101 +03:00 [DBG] DetectChanges completed for 'RepositoryContext'.
+2026-01-11 23:50:16.108 +03:00 [DBG] Opening connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:50:16.113 +03:00 [DBG] Opened connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:50:16.118 +03:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2026-01-11 23:50:16.123 +03:00 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2026-01-11 23:50:16.134 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-01-11 23:50:16.140 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (5ms).
+2026-01-11 23:50:16.146 +03:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [UserDetayIzın]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+2026-01-11 23:50:16.159 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [UserDetayIzın]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+2026-01-11 23:50:16.177 +03:00 [DBG] A data reader was disposed.
+2026-01-11 23:50:16.180 +03:00 [DBG] Committing transaction.
+2026-01-11 23:50:16.184 +03:00 [DBG] Committed transaction.
+2026-01-11 23:50:16.188 +03:00 [DBG] Closing connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:50:16.194 +03:00 [DBG] Closed connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:50:16.199 +03:00 [DBG] Disposing transaction.
+2026-01-11 23:50:16.216 +03:00 [DBG] An entity of type 'UserDetayIzın' tracked by 'RepositoryContext' changed state from '"Deleted"' to '"Detached"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-11 23:50:16.223 +03:00 [DBG] SaveChanges completed for 'RepositoryContext' with 1 entities written to the database.
+2026-01-11 23:50:16.249 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2026-01-11 23:50:16.267 +03:00 [INF] Executed action Presentation.Controllers.UserController.DeleteUserIzin (Presentation) in 68581.3509ms
+2026-01-11 23:50:16.276 +03:00 [INF] Executed endpoint 'Presentation.Controllers.UserController.DeleteUserIzin (Presentation)'
+2026-01-11 23:50:16.296 +03:00 [DBG] Connection id "0HNIHAB7NQRJ8" completed keep alive response.
+2026-01-11 23:50:16.309 +03:00 [DBG] 'RepositoryContext' disposed.
+2026-01-11 23:50:16.320 +03:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:1000/api/users/izin-sil?Iz%C4%B1nId=3 - - - 204 - - 69171.6717ms
+2026-01-11 23:51:04.474 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2026-01-11 23:51:04.723 +03:00 [DBG] Hosting starting
+2026-01-11 23:51:04.800 +03:00 [INF] User profile is available. Using 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-01-11 23:51:04.811 +03:00 [DBG] Reading data from file 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys\key-06314caf-114b-4447-b671-26cff94eef42.xml'.
+2026-01-11 23:51:04.823 +03:00 [DBG] Reading data from file 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys\key-090bb267-211d-492b-a818-8821e0be7068.xml'.
+2026-01-11 23:51:04.827 +03:00 [DBG] Reading data from file 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys\key-48d29924-c2fa-4ef4-a60c-de094dd470d3.xml'.
+2026-01-11 23:51:04.830 +03:00 [DBG] Reading data from file 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys\key-55f98cc5-78aa-424c-bf70-872acedb0f6c.xml'.
+2026-01-11 23:51:04.842 +03:00 [DBG] Found key {06314caf-114b-4447-b671-26cff94eef42}.
+2026-01-11 23:51:04.855 +03:00 [DBG] Found key {090bb267-211d-492b-a818-8821e0be7068}.
+2026-01-11 23:51:04.858 +03:00 [DBG] Found key {48d29924-c2fa-4ef4-a60c-de094dd470d3}.
+2026-01-11 23:51:04.861 +03:00 [DBG] Found key {55f98cc5-78aa-424c-bf70-872acedb0f6c}.
+2026-01-11 23:51:04.880 +03:00 [DBG] Considering key {48d29924-c2fa-4ef4-a60c-de094dd470d3} with expiration date 2026-04-04 17:42:23Z as default key.
+2026-01-11 23:51:04.887 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2026-01-11 23:51:04.898 +03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2026-01-11 23:51:04.903 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2026-01-11 23:51:04.920 +03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2026-01-11 23:51:04.929 +03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2026-01-11 23:51:04.939 +03:00 [DBG] Using key {48d29924-c2fa-4ef4-a60c-de094dd470d3} as the default key.
+2026-01-11 23:51:04.944 +03:00 [DBG] Key ring with default key {48d29924-c2fa-4ef4-a60c-de094dd470d3} was loaded during application startup.
+2026-01-11 23:51:05.234 +03:00 [WRN] Overriding address(es) 'http://localhost:1000'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2026-01-11 23:51:05.316 +03:00 [INF] Now listening on: http://localhost:1000
+2026-01-11 23:51:05.319 +03:00 [DBG] Loaded hosting startup assembly TaskManagerApi
+2026-01-11 23:51:05.321 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2026-01-11 23:51:05.323 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2026-01-11 23:51:05.325 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2026-01-11 23:51:05.370 +03:00 [DBG] Connection id "0HNIHACHONQ0F" received FIN.
+2026-01-11 23:51:05.370 +03:00 [DBG] Connection id "0HNIHACHONQ0G" received FIN.
+2026-01-11 23:51:05.420 +03:00 [DBG] Connection id "0HNIHACHONQ0G" accepted.
+2026-01-11 23:51:05.421 +03:00 [DBG] Connection id "0HNIHACHONQ0F" accepted.
+2026-01-11 23:51:05.913 +03:00 [DBG] Connection id "0HNIHACHONQ0F" started.
+2026-01-11 23:51:05.911 +03:00 [DBG] Connection id "0HNIHACHONQ0G" started.
+2026-01-11 23:51:06.820 +03:00 [DBG] Connection id "0HNIHACHONQ0H" accepted.
+2026-01-11 23:51:06.826 +03:00 [DBG] Connection id "0HNIHACHONQ0F" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-01-11 23:51:06.826 +03:00 [DBG] Connection id "0HNIHACHONQ0G" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-01-11 23:51:07.724 +03:00 [DBG] Connection id "0HNIHACHONQ0H" started.
+2026-01-11 23:51:08.094 +03:00 [DBG] Connection id "0HNIHACHONQ0F" disconnecting.
+2026-01-11 23:51:08.131 +03:00 [DBG] Connection id "0HNIHACHONQ0G" disconnecting.
+2026-01-11 23:51:08.678 +03:00 [DBG] Connection id "0HNIHACHONQ0F" stopped.
+2026-01-11 23:51:08.718 +03:00 [DBG] Connection id "0HNIHACHONQ0G" stopped.
+2026-01-11 23:51:08.804 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:1000/swagger/index.html - -
+2026-01-11 23:51:09.305 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-11 23:51:09.364 +03:00 [INF] Hosting environment: Development
+2026-01-11 23:51:09.423 +03:00 [INF] Content root path: C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManagerApi\TaskManager\
+2026-01-11 23:51:09.454 +03:00 [DBG] Hosting started
+2026-01-11 23:51:09.842 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2026-01-11 23:51:10.371 +03:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2026-01-11 23:51:10.415 +03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2026-01-11 23:51:10.575 +03:00 [DBG] Response markup was updated to include Browser Link script injection.
+2026-01-11 23:51:10.588 +03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2026-01-11 23:51:10.599 +03:00 [DBG] Connection id "0HNIHACHONQ0H" completed keep alive response.
+2026-01-11 23:51:10.638 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:1000/swagger/index.html - - - 200 - text/html;charset=utf-8 1859.5274ms
+2026-01-11 23:51:10.799 +03:00 [DBG] Connection id "0HNIHACHONQ0I" accepted.
+2026-01-11 23:51:10.839 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:1000/_framework/aspnetcore-browser-refresh.js - -
+2026-01-11 23:51:10.899 +03:00 [DBG] Connection id "0HNIHACHONQ0I" started.
+2026-01-11 23:51:10.937 +03:00 [DBG] Connection id "0HNIHACHONQ0H" completed keep alive response.
+2026-01-11 23:51:10.977 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:1000/_vs/browserLink - -
+2026-01-11 23:51:10.993 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:1000/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 154.0738ms
+2026-01-11 23:51:11.236 +03:00 [DBG] Connection id "0HNIHACHONQ0I" completed keep alive response.
+2026-01-11 23:51:11.248 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:1000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 270.6441ms
+2026-01-11 23:51:11.338 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:1000/swagger/v1/swagger.json - -
+2026-01-11 23:51:11.417 +03:00 [DBG] Connection id "0HNIHACHONQ0I" completed keep alive response.
+2026-01-11 23:51:11.559 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:1000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 220.5450ms
+2026-01-11 23:51:49.458 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:1000/api/users/izinDetayEkle application/json 155
+2026-01-11 23:51:49.465 +03:00 [DBG] POST requests are not supported
+2026-01-11 23:51:49.470 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-01-11 23:51:49.569 +03:00 [DBG] 1 candidate(s) found for the request path '/api/users/izinDetayEkle'
+2026-01-11 23:51:49.585 +03:00 [DBG] Endpoint 'Presentation.Controllers.UserController.UserDetayIzinEkleAsync (Presentation)' with route pattern 'api/users/izinDetayEkle' is valid for the request path '/api/users/izinDetayEkle'
+2026-01-11 23:51:49.590 +03:00 [DBG] Request matched endpoint 'Presentation.Controllers.UserController.UserDetayIzinEkleAsync (Presentation)'
+2026-01-11 23:51:49.774 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2026-01-11 23:51:49.936 +03:00 [INF] Executing endpoint 'Presentation.Controllers.UserController.UserDetayIzinEkleAsync (Presentation)'
+2026-01-11 23:51:50.056 +03:00 [INF] Route matched with {action = "UserDetayIzinEkle", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UserDetayIzinEkleAsync(Entites.Data_Transfer_object.UserIzinDetay.UserIzinDetayEkleDTO) on controller Presentation.Controllers.UserController (Presentation).
+2026-01-11 23:51:50.067 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2026-01-11 23:51:50.073 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2026-01-11 23:51:50.081 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2026-01-11 23:51:50.088 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2026-01-11 23:51:50.094 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2026-01-11 23:51:50.103 +03:00 [DBG] Executing controller factory for controller Presentation.Controllers.UserController (Presentation)
+2026-01-11 23:51:50.456 +03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2026-01-11 23:51:50.522 +03:00 [DBG] Executed controller factory for controller Presentation.Controllers.UserController (Presentation)
+2026-01-11 23:51:50.537 +03:00 [DBG] Attempting to bind parameter 'userIzinDetayEkle' of type 'Entites.Data_Transfer_object.UserIzinDetay.UserIzinDetayEkleDTO' ...
+2026-01-11 23:51:50.546 +03:00 [DBG] Attempting to bind parameter 'userIzinDetayEkle' of type 'Entites.Data_Transfer_object.UserIzinDetay.UserIzinDetayEkleDTO' using the name '' in request data ...
+2026-01-11 23:51:50.554 +03:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2026-01-11 23:51:50.636 +03:00 [DBG] Connection id "0HNIHACHONQ0I", Request id "0HNIHACHONQ0I:00000004": started reading request body.
+2026-01-11 23:51:50.644 +03:00 [DBG] Connection id "0HNIHACHONQ0I", Request id "0HNIHACHONQ0I:00000004": done reading request body.
+2026-01-11 23:51:50.725 +03:00 [DBG] JSON input formatter succeeded, deserializing to type 'Entites.Data_Transfer_object.UserIzinDetay.UserIzinDetayEkleDTO'
+2026-01-11 23:51:50.730 +03:00 [DBG] Done attempting to bind parameter 'userIzinDetayEkle' of type 'Entites.Data_Transfer_object.UserIzinDetay.UserIzinDetayEkleDTO'.
+2026-01-11 23:51:50.734 +03:00 [DBG] Done attempting to bind parameter 'userIzinDetayEkle' of type 'Entites.Data_Transfer_object.UserIzinDetay.UserIzinDetayEkleDTO'.
+2026-01-11 23:51:50.737 +03:00 [DBG] Attempting to validate the bound parameter 'userIzinDetayEkle' of type 'Entites.Data_Transfer_object.UserIzinDetay.UserIzinDetayEkleDTO' ...
+2026-01-11 23:51:50.765 +03:00 [DBG] Done attempting to validate the bound parameter 'userIzinDetayEkle' of type 'Entites.Data_Transfer_object.UserIzinDetay.UserIzinDetayEkleDTO'.
+2026-01-11 23:51:52.868 +03:00 [INF] Entity Framework Core 6.0.10 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: MigrationsAssembly=TaskManagerApi 
+2026-01-11 23:51:53.038 +03:00 [DBG] Compiling query expression: 
+'DbSet<User>()
+    .Any(x => x.Id == __id_0 && x.aktifMi == True)'
+2026-01-11 23:51:53.560 +03:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleAsync<bool>(
+    asyncEnumerable: new SingleQueryingEnumerable<bool>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.SelectExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT EXISTS (
+                SELECT 1
+                FROM users AS u
+                WHERE (u.Id == @__id_0) && (u.aktifMi == CAST(1 AS bit)))), 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, bool>, 
+        Repositories.EFCore.RepositoryContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2026-01-11 23:51:53.698 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-01-11 23:51:53.771 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (67ms).
+2026-01-11 23:51:53.815 +03:00 [DBG] Opening connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:51:54.381 +03:00 [DBG] Opened connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:51:54.416 +03:00 [DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [users] AS [u]
+        WHERE ([u].[Id] = @__id_0) AND ([u].[aktifMi] = CAST(1 AS bit))) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-01-11 23:51:54.598 +03:00 [INF] Executed DbCommand (192ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [users] AS [u]
+        WHERE ([u].[Id] = @__id_0) AND ([u].[aktifMi] = CAST(1 AS bit))) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-01-11 23:51:54.664 +03:00 [DBG] A data reader was disposed.
+2026-01-11 23:51:54.682 +03:00 [DBG] Closing connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:51:54.703 +03:00 [DBG] Closed connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:51:54.712 +03:00 [DBG] Compiling query expression: 
+'DbSet<userIzın>()
+    .FirstOrDefault(x => x.userId == __userId_0)'
+2026-01-11 23:51:54.808 +03:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<userIzın>(
+    asyncEnumerable: new SingleQueryingEnumerable<userIzın>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.SelectExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: userIzın.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: userIzın.HakedilenIzın (int) Required, 1], [Property: userIzın.userId (int) Required, 2] }
+            SELECT TOP(1) u.Id, u.HakedilenIzın, u.userId
+            FROM userIzıns AS u
+            WHERE u.userId == @__userId_0), 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, userIzın>, 
+        Repositories.EFCore.RepositoryContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2026-01-11 23:51:54.840 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-01-11 23:51:54.843 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (3ms).
+2026-01-11 23:51:54.849 +03:00 [DBG] Opening connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:51:54.858 +03:00 [DBG] Opened connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:51:54.862 +03:00 [DBG] Executing DbCommand [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[HakedilenIzın], [u].[userId]
+FROM [userIzıns] AS [u]
+WHERE [u].[userId] = @__userId_0
+2026-01-11 23:51:54.881 +03:00 [INF] Executed DbCommand (19ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[HakedilenIzın], [u].[userId]
+FROM [userIzıns] AS [u]
+WHERE [u].[userId] = @__userId_0
+2026-01-11 23:51:54.948 +03:00 [DBG] Context 'RepositoryContext' started tracking 'userIzın' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-11 23:51:54.991 +03:00 [DBG] A data reader was disposed.
+2026-01-11 23:51:54.993 +03:00 [DBG] Closing connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:51:54.997 +03:00 [DBG] Closed connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:52:00.762 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-01-11 23:52:00.767 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (4ms).
+2026-01-11 23:52:00.772 +03:00 [DBG] Opening connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:52:00.777 +03:00 [DBG] Opened connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:52:00.784 +03:00 [DBG] Executing DbCommand [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[HakedilenIzın], [u].[userId]
+FROM [userIzıns] AS [u]
+WHERE [u].[userId] = @__userId_0
+2026-01-11 23:52:00.793 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[HakedilenIzın], [u].[userId]
+FROM [userIzıns] AS [u]
+WHERE [u].[userId] = @__userId_0
+2026-01-11 23:52:00.802 +03:00 [DBG] A data reader was disposed.
+2026-01-11 23:52:00.805 +03:00 [DBG] Closing connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:52:00.810 +03:00 [DBG] Closed connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:52:00.826 +03:00 [DBG] SaveChanges starting for 'RepositoryContext'.
+2026-01-11 23:52:00.836 +03:00 [DBG] DetectChanges starting for 'RepositoryContext'.
+2026-01-11 23:52:00.866 +03:00 [DBG] The unchanged property 'userIzın.HakedilenIzın' was detected as changed and will be marked as modified. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2026-01-11 23:52:00.893 +03:00 [DBG] An entity of type 'userIzın' tracked by 'RepositoryContext' changed state from '"Unchanged"' to '"Modified"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-11 23:52:00.904 +03:00 [DBG] DetectChanges completed for 'RepositoryContext'.
+2026-01-11 23:52:00.962 +03:00 [DBG] Opening connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:52:00.966 +03:00 [DBG] Opened connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:52:00.976 +03:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2026-01-11 23:52:01.001 +03:00 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2026-01-11 23:52:01.083 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-01-11 23:52:01.086 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (3ms).
+2026-01-11 23:52:01.093 +03:00 [DBG] Executing DbCommand [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [userIzıns] SET [HakedilenIzın] = @p0
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;
+2026-01-11 23:52:01.104 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [userIzıns] SET [HakedilenIzın] = @p0
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;
+2026-01-11 23:52:01.131 +03:00 [DBG] A data reader was disposed.
+2026-01-11 23:52:01.150 +03:00 [DBG] Committing transaction.
+2026-01-11 23:52:01.163 +03:00 [DBG] Committed transaction.
+2026-01-11 23:52:01.175 +03:00 [DBG] Closing connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:52:01.180 +03:00 [DBG] Closed connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:52:01.191 +03:00 [DBG] Disposing transaction.
+2026-01-11 23:52:01.208 +03:00 [DBG] An entity of type 'userIzın' tracked by 'RepositoryContext' changed state from '"Modified"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-11 23:52:01.222 +03:00 [DBG] SaveChanges completed for 'RepositoryContext' with 1 entities written to the database.
+2026-01-11 23:52:01.271 +03:00 [DBG] 'RepositoryContext' generated a temporary value for the property '{2_entityType}.{1_property}'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-11 23:52:01.310 +03:00 [DBG] Context 'RepositoryContext' started tracking 'UserDetayIzın' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-11 23:52:01.316 +03:00 [DBG] SaveChanges starting for 'RepositoryContext'.
+2026-01-11 23:52:01.320 +03:00 [DBG] DetectChanges starting for 'RepositoryContext'.
+2026-01-11 23:52:01.343 +03:00 [DBG] DetectChanges completed for 'RepositoryContext'.
+2026-01-11 23:52:01.348 +03:00 [DBG] Opening connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:52:01.353 +03:00 [DBG] Opened connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:52:01.358 +03:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2026-01-11 23:52:01.362 +03:00 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2026-01-11 23:52:01.379 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-01-11 23:52:01.384 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (5ms).
+2026-01-11 23:52:01.394 +03:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [UserDetayIzın] ([BaslangicTarihi], [BitisTarihi], [IzınDetay], [UserId], [YoneticiOnay])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT [Id]
+FROM [UserDetayIzın]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2026-01-11 23:52:01.407 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [UserDetayIzın] ([BaslangicTarihi], [BitisTarihi], [IzınDetay], [UserId], [YoneticiOnay])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT [Id]
+FROM [UserDetayIzın]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2026-01-11 23:52:01.439 +03:00 [DBG] The foreign key property 'UserDetayIzın.Id' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2026-01-11 23:52:01.454 +03:00 [DBG] A data reader was disposed.
+2026-01-11 23:52:01.457 +03:00 [DBG] Committing transaction.
+2026-01-11 23:52:01.462 +03:00 [DBG] Committed transaction.
+2026-01-11 23:52:01.466 +03:00 [DBG] Closing connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:52:01.470 +03:00 [DBG] Closed connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:52:01.473 +03:00 [DBG] Disposing transaction.
+2026-01-11 23:52:01.482 +03:00 [DBG] An entity of type 'UserDetayIzın' tracked by 'RepositoryContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-11 23:52:01.491 +03:00 [DBG] SaveChanges completed for 'RepositoryContext' with 1 entities written to the database.
+2026-01-11 23:52:01.503 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2026-01-11 23:52:01.517 +03:00 [DBG] No information found on request to perform content negotiation.
+2026-01-11 23:52:01.521 +03:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2026-01-11 23:52:01.524 +03:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2026-01-11 23:52:01.527 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2026-01-11 23:52:01.530 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2026-01-11 23:52:01.549 +03:00 [INF] Executed action Presentation.Controllers.UserController.UserDetayIzinEkleAsync (Presentation) in 11438.0623ms
+2026-01-11 23:52:01.557 +03:00 [INF] Executed endpoint 'Presentation.Controllers.UserController.UserDetayIzinEkleAsync (Presentation)'
+2026-01-11 23:52:01.568 +03:00 [DBG] Connection id "0HNIHACHONQ0I" completed keep alive response.
+2026-01-11 23:52:01.579 +03:00 [DBG] 'RepositoryContext' disposed.
+2026-01-11 23:52:01.590 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:1000/api/users/izinDetayEkle application/json 155 - 200 - text/plain;+charset=utf-8 12131.4646ms
+2026-01-11 23:52:24.319 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:1000/api/users/izin-sil?Iz%C4%B1nId=8 - -
+2026-01-11 23:52:24.354 +03:00 [DBG] DELETE requests are not supported
+2026-01-11 23:52:24.367 +03:00 [DBG] 1 candidate(s) found for the request path '/api/users/izin-sil'
+2026-01-11 23:52:24.371 +03:00 [DBG] Endpoint 'Presentation.Controllers.UserController.DeleteUserIzin (Presentation)' with route pattern 'api/users/izin-sil' is valid for the request path '/api/users/izin-sil'
+2026-01-11 23:52:24.376 +03:00 [DBG] Request matched endpoint 'Presentation.Controllers.UserController.DeleteUserIzin (Presentation)'
+2026-01-11 23:52:24.380 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2026-01-11 23:52:24.400 +03:00 [INF] Executing endpoint 'Presentation.Controllers.UserController.DeleteUserIzin (Presentation)'
+2026-01-11 23:52:24.420 +03:00 [INF] Route matched with {action = "DeleteUserIzin", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteUserIzin(Entites.Data_Transfer_object.UserIzinDetay.userIzınDetaySılDTO) on controller Presentation.Controllers.UserController (Presentation).
+2026-01-11 23:52:24.439 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2026-01-11 23:52:24.499 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2026-01-11 23:52:24.507 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2026-01-11 23:52:24.532 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2026-01-11 23:52:24.540 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2026-01-11 23:52:24.546 +03:00 [DBG] Executing controller factory for controller Presentation.Controllers.UserController (Presentation)
+2026-01-11 23:52:24.554 +03:00 [DBG] Executed controller factory for controller Presentation.Controllers.UserController (Presentation)
+2026-01-11 23:52:24.577 +03:00 [DBG] Attempting to bind parameter 'dto' of type 'Entites.Data_Transfer_object.UserIzinDetay.userIzınDetaySılDTO' ...
+2026-01-11 23:52:24.583 +03:00 [DBG] Attempting to bind parameter 'dto' of type 'Entites.Data_Transfer_object.UserIzinDetay.userIzınDetaySılDTO' using the name '' in request data ...
+2026-01-11 23:52:24.605 +03:00 [DBG] Attempting to bind property 'Entites.Data_Transfer_object.UserIzinDetay.userIzınDetaySılDTO.IzınId' of type 'System.Int32' using the name 'IzınId' in request data ...
+2026-01-11 23:52:24.626 +03:00 [DBG] Done attempting to bind property 'Entites.Data_Transfer_object.UserIzinDetay.userIzınDetaySılDTO.IzınId' of type 'System.Int32'.
+2026-01-11 23:52:24.635 +03:00 [DBG] Done attempting to bind parameter 'dto' of type 'Entites.Data_Transfer_object.UserIzinDetay.userIzınDetaySılDTO'.
+2026-01-11 23:52:24.641 +03:00 [DBG] Done attempting to bind parameter 'dto' of type 'Entites.Data_Transfer_object.UserIzinDetay.userIzınDetaySılDTO'.
+2026-01-11 23:52:24.645 +03:00 [DBG] Attempting to validate the bound parameter 'dto' of type 'Entites.Data_Transfer_object.UserIzinDetay.userIzınDetaySılDTO' ...
+2026-01-11 23:52:24.652 +03:00 [DBG] Done attempting to validate the bound parameter 'dto' of type 'Entites.Data_Transfer_object.UserIzinDetay.userIzınDetaySılDTO'.
+2026-01-11 23:52:32.072 +03:00 [INF] Entity Framework Core 6.0.10 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: MigrationsAssembly=TaskManagerApi 
+2026-01-11 23:52:32.099 +03:00 [DBG] Compiling query expression: 
+'DbSet<UserDetayIzın>()
+    .FirstOrDefault(x => x.Id == __id_0)'
+2026-01-11 23:52:32.110 +03:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<UserDetayIzın>(
+    asyncEnumerable: new SingleQueryingEnumerable<UserDetayIzın>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.SelectExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: UserDetayIzın.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: UserDetayIzın.BaslangicTarihi (DateTime) Required, 1], [Property: UserDetayIzın.BitisTarihi (DateTime) Required, 2], [Property: UserDetayIzın.IzınDetay (IzınDetayEnum) Required, 3], [Property: UserDetayIzın.UserId (int) Required, 4], [Property: UserDetayIzın.YoneticiOnay (bool) Required, 5] }
+            SELECT TOP(1) u.Id, u.BaslangicTarihi, u.BitisTarihi, u.IzınDetay, u.UserId, u.YoneticiOnay
+            FROM UserDetayIzın AS u
+            WHERE u.Id == @__id_0), 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, UserDetayIzın>, 
+        Repositories.EFCore.RepositoryContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2026-01-11 23:52:32.116 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-01-11 23:52:32.123 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (7ms).
+2026-01-11 23:52:32.128 +03:00 [DBG] Opening connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:52:32.134 +03:00 [DBG] Opened connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:52:32.139 +03:00 [DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[BaslangicTarihi], [u].[BitisTarihi], [u].[IzınDetay], [u].[UserId], [u].[YoneticiOnay]
+FROM [UserDetayIzın] AS [u]
+WHERE [u].[Id] = @__id_0
+2026-01-11 23:52:32.151 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[BaslangicTarihi], [u].[BitisTarihi], [u].[IzınDetay], [u].[UserId], [u].[YoneticiOnay]
+FROM [UserDetayIzın] AS [u]
+WHERE [u].[Id] = @__id_0
+2026-01-11 23:52:32.194 +03:00 [DBG] Context 'RepositoryContext' started tracking 'UserDetayIzın' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-11 23:52:32.201 +03:00 [DBG] A data reader was disposed.
+2026-01-11 23:52:32.204 +03:00 [DBG] Closing connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:52:32.208 +03:00 [DBG] Closed connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:53:27.043 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-01-11 23:53:27.046 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (3ms).
+2026-01-11 23:53:27.049 +03:00 [DBG] Opening connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:53:27.052 +03:00 [DBG] Opened connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:53:27.055 +03:00 [DBG] Executing DbCommand [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[HakedilenIzın], [u].[userId]
+FROM [userIzıns] AS [u]
+WHERE [u].[userId] = @__userId_0
+2026-01-11 23:53:27.063 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[HakedilenIzın], [u].[userId]
+FROM [userIzıns] AS [u]
+WHERE [u].[userId] = @__userId_0
+2026-01-11 23:53:27.097 +03:00 [DBG] Context 'RepositoryContext' started tracking 'userIzın' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-11 23:53:27.103 +03:00 [DBG] A data reader was disposed.
+2026-01-11 23:53:27.107 +03:00 [DBG] Closing connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:53:27.113 +03:00 [DBG] Closed connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:55:58.143 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2026-01-11 23:55:58.462 +03:00 [DBG] Hosting starting
+2026-01-11 23:55:58.542 +03:00 [INF] User profile is available. Using 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-01-11 23:55:58.550 +03:00 [DBG] Reading data from file 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys\key-06314caf-114b-4447-b671-26cff94eef42.xml'.
+2026-01-11 23:55:58.561 +03:00 [DBG] Reading data from file 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys\key-090bb267-211d-492b-a818-8821e0be7068.xml'.
+2026-01-11 23:55:58.565 +03:00 [DBG] Reading data from file 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys\key-48d29924-c2fa-4ef4-a60c-de094dd470d3.xml'.
+2026-01-11 23:55:58.569 +03:00 [DBG] Reading data from file 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys\key-55f98cc5-78aa-424c-bf70-872acedb0f6c.xml'.
+2026-01-11 23:55:58.581 +03:00 [DBG] Found key {06314caf-114b-4447-b671-26cff94eef42}.
+2026-01-11 23:55:58.598 +03:00 [DBG] Found key {090bb267-211d-492b-a818-8821e0be7068}.
+2026-01-11 23:55:58.603 +03:00 [DBG] Found key {48d29924-c2fa-4ef4-a60c-de094dd470d3}.
+2026-01-11 23:55:58.607 +03:00 [DBG] Found key {55f98cc5-78aa-424c-bf70-872acedb0f6c}.
+2026-01-11 23:55:58.633 +03:00 [DBG] Considering key {48d29924-c2fa-4ef4-a60c-de094dd470d3} with expiration date 2026-04-04 17:42:23Z as default key.
+2026-01-11 23:55:58.647 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2026-01-11 23:55:58.664 +03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2026-01-11 23:55:58.669 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2026-01-11 23:55:58.685 +03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2026-01-11 23:55:58.695 +03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2026-01-11 23:55:58.707 +03:00 [DBG] Using key {48d29924-c2fa-4ef4-a60c-de094dd470d3} as the default key.
+2026-01-11 23:55:58.712 +03:00 [DBG] Key ring with default key {48d29924-c2fa-4ef4-a60c-de094dd470d3} was loaded during application startup.
+2026-01-11 23:55:59.072 +03:00 [WRN] Overriding address(es) 'http://localhost:1000'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2026-01-11 23:55:59.152 +03:00 [INF] Now listening on: http://localhost:1000
+2026-01-11 23:55:59.155 +03:00 [DBG] Loaded hosting startup assembly TaskManagerApi
+2026-01-11 23:55:59.159 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2026-01-11 23:55:59.161 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2026-01-11 23:55:59.164 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2026-01-11 23:55:59.517 +03:00 [DBG] Connection id "0HNIHAF9DU4SP" received FIN.
+2026-01-11 23:55:59.561 +03:00 [DBG] Connection id "0HNIHAF9DU4SP" accepted.
+2026-01-11 23:55:59.576 +03:00 [DBG] Connection id "0HNIHAF9DU4SP" started.
+2026-01-11 23:55:59.579 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-11 23:55:59.625 +03:00 [DBG] Connection id "0HNIHAF9DU4SP" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-01-11 23:55:59.640 +03:00 [INF] Hosting environment: Development
+2026-01-11 23:55:59.666 +03:00 [DBG] Connection id "0HNIHAF9DU4SP" disconnecting.
+2026-01-11 23:55:59.692 +03:00 [INF] Content root path: C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManagerApi\TaskManager\
+2026-01-11 23:55:59.736 +03:00 [DBG] Connection id "0HNIHAF9DU4SP" stopped.
+2026-01-11 23:55:59.779 +03:00 [DBG] Hosting started
+2026-01-11 23:56:01.696 +03:00 [DBG] Connection id "0HNIHAF9DU4SQ" accepted.
+2026-01-11 23:56:01.847 +03:00 [DBG] Connection id "0HNIHAF9DU4SQ" started.
+2026-01-11 23:56:02.436 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:1000/swagger/index.html - -
+2026-01-11 23:56:03.109 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2026-01-11 23:56:03.559 +03:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2026-01-11 23:56:03.592 +03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2026-01-11 23:56:03.708 +03:00 [DBG] Response markup was updated to include Browser Link script injection.
+2026-01-11 23:56:03.772 +03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2026-01-11 23:56:03.792 +03:00 [DBG] Connection id "0HNIHAF9DU4SQ" completed keep alive response.
+2026-01-11 23:56:03.823 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:1000/swagger/index.html - - - 200 - text/html;charset=utf-8 1412.8773ms
+2026-01-11 23:56:04.009 +03:00 [DBG] Connection id "0HNIHAF9DU4SR" accepted.
+2026-01-11 23:56:04.038 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:1000/_framework/aspnetcore-browser-refresh.js - -
+2026-01-11 23:56:04.047 +03:00 [DBG] Connection id "0HNIHAF9DU4SR" started.
+2026-01-11 23:56:04.098 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:1000/_vs/browserLink - -
+2026-01-11 23:56:04.101 +03:00 [DBG] Connection id "0HNIHAF9DU4SQ" completed keep alive response.
+2026-01-11 23:56:04.117 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:1000/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 79.2420ms
+2026-01-11 23:56:04.397 +03:00 [DBG] Connection id "0HNIHAF9DU4SR" completed keep alive response.
+2026-01-11 23:56:04.419 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:1000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 321.2742ms
+2026-01-11 23:56:04.557 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:1000/swagger/v1/swagger.json - -
+2026-01-11 23:56:04.646 +03:00 [DBG] Connection id "0HNIHAF9DU4SR" completed keep alive response.
+2026-01-11 23:56:04.737 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:1000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 180.1477ms
+2026-01-11 23:56:15.173 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:1000/api/users/izin-sil?Iz%C4%B1nId=8 - -
+2026-01-11 23:56:15.180 +03:00 [DBG] DELETE requests are not supported
+2026-01-11 23:56:15.189 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-01-11 23:56:15.247 +03:00 [DBG] 1 candidate(s) found for the request path '/api/users/izin-sil'
+2026-01-11 23:56:15.274 +03:00 [DBG] Endpoint 'Presentation.Controllers.UserController.DeleteUserIzin (Presentation)' with route pattern 'api/users/izin-sil' is valid for the request path '/api/users/izin-sil'
+2026-01-11 23:56:15.280 +03:00 [DBG] Request matched endpoint 'Presentation.Controllers.UserController.DeleteUserIzin (Presentation)'
+2026-01-11 23:56:15.421 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2026-01-11 23:56:15.543 +03:00 [INF] Executing endpoint 'Presentation.Controllers.UserController.DeleteUserIzin (Presentation)'
+2026-01-11 23:56:15.619 +03:00 [INF] Route matched with {action = "DeleteUserIzin", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteUserIzin(Entites.Data_Transfer_object.UserIzinDetay.userIzınDetaySılDTO) on controller Presentation.Controllers.UserController (Presentation).
+2026-01-11 23:56:15.628 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2026-01-11 23:56:15.635 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2026-01-11 23:56:15.641 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2026-01-11 23:56:15.650 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2026-01-11 23:56:15.656 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2026-01-11 23:56:15.663 +03:00 [DBG] Executing controller factory for controller Presentation.Controllers.UserController (Presentation)
+2026-01-11 23:56:15.943 +03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2026-01-11 23:56:15.991 +03:00 [DBG] Executed controller factory for controller Presentation.Controllers.UserController (Presentation)
+2026-01-11 23:56:16.012 +03:00 [DBG] Attempting to bind parameter 'dto' of type 'Entites.Data_Transfer_object.UserIzinDetay.userIzınDetaySılDTO' ...
+2026-01-11 23:56:16.020 +03:00 [DBG] Attempting to bind parameter 'dto' of type 'Entites.Data_Transfer_object.UserIzinDetay.userIzınDetaySılDTO' using the name '' in request data ...
+2026-01-11 23:56:16.036 +03:00 [DBG] Attempting to bind property 'Entites.Data_Transfer_object.UserIzinDetay.userIzınDetaySılDTO.IzınId' of type 'System.Int32' using the name 'IzınId' in request data ...
+2026-01-11 23:56:16.046 +03:00 [DBG] Done attempting to bind property 'Entites.Data_Transfer_object.UserIzinDetay.userIzınDetaySılDTO.IzınId' of type 'System.Int32'.
+2026-01-11 23:56:16.057 +03:00 [DBG] Done attempting to bind parameter 'dto' of type 'Entites.Data_Transfer_object.UserIzinDetay.userIzınDetaySılDTO'.
+2026-01-11 23:56:16.063 +03:00 [DBG] Done attempting to bind parameter 'dto' of type 'Entites.Data_Transfer_object.UserIzinDetay.userIzınDetaySılDTO'.
+2026-01-11 23:56:16.068 +03:00 [DBG] Attempting to validate the bound parameter 'dto' of type 'Entites.Data_Transfer_object.UserIzinDetay.userIzınDetaySılDTO' ...
+2026-01-11 23:56:16.083 +03:00 [DBG] Done attempting to validate the bound parameter 'dto' of type 'Entites.Data_Transfer_object.UserIzinDetay.userIzınDetaySılDTO'.
+2026-01-11 23:56:23.398 +03:00 [INF] Entity Framework Core 6.0.10 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: MigrationsAssembly=TaskManagerApi 
+2026-01-11 23:56:23.547 +03:00 [DBG] Compiling query expression: 
+'DbSet<UserDetayIzın>()
+    .FirstOrDefault(x => x.Id == __id_0)'
+2026-01-11 23:56:24.132 +03:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<UserDetayIzın>(
+    asyncEnumerable: new SingleQueryingEnumerable<UserDetayIzın>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.SelectExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: UserDetayIzın.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: UserDetayIzın.BaslangicTarihi (DateTime) Required, 1], [Property: UserDetayIzın.BitisTarihi (DateTime) Required, 2], [Property: UserDetayIzın.IzınDetay (IzınDetayEnum) Required, 3], [Property: UserDetayIzın.UserId (int) Required, 4], [Property: UserDetayIzın.YoneticiOnay (bool) Required, 5] }
+            SELECT TOP(1) u.Id, u.BaslangicTarihi, u.BitisTarihi, u.IzınDetay, u.UserId, u.YoneticiOnay
+            FROM UserDetayIzın AS u
+            WHERE u.Id == @__id_0), 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, UserDetayIzın>, 
+        Repositories.EFCore.RepositoryContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2026-01-11 23:56:24.252 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-01-11 23:56:24.352 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (93ms).
+2026-01-11 23:56:24.385 +03:00 [DBG] Opening connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:56:25.013 +03:00 [DBG] Opened connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:56:25.053 +03:00 [DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[BaslangicTarihi], [u].[BitisTarihi], [u].[IzınDetay], [u].[UserId], [u].[YoneticiOnay]
+FROM [UserDetayIzın] AS [u]
+WHERE [u].[Id] = @__id_0
+2026-01-11 23:56:25.224 +03:00 [INF] Executed DbCommand (183ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[BaslangicTarihi], [u].[BitisTarihi], [u].[IzınDetay], [u].[UserId], [u].[YoneticiOnay]
+FROM [UserDetayIzın] AS [u]
+WHERE [u].[Id] = @__id_0
+2026-01-11 23:56:25.285 +03:00 [DBG] Context 'RepositoryContext' started tracking 'UserDetayIzın' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-11 23:56:25.367 +03:00 [DBG] A data reader was disposed.
+2026-01-11 23:56:25.389 +03:00 [DBG] Closing connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:56:25.412 +03:00 [DBG] Closed connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:56:36.519 +03:00 [DBG] Compiling query expression: 
+'DbSet<userIzın>()
+    .FirstOrDefault(x => x.userId == __userId_0)'
+2026-01-11 23:56:36.530 +03:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<userIzın>(
+    asyncEnumerable: new SingleQueryingEnumerable<userIzın>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.SelectExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: userIzın.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: userIzın.HakedilenIzın (int) Required, 1], [Property: userIzın.userId (int) Required, 2] }
+            SELECT TOP(1) u.Id, u.HakedilenIzın, u.userId
+            FROM userIzıns AS u
+            WHERE u.userId == @__userId_0), 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, userIzın>, 
+        Repositories.EFCore.RepositoryContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2026-01-11 23:56:36.537 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-01-11 23:56:36.542 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (5ms).
+2026-01-11 23:56:36.547 +03:00 [DBG] Opening connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:56:36.554 +03:00 [DBG] Opened connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:56:36.560 +03:00 [DBG] Executing DbCommand [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[HakedilenIzın], [u].[userId]
+FROM [userIzıns] AS [u]
+WHERE [u].[userId] = @__userId_0
+2026-01-11 23:56:36.604 +03:00 [INF] Executed DbCommand (44ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[HakedilenIzın], [u].[userId]
+FROM [userIzıns] AS [u]
+WHERE [u].[userId] = @__userId_0
+2026-01-11 23:56:36.617 +03:00 [DBG] Context 'RepositoryContext' started tracking 'userIzın' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-11 23:56:36.627 +03:00 [DBG] A data reader was disposed.
+2026-01-11 23:56:36.630 +03:00 [DBG] Closing connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:56:36.637 +03:00 [DBG] Closed connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:56:58.635 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-01-11 23:56:58.639 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (4ms).
+2026-01-11 23:56:58.645 +03:00 [DBG] Opening connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:56:58.650 +03:00 [DBG] Opened connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:56:58.655 +03:00 [DBG] Executing DbCommand [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[HakedilenIzın], [u].[userId]
+FROM [userIzıns] AS [u]
+WHERE [u].[userId] = @__userId_0
+2026-01-11 23:56:58.665 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[HakedilenIzın], [u].[userId]
+FROM [userIzıns] AS [u]
+WHERE [u].[userId] = @__userId_0
+2026-01-11 23:56:58.684 +03:00 [DBG] A data reader was disposed.
+2026-01-11 23:56:58.687 +03:00 [DBG] Closing connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:56:58.690 +03:00 [DBG] Closed connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:56:58.710 +03:00 [DBG] SaveChanges starting for 'RepositoryContext'.
+2026-01-11 23:56:58.719 +03:00 [DBG] DetectChanges starting for 'RepositoryContext'.
+2026-01-11 23:56:58.768 +03:00 [DBG] The unchanged property 'userIzın.HakedilenIzın' was detected as changed and will be marked as modified. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2026-01-11 23:56:58.785 +03:00 [DBG] An entity of type 'userIzın' tracked by 'RepositoryContext' changed state from '"Unchanged"' to '"Modified"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-11 23:56:58.797 +03:00 [DBG] DetectChanges completed for 'RepositoryContext'.
+2026-01-11 23:56:58.826 +03:00 [DBG] Opening connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:56:58.833 +03:00 [DBG] Opened connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:56:58.842 +03:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2026-01-11 23:56:58.866 +03:00 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2026-01-11 23:56:58.930 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-01-11 23:56:58.935 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (5ms).
+2026-01-11 23:56:58.942 +03:00 [DBG] Executing DbCommand [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [userIzıns] SET [HakedilenIzın] = @p0
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;
+2026-01-11 23:56:58.951 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [userIzıns] SET [HakedilenIzın] = @p0
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;
+2026-01-11 23:56:58.982 +03:00 [DBG] A data reader was disposed.
+2026-01-11 23:56:59.000 +03:00 [DBG] Committing transaction.
+2026-01-11 23:56:59.015 +03:00 [DBG] Committed transaction.
+2026-01-11 23:56:59.025 +03:00 [DBG] Closing connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:56:59.031 +03:00 [DBG] Closed connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:56:59.042 +03:00 [DBG] Disposing transaction.
+2026-01-11 23:56:59.058 +03:00 [DBG] An entity of type 'userIzın' tracked by 'RepositoryContext' changed state from '"Modified"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-11 23:56:59.073 +03:00 [DBG] SaveChanges completed for 'RepositoryContext' with 1 entities written to the database.
+2026-01-11 23:57:00.767 +03:00 [DBG] An entity of type 'UserDetayIzın' tracked by 'RepositoryContext' changed state from '"Unchanged"' to '"Deleted"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-11 23:57:00.777 +03:00 [DBG] SaveChanges starting for 'RepositoryContext'.
+2026-01-11 23:57:00.781 +03:00 [DBG] DetectChanges starting for 'RepositoryContext'.
+2026-01-11 23:57:00.790 +03:00 [DBG] DetectChanges completed for 'RepositoryContext'.
+2026-01-11 23:57:00.797 +03:00 [DBG] Opening connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:57:00.803 +03:00 [DBG] Opened connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:57:00.808 +03:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2026-01-11 23:57:00.813 +03:00 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2026-01-11 23:57:00.826 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-01-11 23:57:00.831 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (4ms).
+2026-01-11 23:57:00.836 +03:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [UserDetayIzın]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+2026-01-11 23:57:00.845 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [UserDetayIzın]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+2026-01-11 23:57:00.855 +03:00 [DBG] A data reader was disposed.
+2026-01-11 23:57:00.859 +03:00 [DBG] Committing transaction.
+2026-01-11 23:57:00.863 +03:00 [DBG] Committed transaction.
+2026-01-11 23:57:00.866 +03:00 [DBG] Closing connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:57:00.871 +03:00 [DBG] Closed connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-11 23:57:00.876 +03:00 [DBG] Disposing transaction.
+2026-01-11 23:57:00.887 +03:00 [DBG] An entity of type 'UserDetayIzın' tracked by 'RepositoryContext' changed state from '"Deleted"' to '"Detached"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-11 23:57:00.896 +03:00 [DBG] SaveChanges completed for 'RepositoryContext' with 1 entities written to the database.
+2026-01-11 23:57:00.909 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2026-01-11 23:57:00.921 +03:00 [INF] Executed action Presentation.Controllers.UserController.DeleteUserIzin (Presentation) in 45253.8547ms
+2026-01-11 23:57:00.929 +03:00 [INF] Executed endpoint 'Presentation.Controllers.UserController.DeleteUserIzin (Presentation)'
+2026-01-11 23:57:00.942 +03:00 [DBG] Connection id "0HNIHAF9DU4SR" completed keep alive response.
+2026-01-11 23:57:00.953 +03:00 [DBG] 'RepositoryContext' disposed.
+2026-01-11 23:57:00.963 +03:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:1000/api/users/izin-sil?Iz%C4%B1nId=8 - - - 204 - - 45789.5399ms

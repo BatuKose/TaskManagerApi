@@ -218,6 +218,22 @@
   },
   {
     "ContainingType": "Presentation.Controllers.UserController",
+    "Method": "DeleteUserIzin",
+    "RelativePath": "api/users/izin-sil",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Iz\u0131nId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.UserController",
     "Method": "UserDetayIzinEkleAsync",
     "RelativePath": "api/users/izinDetayEkle",
     "HttpMethod": "POST",

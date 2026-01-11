@@ -13,5 +13,8 @@ namespace Repositories.Contracts
         Task<userIzın> IzınGetirAsync(int userId);
         Task<UserDetayIzın> UserDetayIzinEkle(UserDetayIzın izin);
         Task<userIzın> IzınGuncelleAsync(int userId, int yeniIzin);
+        Task<UserDetayIzın?> IzinDetayGetirAsync(int id);
+        Task UserDetayIzinSilAsync(UserDetayIzın izin);
+
     }
 }

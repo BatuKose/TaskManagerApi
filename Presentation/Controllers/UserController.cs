@@ -5,6 +5,7 @@ using Entites.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Query.Internal;
+using Services;
 using Services.Contracts;
 using System;
 using System.Collections.Generic;
@@ -71,8 +72,8 @@ namespace Presentation.Controllers
             await _ServiceManager.UserService.IzınEkleAsync(id);
             return Ok("izin eklendi");
         }
-        [AllowAnonymous]
-        //  [Authorize(Policy = "Admin-Manage")]
+       
+         [Authorize(Policy = "Worker-Manager")]
         [HttpPut("{id}/izin")]
         public async Task<IActionResult> UserIzinGuncelleAsync(int id, [FromBody] int izin)
         {
@@ -82,13 +83,25 @@ namespace Presentation.Controllers
 
 
         [AllowAnonymous]
-      //  [Authorize(Policy = "Admin-Manage")]
+        // Authorize(Policy = "Worker-Manager")]
         [HttpPost("izinDetayEkle")]
         public async Task<IActionResult> UserDetayIzinEkleAsync([FromBody] UserIzinDetayEkleDTO userIzinDetayEkle  )
         {
            if(!ModelState.IsValid) return BadRequest(ModelState);
            await _ServiceManager.UserService.UserIzinDetayEkleAsync( userIzinDetayEkle);
             return Ok("İzin Detay Eklendi");
+        }
+        [AllowAnonymous]
+       // [Authorize(Policy = "Worker-Manager")]
+        [HttpDelete("izin-sil")]
+        public async Task<IActionResult> DeleteUserIzin([FromQuery] userIzınDetaySılDTO dto)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            await _ServiceManager.UserService.DeleteUserIzinAsync(dto.IzınId);
+
+            return NoContent(); 
         }
     }
 }

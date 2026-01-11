@@ -188,5 +188,25 @@ namespace Services
             };
             return ReturnDto;
         }
+
+        public async Task DeleteUserIzinAsync(int izinId)
+        {
+            var izin = await _repositoryManager.UserIzınRepository.IzinDetayGetirAsync(izinId);
+            if (izin is null) throw new NotFoundException("Kullanıcının izin bilgisi bulunamadı.");
+
+            if (izin.YoneticiOnay) throw new BadRequestException("Onaylanmış izin bilgisi silinemez.");
+            var mevcutIzın= await _repositoryManager.UserIzınRepository.IzınGetirAsync(izin.UserId);
+            var eklenecekGunSayısı = (izin.BitisTarihi - izin.BaslangicTarihi).Days + 1;
+            int ToplamHakedis=mevcutIzın.HakedilenIzın+ eklenecekGunSayısı;
+            var userId= izin.UserId;
+            //var izinGuncelle = new userIzın()
+            //{
+            //    Id=izin.UserId,
+            //    userId=izin.UserId,
+            //    HakedilenIzın=eklenecekGunSayısı
+            //};
+            await _repositoryManager.UserIzınRepository.IzınGuncelleAsync(userId, ToplamHakedis);
+            await _repositoryManager.UserIzınRepository.UserDetayIzinSilAsync(izin);
+        }
     }
 }

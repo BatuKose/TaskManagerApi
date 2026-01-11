@@ -45,13 +45,23 @@ namespace Repositories.EFCore
             await _context.SaveChangesAsync();
             return izinEntity;
         }
+        
 
-       
         public async Task<UserDetayIzın>UserDetayIzinEkle(UserDetayIzın izin)
         {
             _context.UserDetayIzın.Add(izin);
             await _context.SaveChangesAsync();
             return izin;
+        }
+        public async Task<UserDetayIzın?> IzinDetayGetirAsync(int id)
+        {
+            return await _context.UserDetayIzın
+                .FirstOrDefaultAsync(x => x.Id == id);
+        }
+        public async Task UserDetayIzinSilAsync(UserDetayIzın izin)
+        {
+            _context.UserDetayIzın.Remove(izin);
+            await _context.SaveChangesAsync();
         }
     }
 }
