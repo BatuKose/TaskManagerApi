@@ -35,7 +35,8 @@ namespace TaskManagerApi.Extensions
             services.AddScoped<IjobDetailRepository,jobDetailRepository>();
             services.AddScoped<IAuthenticationRepository, AuthenticationRepository>();
             services.AddScoped<IUserIzınRepository, userIzınRepository>();
-         
+            services.AddScoped<IZimmetDemirbasRepository, ZimmetDemirbasRepository>();
+
         }
         public static void ConfigureServiceManager(this IServiceCollection services)
         {
@@ -45,6 +46,7 @@ namespace TaskManagerApi.Extensions
             services.AddScoped<IJobHeaderService,JobHeaderManager>();
             services.AddScoped<IJobDetailService,JobDetailManager>();
             services.AddScoped<IAuthenticationService,AuthenticationManager>();
+            services.AddScoped<IZimmetDemirbasService,ZimmetDemirbasManager>();
         }
 
         public static void AddSerilogLogging(this WebApplicationBuilder builder)

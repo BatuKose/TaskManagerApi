@@ -19,7 +19,7 @@ namespace Services
         private readonly Lazy<IJobDetailService> _jobDetailManager;
         private readonly Lazy<IAuthenticationService> _authenticationService;
         private readonly Lazy<IHttpContextAccessor> _httpContextAccessor;
-
+        private readonly Lazy<IZimmetDemirbasService> _zimmetDemirbasService;
 
 
         public ServiceManager(IRepositoryManager repositoryManager,IConfiguration configuration, IHttpContextAccessor httpContextAccessor)
@@ -29,6 +29,7 @@ namespace Services
             _jobHeaderManager = new Lazy<IJobHeaderService>(() => new JobHeaderManager(repositoryManager));
             _jobDetailManager = new Lazy<IJobDetailService>(() => new JobDetailManager(repositoryManager));
             _authenticationService = new Lazy<IAuthenticationService>(() => new AuthenticationManager(repositoryManager, configuration, httpContextAccessor));
+            _zimmetDemirbasService = new Lazy<IZimmetDemirbasService>(() => new ZimmetDemirbasManager(repositoryManager));
         }
         public IUserService UserService => _userService.Value;
         public IRoleManager RoleManager => _roleManager.Value;
@@ -37,7 +38,7 @@ namespace Services
         public IJobDetailService JobDetailService => _jobDetailManager.Value;
         public IAuthenticationService authenticationService => _authenticationService.Value;
 
-       
+       public IZimmetDemirbasService ZimmetDemirbasService => _zimmetDemirbasService.Value;
     }
 
 }

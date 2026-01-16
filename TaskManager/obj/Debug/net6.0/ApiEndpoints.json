@@ -395,5 +395,42 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "Presentation.Controllers.ZimmetDemirbasController",
+    "Method": "InsertCategoryAsync",
+    "RelativePath": "ZimmetDemirbas/InsertCategory",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "categoryDTO",
+        "Type": "Entites.Data_Transfer_object.ZimmetDemirbas.CreateCategoryDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.ZimmetDemirbasController",
+    "Method": "UpdateCategoryAsync",
+    "RelativePath": "ZimmetDemirbas/UpdateCategory/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updateCategoryDTO",
+        "Type": "Entites.Data_Transfer_object.ZimmetDemirbas.UpdateCategoryDTO",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

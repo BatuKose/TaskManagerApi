@@ -1,0 +1,896 @@
+2026-01-17 00:45:48.906 +03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2026-01-17 00:45:50.123 +03:00 [INF] Entity Framework Core 6.0.10 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: MigrationsAssembly=TaskManagerApi 
+2026-01-17 00:45:50.429 +03:00 [DBG] Context 'RepositoryContext' started tracking 'Role' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-17 00:45:50.430 +03:00 [DBG] Context 'RepositoryContext' started tracking 'Role' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-17 00:45:50.480 +03:00 [DBG] Context 'RepositoryContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-17 00:45:50.515 +03:00 [DBG] Context 'RepositoryContext' started tracking 'Role' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-17 00:45:50.516 +03:00 [DBG] Context 'RepositoryContext' started tracking 'Role' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-17 00:45:50.578 +03:00 [DBG] Context 'RepositoryContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-17 00:45:50.608 +03:00 [DBG] An entity of type 'Role' tracked by 'RepositoryContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-17 00:45:50.613 +03:00 [DBG] An entity of type 'Role' tracked by 'RepositoryContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-17 00:45:50.614 +03:00 [DBG] An entity of type 'User' tracked by 'RepositoryContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-17 00:45:50.643 +03:00 [DBG] DetectChanges starting for 'RepositoryContext'.
+2026-01-17 00:45:50.653 +03:00 [DBG] DetectChanges completed for 'RepositoryContext'.
+2026-01-17 00:45:50.654 +03:00 [DBG] DetectChanges starting for 'RepositoryContext'.
+2026-01-17 00:45:50.654 +03:00 [DBG] DetectChanges completed for 'RepositoryContext'.
+2026-01-17 00:45:50.660 +03:00 [DBG] Context 'RepositoryContext' started tracking 'Role' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-17 00:45:50.661 +03:00 [DBG] Context 'RepositoryContext' started tracking 'Role' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-17 00:45:50.661 +03:00 [DBG] Context 'RepositoryContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-17 00:45:50.661 +03:00 [DBG] Context 'RepositoryContext' started tracking 'Role' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-17 00:45:50.661 +03:00 [DBG] Context 'RepositoryContext' started tracking 'Role' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-17 00:45:50.661 +03:00 [DBG] Context 'RepositoryContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-17 00:45:50.661 +03:00 [DBG] An entity of type 'Role' tracked by 'RepositoryContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-17 00:45:50.662 +03:00 [DBG] An entity of type 'Role' tracked by 'RepositoryContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-17 00:45:50.662 +03:00 [DBG] An entity of type 'User' tracked by 'RepositoryContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-17 00:45:50.662 +03:00 [DBG] DetectChanges starting for 'RepositoryContext'.
+2026-01-17 00:45:50.662 +03:00 [DBG] DetectChanges completed for 'RepositoryContext'.
+2026-01-17 00:45:50.662 +03:00 [DBG] DetectChanges starting for 'RepositoryContext'.
+2026-01-17 00:45:50.662 +03:00 [DBG] DetectChanges completed for 'RepositoryContext'.
+2026-01-17 00:45:50.776 +03:00 [DBG] 'RepositoryContext' disposed.
+2026-01-17 00:46:09.895 +03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2026-01-17 00:46:10.741 +03:00 [INF] Entity Framework Core 6.0.10 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: MigrationsAssembly=TaskManagerApi 
+2026-01-17 00:46:10.820 +03:00 [DBG] Migrating using database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-17 00:46:10.828 +03:00 [DBG] Opening connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-17 00:46:11.218 +03:00 [DBG] Opened connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-17 00:46:11.226 +03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2026-01-17 00:46:11.233 +03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (7ms).
+2026-01-17 00:46:11.242 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-01-17 00:46:11.265 +03:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-01-17 00:46:11.267 +03:00 [DBG] Closing connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-17 00:46:11.269 +03:00 [DBG] Closed connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-17 00:46:11.275 +03:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2026-01-17 00:46:11.276 +03:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2026-01-17 00:46:11.276 +03:00 [DBG] Opening connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-17 00:46:11.277 +03:00 [DBG] Opened connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-17 00:46:11.277 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-01-17 00:46:11.292 +03:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-01-17 00:46:11.292 +03:00 [DBG] Closing connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-17 00:46:11.293 +03:00 [DBG] Closed connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-17 00:46:11.294 +03:00 [DBG] Opening connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-17 00:46:11.294 +03:00 [DBG] Opened connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-17 00:46:11.295 +03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2026-01-17 00:46:11.295 +03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2026-01-17 00:46:11.295 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-01-17 00:46:11.296 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-01-17 00:46:11.296 +03:00 [DBG] Closing connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-17 00:46:11.296 +03:00 [DBG] Closed connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-17 00:46:11.296 +03:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2026-01-17 00:46:11.296 +03:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2026-01-17 00:46:11.296 +03:00 [DBG] Opening connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-17 00:46:11.296 +03:00 [DBG] Opened connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-17 00:46:11.296 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-01-17 00:46:11.297 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-01-17 00:46:11.297 +03:00 [DBG] Closing connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-17 00:46:11.297 +03:00 [DBG] Closed connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-17 00:46:11.315 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-01-17 00:46:11.315 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2026-01-17 00:46:11.315 +03:00 [DBG] Opening connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-17 00:46:11.315 +03:00 [DBG] Opened connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-17 00:46:11.315 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-01-17 00:46:11.318 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-01-17 00:46:11.319 +03:00 [DBG] A data reader was disposed.
+2026-01-17 00:46:11.319 +03:00 [DBG] Closing connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-17 00:46:11.319 +03:00 [DBG] Closed connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-17 00:46:11.331 +03:00 [INF] Applying migration '20260116214550_CategoryMg'.
+2026-01-17 00:46:11.377 +03:00 [DBG] Opening connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-17 00:46:11.378 +03:00 [DBG] Opened connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-17 00:46:11.379 +03:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2026-01-17 00:46:11.385 +03:00 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2026-01-17 00:46:11.385 +03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2026-01-17 00:46:11.385 +03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2026-01-17 00:46:11.386 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Categories] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NOT NULL,
+    [Description] nvarchar(max) NOT NULL,
+    [isActive] bit NOT NULL,
+    [CreatedAt] datetime2 NOT NULL,
+    CONSTRAINT [PK_Categories] PRIMARY KEY ([Id])
+);
+2026-01-17 00:46:11.391 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Categories] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NOT NULL,
+    [Description] nvarchar(max) NOT NULL,
+    [isActive] bit NOT NULL,
+    [CreatedAt] datetime2 NOT NULL,
+    CONSTRAINT [PK_Categories] PRIMARY KEY ([Id])
+);
+2026-01-17 00:46:11.391 +03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2026-01-17 00:46:11.391 +03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2026-01-17 00:46:11.391 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260116214550_CategoryMg', N'6.0.10');
+2026-01-17 00:46:11.392 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260116214550_CategoryMg', N'6.0.10');
+2026-01-17 00:46:11.393 +03:00 [DBG] Committing transaction.
+2026-01-17 00:46:11.395 +03:00 [DBG] Committed transaction.
+2026-01-17 00:46:11.396 +03:00 [DBG] Disposing transaction.
+2026-01-17 00:46:11.396 +03:00 [DBG] Closing connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-17 00:46:11.396 +03:00 [DBG] Closed connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-17 00:46:11.397 +03:00 [DBG] 'RepositoryContext' disposed.
+2026-01-17 01:16:36.031 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2026-01-17 01:16:36.426 +03:00 [DBG] Hosting starting
+2026-01-17 01:16:36.539 +03:00 [INF] User profile is available. Using 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-01-17 01:16:36.550 +03:00 [DBG] Reading data from file 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys\key-06314caf-114b-4447-b671-26cff94eef42.xml'.
+2026-01-17 01:16:36.597 +03:00 [DBG] Reading data from file 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys\key-090bb267-211d-492b-a818-8821e0be7068.xml'.
+2026-01-17 01:16:36.621 +03:00 [DBG] Reading data from file 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys\key-48d29924-c2fa-4ef4-a60c-de094dd470d3.xml'.
+2026-01-17 01:16:36.651 +03:00 [DBG] Reading data from file 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys\key-55f98cc5-78aa-424c-bf70-872acedb0f6c.xml'.
+2026-01-17 01:16:36.705 +03:00 [DBG] Found key {06314caf-114b-4447-b671-26cff94eef42}.
+2026-01-17 01:16:36.729 +03:00 [DBG] Found key {090bb267-211d-492b-a818-8821e0be7068}.
+2026-01-17 01:16:36.732 +03:00 [DBG] Found key {48d29924-c2fa-4ef4-a60c-de094dd470d3}.
+2026-01-17 01:16:36.734 +03:00 [DBG] Found key {55f98cc5-78aa-424c-bf70-872acedb0f6c}.
+2026-01-17 01:16:36.749 +03:00 [DBG] Considering key {48d29924-c2fa-4ef4-a60c-de094dd470d3} with expiration date 2026-04-04 17:42:23Z as default key.
+2026-01-17 01:16:36.755 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2026-01-17 01:16:36.763 +03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2026-01-17 01:16:36.766 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2026-01-17 01:16:36.776 +03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2026-01-17 01:16:36.782 +03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2026-01-17 01:16:36.788 +03:00 [DBG] Using key {48d29924-c2fa-4ef4-a60c-de094dd470d3} as the default key.
+2026-01-17 01:16:36.792 +03:00 [DBG] Key ring with default key {48d29924-c2fa-4ef4-a60c-de094dd470d3} was loaded during application startup.
+2026-01-17 01:16:37.087 +03:00 [WRN] Overriding address(es) 'http://localhost:1000'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2026-01-17 01:16:37.152 +03:00 [INF] Now listening on: http://localhost:1000
+2026-01-17 01:16:37.155 +03:00 [DBG] Loaded hosting startup assembly TaskManagerApi
+2026-01-17 01:16:37.158 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2026-01-17 01:16:37.160 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2026-01-17 01:16:37.163 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2026-01-17 01:16:37.474 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-17 01:16:37.476 +03:00 [INF] Hosting environment: Development
+2026-01-17 01:16:37.486 +03:00 [DBG] Connection id "0HNIL9JL99SLK" accepted.
+2026-01-17 01:16:37.488 +03:00 [INF] Content root path: C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManagerApi\TaskManager\
+2026-01-17 01:16:37.494 +03:00 [DBG] Connection id "0HNIL9JL99SLK" received FIN.
+2026-01-17 01:16:37.496 +03:00 [DBG] Hosting started
+2026-01-17 01:16:37.496 +03:00 [DBG] Connection id "0HNIL9JL99SLK" started.
+2026-01-17 01:16:37.532 +03:00 [DBG] Connection id "0HNIL9JL99SLK" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-01-17 01:16:37.541 +03:00 [DBG] Connection id "0HNIL9JL99SLK" disconnecting.
+2026-01-17 01:16:37.563 +03:00 [DBG] Connection id "0HNIL9JL99SLK" stopped.
+2026-01-17 01:16:38.572 +03:00 [DBG] Connection id "0HNIL9JL99SLL" accepted.
+2026-01-17 01:16:39.260 +03:00 [DBG] Connection id "0HNIL9JL99SLL" started.
+2026-01-17 01:16:39.652 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:1000/swagger - -
+2026-01-17 01:16:41.220 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2026-01-17 01:16:41.461 +03:00 [DBG] Connection id "0HNIL9JL99SLL" completed keep alive response.
+2026-01-17 01:16:41.501 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:1000/swagger - - - 301 0 - 1872.4650ms
+2026-01-17 01:16:41.563 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:1000/swagger/index.html - -
+2026-01-17 01:16:41.812 +03:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2026-01-17 01:16:41.918 +03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2026-01-17 01:16:42.087 +03:00 [DBG] Response markup was updated to include Browser Link script injection.
+2026-01-17 01:16:42.272 +03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2026-01-17 01:16:42.289 +03:00 [DBG] Connection id "0HNIL9JL99SLL" completed keep alive response.
+2026-01-17 01:16:42.306 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:1000/swagger/index.html - - - 200 - text/html;charset=utf-8 743.2843ms
+2026-01-17 01:16:43.517 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:1000/swagger/swagger-ui.css - -
+2026-01-17 01:16:43.519 +03:00 [DBG] Connection id "0HNIL9JL99SLM" accepted.
+2026-01-17 01:16:43.608 +03:00 [DBG] Connection id "0HNIL9JL99SLM" started.
+2026-01-17 01:16:43.609 +03:00 [DBG] Connection id "0HNIL9JL99SLN" accepted.
+2026-01-17 01:16:43.655 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:1000/swagger/swagger-ui-bundle.js - -
+2026-01-17 01:16:43.668 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2026-01-17 01:16:43.683 +03:00 [DBG] Connection id "0HNIL9JL99SLN" started.
+2026-01-17 01:16:43.887 +03:00 [DBG] Connection id "0HNIL9JL99SLL" completed keep alive response.
+2026-01-17 01:16:43.930 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2026-01-17 01:16:43.962 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:1000/swagger/swagger-ui-standalone-preset.js - -
+2026-01-17 01:16:43.971 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:1000/swagger/swagger-ui.css - - - 200 144929 text/css 453.7255ms
+2026-01-17 01:16:43.995 +03:00 [DBG] Connection id "0HNIL9JL99SLM" completed keep alive response.
+2026-01-17 01:16:44.025 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:1000/_framework/aspnetcore-browser-refresh.js - -
+2026-01-17 01:16:44.033 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2026-01-17 01:16:44.036 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:1000/swagger/swagger-ui-bundle.js - - - 200 1061536 application/javascript 381.8346ms
+2026-01-17 01:16:44.069 +03:00 [DBG] Connection id "0HNIL9JL99SLN" completed keep alive response.
+2026-01-17 01:16:44.070 +03:00 [DBG] Connection id "0HNIL9JL99SLL" completed keep alive response.
+2026-01-17 01:16:44.079 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:1000/swagger/swagger-ui-standalone-preset.js - - - 200 312163 application/javascript 117.0750ms
+2026-01-17 01:16:44.087 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:1000/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 61.7045ms
+2026-01-17 01:16:44.119 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:1000/_vs/browserLink - -
+2026-01-17 01:16:44.433 +03:00 [DBG] Connection id "0HNIL9JL99SLL" completed keep alive response.
+2026-01-17 01:16:44.471 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:1000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 351.8822ms
+2026-01-17 01:16:45.590 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:1000/swagger/v1/swagger.json - -
+2026-01-17 01:16:45.614 +03:00 [DBG] Connection id "0HNIL9JL99SLL" completed keep alive response.
+2026-01-17 01:16:45.632 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:1000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 41.2755ms
+2026-01-17 01:17:27.314 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:1000/ZimmetDemirbas/InsertCategory application/json 68
+2026-01-17 01:17:27.319 +03:00 [DBG] POST requests are not supported
+2026-01-17 01:17:27.324 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-01-17 01:17:27.364 +03:00 [DBG] 1 candidate(s) found for the request path '/ZimmetDemirbas/InsertCategory'
+2026-01-17 01:17:27.383 +03:00 [DBG] Endpoint 'Presentation.Controllers.ZimmetDemirbasController.InsertCategoryAsync (Presentation)' with route pattern 'ZimmetDemirbas/InsertCategory' is valid for the request path '/ZimmetDemirbas/InsertCategory'
+2026-01-17 01:17:27.389 +03:00 [DBG] Request matched endpoint 'Presentation.Controllers.ZimmetDemirbasController.InsertCategoryAsync (Presentation)'
+2026-01-17 01:17:27.538 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2026-01-17 01:17:27.677 +03:00 [INF] Executing endpoint 'Presentation.Controllers.ZimmetDemirbasController.InsertCategoryAsync (Presentation)'
+2026-01-17 01:17:27.736 +03:00 [INF] Route matched with {action = "InsertCategory", controller = "ZimmetDemirbas"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InsertCategoryAsync(Entites.Data_Transfer_object.ZimmetDemirbas.CreateCategoryDTO) on controller Presentation.Controllers.ZimmetDemirbasController (Presentation).
+2026-01-17 01:17:27.740 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2026-01-17 01:17:27.743 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2026-01-17 01:17:27.746 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2026-01-17 01:17:27.750 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2026-01-17 01:17:27.753 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2026-01-17 01:17:27.757 +03:00 [DBG] Executing controller factory for controller Presentation.Controllers.ZimmetDemirbasController (Presentation)
+2026-01-17 01:17:27.971 +03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2026-01-17 01:17:28.013 +03:00 [DBG] Executed controller factory for controller Presentation.Controllers.ZimmetDemirbasController (Presentation)
+2026-01-17 01:17:28.027 +03:00 [DBG] Attempting to bind parameter 'categoryDTO' of type 'Entites.Data_Transfer_object.ZimmetDemirbas.CreateCategoryDTO' ...
+2026-01-17 01:17:28.036 +03:00 [DBG] Attempting to bind parameter 'categoryDTO' of type 'Entites.Data_Transfer_object.ZimmetDemirbas.CreateCategoryDTO' using the name '' in request data ...
+2026-01-17 01:17:28.043 +03:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2026-01-17 01:17:28.068 +03:00 [DBG] Connection id "0HNIL9JL99SLL", Request id "0HNIL9JL99SLL:00000008": started reading request body.
+2026-01-17 01:17:28.072 +03:00 [DBG] Connection id "0HNIL9JL99SLL", Request id "0HNIL9JL99SLL:00000008": done reading request body.
+2026-01-17 01:17:28.108 +03:00 [DBG] JSON input formatter succeeded, deserializing to type 'Entites.Data_Transfer_object.ZimmetDemirbas.CreateCategoryDTO'
+2026-01-17 01:17:28.111 +03:00 [DBG] Done attempting to bind parameter 'categoryDTO' of type 'Entites.Data_Transfer_object.ZimmetDemirbas.CreateCategoryDTO'.
+2026-01-17 01:17:28.114 +03:00 [DBG] Done attempting to bind parameter 'categoryDTO' of type 'Entites.Data_Transfer_object.ZimmetDemirbas.CreateCategoryDTO'.
+2026-01-17 01:17:28.116 +03:00 [DBG] Attempting to validate the bound parameter 'categoryDTO' of type 'Entites.Data_Transfer_object.ZimmetDemirbas.CreateCategoryDTO' ...
+2026-01-17 01:17:28.128 +03:00 [DBG] Done attempting to validate the bound parameter 'categoryDTO' of type 'Entites.Data_Transfer_object.ZimmetDemirbas.CreateCategoryDTO'.
+2026-01-17 01:17:29.653 +03:00 [INF] Entity Framework Core 6.0.10 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: MigrationsAssembly=TaskManagerApi 
+2026-01-17 01:17:29.703 +03:00 [DBG] 'RepositoryContext' generated a temporary value for the property '{2_entityType}.{1_property}'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-17 01:17:29.788 +03:00 [DBG] Context 'RepositoryContext' started tracking 'Category' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-17 01:17:29.805 +03:00 [DBG] SaveChanges starting for 'RepositoryContext'.
+2026-01-17 01:17:29.818 +03:00 [DBG] DetectChanges starting for 'RepositoryContext'.
+2026-01-17 01:17:29.844 +03:00 [DBG] DetectChanges completed for 'RepositoryContext'.
+2026-01-17 01:17:29.948 +03:00 [DBG] Opening connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-17 01:17:30.409 +03:00 [DBG] Opened connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-17 01:17:30.420 +03:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2026-01-17 01:17:30.451 +03:00 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2026-01-17 01:17:30.552 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-01-17 01:17:30.568 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (9ms).
+2026-01-17 01:17:30.608 +03:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Categories] ([CreatedAt], [Description], [Name], [isActive])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Categories]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2026-01-17 01:17:30.761 +03:00 [INF] Executed DbCommand (164ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Categories] ([CreatedAt], [Description], [Name], [isActive])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Categories]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2026-01-17 01:17:30.820 +03:00 [DBG] The foreign key property 'Category.Id' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2026-01-17 01:17:30.849 +03:00 [DBG] A data reader was disposed.
+2026-01-17 01:17:30.868 +03:00 [DBG] Committing transaction.
+2026-01-17 01:17:30.881 +03:00 [DBG] Committed transaction.
+2026-01-17 01:17:30.892 +03:00 [DBG] Closing connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-17 01:17:30.908 +03:00 [DBG] Closed connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-17 01:17:30.918 +03:00 [DBG] Disposing transaction.
+2026-01-17 01:17:30.938 +03:00 [DBG] An entity of type 'Category' tracked by 'RepositoryContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-17 01:17:30.947 +03:00 [DBG] SaveChanges completed for 'RepositoryContext' with 1 entities written to the database.
+2026-01-17 01:17:30.957 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2026-01-17 01:17:30.966 +03:00 [DBG] No information found on request to perform content negotiation.
+2026-01-17 01:17:30.968 +03:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2026-01-17 01:17:30.970 +03:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2026-01-17 01:17:30.973 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2026-01-17 01:17:30.976 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2026-01-17 01:17:30.991 +03:00 [INF] Executed action Presentation.Controllers.ZimmetDemirbasController.InsertCategoryAsync (Presentation) in 3228.7831ms
+2026-01-17 01:17:30.998 +03:00 [INF] Executed endpoint 'Presentation.Controllers.ZimmetDemirbasController.InsertCategoryAsync (Presentation)'
+2026-01-17 01:17:31.004 +03:00 [DBG] Connection id "0HNIL9JL99SLL" completed keep alive response.
+2026-01-17 01:17:31.014 +03:00 [DBG] 'RepositoryContext' disposed.
+2026-01-17 01:17:31.023 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:1000/ZimmetDemirbas/InsertCategory application/json 68 - 200 - text/plain;+charset=utf-8 3709.7501ms
+2026-01-17 01:38:02.987 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2026-01-17 01:38:03.228 +03:00 [DBG] Hosting starting
+2026-01-17 01:38:03.317 +03:00 [INF] User profile is available. Using 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-01-17 01:38:03.326 +03:00 [DBG] Reading data from file 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys\key-06314caf-114b-4447-b671-26cff94eef42.xml'.
+2026-01-17 01:38:03.343 +03:00 [DBG] Reading data from file 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys\key-090bb267-211d-492b-a818-8821e0be7068.xml'.
+2026-01-17 01:38:03.346 +03:00 [DBG] Reading data from file 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys\key-48d29924-c2fa-4ef4-a60c-de094dd470d3.xml'.
+2026-01-17 01:38:03.350 +03:00 [DBG] Reading data from file 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys\key-55f98cc5-78aa-424c-bf70-872acedb0f6c.xml'.
+2026-01-17 01:38:03.363 +03:00 [DBG] Found key {06314caf-114b-4447-b671-26cff94eef42}.
+2026-01-17 01:38:03.374 +03:00 [DBG] Found key {090bb267-211d-492b-a818-8821e0be7068}.
+2026-01-17 01:38:03.377 +03:00 [DBG] Found key {48d29924-c2fa-4ef4-a60c-de094dd470d3}.
+2026-01-17 01:38:03.380 +03:00 [DBG] Found key {55f98cc5-78aa-424c-bf70-872acedb0f6c}.
+2026-01-17 01:38:03.396 +03:00 [DBG] Considering key {48d29924-c2fa-4ef4-a60c-de094dd470d3} with expiration date 2026-04-04 17:42:23Z as default key.
+2026-01-17 01:38:03.405 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2026-01-17 01:38:03.414 +03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2026-01-17 01:38:03.417 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2026-01-17 01:38:03.427 +03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2026-01-17 01:38:03.431 +03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2026-01-17 01:38:03.437 +03:00 [DBG] Using key {48d29924-c2fa-4ef4-a60c-de094dd470d3} as the default key.
+2026-01-17 01:38:03.439 +03:00 [DBG] Key ring with default key {48d29924-c2fa-4ef4-a60c-de094dd470d3} was loaded during application startup.
+2026-01-17 01:38:03.628 +03:00 [WRN] Overriding address(es) 'http://localhost:1000'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2026-01-17 01:38:03.680 +03:00 [INF] Now listening on: http://localhost:1000
+2026-01-17 01:38:03.682 +03:00 [DBG] Loaded hosting startup assembly TaskManagerApi
+2026-01-17 01:38:03.684 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2026-01-17 01:38:03.685 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2026-01-17 01:38:03.687 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2026-01-17 01:38:03.776 +03:00 [DBG] Connection id "0HNIL9VKKEB71" accepted.
+2026-01-17 01:38:03.832 +03:00 [DBG] Connection id "0HNIL9VKKEB71" received FIN.
+2026-01-17 01:38:03.776 +03:00 [DBG] Connection id "0HNIL9VKKEB72" accepted.
+2026-01-17 01:38:03.805 +03:00 [DBG] Connection id "0HNIL9VKKEB72" received FIN.
+2026-01-17 01:38:04.154 +03:00 [DBG] Connection id "0HNIL9VKKEB72" started.
+2026-01-17 01:38:03.887 +03:00 [DBG] Connection id "0HNIL9VKKEB71" started.
+2026-01-17 01:38:04.253 +03:00 [DBG] Connection id "0HNIL9VKKEB71" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-01-17 01:38:04.252 +03:00 [DBG] Connection id "0HNIL9VKKEB72" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-01-17 01:38:04.280 +03:00 [DBG] Connection id "0HNIL9VKKEB71" disconnecting.
+2026-01-17 01:38:04.403 +03:00 [DBG] Connection id "0HNIL9VKKEB72" disconnecting.
+2026-01-17 01:38:04.439 +03:00 [DBG] Connection id "0HNIL9VKKEB71" stopped.
+2026-01-17 01:38:04.439 +03:00 [DBG] Connection id "0HNIL9VKKEB72" stopped.
+2026-01-17 01:38:04.605 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-17 01:38:05.365 +03:00 [DBG] Connection id "0HNIL9VKKEB73" accepted.
+2026-01-17 01:38:05.792 +03:00 [INF] Hosting environment: Development
+2026-01-17 01:38:06.288 +03:00 [DBG] Connection id "0HNIL9VKKEB73" started.
+2026-01-17 01:38:07.050 +03:00 [INF] Content root path: C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManagerApi\TaskManager\
+2026-01-17 01:38:07.078 +03:00 [DBG] Hosting started
+2026-01-17 01:38:07.259 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:1000/swagger/index.html - -
+2026-01-17 01:38:07.729 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2026-01-17 01:38:07.981 +03:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2026-01-17 01:38:08.023 +03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2026-01-17 01:38:08.155 +03:00 [DBG] Response markup was updated to include Browser Link script injection.
+2026-01-17 01:38:08.242 +03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2026-01-17 01:38:08.265 +03:00 [DBG] Connection id "0HNIL9VKKEB73" completed keep alive response.
+2026-01-17 01:38:08.478 +03:00 [DBG] Connection id "0HNIL9VKKEB74" accepted.
+2026-01-17 01:38:08.489 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:1000/swagger/index.html - - - 200 - text/html;charset=utf-8 1240.1569ms
+2026-01-17 01:38:08.631 +03:00 [DBG] Connection id "0HNIL9VKKEB74" started.
+2026-01-17 01:38:08.659 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:1000/_vs/browserLink - -
+2026-01-17 01:38:08.668 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:1000/_framework/aspnetcore-browser-refresh.js - -
+2026-01-17 01:38:08.692 +03:00 [DBG] Connection id "0HNIL9VKKEB73" completed keep alive response.
+2026-01-17 01:38:08.732 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:1000/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 63.5891ms
+2026-01-17 01:38:08.981 +03:00 [DBG] Connection id "0HNIL9VKKEB74" completed keep alive response.
+2026-01-17 01:38:09.020 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:1000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 361.0822ms
+2026-01-17 01:38:09.131 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:1000/swagger/v1/swagger.json - -
+2026-01-17 01:38:09.179 +03:00 [DBG] Connection id "0HNIL9VKKEB74" completed keep alive response.
+2026-01-17 01:38:09.220 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:1000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 88.3383ms
+2026-01-17 01:38:35.067 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost:1000/ZimmetDemirbas/UpdateCategory/1 application/json 67
+2026-01-17 01:38:35.090 +03:00 [DBG] PUT requests are not supported
+2026-01-17 01:38:35.106 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-01-17 01:38:35.212 +03:00 [DBG] 1 candidate(s) found for the request path '/ZimmetDemirbas/UpdateCategory/1'
+2026-01-17 01:38:35.237 +03:00 [DBG] Endpoint 'Presentation.Controllers.ZimmetDemirbasController.UpdateCategoryAsync (Presentation)' with route pattern 'ZimmetDemirbas/UpdateCategory/{id}' is valid for the request path '/ZimmetDemirbas/UpdateCategory/1'
+2026-01-17 01:38:35.249 +03:00 [DBG] Request matched endpoint 'Presentation.Controllers.ZimmetDemirbasController.UpdateCategoryAsync (Presentation)'
+2026-01-17 01:38:35.488 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2026-01-17 01:38:35.675 +03:00 [INF] Executing endpoint 'Presentation.Controllers.ZimmetDemirbasController.UpdateCategoryAsync (Presentation)'
+2026-01-17 01:38:35.789 +03:00 [INF] Route matched with {action = "UpdateCategory", controller = "ZimmetDemirbas"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateCategoryAsync(Entites.Data_Transfer_object.ZimmetDemirbas.UpdateCategoryDTO, Int32) on controller Presentation.Controllers.ZimmetDemirbasController (Presentation).
+2026-01-17 01:38:35.795 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2026-01-17 01:38:35.799 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2026-01-17 01:38:35.803 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2026-01-17 01:38:35.808 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2026-01-17 01:38:35.812 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2026-01-17 01:38:35.817 +03:00 [DBG] Executing controller factory for controller Presentation.Controllers.ZimmetDemirbasController (Presentation)
+2026-01-17 01:38:36.066 +03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2026-01-17 01:38:36.111 +03:00 [DBG] Executed controller factory for controller Presentation.Controllers.ZimmetDemirbasController (Presentation)
+2026-01-17 01:38:36.120 +03:00 [DBG] Attempting to bind parameter 'updateCategoryDTO' of type 'Entites.Data_Transfer_object.ZimmetDemirbas.UpdateCategoryDTO' ...
+2026-01-17 01:38:36.125 +03:00 [DBG] Attempting to bind parameter 'updateCategoryDTO' of type 'Entites.Data_Transfer_object.ZimmetDemirbas.UpdateCategoryDTO' using the name '' in request data ...
+2026-01-17 01:38:36.129 +03:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2026-01-17 01:38:36.153 +03:00 [DBG] Connection id "0HNIL9VKKEB74", Request id "0HNIL9VKKEB74:00000004": started reading request body.
+2026-01-17 01:38:36.159 +03:00 [DBG] Connection id "0HNIL9VKKEB74", Request id "0HNIL9VKKEB74:00000004": done reading request body.
+2026-01-17 01:38:36.205 +03:00 [DBG] JSON input formatter succeeded, deserializing to type 'Entites.Data_Transfer_object.ZimmetDemirbas.UpdateCategoryDTO'
+2026-01-17 01:38:36.209 +03:00 [DBG] Done attempting to bind parameter 'updateCategoryDTO' of type 'Entites.Data_Transfer_object.ZimmetDemirbas.UpdateCategoryDTO'.
+2026-01-17 01:38:36.212 +03:00 [DBG] Done attempting to bind parameter 'updateCategoryDTO' of type 'Entites.Data_Transfer_object.ZimmetDemirbas.UpdateCategoryDTO'.
+2026-01-17 01:38:36.215 +03:00 [DBG] Attempting to validate the bound parameter 'updateCategoryDTO' of type 'Entites.Data_Transfer_object.ZimmetDemirbas.UpdateCategoryDTO' ...
+2026-01-17 01:38:36.230 +03:00 [DBG] Done attempting to validate the bound parameter 'updateCategoryDTO' of type 'Entites.Data_Transfer_object.ZimmetDemirbas.UpdateCategoryDTO'.
+2026-01-17 01:38:36.235 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' ...
+2026-01-17 01:38:36.239 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2026-01-17 01:38:36.243 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2026-01-17 01:38:36.246 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2026-01-17 01:38:36.249 +03:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2026-01-17 01:38:36.252 +03:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2026-01-17 01:38:50.219 +03:00 [INF] Entity Framework Core 6.0.10 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: MigrationsAssembly=TaskManagerApi 
+2026-01-17 01:38:50.339 +03:00 [DBG] Compiling query expression: 
+'DbSet<Category>()
+    .SingleOrDefault(x => x.Id == __id_0 && x.isActive == True)'
+2026-01-17 01:38:50.747 +03:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<Category>(
+    asyncEnumerable: new SingleQueryingEnumerable<Category>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.SelectExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Category.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Category.CreatedAt (DateTime) Required, 1], [Property: Category.Description (string) Required, 2], [Property: Category.Name (string) Required, 3], [Property: Category.isActive (bool) Required, 4] }
+            SELECT TOP(2) c.Id, c.CreatedAt, c.Description, c.Name, c.isActive
+            FROM Categories AS c
+            WHERE (c.Id == @__id_0) && (c.isActive == CAST(1 AS bit))), 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Category>, 
+        Repositories.EFCore.RepositoryContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2026-01-17 01:38:50.833 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-01-17 01:38:50.908 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (66ms).
+2026-01-17 01:38:50.940 +03:00 [DBG] Opening connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-17 01:38:51.399 +03:00 [DBG] Opened connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-17 01:38:51.426 +03:00 [DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [c].[Id], [c].[CreatedAt], [c].[Description], [c].[Name], [c].[isActive]
+FROM [Categories] AS [c]
+WHERE ([c].[Id] = @__id_0) AND ([c].[isActive] = CAST(1 AS bit))
+2026-01-17 01:38:51.552 +03:00 [INF] Executed DbCommand (132ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [c].[Id], [c].[CreatedAt], [c].[Description], [c].[Name], [c].[isActive]
+FROM [Categories] AS [c]
+WHERE ([c].[Id] = @__id_0) AND ([c].[isActive] = CAST(1 AS bit))
+2026-01-17 01:38:51.604 +03:00 [DBG] Context 'RepositoryContext' started tracking 'Category' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-17 01:38:51.652 +03:00 [DBG] A data reader was disposed.
+2026-01-17 01:38:51.662 +03:00 [DBG] Closing connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-17 01:38:51.676 +03:00 [DBG] Closed connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-17 01:39:13.577 +03:00 [INF] Executed action Presentation.Controllers.ZimmetDemirbasController.UpdateCategoryAsync (Presentation) in 37755.9945ms
+2026-01-17 01:39:13.582 +03:00 [INF] Executed endpoint 'Presentation.Controllers.ZimmetDemirbasController.UpdateCategoryAsync (Presentation)'
+2026-01-17 01:39:13.700 +03:00 [ERR] The instance of entity type 'Category' cannot be tracked because another instance with the same key value for {'Id'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+System.InvalidOperationException: The instance of entity type 'Category' cannot be tracked because another instance with the same key value for {'Id'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.ThrowIdentityConflict(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry, Boolean updateDuplicate)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.StartTracking(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState oldState, EntityState newState, Boolean acceptChanges, Boolean modifyProperties)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.PaintAction(EntityEntryGraphNode`1 node)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityEntryGraphIterator.TraverseGraph[TState](EntityEntryGraphNode`1 node, Func`2 handleNode)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.AttachGraph(InternalEntityEntry rootEntry, EntityState targetState, EntityState storeGeneratedWithKeySetTargetState, Boolean forceStateWhenUnknownKey)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Update(TEntity entity)
+   at Repositories.EFCore.ZimmetDemirbasRepository.UpdateCategoryAsyc(Category category) in C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManagerApi\Repositories\EFCore\ZimmetDemirbasRepository.cs:line 36
+   at Services.ZimmetDemirbasManager.UpdateCategoryAsync(UpdateCategoryDTO updateCategoryDTO, Int32 id) in C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManagerApi\Services\ZimmetDemirbasManager.cs:line 49
+   at Presentation.Controllers.ZimmetDemirbasController.UpdateCategoryAsync(UpdateCategoryDTO updateCategoryDTO, Int32 id) in C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManagerApi\Presentation\Controllers\ZimmetDemirbasController.cs:line 36
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManagerApi\Entites\Exceptions\GlobalExceptionMiddleware.cs:line 22
+2026-01-17 01:39:13.853 +03:00 [DBG] Connection id "0HNIL9VKKEB74" completed keep alive response.
+2026-01-17 01:39:13.860 +03:00 [DBG] 'RepositoryContext' disposed.
+2026-01-17 01:39:13.867 +03:00 [INF] Request finished HTTP/1.1 PUT http://localhost:1000/ZimmetDemirbas/UpdateCategory/1 application/json 67 - 500 - application/json 38799.9383ms
+2026-01-17 01:39:42.200 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost:1000/ZimmetDemirbas/UpdateCategory/1 application/json 67
+2026-01-17 01:39:42.216 +03:00 [DBG] PUT requests are not supported
+2026-01-17 01:39:42.224 +03:00 [DBG] 1 candidate(s) found for the request path '/ZimmetDemirbas/UpdateCategory/1'
+2026-01-17 01:39:42.228 +03:00 [DBG] Endpoint 'Presentation.Controllers.ZimmetDemirbasController.UpdateCategoryAsync (Presentation)' with route pattern 'ZimmetDemirbas/UpdateCategory/{id}' is valid for the request path '/ZimmetDemirbas/UpdateCategory/1'
+2026-01-17 01:39:42.233 +03:00 [DBG] Request matched endpoint 'Presentation.Controllers.ZimmetDemirbasController.UpdateCategoryAsync (Presentation)'
+2026-01-17 01:39:42.241 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2026-01-17 01:39:42.273 +03:00 [INF] Executing endpoint 'Presentation.Controllers.ZimmetDemirbasController.UpdateCategoryAsync (Presentation)'
+2026-01-17 01:39:42.277 +03:00 [INF] Route matched with {action = "UpdateCategory", controller = "ZimmetDemirbas"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateCategoryAsync(Entites.Data_Transfer_object.ZimmetDemirbas.UpdateCategoryDTO, Int32) on controller Presentation.Controllers.ZimmetDemirbasController (Presentation).
+2026-01-17 01:39:42.282 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2026-01-17 01:39:42.287 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2026-01-17 01:39:42.293 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2026-01-17 01:39:42.300 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2026-01-17 01:39:42.307 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2026-01-17 01:39:42.313 +03:00 [DBG] Executing controller factory for controller Presentation.Controllers.ZimmetDemirbasController (Presentation)
+2026-01-17 01:39:42.321 +03:00 [DBG] Executed controller factory for controller Presentation.Controllers.ZimmetDemirbasController (Presentation)
+2026-01-17 01:39:42.333 +03:00 [DBG] Attempting to bind parameter 'updateCategoryDTO' of type 'Entites.Data_Transfer_object.ZimmetDemirbas.UpdateCategoryDTO' ...
+2026-01-17 01:39:42.341 +03:00 [DBG] Attempting to bind parameter 'updateCategoryDTO' of type 'Entites.Data_Transfer_object.ZimmetDemirbas.UpdateCategoryDTO' using the name '' in request data ...
+2026-01-17 01:39:42.346 +03:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2026-01-17 01:39:42.351 +03:00 [DBG] Connection id "0HNIL9VKKEB74", Request id "0HNIL9VKKEB74:00000005": started reading request body.
+2026-01-17 01:39:42.356 +03:00 [DBG] Connection id "0HNIL9VKKEB74", Request id "0HNIL9VKKEB74:00000005": done reading request body.
+2026-01-17 01:39:42.361 +03:00 [DBG] JSON input formatter succeeded, deserializing to type 'Entites.Data_Transfer_object.ZimmetDemirbas.UpdateCategoryDTO'
+2026-01-17 01:39:42.363 +03:00 [DBG] Done attempting to bind parameter 'updateCategoryDTO' of type 'Entites.Data_Transfer_object.ZimmetDemirbas.UpdateCategoryDTO'.
+2026-01-17 01:39:42.368 +03:00 [DBG] Done attempting to bind parameter 'updateCategoryDTO' of type 'Entites.Data_Transfer_object.ZimmetDemirbas.UpdateCategoryDTO'.
+2026-01-17 01:39:42.372 +03:00 [DBG] Attempting to validate the bound parameter 'updateCategoryDTO' of type 'Entites.Data_Transfer_object.ZimmetDemirbas.UpdateCategoryDTO' ...
+2026-01-17 01:39:42.377 +03:00 [DBG] Done attempting to validate the bound parameter 'updateCategoryDTO' of type 'Entites.Data_Transfer_object.ZimmetDemirbas.UpdateCategoryDTO'.
+2026-01-17 01:39:42.380 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' ...
+2026-01-17 01:39:42.384 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2026-01-17 01:39:42.389 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2026-01-17 01:39:42.394 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2026-01-17 01:39:42.398 +03:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2026-01-17 01:39:42.401 +03:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2026-01-17 01:39:46.595 +03:00 [INF] Entity Framework Core 6.0.10 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: MigrationsAssembly=TaskManagerApi 
+2026-01-17 01:39:46.615 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-01-17 01:39:46.618 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (3ms).
+2026-01-17 01:39:46.621 +03:00 [DBG] Opening connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-17 01:39:46.625 +03:00 [DBG] Opened connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-17 01:39:46.627 +03:00 [DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [c].[Id], [c].[CreatedAt], [c].[Description], [c].[Name], [c].[isActive]
+FROM [Categories] AS [c]
+WHERE ([c].[Id] = @__id_0) AND ([c].[isActive] = CAST(1 AS bit))
+2026-01-17 01:39:46.663 +03:00 [INF] Executed DbCommand (34ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [c].[Id], [c].[CreatedAt], [c].[Description], [c].[Name], [c].[isActive]
+FROM [Categories] AS [c]
+WHERE ([c].[Id] = @__id_0) AND ([c].[isActive] = CAST(1 AS bit))
+2026-01-17 01:39:46.667 +03:00 [DBG] Context 'RepositoryContext' started tracking 'Category' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-17 01:39:46.670 +03:00 [DBG] A data reader was disposed.
+2026-01-17 01:39:46.671 +03:00 [DBG] Closing connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-17 01:39:46.673 +03:00 [DBG] Closed connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-17 01:40:15.438 +03:00 [INF] Executed action Presentation.Controllers.ZimmetDemirbasController.UpdateCategoryAsync (Presentation) in 33125.0494ms
+2026-01-17 01:40:15.441 +03:00 [INF] Executed endpoint 'Presentation.Controllers.ZimmetDemirbasController.UpdateCategoryAsync (Presentation)'
+2026-01-17 01:40:15.520 +03:00 [ERR] The instance of entity type 'Category' cannot be tracked because another instance with the same key value for {'Id'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+System.InvalidOperationException: The instance of entity type 'Category' cannot be tracked because another instance with the same key value for {'Id'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.ThrowIdentityConflict(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry, Boolean updateDuplicate)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.StartTracking(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState oldState, EntityState newState, Boolean acceptChanges, Boolean modifyProperties)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.PaintAction(EntityEntryGraphNode`1 node)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityEntryGraphIterator.TraverseGraph[TState](EntityEntryGraphNode`1 node, Func`2 handleNode)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.AttachGraph(InternalEntityEntry rootEntry, EntityState targetState, EntityState storeGeneratedWithKeySetTargetState, Boolean forceStateWhenUnknownKey)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Update(TEntity entity)
+   at Repositories.EFCore.ZimmetDemirbasRepository.UpdateCategoryAsyc(Category category) in C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManagerApi\Repositories\EFCore\ZimmetDemirbasRepository.cs:line 36
+   at Services.ZimmetDemirbasManager.UpdateCategoryAsync(UpdateCategoryDTO updateCategoryDTO, Int32 id) in C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManagerApi\Services\ZimmetDemirbasManager.cs:line 49
+   at Presentation.Controllers.ZimmetDemirbasController.UpdateCategoryAsync(UpdateCategoryDTO updateCategoryDTO, Int32 id) in C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManagerApi\Presentation\Controllers\ZimmetDemirbasController.cs:line 36
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManagerApi\Entites\Exceptions\GlobalExceptionMiddleware.cs:line 22
+2026-01-17 01:40:15.531 +03:00 [DBG] Connection id "0HNIL9VKKEB74" completed keep alive response.
+2026-01-17 01:40:15.539 +03:00 [DBG] 'RepositoryContext' disposed.
+2026-01-17 01:40:15.547 +03:00 [INF] Request finished HTTP/1.1 PUT http://localhost:1000/ZimmetDemirbas/UpdateCategory/1 application/json 67 - 500 - application/json 33347.0564ms
+2026-01-17 01:49:39.098 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2026-01-17 01:49:39.363 +03:00 [DBG] Hosting starting
+2026-01-17 01:49:39.433 +03:00 [INF] User profile is available. Using 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-01-17 01:49:39.440 +03:00 [DBG] Reading data from file 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys\key-06314caf-114b-4447-b671-26cff94eef42.xml'.
+2026-01-17 01:49:39.450 +03:00 [DBG] Reading data from file 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys\key-090bb267-211d-492b-a818-8821e0be7068.xml'.
+2026-01-17 01:49:39.453 +03:00 [DBG] Reading data from file 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys\key-48d29924-c2fa-4ef4-a60c-de094dd470d3.xml'.
+2026-01-17 01:49:39.456 +03:00 [DBG] Reading data from file 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys\key-55f98cc5-78aa-424c-bf70-872acedb0f6c.xml'.
+2026-01-17 01:49:39.465 +03:00 [DBG] Found key {06314caf-114b-4447-b671-26cff94eef42}.
+2026-01-17 01:49:39.476 +03:00 [DBG] Found key {090bb267-211d-492b-a818-8821e0be7068}.
+2026-01-17 01:49:39.478 +03:00 [DBG] Found key {48d29924-c2fa-4ef4-a60c-de094dd470d3}.
+2026-01-17 01:49:39.480 +03:00 [DBG] Found key {55f98cc5-78aa-424c-bf70-872acedb0f6c}.
+2026-01-17 01:49:39.494 +03:00 [DBG] Considering key {48d29924-c2fa-4ef4-a60c-de094dd470d3} with expiration date 2026-04-04 17:42:23Z as default key.
+2026-01-17 01:49:39.500 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2026-01-17 01:49:39.507 +03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2026-01-17 01:49:39.510 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2026-01-17 01:49:39.521 +03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2026-01-17 01:49:39.527 +03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2026-01-17 01:49:39.533 +03:00 [DBG] Using key {48d29924-c2fa-4ef4-a60c-de094dd470d3} as the default key.
+2026-01-17 01:49:39.536 +03:00 [DBG] Key ring with default key {48d29924-c2fa-4ef4-a60c-de094dd470d3} was loaded during application startup.
+2026-01-17 01:49:39.742 +03:00 [WRN] Overriding address(es) 'http://localhost:1000'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2026-01-17 01:49:39.791 +03:00 [INF] Now listening on: http://localhost:1000
+2026-01-17 01:49:39.794 +03:00 [DBG] Loaded hosting startup assembly TaskManagerApi
+2026-01-17 01:49:39.796 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2026-01-17 01:49:39.797 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2026-01-17 01:49:39.798 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2026-01-17 01:49:40.078 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-17 01:49:40.083 +03:00 [INF] Hosting environment: Development
+2026-01-17 01:49:40.087 +03:00 [INF] Content root path: C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManagerApi\TaskManager\
+2026-01-17 01:49:40.090 +03:00 [DBG] Hosting started
+2026-01-17 01:49:40.188 +03:00 [DBG] Connection id "0HNILA645VE2U" received FIN.
+2026-01-17 01:49:40.188 +03:00 [DBG] Connection id "0HNILA645VE2V" received FIN.
+2026-01-17 01:49:40.249 +03:00 [DBG] Connection id "0HNILA645VE2V" accepted.
+2026-01-17 01:49:40.249 +03:00 [DBG] Connection id "0HNILA645VE2U" accepted.
+2026-01-17 01:49:40.255 +03:00 [DBG] Connection id "0HNILA645VE2V" started.
+2026-01-17 01:49:40.257 +03:00 [DBG] Connection id "0HNILA645VE2U" started.
+2026-01-17 01:49:40.276 +03:00 [DBG] Connection id "0HNILA645VE2U" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-01-17 01:49:40.276 +03:00 [DBG] Connection id "0HNILA645VE2V" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-01-17 01:49:40.290 +03:00 [DBG] Connection id "0HNILA645VE2U" disconnecting.
+2026-01-17 01:49:40.290 +03:00 [DBG] Connection id "0HNILA645VE2V" disconnecting.
+2026-01-17 01:49:40.324 +03:00 [DBG] Connection id "0HNILA645VE2U" stopped.
+2026-01-17 01:49:40.324 +03:00 [DBG] Connection id "0HNILA645VE2V" stopped.
+2026-01-17 01:49:41.485 +03:00 [DBG] Connection id "0HNILA645VE30" accepted.
+2026-01-17 01:49:42.032 +03:00 [DBG] Connection id "0HNILA645VE30" started.
+2026-01-17 01:49:42.351 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:1000/swagger/index.html - -
+2026-01-17 01:49:43.375 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2026-01-17 01:49:43.594 +03:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2026-01-17 01:49:43.603 +03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2026-01-17 01:49:43.681 +03:00 [DBG] Response markup was updated to include Browser Link script injection.
+2026-01-17 01:49:43.687 +03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2026-01-17 01:49:43.696 +03:00 [DBG] Connection id "0HNILA645VE30" completed keep alive response.
+2026-01-17 01:49:43.710 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:1000/swagger/index.html - - - 200 - text/html;charset=utf-8 1381.2231ms
+2026-01-17 01:49:43.899 +03:00 [DBG] Connection id "0HNILA645VE31" accepted.
+2026-01-17 01:49:43.908 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:1000/_framework/aspnetcore-browser-refresh.js - -
+2026-01-17 01:49:43.909 +03:00 [DBG] Connection id "0HNILA645VE31" started.
+2026-01-17 01:49:43.917 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:1000/_vs/browserLink - -
+2026-01-17 01:49:43.922 +03:00 [DBG] Connection id "0HNILA645VE30" completed keep alive response.
+2026-01-17 01:49:43.930 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:1000/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 22.1153ms
+2026-01-17 01:49:44.169 +03:00 [DBG] Connection id "0HNILA645VE31" completed keep alive response.
+2026-01-17 01:49:44.188 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:1000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 271.9208ms
+2026-01-17 01:49:44.318 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:1000/swagger/v1/swagger.json - -
+2026-01-17 01:49:44.361 +03:00 [DBG] Connection id "0HNILA645VE31" completed keep alive response.
+2026-01-17 01:49:44.376 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:1000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 58.6424ms
+2026-01-17 01:49:59.745 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost:1000/ZimmetDemirbas/UpdateCategory/1 application/json 67
+2026-01-17 01:49:59.750 +03:00 [DBG] PUT requests are not supported
+2026-01-17 01:49:59.757 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-01-17 01:49:59.797 +03:00 [DBG] 1 candidate(s) found for the request path '/ZimmetDemirbas/UpdateCategory/1'
+2026-01-17 01:49:59.811 +03:00 [DBG] Endpoint 'Presentation.Controllers.ZimmetDemirbasController.UpdateCategoryAsync (Presentation)' with route pattern 'ZimmetDemirbas/UpdateCategory/{id}' is valid for the request path '/ZimmetDemirbas/UpdateCategory/1'
+2026-01-17 01:49:59.817 +03:00 [DBG] Request matched endpoint 'Presentation.Controllers.ZimmetDemirbasController.UpdateCategoryAsync (Presentation)'
+2026-01-17 01:50:00.001 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2026-01-17 01:50:00.151 +03:00 [INF] Executing endpoint 'Presentation.Controllers.ZimmetDemirbasController.UpdateCategoryAsync (Presentation)'
+2026-01-17 01:50:00.214 +03:00 [INF] Route matched with {action = "UpdateCategory", controller = "ZimmetDemirbas"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateCategoryAsync(Entites.Data_Transfer_object.ZimmetDemirbas.UpdateCategoryDTO, Int32) on controller Presentation.Controllers.ZimmetDemirbasController (Presentation).
+2026-01-17 01:50:00.221 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2026-01-17 01:50:00.227 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2026-01-17 01:50:00.231 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2026-01-17 01:50:00.237 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2026-01-17 01:50:00.241 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2026-01-17 01:50:00.247 +03:00 [DBG] Executing controller factory for controller Presentation.Controllers.ZimmetDemirbasController (Presentation)
+2026-01-17 01:50:00.510 +03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2026-01-17 01:50:00.547 +03:00 [DBG] Executed controller factory for controller Presentation.Controllers.ZimmetDemirbasController (Presentation)
+2026-01-17 01:50:00.556 +03:00 [DBG] Attempting to bind parameter 'updateCategoryDTO' of type 'Entites.Data_Transfer_object.ZimmetDemirbas.UpdateCategoryDTO' ...
+2026-01-17 01:50:00.562 +03:00 [DBG] Attempting to bind parameter 'updateCategoryDTO' of type 'Entites.Data_Transfer_object.ZimmetDemirbas.UpdateCategoryDTO' using the name '' in request data ...
+2026-01-17 01:50:00.566 +03:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2026-01-17 01:50:00.585 +03:00 [DBG] Connection id "0HNILA645VE31", Request id "0HNILA645VE31:00000004": started reading request body.
+2026-01-17 01:50:00.590 +03:00 [DBG] Connection id "0HNILA645VE31", Request id "0HNILA645VE31:00000004": done reading request body.
+2026-01-17 01:50:00.634 +03:00 [DBG] JSON input formatter succeeded, deserializing to type 'Entites.Data_Transfer_object.ZimmetDemirbas.UpdateCategoryDTO'
+2026-01-17 01:50:00.637 +03:00 [DBG] Done attempting to bind parameter 'updateCategoryDTO' of type 'Entites.Data_Transfer_object.ZimmetDemirbas.UpdateCategoryDTO'.
+2026-01-17 01:50:00.640 +03:00 [DBG] Done attempting to bind parameter 'updateCategoryDTO' of type 'Entites.Data_Transfer_object.ZimmetDemirbas.UpdateCategoryDTO'.
+2026-01-17 01:50:00.643 +03:00 [DBG] Attempting to validate the bound parameter 'updateCategoryDTO' of type 'Entites.Data_Transfer_object.ZimmetDemirbas.UpdateCategoryDTO' ...
+2026-01-17 01:50:00.662 +03:00 [DBG] Done attempting to validate the bound parameter 'updateCategoryDTO' of type 'Entites.Data_Transfer_object.ZimmetDemirbas.UpdateCategoryDTO'.
+2026-01-17 01:50:00.669 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' ...
+2026-01-17 01:50:00.673 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2026-01-17 01:50:00.678 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2026-01-17 01:50:00.682 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2026-01-17 01:50:00.685 +03:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2026-01-17 01:50:00.688 +03:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2026-01-17 01:50:05.355 +03:00 [INF] Entity Framework Core 6.0.10 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: MigrationsAssembly=TaskManagerApi 
+2026-01-17 01:50:05.487 +03:00 [DBG] Compiling query expression: 
+'DbSet<Category>()
+    .SingleOrDefault(x => x.Id == __id_0 && x.isActive == True)'
+2026-01-17 01:50:05.894 +03:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<Category>(
+    asyncEnumerable: new SingleQueryingEnumerable<Category>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.SelectExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Category.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Category.CreatedAt (DateTime) Required, 1], [Property: Category.Description (string) Required, 2], [Property: Category.Name (string) Required, 3], [Property: Category.isActive (bool) Required, 4] }
+            SELECT TOP(2) c.Id, c.CreatedAt, c.Description, c.Name, c.isActive
+            FROM Categories AS c
+            WHERE (c.Id == @__id_0) && (c.isActive == CAST(1 AS bit))), 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Category>, 
+        Repositories.EFCore.RepositoryContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2026-01-17 01:50:06.010 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-01-17 01:50:06.070 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (54ms).
+2026-01-17 01:50:06.106 +03:00 [DBG] Opening connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-17 01:50:06.590 +03:00 [DBG] Opened connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-17 01:50:06.622 +03:00 [DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [c].[Id], [c].[CreatedAt], [c].[Description], [c].[Name], [c].[isActive]
+FROM [Categories] AS [c]
+WHERE ([c].[Id] = @__id_0) AND ([c].[isActive] = CAST(1 AS bit))
+2026-01-17 01:50:06.734 +03:00 [INF] Executed DbCommand (122ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [c].[Id], [c].[CreatedAt], [c].[Description], [c].[Name], [c].[isActive]
+FROM [Categories] AS [c]
+WHERE ([c].[Id] = @__id_0) AND ([c].[isActive] = CAST(1 AS bit))
+2026-01-17 01:50:06.789 +03:00 [DBG] Context 'RepositoryContext' started tracking 'Category' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-17 01:50:06.841 +03:00 [DBG] A data reader was disposed.
+2026-01-17 01:50:06.851 +03:00 [DBG] Closing connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-17 01:50:06.866 +03:00 [DBG] Closed connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-17 01:50:40.599 +03:00 [DBG] SaveChanges starting for 'RepositoryContext'.
+2026-01-17 01:50:40.604 +03:00 [DBG] DetectChanges starting for 'RepositoryContext'.
+2026-01-17 01:50:40.622 +03:00 [DBG] DetectChanges completed for 'RepositoryContext'.
+2026-01-17 01:50:40.631 +03:00 [DBG] SaveChanges completed for 'RepositoryContext' with 0 entities written to the database.
+2026-01-17 01:50:43.592 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2026-01-17 01:50:43.599 +03:00 [DBG] No information found on request to perform content negotiation.
+2026-01-17 01:50:43.601 +03:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2026-01-17 01:50:43.602 +03:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2026-01-17 01:50:43.604 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2026-01-17 01:50:43.606 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2026-01-17 01:50:43.618 +03:00 [INF] Executed action Presentation.Controllers.ZimmetDemirbasController.UpdateCategoryAsync (Presentation) in 43367.5061ms
+2026-01-17 01:50:43.623 +03:00 [INF] Executed endpoint 'Presentation.Controllers.ZimmetDemirbasController.UpdateCategoryAsync (Presentation)'
+2026-01-17 01:50:43.630 +03:00 [DBG] Connection id "0HNILA645VE31" completed keep alive response.
+2026-01-17 01:50:43.638 +03:00 [DBG] 'RepositoryContext' disposed.
+2026-01-17 01:50:43.646 +03:00 [INF] Request finished HTTP/1.1 PUT http://localhost:1000/ZimmetDemirbas/UpdateCategory/1 application/json 67 - 200 - text/plain;+charset=utf-8 43901.2110ms
+2026-01-17 01:53:12.137 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2026-01-17 01:53:12.320 +03:00 [DBG] Hosting starting
+2026-01-17 01:53:12.361 +03:00 [INF] User profile is available. Using 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-01-17 01:53:12.367 +03:00 [DBG] Reading data from file 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys\key-06314caf-114b-4447-b671-26cff94eef42.xml'.
+2026-01-17 01:53:12.374 +03:00 [DBG] Reading data from file 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys\key-090bb267-211d-492b-a818-8821e0be7068.xml'.
+2026-01-17 01:53:12.378 +03:00 [DBG] Reading data from file 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys\key-48d29924-c2fa-4ef4-a60c-de094dd470d3.xml'.
+2026-01-17 01:53:12.380 +03:00 [DBG] Reading data from file 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys\key-55f98cc5-78aa-424c-bf70-872acedb0f6c.xml'.
+2026-01-17 01:53:12.389 +03:00 [DBG] Found key {06314caf-114b-4447-b671-26cff94eef42}.
+2026-01-17 01:53:12.399 +03:00 [DBG] Found key {090bb267-211d-492b-a818-8821e0be7068}.
+2026-01-17 01:53:12.402 +03:00 [DBG] Found key {48d29924-c2fa-4ef4-a60c-de094dd470d3}.
+2026-01-17 01:53:12.404 +03:00 [DBG] Found key {55f98cc5-78aa-424c-bf70-872acedb0f6c}.
+2026-01-17 01:53:12.416 +03:00 [DBG] Considering key {48d29924-c2fa-4ef4-a60c-de094dd470d3} with expiration date 2026-04-04 17:42:23Z as default key.
+2026-01-17 01:53:12.423 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2026-01-17 01:53:12.431 +03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2026-01-17 01:53:12.434 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2026-01-17 01:53:12.443 +03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2026-01-17 01:53:12.449 +03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2026-01-17 01:53:12.454 +03:00 [DBG] Using key {48d29924-c2fa-4ef4-a60c-de094dd470d3} as the default key.
+2026-01-17 01:53:12.457 +03:00 [DBG] Key ring with default key {48d29924-c2fa-4ef4-a60c-de094dd470d3} was loaded during application startup.
+2026-01-17 01:53:12.646 +03:00 [WRN] Overriding address(es) 'http://localhost:1000'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2026-01-17 01:53:12.699 +03:00 [INF] Now listening on: http://localhost:1000
+2026-01-17 01:53:12.702 +03:00 [DBG] Loaded hosting startup assembly TaskManagerApi
+2026-01-17 01:53:12.704 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2026-01-17 01:53:12.711 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2026-01-17 01:53:12.715 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2026-01-17 01:53:12.731 +03:00 [DBG] Connection id "0HNILA83GTAGR" accepted.
+2026-01-17 01:53:12.736 +03:00 [DBG] Connection id "0HNILA83GTAGR" started.
+2026-01-17 01:53:12.738 +03:00 [DBG] Connection id "0HNILA83GTAGS" accepted.
+2026-01-17 01:53:12.743 +03:00 [DBG] Connection id "0HNILA83GTAGS" started.
+2026-01-17 01:53:12.786 +03:00 [DBG] Connection id "0HNILA83GTAGR" received FIN.
+2026-01-17 01:53:12.786 +03:00 [DBG] Connection id "0HNILA83GTAGS" received FIN.
+2026-01-17 01:53:12.803 +03:00 [DBG] Connection id "0HNILA83GTAGS" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-01-17 01:53:12.799 +03:00 [DBG] Connection id "0HNILA83GTAGR" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-01-17 01:53:12.813 +03:00 [DBG] Connection id "0HNILA83GTAGS" disconnecting.
+2026-01-17 01:53:12.814 +03:00 [DBG] Connection id "0HNILA83GTAGR" disconnecting.
+2026-01-17 01:53:12.821 +03:00 [DBG] Connection id "0HNILA83GTAGS" stopped.
+2026-01-17 01:53:12.821 +03:00 [DBG] Connection id "0HNILA83GTAGR" stopped.
+2026-01-17 01:53:12.982 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-17 01:53:12.985 +03:00 [INF] Hosting environment: Development
+2026-01-17 01:53:12.987 +03:00 [INF] Content root path: C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManagerApi\TaskManager\
+2026-01-17 01:53:12.989 +03:00 [DBG] Hosting started
+2026-01-17 01:53:15.388 +03:00 [DBG] Connection id "0HNILA83GTAGT" accepted.
+2026-01-17 01:53:16.262 +03:00 [DBG] Connection id "0HNILA83GTAGT" started.
+2026-01-17 01:53:16.990 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:1000/swagger/index.html - -
+2026-01-17 01:53:17.748 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2026-01-17 01:53:18.047 +03:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2026-01-17 01:53:18.059 +03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2026-01-17 01:53:18.316 +03:00 [DBG] Response markup was updated to include Browser Link script injection.
+2026-01-17 01:53:18.323 +03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2026-01-17 01:53:18.346 +03:00 [DBG] Connection id "0HNILA83GTAGT" completed keep alive response.
+2026-01-17 01:53:18.379 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:1000/swagger/index.html - - - 200 - text/html;charset=utf-8 1403.3341ms
+2026-01-17 01:53:18.543 +03:00 [DBG] Connection id "0HNILA83GTAGU" accepted.
+2026-01-17 01:53:18.548 +03:00 [DBG] Connection id "0HNILA83GTAGU" started.
+2026-01-17 01:53:18.551 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:1000/_framework/aspnetcore-browser-refresh.js - -
+2026-01-17 01:53:18.555 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:1000/_vs/browserLink - -
+2026-01-17 01:53:18.568 +03:00 [DBG] Connection id "0HNILA83GTAGT" completed keep alive response.
+2026-01-17 01:53:18.610 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:1000/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 55.3258ms
+2026-01-17 01:53:18.943 +03:00 [DBG] Connection id "0HNILA83GTAGU" completed keep alive response.
+2026-01-17 01:53:19.058 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:1000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 502.9999ms
+2026-01-17 01:53:19.067 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:1000/swagger/v1/swagger.json - -
+2026-01-17 01:53:19.123 +03:00 [DBG] Connection id "0HNILA83GTAGU" completed keep alive response.
+2026-01-17 01:53:19.172 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:1000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 104.7669ms
+2026-01-17 01:53:44.551 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost:1000/ZimmetDemirbas/UpdateCategory/1 application/json 61
+2026-01-17 01:53:44.560 +03:00 [DBG] PUT requests are not supported
+2026-01-17 01:53:44.565 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-01-17 01:53:44.614 +03:00 [DBG] 1 candidate(s) found for the request path '/ZimmetDemirbas/UpdateCategory/1'
+2026-01-17 01:53:44.627 +03:00 [DBG] Endpoint 'Presentation.Controllers.ZimmetDemirbasController.UpdateCategoryAsync (Presentation)' with route pattern 'ZimmetDemirbas/UpdateCategory/{id}' is valid for the request path '/ZimmetDemirbas/UpdateCategory/1'
+2026-01-17 01:53:44.632 +03:00 [DBG] Request matched endpoint 'Presentation.Controllers.ZimmetDemirbasController.UpdateCategoryAsync (Presentation)'
+2026-01-17 01:53:44.747 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2026-01-17 01:53:44.827 +03:00 [INF] Executing endpoint 'Presentation.Controllers.ZimmetDemirbasController.UpdateCategoryAsync (Presentation)'
+2026-01-17 01:53:44.884 +03:00 [INF] Route matched with {action = "UpdateCategory", controller = "ZimmetDemirbas"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateCategoryAsync(Entites.Data_Transfer_object.ZimmetDemirbas.UpdateCategoryDTO, Int32) on controller Presentation.Controllers.ZimmetDemirbasController (Presentation).
+2026-01-17 01:53:44.891 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2026-01-17 01:53:44.894 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2026-01-17 01:53:44.897 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2026-01-17 01:53:44.901 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2026-01-17 01:53:44.904 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2026-01-17 01:53:44.909 +03:00 [DBG] Executing controller factory for controller Presentation.Controllers.ZimmetDemirbasController (Presentation)
+2026-01-17 01:53:45.126 +03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2026-01-17 01:53:45.168 +03:00 [DBG] Executed controller factory for controller Presentation.Controllers.ZimmetDemirbasController (Presentation)
+2026-01-17 01:53:45.179 +03:00 [DBG] Attempting to bind parameter 'updateCategoryDTO' of type 'Entites.Data_Transfer_object.ZimmetDemirbas.UpdateCategoryDTO' ...
+2026-01-17 01:53:45.186 +03:00 [DBG] Attempting to bind parameter 'updateCategoryDTO' of type 'Entites.Data_Transfer_object.ZimmetDemirbas.UpdateCategoryDTO' using the name '' in request data ...
+2026-01-17 01:53:45.191 +03:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2026-01-17 01:53:45.210 +03:00 [DBG] Connection id "0HNILA83GTAGU", Request id "0HNILA83GTAGU:00000004": started reading request body.
+2026-01-17 01:53:45.215 +03:00 [DBG] Connection id "0HNILA83GTAGU", Request id "0HNILA83GTAGU:00000004": done reading request body.
+2026-01-17 01:53:45.269 +03:00 [DBG] JSON input formatter succeeded, deserializing to type 'Entites.Data_Transfer_object.ZimmetDemirbas.UpdateCategoryDTO'
+2026-01-17 01:53:45.274 +03:00 [DBG] Done attempting to bind parameter 'updateCategoryDTO' of type 'Entites.Data_Transfer_object.ZimmetDemirbas.UpdateCategoryDTO'.
+2026-01-17 01:53:45.279 +03:00 [DBG] Done attempting to bind parameter 'updateCategoryDTO' of type 'Entites.Data_Transfer_object.ZimmetDemirbas.UpdateCategoryDTO'.
+2026-01-17 01:53:45.284 +03:00 [DBG] Attempting to validate the bound parameter 'updateCategoryDTO' of type 'Entites.Data_Transfer_object.ZimmetDemirbas.UpdateCategoryDTO' ...
+2026-01-17 01:53:45.300 +03:00 [DBG] Done attempting to validate the bound parameter 'updateCategoryDTO' of type 'Entites.Data_Transfer_object.ZimmetDemirbas.UpdateCategoryDTO'.
+2026-01-17 01:53:45.306 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' ...
+2026-01-17 01:53:45.310 +03:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2026-01-17 01:53:45.315 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2026-01-17 01:53:45.318 +03:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2026-01-17 01:53:45.321 +03:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2026-01-17 01:53:45.323 +03:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2026-01-17 01:53:55.604 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:1000/swagger/index.html - -
+2026-01-17 01:53:55.633 +03:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2026-01-17 01:53:55.635 +03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2026-01-17 01:53:55.640 +03:00 [DBG] Response markup was updated to include Browser Link script injection.
+2026-01-17 01:53:55.654 +03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2026-01-17 01:53:55.666 +03:00 [DBG] Connection id "0HNILA83GTAGU" received FIN.
+2026-01-17 01:53:55.668 +03:00 [DBG] Connection id "0HNILA83GTAGT" completed keep alive response.
+2026-01-17 01:53:55.688 +03:00 [DBG] Connection id "0HNILA83GTAGU" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-01-17 01:53:55.691 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:1000/swagger/index.html - - - 200 - text/html;charset=utf-8 86.8769ms
+2026-01-17 01:53:55.698 +03:00 [DBG] Connection id "0HNILA83GTAGU" disconnecting.
+2026-01-17 01:53:55.780 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:1000/_vs/browserLink - -
+2026-01-17 01:53:55.781 +03:00 [DBG] Connection id "0HNILA83GTAGV" accepted.
+2026-01-17 01:53:55.811 +03:00 [DBG] Connection id "0HNILA83GTAGV" started.
+2026-01-17 01:53:55.874 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:1000/_framework/aspnetcore-browser-refresh.js - -
+2026-01-17 01:53:55.890 +03:00 [DBG] Connection id "0HNILA83GTAGT" completed keep alive response.
+2026-01-17 01:53:55.912 +03:00 [DBG] Connection id "0HNILA83GTAGV" completed keep alive response.
+2026-01-17 01:53:55.935 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:1000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 155.0749ms
+2026-01-17 01:53:55.940 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:1000/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 66.9389ms
+2026-01-17 01:53:56.145 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:1000/swagger/v1/swagger.json - -
+2026-01-17 01:53:56.161 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:1000/swagger/favicon-32x32.png - -
+2026-01-17 01:53:56.208 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2026-01-17 01:53:56.213 +03:00 [DBG] Connection id "0HNILA83GTAGV" completed keep alive response.
+2026-01-17 01:53:56.223 +03:00 [DBG] Connection id "0HNILA83GTAGT" completed keep alive response.
+2026-01-17 01:53:56.239 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:1000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 93.9383ms
+2026-01-17 01:53:56.245 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:1000/swagger/favicon-32x32.png - - - 200 628 image/png 83.7579ms
+2026-01-17 01:53:56.601 +03:00 [INF] Entity Framework Core 6.0.10 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: MigrationsAssembly=TaskManagerApi 
+2026-01-17 01:53:56.712 +03:00 [DBG] Compiling query expression: 
+'DbSet<Category>()
+    .SingleOrDefault(x => x.Id == __id_0 && x.isActive == True)'
+2026-01-17 01:53:57.340 +03:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<Category>(
+    asyncEnumerable: new SingleQueryingEnumerable<Category>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.SelectExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Category.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Category.CreatedAt (DateTime) Required, 1], [Property: Category.Description (string) Required, 2], [Property: Category.Name (string) Required, 3], [Property: Category.isActive (bool) Required, 4] }
+            SELECT TOP(2) c.Id, c.CreatedAt, c.Description, c.Name, c.isActive
+            FROM Categories AS c
+            WHERE (c.Id == @__id_0) && (c.isActive == CAST(1 AS bit))), 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Category>, 
+        Repositories.EFCore.RepositoryContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2026-01-17 01:53:57.510 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-01-17 01:53:57.614 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (99ms).
+2026-01-17 01:53:57.665 +03:00 [DBG] Opening connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-17 01:53:58.232 +03:00 [DBG] Opened connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-17 01:53:58.263 +03:00 [DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [c].[Id], [c].[CreatedAt], [c].[Description], [c].[Name], [c].[isActive]
+FROM [Categories] AS [c]
+WHERE ([c].[Id] = @__id_0) AND ([c].[isActive] = CAST(1 AS bit))
+2026-01-17 01:53:58.376 +03:00 [INF] Executed DbCommand (126ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [c].[Id], [c].[CreatedAt], [c].[Description], [c].[Name], [c].[isActive]
+FROM [Categories] AS [c]
+WHERE ([c].[Id] = @__id_0) AND ([c].[isActive] = CAST(1 AS bit))
+2026-01-17 01:53:58.420 +03:00 [DBG] Context 'RepositoryContext' started tracking 'Category' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-17 01:53:58.463 +03:00 [DBG] A data reader was disposed.
+2026-01-17 01:53:58.472 +03:00 [DBG] Closing connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-17 01:53:58.486 +03:00 [DBG] Closed connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-17 01:53:58.501 +03:00 [DBG] SaveChanges starting for 'RepositoryContext'.
+2026-01-17 01:53:58.508 +03:00 [DBG] DetectChanges starting for 'RepositoryContext'.
+2026-01-17 01:53:58.535 +03:00 [DBG] The unchanged property 'Category.Description' was detected as changed and will be marked as modified. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2026-01-17 01:53:58.552 +03:00 [DBG] An entity of type 'Category' tracked by 'RepositoryContext' changed state from '"Unchanged"' to '"Modified"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-17 01:53:58.558 +03:00 [DBG] The unchanged property 'Category.Name' was detected as changed and will be marked as modified. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2026-01-17 01:53:58.568 +03:00 [DBG] DetectChanges completed for 'RepositoryContext'.
+2026-01-17 01:53:58.620 +03:00 [DBG] Opening connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-17 01:53:58.633 +03:00 [DBG] Opened connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-17 01:53:58.680 +03:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2026-01-17 01:53:58.770 +03:00 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2026-01-17 01:53:58.961 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-01-17 01:53:58.969 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (7ms).
+2026-01-17 01:53:58.981 +03:00 [DBG] Executing DbCommand [Parameters=[@p2='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Categories] SET [Description] = @p0, [Name] = @p1
+WHERE [Id] = @p2;
+SELECT @@ROWCOUNT;
+2026-01-17 01:53:59.005 +03:00 [INF] Executed DbCommand (24ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Categories] SET [Description] = @p0, [Name] = @p1
+WHERE [Id] = @p2;
+SELECT @@ROWCOUNT;
+2026-01-17 01:53:59.035 +03:00 [DBG] A data reader was disposed.
+2026-01-17 01:53:59.058 +03:00 [DBG] Committing transaction.
+2026-01-17 01:53:59.075 +03:00 [DBG] Committed transaction.
+2026-01-17 01:53:59.093 +03:00 [DBG] Closing connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-17 01:53:59.098 +03:00 [DBG] Closed connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-01-17 01:53:59.113 +03:00 [DBG] Disposing transaction.
+2026-01-17 01:53:59.133 +03:00 [DBG] An entity of type 'Category' tracked by 'RepositoryContext' changed state from '"Modified"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-17 01:53:59.148 +03:00 [DBG] SaveChanges completed for 'RepositoryContext' with 1 entities written to the database.
+2026-01-17 01:53:59.167 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2026-01-17 01:53:59.180 +03:00 [DBG] No information found on request to perform content negotiation.
+2026-01-17 01:53:59.182 +03:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2026-01-17 01:53:59.184 +03:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2026-01-17 01:53:59.189 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2026-01-17 01:53:59.193 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2026-01-17 01:54:06.343 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2026-01-17 01:54:06.527 +03:00 [DBG] Hosting starting
+2026-01-17 01:54:06.608 +03:00 [INF] User profile is available. Using 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-01-17 01:54:06.619 +03:00 [DBG] Reading data from file 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys\key-06314caf-114b-4447-b671-26cff94eef42.xml'.
+2026-01-17 01:54:06.635 +03:00 [DBG] Reading data from file 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys\key-090bb267-211d-492b-a818-8821e0be7068.xml'.
+2026-01-17 01:54:06.639 +03:00 [DBG] Reading data from file 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys\key-48d29924-c2fa-4ef4-a60c-de094dd470d3.xml'.
+2026-01-17 01:54:06.643 +03:00 [DBG] Reading data from file 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys\key-55f98cc5-78aa-424c-bf70-872acedb0f6c.xml'.
+2026-01-17 01:54:06.658 +03:00 [DBG] Found key {06314caf-114b-4447-b671-26cff94eef42}.
+2026-01-17 01:54:06.672 +03:00 [DBG] Found key {090bb267-211d-492b-a818-8821e0be7068}.
+2026-01-17 01:54:06.675 +03:00 [DBG] Found key {48d29924-c2fa-4ef4-a60c-de094dd470d3}.
+2026-01-17 01:54:06.678 +03:00 [DBG] Found key {55f98cc5-78aa-424c-bf70-872acedb0f6c}.
+2026-01-17 01:54:06.697 +03:00 [DBG] Considering key {48d29924-c2fa-4ef4-a60c-de094dd470d3} with expiration date 2026-04-04 17:42:23Z as default key.
+2026-01-17 01:54:06.704 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2026-01-17 01:54:06.716 +03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2026-01-17 01:54:06.720 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2026-01-17 01:54:06.733 +03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2026-01-17 01:54:06.751 +03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2026-01-17 01:54:06.759 +03:00 [DBG] Using key {48d29924-c2fa-4ef4-a60c-de094dd470d3} as the default key.
+2026-01-17 01:54:06.763 +03:00 [DBG] Key ring with default key {48d29924-c2fa-4ef4-a60c-de094dd470d3} was loaded during application startup.
+2026-01-17 01:54:06.994 +03:00 [WRN] Overriding address(es) 'http://localhost:1000'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2026-01-17 01:54:07.056 +03:00 [INF] Now listening on: http://localhost:1000
+2026-01-17 01:54:07.057 +03:00 [DBG] Connection id "0HNILA8JN0BL9" accepted.
+2026-01-17 01:54:07.058 +03:00 [DBG] Loaded hosting startup assembly TaskManagerApi
+2026-01-17 01:54:07.063 +03:00 [DBG] Connection id "0HNILA8JN0BL9" started.
+2026-01-17 01:54:07.063 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2026-01-17 01:54:07.067 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2026-01-17 01:54:07.069 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2026-01-17 01:54:07.083 +03:00 [DBG] Connection id "0HNILA8JN0BL9" received FIN.
+2026-01-17 01:54:07.089 +03:00 [DBG] Connection id "0HNILA8JN0BL9" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-01-17 01:54:07.096 +03:00 [DBG] Connection id "0HNILA8JN0BL9" disconnecting.
+2026-01-17 01:54:07.112 +03:00 [DBG] Connection id "0HNILA8JN0BL9" stopped.
+2026-01-17 01:54:07.579 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-17 01:54:08.396 +03:00 [DBG] Connection id "0HNILA8JN0BLA" accepted.
+2026-01-17 01:54:08.442 +03:00 [INF] Hosting environment: Development
+2026-01-17 01:54:09.186 +03:00 [DBG] Connection id "0HNILA8JN0BLA" started.
+2026-01-17 01:54:09.171 +03:00 [DBG] Connection id "0HNILA8JN0BLA" received FIN.

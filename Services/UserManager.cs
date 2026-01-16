@@ -199,12 +199,6 @@ namespace Services
             var eklenecekGunSayısı = (izin.BitisTarihi - izin.BaslangicTarihi).Days + 1;
             int ToplamHakedis=mevcutIzın.HakedilenIzın+ eklenecekGunSayısı;
             var userId= izin.UserId;
-            //var izinGuncelle = new userIzın()
-            //{
-            //    Id=izin.UserId,
-            //    userId=izin.UserId,
-            //    HakedilenIzın=eklenecekGunSayısı
-            //};
             await _repositoryManager.UserIzınRepository.IzınGuncelleAsync(userId, ToplamHakedis);
             await _repositoryManager.UserIzınRepository.UserDetayIzinSilAsync(izin);
         }

@@ -14,6 +14,7 @@ namespace Repositories.Contracts
         IjobDetailRepository JobDetailRepository { get; }
         IAuthenticationRepository authenticationRepository { get; }
         IUserIzınRepository UserIzınRepository { get; }
+        IZimmetDemirbasRepository zimmetDemirbasRepository { get; }
         Task saveAsyc();
     }
 }

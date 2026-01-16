@@ -13,6 +13,7 @@ namespace Services.Contracts
         IJobHeaderService JobHeaderService { get; }
         IJobDetailService JobDetailService { get; }
         IAuthenticationService authenticationService { get; }
+        IZimmetDemirbasService ZimmetDemirbasService { get; }
 
     }
 }
