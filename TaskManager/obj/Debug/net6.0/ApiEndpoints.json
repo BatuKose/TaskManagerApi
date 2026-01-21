@@ -398,6 +398,16 @@
   },
   {
     "ContainingType": "Presentation.Controllers.ZimmetDemirbasController",
+    "Method": "GetAllProductsAsync",
+    "RelativePath": "ZimmetDemirbas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.ZimmetDemirbasController",
     "Method": "InsertCategoryAsync",
     "RelativePath": "ZimmetDemirbas/InsertCategory",
     "HttpMethod": "POST",
@@ -407,6 +417,54 @@
       {
         "Name": "categoryDTO",
         "Type": "Entites.Data_Transfer_object.ZimmetDemirbas.CreateCategoryDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.ZimmetDemirbasController",
+    "Method": "InsertProductAsync",
+    "RelativePath": "ZimmetDemirbas/InsertProduct",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "product",
+        "Type": "Entites.Data_Transfer_object.ZimmetDemirbas.CreateProductDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.ZimmetDemirbasController",
+    "Method": "SoftDeleteProductAsync",
+    "RelativePath": "ZimmetDemirbas/soft-delete-product/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.ZimmetDemirbasController",
+    "Method": "SoftDeleteCategoryAsync",
+    "RelativePath": "ZimmetDemirbas/soft-delete/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],

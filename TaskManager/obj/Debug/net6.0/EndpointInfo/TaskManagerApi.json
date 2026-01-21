@@ -733,6 +733,95 @@
           }
         }
       }
+    },
+    "/ZimmetDemirbas/soft-delete/{id}": {
+      "put": {
+        "tags": [
+          "ZimmetDemirbas"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/ZimmetDemirbas/InsertProduct": {
+      "post": {
+        "tags": [
+          "ZimmetDemirbas"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateProductDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateProductDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateProductDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/ZimmetDemirbas/soft-delete-product/{id}": {
+      "put": {
+        "tags": [
+          "ZimmetDemirbas"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/ZimmetDemirbas": {
+      "get": {
+        "tags": [
+          "ZimmetDemirbas"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
     }
   },
   "components": {
@@ -779,6 +868,40 @@
           "deadline": {
             "type": "string",
             "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateProductDto": {
+        "required": [
+          "brand",
+          "categoryId",
+          "model",
+          "name"
+        ],
+        "type": "object",
+        "properties": {
+          "categoryId": {
+            "maximum": 2147483647,
+            "minimum": 1,
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "minLength": 5,
+            "type": "string"
+          },
+          "brand": {
+            "minLength": 5,
+            "type": "string"
+          },
+          "model": {
+            "minLength": 5,
+            "type": "string"
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false

@@ -1,4 +1,5 @@
-﻿using Entites.Models;
+﻿using Entites.Data_Transfer_object.ZimmetDemirbas;
+using Entites.Models;
 using Microsoft.EntityFrameworkCore;
 using Repositories.Contracts;
 using System;
@@ -16,7 +17,10 @@ namespace Repositories.EFCore
         {
             _context = context;
         }
-
+        public async Task SaveAsync()
+        {
+            await _context.SaveChangesAsync();
+        }
         public  async Task<Category> InsertCategoryAsync(Category category)
         {
             _context.Categories.Add(category);
@@ -30,10 +34,38 @@ namespace Repositories.EFCore
             var category= await _context.Categories.SingleOrDefaultAsync(x=>x.Id==id && x.isActive==true);
             return category;
         }
-
-        public async Task SaveAsync()
+        public async Task<Product>InsertProductAsync(Product product)
         {
+            _context.Products.Add(product);
             await _context.SaveChangesAsync();
+            return product;
+        }
+
+        public Task<Product> SelectProductById(int id)
+        {
+           var product= _context.Products.SingleOrDefaultAsync(x=>x.id==id && x.isActive==true);
+           return product;
+        }
+        public async Task<List<UrünBilgileriDTO>> GetProductsWithCategoryAsync()
+        {
+            var query  = await (from p in _context.Products.AsNoTracking()
+                        join c in _context.Categories.AsNoTracking() on p.categoryId equals c.Id
+                        where p.isActive==true && c.isActive==true
+                        select new UrünBilgileriDTO
+                        {
+                            urunAd=p.name,
+                            urunMarka=p.brand,
+                            urunModel=p.model,
+                            urunKategori=c.Name
+
+                        }).ToListAsync();
+            return  query;
+        }
+        //ürün silinmeye müsait mi kontrolü ve aynısı kategori için de yapılacak daha bitmedi
+        public async Task<bool> ProductSilinmeyeMüsaitMi(int id,int catId)
+        {
+            return await _context.Products.AnyAsync(x => x.id == id && x.categoryId == catId);
+           
         }
     }
 }

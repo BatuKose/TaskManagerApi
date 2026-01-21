@@ -94,7 +94,8 @@ namespace Repositories.EFCore
                         join u1 in _Context.users on j.ManagerId equals u1.Id
                         join r in _Context.roles on u.RoleId equals r.Id
                         join r1 in _Context.roles on u1.RoleId equals r1.Id
-                        where j.Id == id
+                        where j.Id == id 
+
                         select new JobDetayStatusWithHeaderDTO()
                         {
                             JobHeaderName=j.Title,

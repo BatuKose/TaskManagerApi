@@ -55,6 +55,53 @@ namespace Services
                 Description = category.Description
             };
         }
+        public async Task<Category> SoftDeleteCategoryAsync(int id)
+        {
+             var Categorty = await _repositoryManager.zimmetDemirbasRepository.SelectCategoryById(id);
+            if (Categorty is null) throw new Exception("Kategori bulunamadı");
+            Categorty.isActive = false;
+            await _repositoryManager.zimmetDemirbasRepository.SaveAsync();
+            return Categorty;
+        }
+        public async Task<CreateProductDto>InsertProductAsync(CreateProductDto dto)
+        {
+            var product = new Product()
+            {
+                categoryId = dto.categoryId,
+                name = dto.name,
+                brand = dto.brand,
+                model = dto.model,
+                description = dto.description
 
+            };
+            var categoryİsExist= await _repositoryManager.zimmetDemirbasRepository.SelectCategoryById(product.categoryId);
+            if (categoryİsExist is null) throw new Exception("Kategori bulunamadı");
+
+            await _repositoryManager.zimmetDemirbasRepository.InsertProductAsync(product);
+          
+            return new CreateProductDto { 
+                categoryId= product.categoryId,
+                name=product.name,
+                brand=product.brand,
+                model=product.model,
+                description=product.description
+            };
+        }
+        public async Task<Product> SoftDeleteProductAsync(int id)
+        {
+           var prodcut= await _repositoryManager.zimmetDemirbasRepository.SelectProductById(id);
+            if (prodcut is null) throw new Exception("Ürün bulunamadı");
+            prodcut.isActive = false;
+            await _repositoryManager.zimmetDemirbasRepository.SaveAsync();
+            return prodcut;
+        }
+
+        public Task<List<UrünBilgileriDTO>> GetProductsWithCategoryAsync()
+        {
+            var productsWithCategory = _repositoryManager.zimmetDemirbasRepository.GetProductsWithCategoryAsync();
+            if(productsWithCategory is null) throw new Exception("Ürünler bulunamadı");
+            return productsWithCategory;
+        }
+      
     }
 }

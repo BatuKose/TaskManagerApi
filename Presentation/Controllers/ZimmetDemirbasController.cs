@@ -36,5 +36,31 @@ namespace Presentation.Controllers
             await _serviceManager.ZimmetDemirbasService.UpdateCategoryAsync(updateCategoryDTO,id);
             return Ok("Kategori başarıyla güncellendi.");
         }
+        [HttpPut("soft-delete/{id}")]
+        public async Task<IActionResult> SoftDeleteCategoryAsync(int id)
+        {
+            await _serviceManager.ZimmetDemirbasService.SoftDeleteCategoryAsync(id);
+            return Ok("Kategori başarıyla silindi.");
+        }
+        [HttpPost("InsertProduct")]
+        public async Task<IActionResult> InsertProductAsync([FromBody] CreateProductDto product)
+        {
+            if(!ModelState.IsValid) return BadRequest(ModelState);
+            await _serviceManager.ZimmetDemirbasService.InsertProductAsync(product);
+            return Ok("Ürün başarıyla eklendi.");
+        }
+        [HttpPut("soft-delete-product/{id}")]
+        public async Task<IActionResult> SoftDeleteProductAsync(int id)
+        {
+            await _serviceManager.ZimmetDemirbasService.SoftDeleteProductAsync(id);
+            return Ok("Ürün başarıyla silindi.");
+        }
+        [HttpGet("ürün-listesi")]
+        public async Task<IActionResult> GetAllProductsAsync()
+        {
+            var products = await _serviceManager.ZimmetDemirbasService.GetProductsWithCategoryAsync();
+            return Ok(products);
+        }
+
     }
 }
