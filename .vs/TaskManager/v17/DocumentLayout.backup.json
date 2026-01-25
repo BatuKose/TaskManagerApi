@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{97C5EDCF-476D-4C0B-9352-4D9F488FCF9F}|Repositories\\Repositories.csproj|c:\\users\\batuhan\\desktop\\desktop\\itsoftware\\asp.net web api\\projeler\\taskmanagerapi\\repositories\\efcore\\zimmetdemirbasrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97C5EDCF-476D-4C0B-9352-4D9F488FCF9F}|Repositories\\Repositories.csproj|solutionrelative:repositories\\efcore\\zimmetdemirbasrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9CBDA63E-0020-4886-A5B7-1CBBE8403DD3}|TaskManager\\TaskManagerApi.csproj|c:\\users\\batuhan\\desktop\\desktop\\itsoftware\\asp.net web api\\projeler\\taskmanagerapi\\taskmanager\\migrations\\20260125174226_zimmetkisiler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CBDA63E-0020-4886-A5B7-1CBBE8403DD3}|TaskManager\\TaskManagerApi.csproj|solutionrelative:taskmanager\\migrations\\20260125174226_zimmetkisiler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97C5EDCF-476D-4C0B-9352-4D9F488FCF9F}|Repositories\\Repositories.csproj|c:\\users\\batuhan\\desktop\\desktop\\itsoftware\\asp.net web api\\projeler\\taskmanagerapi\\repositories\\efcore\\repositorycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97C5EDCF-476D-4C0B-9352-4D9F488FCF9F}|Repositories\\Repositories.csproj|solutionrelative:repositories\\efcore\\repositorycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,14 +39,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ZimmetDemirbasRepository.cs",
-              "DocumentMoniker": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\Repositories\\EFCore\\ZimmetDemirbasRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\EFCore\\ZimmetDemirbasRepository.cs",
-              "ToolTip": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\Repositories\\EFCore\\ZimmetDemirbasRepository.cs",
-              "RelativeToolTip": "Repositories\\EFCore\\ZimmetDemirbasRepository.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAAAD8AAABdAAAAAAAAAA==",
+              "Title": "20260125174226_ZimmetKisiler.cs",
+              "DocumentMoniker": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\TaskManager\\Migrations\\20260125174226_ZimmetKisiler.cs",
+              "RelativeDocumentMoniker": "TaskManager\\Migrations\\20260125174226_ZimmetKisiler.cs",
+              "ToolTip": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\TaskManager\\Migrations\\20260125174226_ZimmetKisiler.cs",
+              "RelativeToolTip": "TaskManager\\Migrations\\20260125174226_ZimmetKisiler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-21T20:14:35.058Z",
+              "WhenOpened": "2026-01-25T17:42:27.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RepositoryContext.cs",
+              "DocumentMoniker": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\Repositories\\EFCore\\RepositoryContext.cs",
+              "RelativeDocumentMoniker": "Repositories\\EFCore\\RepositoryContext.cs",
+              "ToolTip": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\Repositories\\EFCore\\RepositoryContext.cs",
+              "RelativeToolTip": "Repositories\\EFCore\\RepositoryContext.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAABoAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-25T17:41:48.506Z",
               "EditorCaption": ""
             }
           ]

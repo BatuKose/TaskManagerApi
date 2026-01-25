@@ -811,7 +811,7 @@
         }
       }
     },
-    "/ZimmetDemirbas": {
+    "/ZimmetDemirbas/ürün-listesi": {
       "get": {
         "tags": [
           "ZimmetDemirbas"
@@ -877,7 +877,8 @@
           "brand",
           "categoryId",
           "model",
-          "name"
+          "name",
+          "unit"
         ],
         "type": "object",
         "properties": {
@@ -902,6 +903,12 @@
           "description": {
             "type": "string",
             "nullable": true
+          },
+          "unit": {
+            "maximum": 2147483647,
+            "minimum": 1,
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false

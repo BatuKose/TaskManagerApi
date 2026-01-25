@@ -17,5 +17,6 @@ namespace Repositories.Contracts
         Task<Product> InsertProductAsync(Product product);
         Task<Product> SelectProductById(int id);
         Task<List<UrünBilgileriDTO>> GetProductsWithCategoryAsync();
+        Task<bool> CategorySilinmeyeMüsaitMi(int catId);
     }
 }

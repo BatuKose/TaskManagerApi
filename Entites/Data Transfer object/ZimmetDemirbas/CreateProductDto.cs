@@ -23,6 +23,9 @@ namespace Entites.Data_Transfer_object.ZimmetDemirbas
         public string model { get; set; }
         
         public string description { get; set; }
+        [Required(ErrorMessage = "Miktar bilgisi girilmesi zorunludur")]
+        [Range(1, int.MaxValue, ErrorMessage = "miktar bilgisi birden den büyük olmalıdır")]
+        public int unit { get; set; }
 
     }
 }

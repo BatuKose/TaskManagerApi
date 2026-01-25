@@ -16,5 +16,6 @@ namespace Entites.Models
         public string description { get; set; }
         public DateTime crateAt { get; set; } = DateTime.Now;
         public bool isActive { get; set; } = true;
+        public int unit { get; set; }
     }
 }

@@ -61,10 +61,10 @@ namespace Repositories.EFCore
                         }).ToListAsync();
             return  query;
         }
-        //ürün silinmeye müsait mi kontrolü ve aynısı kategori için de yapılacak daha bitmedi
-        public async Task<bool> ProductSilinmeyeMüsaitMi(int id,int catId)
+       
+        public async Task<bool> CategorySilinmeyeMüsaitMi(int catId)
         {
-            return await _context.Products.AnyAsync(x => x.id == id && x.categoryId == catId);
+            return await _context.Products.AnyAsync(x=> x.categoryId == catId);
            
         }
     }

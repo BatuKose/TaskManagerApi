@@ -170,6 +170,9 @@ namespace TaskManagerApi.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("unit")
+                        .HasColumnType("int");
+
                     b.HasKey("id");
 
                     b.ToTable("Products");
@@ -309,6 +312,31 @@ namespace TaskManagerApi.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("userIzıns");
+                });
+
+            modelBuilder.Entity("Entites.Models.ZımmetliKisiler", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("ProcudtId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Unit")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("ZimmetAlisTarihi")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("zımmetliKisiler");
                 });
 
             modelBuilder.Entity("Entites.View.CezalıIslerView", b =>

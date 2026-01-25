@@ -398,16 +398,6 @@
   },
   {
     "ContainingType": "Presentation.Controllers.ZimmetDemirbasController",
-    "Method": "GetAllProductsAsync",
-    "RelativePath": "ZimmetDemirbas",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Presentation.Controllers.ZimmetDemirbasController",
     "Method": "InsertCategoryAsync",
     "RelativePath": "ZimmetDemirbas/InsertCategory",
     "HttpMethod": "POST",
@@ -489,6 +479,16 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.ZimmetDemirbasController",
+    "Method": "GetAllProductsAsync",
+    "RelativePath": "ZimmetDemirbas/\u00FCr\u00FCn-listesi",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   }
 ]
