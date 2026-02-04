@@ -114,6 +114,42 @@ namespace Services
             if(productsWithCategory is null) throw new NotFoundException("Ürünler bulunamadı");
             return productsWithCategory;
         }
-      
+         public async Task<zimmetKisilerInsertDto>InsertZimmetKisilerAsync(zimmetKisilerInsertDto dto)
+        {
+            
+            if (dto.Unit<=0) throw new BadRequestException("Geçerli miktar bilgisi giriniz");
+            var userExits = await _repositoryManager.UserRepository.UserExistsAsync(dto.UserId);
+            if (!userExits) throw new NotFoundException("kullanıcı bilgileri bulunamadı");
+            var productExist = await _repositoryManager.zimmetDemirbasRepository.SelectProductById(dto.ProcudtId);
+            if (productExist is null) throw new NotFoundException("ürün bilgisine ulaşılamadı");
+            if (productExist.unit<=0) throw new BadRequestException("zimmete ekleyecek ürünün miktarı yeterli değildir.");
+            int mevcutMiktar = productExist.unit;
+            if (dto.Unit>mevcutMiktar) throw new BadRequestException("Zimmete alınacak miktar depoda miktarını aşmaktadır");
+            int productKalanMiktar = (mevcutMiktar-dto.Unit);
+            var zimmet = new ZımmetliKisiler()
+            {
+                UserId = dto.UserId,
+                ProcudtId = dto.ProcudtId,
+                Unit = dto.Unit
+
+            };
+            productExist.unit = productKalanMiktar;
+            _repositoryManager.zimmetDemirbasRepository.InsertZımmetKisiler(zimmet);
+            await  _repositoryManager.saveAsyc();
+
+
+            return new zimmetKisilerInsertDto
+            {
+                UserId = zimmet.UserId,
+                ProcudtId = zimmet.ProcudtId,
+                Unit = zimmet.Unit
+            };
+        }
+        public async Task<List<SelectZimmetDetailListDTO>> SelectZimmetDetailsListAsync()
+        {
+            var zimmetDetails = await _repositoryManager.zimmetDemirbasRepository.SelectZimmetDetailsListAsync();
+            if (zimmetDetails is null) throw new NotFoundException("Zimmet detayları bulunamadı");
+            return zimmetDetails;
+        }
     }
 }

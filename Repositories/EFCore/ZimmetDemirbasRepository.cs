@@ -67,5 +67,32 @@ namespace Repositories.EFCore
             return await _context.Products.AnyAsync(x=> x.categoryId == catId);
            
         }
+        public  ZımmetliKisiler InsertZımmetKisiler(ZımmetliKisiler zımmetliKisiler)
+        {
+            _context.zımmetliKisiler.Add(zımmetliKisiler);     
+            return zımmetliKisiler;
+        }
+        public async Task<List<SelectZimmetDetailListDTO>> SelectZimmetDetailsListAsync()
+        {
+            var query = await (
+                from z in _context.zımmetliKisiler.AsNoTracking()
+                join p in _context.Products.AsNoTracking() on z.ProcudtId equals p.id
+                join u in _context.users.AsNoTracking() on z.UserId equals u.Id
+                join r in _context.roles.AsNoTracking() on u.RoleId equals r.Id
+                join c in _context.Categories.AsNoTracking() on p.categoryId equals c.Id
+                select new SelectZimmetDetailListDTO
+                {
+                    ZimmetKisiAd=u.UserName,
+                    ZimmetKisiEmail=u.Email,
+                    KisiRol=r.RoleName,
+                    UrunAd=p.name,
+                    Model=p.model,
+                    UrunKategoriAd=c.Name,
+                    ZimmetMiktar=z.Unit,
+                    ZimmetTarih=z.ZimmetAlisTarihi
+                }
+                ).ToListAsync();
+            return query;
+        }
     }
 }

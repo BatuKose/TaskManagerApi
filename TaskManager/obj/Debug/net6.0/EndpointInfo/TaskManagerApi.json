@@ -822,6 +822,49 @@
           }
         }
       }
+    },
+    "/ZimmetDemirbas/ZimmetKisiler": {
+      "post": {
+        "tags": [
+          "ZimmetDemirbas"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/zimmetKisilerInsertDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/zimmetKisilerInsertDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/zimmetKisilerInsertDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/ZimmetDemirbas/ZimmetDetayListesi": {
+      "get": {
+        "tags": [
+          "ZimmetDemirbas"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
     }
   },
   "components": {
@@ -1114,6 +1157,29 @@
             "type": "string"
           },
           "assignedUserId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "zimmetKisilerInsertDto": {
+        "required": [
+          "procudtId",
+          "unit",
+          "userId"
+        ],
+        "type": "object",
+        "properties": {
+          "userId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "procudtId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "unit": {
             "type": "integer",
             "format": "int32"
           }

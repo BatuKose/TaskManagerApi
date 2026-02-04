@@ -62,5 +62,18 @@ namespace Presentation.Controllers
             return Ok(products);
         }
 
+        [HttpPost("ZimmetKisiler")]
+        public async Task<IActionResult> zimmetKisilerInsertAsync([FromBody] zimmetKisilerInsertDto dto)
+        {
+            if(!ModelState.IsValid) return BadRequest(ModelState);
+            await _serviceManager.ZimmetDemirbasService.InsertZimmetKisilerAsync(dto);
+            return Ok("Zimmetleme işlemi başarıyla gerçekleştirildi.");
+        }
+        [HttpGet("ZimmetDetayListesi")]
+        public async Task<IActionResult> GetZimmetDetailsListAsync()
+        {
+            var zimmetDetails = await _serviceManager.ZimmetDemirbasService.SelectZimmetDetailsListAsync();
+            return Ok(zimmetDetails);
+        }
     }
 }

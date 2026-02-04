@@ -16,5 +16,7 @@ namespace Services.Contracts
         Task<Category> SoftDeleteCategoryAsync(int id);
         Task<Product> SoftDeleteProductAsync(int id);
         Task<List<UrünBilgileriDTO>> GetProductsWithCategoryAsync();
+        Task<zimmetKisilerInsertDto> InsertZimmetKisilerAsync(zimmetKisilerInsertDto dto);
+        Task<List<SelectZimmetDetailListDTO>> SelectZimmetDetailsListAsync();
     }
 }

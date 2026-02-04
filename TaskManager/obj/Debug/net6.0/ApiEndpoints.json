@@ -490,5 +490,31 @@
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.ZimmetDemirbasController",
+    "Method": "GetZimmetDetailsListAsync",
+    "RelativePath": "ZimmetDemirbas/ZimmetDetayListesi",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.ZimmetDemirbasController",
+    "Method": "zimmetKisilerInsertAsync",
+    "RelativePath": "ZimmetDemirbas/ZimmetKisiler",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Entites.Data_Transfer_object.ZimmetDemirbas.zimmetKisilerInsertDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]
