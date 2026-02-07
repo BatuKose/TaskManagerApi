@@ -18,5 +18,6 @@ namespace Services.Contracts
         Task<List<UrünBilgileriDTO>> GetProductsWithCategoryAsync();
         Task<zimmetKisilerInsertDto> InsertZimmetKisilerAsync(zimmetKisilerInsertDto dto);
         Task<List<SelectZimmetDetailListDTO>> SelectZimmetDetailsListAsync();
+        Task<byte[]> ExportZimmetToExcelAsync();
     }
 }

@@ -865,6 +865,18 @@
           }
         }
       }
+    },
+    "/ZimmetDemirbas/export-excel-zimmetkisiler": {
+      "get": {
+        "tags": [
+          "ZimmetDemirbas"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
     }
   },
   "components": {

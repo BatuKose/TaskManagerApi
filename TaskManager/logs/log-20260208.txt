@@ -1,0 +1,173 @@
+2026-02-08 01:43:17.085 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2026-02-08 01:43:17.315 +03:00 [DBG] Hosting starting
+2026-02-08 01:43:17.393 +03:00 [INF] User profile is available. Using 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-02-08 01:43:17.400 +03:00 [DBG] Reading data from file 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys\key-06314caf-114b-4447-b671-26cff94eef42.xml'.
+2026-02-08 01:43:17.443 +03:00 [DBG] Reading data from file 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys\key-090bb267-211d-492b-a818-8821e0be7068.xml'.
+2026-02-08 01:43:17.477 +03:00 [DBG] Reading data from file 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys\key-48d29924-c2fa-4ef4-a60c-de094dd470d3.xml'.
+2026-02-08 01:43:17.528 +03:00 [DBG] Reading data from file 'C:\Users\batuhan\AppData\Local\ASP.NET\DataProtection-Keys\key-55f98cc5-78aa-424c-bf70-872acedb0f6c.xml'.
+2026-02-08 01:43:17.571 +03:00 [DBG] Found key {06314caf-114b-4447-b671-26cff94eef42}.
+2026-02-08 01:43:17.587 +03:00 [DBG] Found key {090bb267-211d-492b-a818-8821e0be7068}.
+2026-02-08 01:43:17.589 +03:00 [DBG] Found key {48d29924-c2fa-4ef4-a60c-de094dd470d3}.
+2026-02-08 01:43:17.592 +03:00 [DBG] Found key {55f98cc5-78aa-424c-bf70-872acedb0f6c}.
+2026-02-08 01:43:17.606 +03:00 [DBG] Considering key {48d29924-c2fa-4ef4-a60c-de094dd470d3} with expiration date 2026-04-04 17:42:23Z as default key.
+2026-02-08 01:43:17.615 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2026-02-08 01:43:17.624 +03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2026-02-08 01:43:17.630 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2026-02-08 01:43:17.645 +03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2026-02-08 01:43:17.651 +03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2026-02-08 01:43:17.661 +03:00 [DBG] Using key {48d29924-c2fa-4ef4-a60c-de094dd470d3} as the default key.
+2026-02-08 01:43:17.665 +03:00 [DBG] Key ring with default key {48d29924-c2fa-4ef4-a60c-de094dd470d3} was loaded during application startup.
+2026-02-08 01:43:18.056 +03:00 [WRN] Overriding address(es) 'http://localhost:1000'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2026-02-08 01:43:18.142 +03:00 [INF] Now listening on: http://localhost:1000
+2026-02-08 01:43:18.144 +03:00 [DBG] Loaded hosting startup assembly TaskManagerApi
+2026-02-08 01:43:18.146 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2026-02-08 01:43:18.149 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2026-02-08 01:43:18.151 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2026-02-08 01:43:18.243 +03:00 [DBG] Connection id "0HNJ6J94SQRAB" accepted.
+2026-02-08 01:43:18.247 +03:00 [DBG] Connection id "0HNJ6J94SQRAB" started.
+2026-02-08 01:43:18.273 +03:00 [DBG] Connection id "0HNJ6J94SQRAB" received FIN.
+2026-02-08 01:43:18.289 +03:00 [DBG] Connection id "0HNJ6J94SQRAB" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-02-08 01:43:18.300 +03:00 [DBG] Connection id "0HNJ6J94SQRAB" disconnecting.
+2026-02-08 01:43:18.312 +03:00 [DBG] Connection id "0HNJ6J94SQRAB" stopped.
+2026-02-08 01:43:18.505 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-02-08 01:43:18.508 +03:00 [INF] Hosting environment: Development
+2026-02-08 01:43:18.510 +03:00 [INF] Content root path: C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManagerApi\TaskManager\
+2026-02-08 01:43:18.512 +03:00 [DBG] Hosting started
+2026-02-08 01:43:19.636 +03:00 [DBG] Connection id "0HNJ6J94SQRAC" accepted.
+2026-02-08 01:43:22.055 +03:00 [DBG] Connection id "0HNJ6J94SQRAC" started.
+2026-02-08 01:43:22.268 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:1000/swagger/index.html - -
+2026-02-08 01:43:22.813 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2026-02-08 01:43:23.133 +03:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2026-02-08 01:43:23.151 +03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2026-02-08 01:43:23.353 +03:00 [DBG] Response markup was updated to include Browser Link script injection.
+2026-02-08 01:43:23.385 +03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2026-02-08 01:43:23.434 +03:00 [DBG] Connection id "0HNJ6J94SQRAC" completed keep alive response.
+2026-02-08 01:43:23.457 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:1000/swagger/index.html - - - 200 - text/html;charset=utf-8 1205.7801ms
+2026-02-08 01:43:23.619 +03:00 [DBG] Connection id "0HNJ6J94SQRAD" accepted.
+2026-02-08 01:43:23.667 +03:00 [DBG] Connection id "0HNJ6J94SQRAD" started.
+2026-02-08 01:43:23.644 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:1000/_framework/aspnetcore-browser-refresh.js - -
+2026-02-08 01:43:23.723 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:1000/_vs/browserLink - -
+2026-02-08 01:43:23.746 +03:00 [DBG] Connection id "0HNJ6J94SQRAC" completed keep alive response.
+2026-02-08 01:43:23.768 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:1000/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 123.7774ms
+2026-02-08 01:43:24.009 +03:00 [DBG] Connection id "0HNJ6J94SQRAD" completed keep alive response.
+2026-02-08 01:43:24.015 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:1000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 291.9366ms
+2026-02-08 01:43:24.341 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:1000/swagger/v1/swagger.json - -
+2026-02-08 01:43:24.431 +03:00 [DBG] Connection id "0HNJ6J94SQRAD" completed keep alive response.
+2026-02-08 01:43:24.436 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:1000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 95.8070ms
+2026-02-08 01:43:30.174 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:1000/ZimmetDemirbas/export-excel-zimmetkisiler - -
+2026-02-08 01:43:30.186 +03:00 [DBG] The request path  does not match the path filter
+2026-02-08 01:43:30.195 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-02-08 01:43:30.254 +03:00 [DBG] 1 candidate(s) found for the request path '/ZimmetDemirbas/export-excel-zimmetkisiler'
+2026-02-08 01:43:30.266 +03:00 [DBG] Endpoint 'Presentation.Controllers.ZimmetDemirbasController.ExportZimmetKisilerToExcelAsync (Presentation)' with route pattern 'ZimmetDemirbas/export-excel-zimmetkisiler' is valid for the request path '/ZimmetDemirbas/export-excel-zimmetkisiler'
+2026-02-08 01:43:30.270 +03:00 [DBG] Request matched endpoint 'Presentation.Controllers.ZimmetDemirbasController.ExportZimmetKisilerToExcelAsync (Presentation)'
+2026-02-08 01:43:30.406 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2026-02-08 01:43:30.505 +03:00 [INF] Executing endpoint 'Presentation.Controllers.ZimmetDemirbasController.ExportZimmetKisilerToExcelAsync (Presentation)'
+2026-02-08 01:43:30.552 +03:00 [INF] Route matched with {action = "ExportZimmetKisilerToExcel", controller = "ZimmetDemirbas"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ExportZimmetKisilerToExcelAsync() on controller Presentation.Controllers.ZimmetDemirbasController (Presentation).
+2026-02-08 01:43:30.558 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2026-02-08 01:43:30.561 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2026-02-08 01:43:30.564 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2026-02-08 01:43:30.567 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2026-02-08 01:43:30.570 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2026-02-08 01:43:30.575 +03:00 [DBG] Executing controller factory for controller Presentation.Controllers.ZimmetDemirbasController (Presentation)
+2026-02-08 01:43:30.847 +03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2026-02-08 01:43:30.920 +03:00 [DBG] Executed controller factory for controller Presentation.Controllers.ZimmetDemirbasController (Presentation)
+2026-02-08 01:43:33.066 +03:00 [INF] Entity Framework Core 6.0.10 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: MigrationsAssembly=TaskManagerApi 
+2026-02-08 01:43:33.220 +03:00 [DBG] Compiling query expression: 
+'DbSet<ZımmetliKisiler>()
+    .AsNoTracking()
+    .Join(
+        inner: DbSet<Product>()
+            .AsNoTracking(), 
+        outerKeySelector: z => z.ProcudtId, 
+        innerKeySelector: p => p.id, 
+        resultSelector: (z, p) => new { 
+            z = z, 
+            p = p
+         })
+    .Join(
+        inner: DbSet<User>()
+            .AsNoTracking(), 
+        outerKeySelector: <>h__TransparentIdentifier0 => <>h__TransparentIdentifier0.z.UserId, 
+        innerKeySelector: u => u.Id, 
+        resultSelector: (<>h__TransparentIdentifier0, u) => new { 
+            <>h__TransparentIdentifier0 = <>h__TransparentIdentifier0, 
+            u = u
+         })
+    .Join(
+        inner: DbSet<Role>()
+            .AsNoTracking(), 
+        outerKeySelector: <>h__TransparentIdentifier1 => <>h__TransparentIdentifier1.u.RoleId, 
+        innerKeySelector: r => r.Id, 
+        resultSelector: (<>h__TransparentIdentifier1, r) => new { 
+            <>h__TransparentIdentifier1 = <>h__TransparentIdentifier1, 
+            r = r
+         })
+    .Join(
+        inner: DbSet<Category>()
+            .AsNoTracking(), 
+        outerKeySelector: <>h__TransparentIdentifier2 => <>h__TransparentIdentifier2.<>h__TransparentIdentifier1.<>h__TransparentIdentifier0.p.categoryId, 
+        innerKeySelector: c => c.Id, 
+        resultSelector: (<>h__TransparentIdentifier2, c) => new SelectZimmetDetailListDTO{ 
+            ZimmetKisiAd = <>h__TransparentIdentifier2.<>h__TransparentIdentifier1.u.UserName, 
+            ZimmetKisiEmail = <>h__TransparentIdentifier2.<>h__TransparentIdentifier1.u.Email, 
+            KisiRol = <>h__TransparentIdentifier2.r.RoleName, 
+            UrunAd = <>h__TransparentIdentifier2.<>h__TransparentIdentifier1.<>h__TransparentIdentifier0.p.name, 
+            Model = <>h__TransparentIdentifier2.<>h__TransparentIdentifier1.<>h__TransparentIdentifier0.p.model, 
+            UrunKategoriAd = c.Name, 
+            ZimmetMiktar = <>h__TransparentIdentifier2.<>h__TransparentIdentifier1.<>h__TransparentIdentifier0.z.Unit, 
+            ZimmetTarih = <>h__TransparentIdentifier2.<>h__TransparentIdentifier1.<>h__TransparentIdentifier0.z.ZimmetAlisTarihi 
+        }
+    )'
+2026-02-08 01:43:33.677 +03:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<SelectZimmetDetailListDTO>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            ZimmetKisiAd -> 0
+            ZimmetKisiEmail -> 1
+            KisiRol -> 2
+            UrunAd -> 3
+            Model -> 4
+            UrunKategoriAd -> 5
+            ZimmetMiktar -> 6
+            ZimmetTarih -> 7
+        SELECT u.UserName AS ZimmetKisiAd, u.Email AS ZimmetKisiEmail, r.RoleName AS KisiRol, p.name AS UrunAd, p.model AS Model, c.Name AS UrunKategoriAd, z.Unit AS ZimmetMiktar, z.ZimmetAlisTarihi AS ZimmetTarih
+        FROM zımmetliKisiler AS z
+        INNER JOIN Products AS p ON z.ProcudtId == p.id
+        INNER JOIN users AS u ON z.UserId == u.Id
+        INNER JOIN roles AS r ON u.RoleId == r.Id
+        INNER JOIN Categories AS c ON p.categoryId == c.Id), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, SelectZimmetDetailListDTO>, 
+    Repositories.EFCore.RepositoryContext, 
+    False, 
+    False, 
+    True
+)'
+2026-02-08 01:43:33.787 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2026-02-08 01:43:33.851 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (62ms).
+2026-02-08 01:43:33.869 +03:00 [DBG] Opening connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-02-08 01:43:36.164 +03:00 [DBG] Opened connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-02-08 01:43:36.189 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[UserName] AS [ZimmetKisiAd], [u].[Email] AS [ZimmetKisiEmail], [r].[RoleName] AS [KisiRol], [p].[name] AS [UrunAd], [p].[model] AS [Model], [c].[Name] AS [UrunKategoriAd], [z].[Unit] AS [ZimmetMiktar], [z].[ZimmetAlisTarihi] AS [ZimmetTarih]
+FROM [zımmetliKisiler] AS [z]
+INNER JOIN [Products] AS [p] ON [z].[ProcudtId] = [p].[id]
+INNER JOIN [users] AS [u] ON [z].[UserId] = [u].[Id]
+INNER JOIN [roles] AS [r] ON [u].[RoleId] = [r].[Id]
+INNER JOIN [Categories] AS [c] ON [p].[categoryId] = [c].[Id]
+2026-02-08 01:43:36.272 +03:00 [INF] Executed DbCommand (90ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[UserName] AS [ZimmetKisiAd], [u].[Email] AS [ZimmetKisiEmail], [r].[RoleName] AS [KisiRol], [p].[name] AS [UrunAd], [p].[model] AS [Model], [c].[Name] AS [UrunKategoriAd], [z].[Unit] AS [ZimmetMiktar], [z].[ZimmetAlisTarihi] AS [ZimmetTarih]
+FROM [zımmetliKisiler] AS [z]
+INNER JOIN [Products] AS [p] ON [z].[ProcudtId] = [p].[id]
+INNER JOIN [users] AS [u] ON [z].[UserId] = [u].[Id]
+INNER JOIN [roles] AS [r] ON [u].[RoleId] = [r].[Id]
+INNER JOIN [Categories] AS [c] ON [p].[categoryId] = [c].[Id]
+2026-02-08 01:43:36.325 +03:00 [DBG] A data reader was disposed.
+2026-02-08 01:43:36.338 +03:00 [DBG] Closing connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-02-08 01:43:36.354 +03:00 [DBG] Closed connection to database 'TaskManager' on server '(localdb)\MSSQLLocalDB'.
+2026-02-08 01:43:40.022 +03:00 [INF] Executing FileContentResult, sending file with download name 'Zimmetler_20260208.xlsx' ...
+2026-02-08 01:43:40.032 +03:00 [DBG] The file result has not been enabled for processing range requests. To enable it, set the EnableRangeProcessing property on the result to 'true'.
+2026-02-08 01:43:40.048 +03:00 [INF] Executed action Presentation.Controllers.ZimmetDemirbasController.ExportZimmetKisilerToExcelAsync (Presentation) in 9469.2605ms
+2026-02-08 01:43:40.055 +03:00 [INF] Executed endpoint 'Presentation.Controllers.ZimmetDemirbasController.ExportZimmetKisilerToExcelAsync (Presentation)'
+2026-02-08 01:43:40.069 +03:00 [DBG] Connection id "0HNJ6J94SQRAD" completed keep alive response.
+2026-02-08 01:43:40.088 +03:00 [DBG] 'RepositoryContext' disposed.
+2026-02-08 01:43:40.102 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:1000/ZimmetDemirbas/export-excel-zimmetkisiler - - - 200 6649 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet 9928.8532ms

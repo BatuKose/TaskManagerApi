@@ -1,6 +1,8 @@
-﻿using Entites.Data_Transfer_object.ZimmetDemirbas;
+﻿using ClosedXML.Excel;
+using Entites.Data_Transfer_object.ZimmetDemirbas;
 using Entites.Exceptions.CustomExceptions;
 using Entites.Models;
+using Microsoft.EntityFrameworkCore.Query;
 using Repositories.Contracts;
 using Services.Contracts;
 using System;
@@ -150,6 +152,41 @@ namespace Services
             var zimmetDetails = await _repositoryManager.zimmetDemirbasRepository.SelectZimmetDetailsListAsync();
             if (zimmetDetails is null) throw new NotFoundException("Zimmet detayları bulunamadı");
             return zimmetDetails;
+        }
+        public async Task<byte[]>ExportZimmetToExcelAsync()
+        {
+            var list= await _repositoryManager.zimmetDemirbasRepository.SelectZimmetDetailsListAsync();
+            if (list is null) throw new NotFoundException("Zimmet detayları bulunamadı");
+            using var workbook = new XLWorkbook();
+            var worksheet=workbook.Worksheets.Add("Zimmetler");
+            
+            worksheet.Cell(1, 1).Value = "Adı Soyadı";
+            worksheet.Cell(1, 2).Value="Email";
+            worksheet.Cell(1, 3).Value="Rol";
+            worksheet.Cell(1,4).Value="Ürün Adı";
+            worksheet.Cell(1, 5).Value="Ürün model";
+            worksheet.Cell(1, 6).Value="Ürün kategori";
+            worksheet.Cell(1, 7).Value="Miktar";
+            worksheet.Cell(1, 8).Value="Zimmet Tarihi";
+
+            int row = 2;
+            foreach (var item in list)
+            {
+                worksheet.Cell(row, 1).Value = item.ZimmetKisiAd;
+                worksheet.Cell(row, 2).Value = item.ZimmetKisiEmail;
+                worksheet.Cell(row, 3).Value = item.KisiRol;
+                worksheet.Cell(row, 4).Value = item.UrunAd;
+                worksheet.Cell(row, 5).Value = item.Model;
+                worksheet.Cell(row, 6).Value = item.UrunKategoriAd;
+                worksheet.Cell(row, 7).Value = item.ZimmetMiktar;
+                worksheet.Cell(row, 8).Value = item.ZimmetTarih.ToString("dd/MM/yyyy");
+            };
+
+            worksheet.Columns().AdjustToContents();
+            using var stream= new MemoryStream();
+            workbook.SaveAs(stream);
+            return stream.ToArray();
+
         }
     }
 }

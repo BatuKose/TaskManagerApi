@@ -220,3 +220,11 @@ C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManager
 C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManagerApi\TaskManager\obj\Debug\net6.0\TaskManagerApi.pdb
 C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManagerApi\TaskManager\obj\Debug\net6.0\TaskManagerApi.genruntimeconfig.cache
 C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManagerApi\TaskManager\obj\Debug\net6.0\ref\TaskManagerApi.dll
+C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManagerApi\TaskManager\bin\Debug\net6.0\ClosedXML.dll
+C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManagerApi\TaskManager\bin\Debug\net6.0\ClosedXML.Parser.dll
+C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManagerApi\TaskManager\bin\Debug\net6.0\DocumentFormat.OpenXml.dll
+C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManagerApi\TaskManager\bin\Debug\net6.0\DocumentFormat.OpenXml.Framework.dll
+C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManagerApi\TaskManager\bin\Debug\net6.0\ExcelNumberFormat.dll
+C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManagerApi\TaskManager\bin\Debug\net6.0\RBush.dll
+C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManagerApi\TaskManager\bin\Debug\net6.0\SixLabors.Fonts.dll
+C:\Users\batuhan\Desktop\Desktop\ITSoftware\Asp.Net Web Api\Projeler\TaskManagerApi\TaskManager\bin\Debug\net6.0\System.IO.Packaging.dll

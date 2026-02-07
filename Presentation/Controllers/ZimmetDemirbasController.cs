@@ -12,7 +12,7 @@ namespace Presentation.Controllers
 {
     [ApiController]
     [Route("ZimmetDemirbas")]
-     // [Authorize]
+    // [Authorize]
     public class ZimmetDemirbasController : ControllerBase
     {
         private readonly IServiceManager _serviceManager;
@@ -23,17 +23,17 @@ namespace Presentation.Controllers
         }
 
         [HttpPost("InsertCategory")]
-        public  async Task<IActionResult> InsertCategoryAsync([FromBody] CreateCategoryDTO categoryDTO)
+        public async Task<IActionResult> InsertCategoryAsync([FromBody] CreateCategoryDTO categoryDTO)
         {
-            if(!ModelState.IsValid) return BadRequest(ModelState);
+            if (!ModelState.IsValid) return BadRequest(ModelState);
             await _serviceManager.ZimmetDemirbasService.CreateCategoryAsync(categoryDTO);
             return Ok("Kategori başarıyla eklendi.");
         }
         [HttpPut("UpdateCategory/{id}")]
-        public async Task<IActionResult> UpdateCategoryAsync([FromBody] UpdateCategoryDTO updateCategoryDTO,int id)
+        public async Task<IActionResult> UpdateCategoryAsync([FromBody] UpdateCategoryDTO updateCategoryDTO, int id)
         {
-            if(!ModelState.IsValid) return BadRequest(ModelState);
-            await _serviceManager.ZimmetDemirbasService.UpdateCategoryAsync(updateCategoryDTO,id);
+            if (!ModelState.IsValid) return BadRequest(ModelState);
+            await _serviceManager.ZimmetDemirbasService.UpdateCategoryAsync(updateCategoryDTO, id);
             return Ok("Kategori başarıyla güncellendi.");
         }
         [HttpPut("soft-delete/{id}")]
@@ -45,7 +45,7 @@ namespace Presentation.Controllers
         [HttpPost("InsertProduct")]
         public async Task<IActionResult> InsertProductAsync([FromBody] CreateProductDto product)
         {
-            if(!ModelState.IsValid) return BadRequest(ModelState);
+            if (!ModelState.IsValid) return BadRequest(ModelState);
             await _serviceManager.ZimmetDemirbasService.InsertProductAsync(product);
             return Ok("Ürün başarıyla eklendi.");
         }
@@ -65,7 +65,7 @@ namespace Presentation.Controllers
         [HttpPost("ZimmetKisiler")]
         public async Task<IActionResult> zimmetKisilerInsertAsync([FromBody] zimmetKisilerInsertDto dto)
         {
-            if(!ModelState.IsValid) return BadRequest(ModelState);
+            if (!ModelState.IsValid) return BadRequest(ModelState);
             await _serviceManager.ZimmetDemirbasService.InsertZimmetKisilerAsync(dto);
             return Ok("Zimmetleme işlemi başarıyla gerçekleştirildi.");
         }
@@ -74,6 +74,13 @@ namespace Presentation.Controllers
         {
             var zimmetDetails = await _serviceManager.ZimmetDemirbasService.SelectZimmetDetailsListAsync();
             return Ok(zimmetDetails);
+        }
+        [HttpGet("export-excel-zimmetkisiler")]
+        public async Task<IActionResult> ExportZimmetKisilerToExcelAsync()
+        {
+            var file = await _serviceManager.ZimmetDemirbasService.ExportZimmetToExcelAsync();
+            return File(file,"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",$"Zimmetler_{DateTime.Now:yyyyMMdd}.xlsx"
+);
         }
     }
 }
