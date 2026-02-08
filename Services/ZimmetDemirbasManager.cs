@@ -11,6 +11,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static Entites.Enums.ZimmetDurumEnums;
 
 namespace Services
 {
@@ -133,7 +134,6 @@ namespace Services
                 UserId = dto.UserId,
                 ProcudtId = dto.ProcudtId,
                 Unit = dto.Unit
-
             };
             productExist.unit = productKalanMiktar;
             _repositoryManager.zimmetDemirbasRepository.InsertZımmetKisiler(zimmet);
@@ -188,5 +188,32 @@ namespace Services
             return stream.ToArray();
 
         }
+        public async Task<ZımmetliKisiler> ZımmetDurumDegisikligiAsync(int id, int managerid, ZimmetDurum durum)
+        {
+            var zimmet = await _repositoryManager
+                .zimmetDemirbasRepository
+                .GetByIdAsync(id);
+            if (zimmet is null)  throw new NotFoundException("Zimmet bulunamadı");
+            if (zimmet.zimmetDurum != ZimmetDurum.Bekliyor) throw new BadRequestException("Sadece bekleyen zimmetler işlem görebilir");
+            var managerExits = await _repositoryManager.UserRepository.GetUserByidAsync(managerid);
+            if (managerExits is null) throw new NotFoundException("kullanıcı bilgileri bulunamadı");
+            if(managerExits.RoleId != 1 && managerExits.RoleId != 2) throw new BadRequestException("Sadece yöneticiler zimmet durumunu değiştirebilir");
+            switch(durum)
+            {
+                case ZimmetDurum.Onaylandı:
+                    zimmet.zimmetDurum=ZimmetDurum.Onaylandı;
+                    zimmet.ZimmetOnayTarihi=DateTime.Now;
+                    break;
+                case ZimmetDurum.İptal:
+                    zimmet.zimmetDurum=ZimmetDurum.İptal;
+                    break;
+                default:
+                    throw new BadRequestException("Geçerli bir durum bilgisi giriniz");
+            }
+            await _repositoryManager.zimmetDemirbasRepository.SaveAsync();
+            //durum iptal olursa ürün depoya geri çekilecek
+            return zimmet;
+        }
+
     }
 }

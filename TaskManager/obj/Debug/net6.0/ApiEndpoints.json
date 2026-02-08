@@ -513,6 +513,32 @@
   },
   {
     "ContainingType": "Presentation.Controllers.ZimmetDemirbasController",
+    "Method": "ZimmetDurumDegistirAsync",
+    "RelativePath": "ZimmetDemirbas/zimmetDurumDegisikligi",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "managerid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "durum",
+        "Type": "Entites.Enums.ZimmetDurumEnums\u002BZimmetDurum",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.ZimmetDemirbasController",
     "Method": "zimmetKisilerInsertAsync",
     "RelativePath": "ZimmetDemirbas/ZimmetKisiler",
     "HttpMethod": "POST",

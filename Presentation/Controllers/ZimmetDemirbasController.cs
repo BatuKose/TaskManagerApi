@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static Entites.Enums.ZimmetDurumEnums;
 
 namespace Presentation.Controllers
 {
@@ -79,8 +80,14 @@ namespace Presentation.Controllers
         public async Task<IActionResult> ExportZimmetKisilerToExcelAsync()
         {
             var file = await _serviceManager.ZimmetDemirbasService.ExportZimmetToExcelAsync();
-            return File(file,"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",$"Zimmetler_{DateTime.Now:yyyyMMdd}.xlsx"
+            return File(file, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", $"Zimmetler_{DateTime.Now:yyyyMMdd}.xlsx"
 );
+        }
+        [HttpPut("zimmetDurumDegisikligi")]
+        public async Task<IActionResult> ZimmetDurumDegistirAsync(int id, int managerid, ZimmetDurum durum)
+        {
+            await _serviceManager.ZimmetDemirbasService.ZımmetDurumDegisikligiAsync(id, managerid, durum);
+            return Ok("Zimmet durumu başarıyla değiştirildi.");
         }
     }
 }

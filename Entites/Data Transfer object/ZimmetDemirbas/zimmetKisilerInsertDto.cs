@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static Entites.Enums.ZimmetDurumEnums;
 
 namespace Entites.Data_Transfer_object.ZimmetDemirbas
 {
@@ -15,5 +16,7 @@ namespace Entites.Data_Transfer_object.ZimmetDemirbas
         public int ProcudtId { get; set; }
         [Required(ErrorMessage = " miktar alanı boş geçilemez.")]
         public int Unit { get; set; }
+
+        public ZimmetDurum zimmetDurum { get; set; } = ZimmetDurum.Bekliyor;
     }
 }

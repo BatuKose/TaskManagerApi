@@ -1,4 +1,5 @@
 ﻿using Entites.Data_Transfer_object.ZimmetDemirbas;
+using Entites.Enums;
 using Entites.Models;
 using Microsoft.EntityFrameworkCore;
 using Repositories.Contracts;
@@ -94,5 +95,11 @@ namespace Repositories.EFCore
                 ).ToListAsync();
             return query;
         }
+        public async Task<ZımmetliKisiler> GetByIdAsync(int id)
+        {
+            return await _context.zımmetliKisiler
+                .SingleOrDefaultAsync(x => x.Id == id);
+        }
+
     }
 }

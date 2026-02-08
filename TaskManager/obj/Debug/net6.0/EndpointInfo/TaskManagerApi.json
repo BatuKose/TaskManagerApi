@@ -877,6 +877,43 @@
           }
         }
       }
+    },
+    "/ZimmetDemirbas/zimmetDurumDegisikligi": {
+      "put": {
+        "tags": [
+          "ZimmetDemirbas"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "managerid",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "durum",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/ZimmetDurum"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
     }
   },
   "components": {
@@ -1157,6 +1194,15 @@
         },
         "additionalProperties": false
       },
+      "ZimmetDurum": {
+        "enum": [
+          1,
+          2,
+          3
+        ],
+        "type": "integer",
+        "format": "int32"
+      },
       "updateJobHeaderDTO": {
         "required": [
           "assignedUserId",
@@ -1194,6 +1240,9 @@
           "unit": {
             "type": "integer",
             "format": "int32"
+          },
+          "zimmetDurum": {
+            "$ref": "#/components/schemas/ZimmetDurum"
           }
         },
         "additionalProperties": false

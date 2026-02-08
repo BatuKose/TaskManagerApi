@@ -20,7 +20,9 @@ namespace Repositories.Contracts
         Task<bool> CategorySilinmeyeMüsaitMi(int catId);
         ZımmetliKisiler InsertZımmetKisiler(ZımmetliKisiler zımmetliKisiler);
         Task<List<SelectZimmetDetailListDTO>> SelectZimmetDetailsListAsync();
-        
+        Task<ZımmetliKisiler> GetByIdAsync(int id);
+
+
 
     }
 }

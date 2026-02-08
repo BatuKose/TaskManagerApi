@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static Entites.Enums.ZimmetDurumEnums;
 
 namespace Services.Contracts
 {
@@ -19,5 +20,6 @@ namespace Services.Contracts
         Task<zimmetKisilerInsertDto> InsertZimmetKisilerAsync(zimmetKisilerInsertDto dto);
         Task<List<SelectZimmetDetailListDTO>> SelectZimmetDetailsListAsync();
         Task<byte[]> ExportZimmetToExcelAsync();
+        Task<ZımmetliKisiler> ZımmetDurumDegisikligiAsync(int id, int managerid, ZimmetDurum durum);
     }
 }
