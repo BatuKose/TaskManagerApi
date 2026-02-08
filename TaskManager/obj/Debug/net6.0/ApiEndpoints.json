@@ -515,7 +515,7 @@
     "ContainingType": "Presentation.Controllers.ZimmetDemirbasController",
     "Method": "ZimmetDurumDegistirAsync",
     "RelativePath": "ZimmetDemirbas/zimmetDurumDegisikligi",
-    "HttpMethod": "PUT",
+    "HttpMethod": "PATCH",
     "IsController": true,
     "Order": 0,
     "Parameters": [

@@ -205,13 +205,17 @@ namespace Services
                     zimmet.ZimmetOnayTarihi=DateTime.Now;
                     break;
                 case ZimmetDurum.İptal:
-                    zimmet.zimmetDurum=ZimmetDurum.İptal;
+                    zimmet.zimmetDurum = ZimmetDurum.İptal;
+                    var product = await _repositoryManager
+                        .zimmetDemirbasRepository
+                        .SelectProductById(zimmet.ProcudtId);
+                    if (product is null) throw new NotFoundException("Ürün bilgisine ulaşılamadı");
+                    product.unit += zimmet.Unit;
                     break;
                 default:
                     throw new BadRequestException("Geçerli bir durum bilgisi giriniz");
-            }
+            }   
             await _repositoryManager.zimmetDemirbasRepository.SaveAsync();
-            //durum iptal olursa ürün depoya geri çekilecek
             return zimmet;
         }
 

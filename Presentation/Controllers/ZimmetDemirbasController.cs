@@ -83,7 +83,7 @@ namespace Presentation.Controllers
             return File(file, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", $"Zimmetler_{DateTime.Now:yyyyMMdd}.xlsx"
 );
         }
-        [HttpPut("zimmetDurumDegisikligi")]
+        [HttpPatch("zimmetDurumDegisikligi")]
         public async Task<IActionResult> ZimmetDurumDegistirAsync(int id, int managerid, ZimmetDurum durum)
         {
             await _serviceManager.ZimmetDemirbasService.ZımmetDurumDegisikligiAsync(id, managerid, durum);
