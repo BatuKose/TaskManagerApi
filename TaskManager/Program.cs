@@ -12,6 +12,7 @@ builder.WebHost.ConfigureKestrel(options =>
 builder.AddSerilogLogging();
 builder.Services.ConfigureSqlContext(builder.Configuration);
 builder.Services.AddControllers().AddApplicationPart(typeof(Presentation.AssemblyReference).Assembly);
+builder.Services.CorsConfigure(); // prod ortamında kaldırılacak
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddJwtAuthentication(builder.Configuration);
 builder.Services.AddSwaggerGen();
@@ -28,8 +29,10 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+app.UseStaticFiles();
 app.UseHttpsRedirection();
 app.UseRouting();
+app.UseCors("AllowAll"); // prod ortamında kaldırılacak
 app.UseAuthentication();
 app.UseAuthorization();
 app.UseCustomRateLimiting();

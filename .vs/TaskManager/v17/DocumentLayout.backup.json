@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DBF95191-984E-4693-8E5D-587F32E99A1A}|Services\\Services.csproj|c:\\users\\batuhan\\desktop\\desktop\\itsoftware\\asp.net web api\\projeler\\taskmanagerapi\\services\\zimmetdemirbasmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DBF95191-984E-4693-8E5D-587F32E99A1A}|Services\\Services.csproj|solutionrelative:services\\zimmetdemirbasmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9CBDA63E-0020-4886-A5B7-1CBBE8403DD3}|TaskManager\\TaskManagerApi.csproj|c:\\users\\batuhan\\desktop\\desktop\\itsoftware\\asp.net web api\\projeler\\taskmanagerapi\\taskmanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CBDA63E-0020-4886-A5B7-1CBBE8403DD3}|TaskManager\\TaskManagerApi.csproj|solutionrelative:taskmanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CDC29FC0-ACB9-48EB-880C-24AAAFB03053}|Presentation\\Presentation.csproj|c:\\users\\batuhan\\desktop\\desktop\\itsoftware\\asp.net web api\\projeler\\taskmanagerapi\\presentation\\controllers\\zimmetdemirbascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CDC29FC0-ACB9-48EB-880C-24AAAFB03053}|Presentation\\Presentation.csproj|solutionrelative:presentation\\controllers\\zimmetdemirbascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DBF95191-984E-4693-8E5D-587F32E99A1A}|Services\\Services.csproj|c:\\users\\batuhan\\desktop\\desktop\\itsoftware\\asp.net web api\\projeler\\taskmanagerapi\\services\\contracts\\izimmetdemirbasservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DBF95191-984E-4693-8E5D-587F32E99A1A}|Services\\Services.csproj|solutionrelative:services\\contracts\\izimmetdemirbasservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A5756DC-7FE5-433A-8F8C-31E1E54017B0}|Entites\\Entites.csproj|c:\\users\\batuhan\\desktop\\desktop\\itsoftware\\asp.net web api\\projeler\\taskmanagerapi\\entites\\enums\\zimmetdurumenums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A5756DC-7FE5-433A-8F8C-31E1E54017B0}|Entites\\Entites.csproj|solutionrelative:entites\\enums\\zimmetdurumenums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9CBDA63E-0020-4886-A5B7-1CBBE8403DD3}|TaskManager\\TaskManagerApi.csproj|c:\\users\\batuhan\\desktop\\desktop\\itsoftware\\asp.net web api\\projeler\\taskmanagerapi\\taskmanager\\extensions\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CBDA63E-0020-4886-A5B7-1CBBE8403DD3}|TaskManager\\TaskManagerApi.csproj|solutionrelative:taskmanager\\extensions\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 19,
+          "SelectedChildIndex": 16,
           "Children": [
             {
               "$type": "Bookmark",
@@ -94,52 +86,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ZimmetDurumEnums.cs",
-              "DocumentMoniker": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\Entites\\Enums\\ZimmetDurumEnums.cs",
-              "RelativeDocumentMoniker": "Entites\\Enums\\ZimmetDurumEnums.cs",
-              "ToolTip": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\Entites\\Enums\\ZimmetDurumEnums.cs",
-              "RelativeToolTip": "Entites\\Enums\\ZimmetDurumEnums.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\TaskManager\\Program.cs",
+              "RelativeDocumentMoniker": "TaskManager\\Program.cs",
+              "ToolTip": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\TaskManager\\Program.cs",
+              "RelativeToolTip": "TaskManager\\Program.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAABoAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-08T19:28:38.527Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IZimmetDemirbasService.cs",
-              "DocumentMoniker": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\Services\\Contracts\\IZimmetDemirbasService.cs",
-              "RelativeDocumentMoniker": "Services\\Contracts\\IZimmetDemirbasService.cs",
-              "ToolTip": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\Services\\Contracts\\IZimmetDemirbasService.cs",
-              "RelativeToolTip": "Services\\Contracts\\IZimmetDemirbasService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-08T19:25:01.719Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ZimmetDemirbasController.cs",
-              "DocumentMoniker": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\Presentation\\Controllers\\ZimmetDemirbasController.cs",
-              "RelativeDocumentMoniker": "Presentation\\Controllers\\ZimmetDemirbasController.cs",
-              "ToolTip": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\Presentation\\Controllers\\ZimmetDemirbasController.cs",
-              "RelativeToolTip": "Presentation\\Controllers\\ZimmetDemirbasController.cs",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAAAFUAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-08T19:24:23.112Z",
+              "WhenOpened": "2026-02-14T16:10:15.375Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ZimmetDemirbasManager.cs",
-              "DocumentMoniker": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\Services\\ZimmetDemirbasManager.cs",
-              "RelativeDocumentMoniker": "Services\\ZimmetDemirbasManager.cs",
-              "ToolTip": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\Services\\ZimmetDemirbasManager.cs",
-              "RelativeToolTip": "Services\\ZimmetDemirbasManager.cs",
-              "ViewState": "AgIAAMMAAAAAAAAAAAAAAMgAAAAMAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "ServiceExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\TaskManager\\Extensions\\ServiceExtensions.cs",
+              "RelativeDocumentMoniker": "TaskManager\\Extensions\\ServiceExtensions.cs",
+              "ToolTip": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\TaskManager\\Extensions\\ServiceExtensions.cs",
+              "RelativeToolTip": "TaskManager\\Extensions\\ServiceExtensions.cs",
+              "ViewState": "AgIAAJIAAAAAAAAAAADwv50AAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-08T18:40:41.571Z",
+              "WhenOpened": "2026-02-14T16:06:11.049Z",
               "EditorCaption": ""
             }
           ]

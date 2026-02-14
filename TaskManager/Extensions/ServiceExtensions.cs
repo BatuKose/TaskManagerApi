@@ -159,5 +159,19 @@ namespace TaskManagerApi.Extensions
             return services;
         }
 
+       public static IServiceCollection CorsConfigure(this IServiceCollection services) // prod ortamında kaldırılacak
+        {
+                       services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAll", builder =>
+                {
+                    builder.AllowAnyOrigin()
+                           .AllowAnyMethod()
+                           .AllowAnyHeader();
+                });
+            });
+            return services;
+        }
+
     }
 }
