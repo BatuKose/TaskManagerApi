@@ -17,7 +17,7 @@ namespace Presentation.Controllers
 {
     [ApiController]
     [Route("api/users")]
-    [Authorize]
+      [Authorize]
     public class UserController : ControllerBase
     {
         private readonly IServiceManager _ServiceManager;
@@ -41,39 +41,39 @@ namespace Presentation.Controllers
             return Ok(result);
         }
         [Authorize(Policy = "Admin-Manage")]
-        [HttpGet ("id:int")]
-        public async Task<IActionResult> GetUserByid([FromQuery(Name ="id")]int id)
+        [HttpGet("id:int")]
+        public async Task<IActionResult> GetUserByid([FromQuery(Name = "id")] int id)
         {
-            if(!ModelState.IsValid) return BadRequest(ModelState); 
-            var result= await _ServiceManager.UserService.getUserByIdAsync(id);
+            if (!ModelState.IsValid) return BadRequest(ModelState);
+            var result = await _ServiceManager.UserService.getUserByIdAsync(id);
             return Ok(result);
         }
         [Authorize(Policy = "Admin")]
         [HttpPatch("softdelete")]
-        public async Task<IActionResult> UserSoftDelete([FromQuery(Name ="id")] int id)
+        public async Task<IActionResult> UserSoftDelete([FromQuery(Name = "id")] int id)
         {
-          await  _ServiceManager.UserService.UserSoftDeleteAsync(id);
+            await _ServiceManager.UserService.UserSoftDeleteAsync(id);
             return NoContent();
         }
         [Authorize(Policy = "Admin")]
         [HttpPatch("updateUser")]
-        public async Task<IActionResult> UpdateUserAsync([FromQuery ] int id,[FromBody] UpdateUserDto userDto)
+        public async Task<IActionResult> UpdateUserAsync([FromQuery] int id, [FromBody] UpdateUserDto userDto)
         {
-           if(!ModelState.IsValid) return BadRequest(ModelState);
-           await _ServiceManager.UserService.UpdateUserAsync(id, userDto);
+            if (!ModelState.IsValid) return BadRequest(ModelState);
+            await _ServiceManager.UserService.UpdateUserAsync(id, userDto);
             return Ok(userDto);
         }
-        
+
         [Authorize(Policy = "Admin-Manage")]
         [HttpPost("izinEkle")]
-        public async Task<IActionResult> IzınEkleAsync([FromQuery(Name ="id")] int id)
+        public async Task<IActionResult> IzınEkleAsync([FromQuery(Name = "id")] int id)
         {
-            if(!ModelState.IsValid) return BadRequest(ModelState);
+            if (!ModelState.IsValid) return BadRequest(ModelState);
             await _ServiceManager.UserService.IzınEkleAsync(id);
             return Ok("izin eklendi");
         }
-       
-         [Authorize(Policy = "Worker-Manager")]
+
+        [Authorize(Policy = "Worker-Manager")]
         [HttpPut("{id}/izin")]
         public async Task<IActionResult> UserIzinGuncelleAsync(int id, [FromBody] int izin)
         {
@@ -83,16 +83,16 @@ namespace Presentation.Controllers
 
 
         [AllowAnonymous]
-        // Authorize(Policy = "Worker-Manager")]
+        [Authorize(Policy = "Worker-Manager")]
         [HttpPost("izinDetayEkle")]
-        public async Task<IActionResult> UserDetayIzinEkleAsync([FromBody] UserIzinDetayEkleDTO userIzinDetayEkle  )
+        public async Task<IActionResult> UserDetayIzinEkleAsync([FromBody] UserIzinDetayEkleDTO userIzinDetayEkle)
         {
-           if(!ModelState.IsValid) return BadRequest(ModelState);
-           await _ServiceManager.UserService.UserIzinDetayEkleAsync( userIzinDetayEkle);
+            if (!ModelState.IsValid) return BadRequest(ModelState);
+            await _ServiceManager.UserService.UserIzinDetayEkleAsync(userIzinDetayEkle);
             return Ok("İzin Detay Eklendi");
         }
         [AllowAnonymous]
-       // [Authorize(Policy = "Worker-Manager")]
+        [Authorize(Policy = "Worker-Manager")]
         [HttpDelete("izin-sil")]
         public async Task<IActionResult> DeleteUserIzin([FromQuery] userIzınDetaySılDTO dto)
         {
@@ -101,7 +101,14 @@ namespace Presentation.Controllers
 
             await _ServiceManager.UserService.DeleteUserIzinAsync(dto.IzınId);
 
-            return NoContent(); 
+            return NoContent();
+        }
+        [Authorize(Policy = "Worker-Manager")]
+        [HttpGet("userDetails")]
+        public async Task<IActionResult> UserDetailsAsync()
+        {
+            var result = await _ServiceManager.UserService.UserDetailsAsync();
+            return Ok(result);
         }
     }
 }

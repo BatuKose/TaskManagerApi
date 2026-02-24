@@ -302,6 +302,16 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Presentation.Controllers.UserController",
+    "Method": "UserDetailsAsync",
+    "RelativePath": "api/users/userDetails",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Presentation.Controllers.AuthenticationController",
     "Method": "Login",
     "RelativePath": "Authentication",

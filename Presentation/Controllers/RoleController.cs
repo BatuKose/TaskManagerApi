@@ -36,14 +36,14 @@ namespace Presentation.Controllers
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
             var result=await serviceManager.RoleManager.GetRoleByİdAsync(id);
-            return Ok(result);
+            return StatusCode(201);
         }
         [HttpDelete]
         public async Task<IActionResult> DeleteRoleAsync([FromQuery] int id)
         {
             if (!ModelState.IsValid) return BadRequest(ModelState);
             await serviceManager.RoleManager.DeleteRoleAsync(id);
-            return Ok("Rol silindi");
+            return NoContent();
         }
         [HttpPut("{id:int}")]
         public async Task<ActionResult<InsertOrUpdateRoleDTO>> UpdateRoleAsync([FromRoute] int id,[FromBody] InsertOrUpdateRoleDTO dto)

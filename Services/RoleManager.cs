@@ -16,20 +16,36 @@ namespace Services
             _Manager=repositoryManager;
         }
 
+        //public async Task<Role> DeleteRoleAsync(int id)
+        //{
+        //   if(id<=0) throw new ArgumentNullException("id");
+        //   var result= await _Manager.RoleRepository.GetRoleByİdAsync(id);
+        //   if(result==null) throw new ();
+        //   if (result.RoleName.Contains("admin",StringComparison.OrdinalIgnoreCase)) throw new BadRequestException("Admin rolünü silemezsiniz");
+        //    var deletedRole = await _Manager.RoleRepository.DeleteRoleAsync(result);
+        //    return deletedRole;
+
+        //}
         public async Task<Role> DeleteRoleAsync(int id)
         {
-           if(id<=0) throw new ArgumentNullException("id");
-           var result= await _Manager.RoleRepository.GetRoleByİdAsync(id);
-           if(result==null) throw new ();
-           if (result.RoleName.Contains("admin",StringComparison.OrdinalIgnoreCase)) throw new BadRequestException("Admin rolünü silemezsiniz");
+            if (id <= 0)
+                throw new BadRequestException("Geçersiz id");
+
+            var result = await _Manager.RoleRepository.GetRoleByİdAsync(id);
+
+            if (result == null)
+                throw new NotFoundException("Rol bulunamadı");
+
+            if (result.RoleName.Contains("admin", StringComparison.OrdinalIgnoreCase))
+                throw new BadRequestException("Admin rolünü silemezsiniz");
+
             var deletedRole = await _Manager.RoleRepository.DeleteRoleAsync(result);
             return deletedRole;
-
         }
 
         public async Task<GetRoleDto> GetRoleByİdAsync( int id)
         {
-            if(id<=0) throw new ArgumentNullException("id");
+            if(id<=0) throw new NotFoundException("id");
             var result = await _Manager.RoleRepository.GetRoleByİdAsync(id);
             if (result is null) throw new NotFoundException("Rol bilgileri bulunamadı");
             var dto = new GetRoleDto()

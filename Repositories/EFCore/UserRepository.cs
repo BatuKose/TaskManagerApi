@@ -22,25 +22,25 @@ namespace Repositories.EFCore
             _context=context;
         }
 
-        public void CreateUser(User user )
+        public void CreateUser(User user)
         {
 
             _context.users.Add(user);
-           
+
         }
 
-        public async  Task<bool> EmailExistsAsync(string email)
+        public async Task<bool> EmailExistsAsync(string email)
         {
-           return  await _context.users.AnyAsync(x=>x.Email == email);
+            return await _context.users.AnyAsync(x => x.Email == email);
         }
 
         public async Task<bool> PassWordExistsAsync(string password)
         {
-            return await _context.users.AnyAsync(x=>x.Password==password);
+            return await _context.users.AnyAsync(x => x.Password==password);
         }
         public async Task<bool> UsernameExistsAsync(string username)
         {
-            return await _context.users.AnyAsync(x=>x.UserName==username);
+            return await _context.users.AnyAsync(x => x.UserName==username);
         }
         public async Task<bool> UserExistsAsync(int id)
         {
@@ -65,15 +65,15 @@ namespace Repositories.EFCore
             return result;
         }
 
-        public  async Task<User> GetUserByidAsync(int id)
+        public async Task<User> GetUserByidAsync(int id)
         {
-             var result = await _context.users.SingleOrDefaultAsync(u => u.Id==id && u.aktifMi==true);
+            var result = await _context.users.SingleOrDefaultAsync(u => u.Id==id && u.aktifMi==true);
             return result;
         }
 
         public async Task<User> SoftDeleteAsync(int id)
         {
-            
+
             var user = await _context.users.FindAsync(id);
             if (user is null) throw new NotFoundException("Kullanıcı bilgileri bulunamadı.");
             if (user.aktifMi)
@@ -81,22 +81,37 @@ namespace Repositories.EFCore
                 user.aktifMi=false;
 
             }
-            else 
+            else
             {
                 user.aktifMi=true;
             }
-                _context.SaveChanges();
+            _context.SaveChanges();
             return user;
 
         }
 
         public async Task<User> UpdateUserAsync(User user)
         {
-              _context.users.Update(user);
-              await _context.SaveChangesAsync();
-              return user;
+            _context.users.Update(user);
+            await _context.SaveChangesAsync();
+            return user;
         }
 
-      
+        public async Task<IEnumerable<UserDetailsDTO>> UserDetailsAsync()
+        {
+            var result = await _context.users
+                .Where(u => u.aktifMi)
+                .Select(u => new UserDetailsDTO
+                {
+                    Id = u.Id,
+                    UserName = u.UserName,
+                    Email = u.Email,
+                    RoleId = u.RoleId,
+                    RoleName = u.Role.RoleName,
+                    
+                })
+                .ToListAsync();
+            return result;
+        }
     }
 }
