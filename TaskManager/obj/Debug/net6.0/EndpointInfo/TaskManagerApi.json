@@ -666,6 +666,15 @@
         "tags": [
           "User"
         ],
+        "parameters": [
+          {
+            "name": "aktifMi",
+            "in": "query",
+            "schema": {
+              "type": "boolean"
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "Success"

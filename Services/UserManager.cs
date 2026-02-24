@@ -202,11 +202,13 @@ namespace Services
             await _repositoryManager.UserIzınRepository.IzınGuncelleAsync(userId, ToplamHakedis);
             await _repositoryManager.UserIzınRepository.UserDetayIzinSilAsync(izin);
         }
-        public async Task<IEnumerable<UserDetailsDTO>> UserDetailsAsync()
+        public async Task<IEnumerable<UserDetailsDTO>> UserDetailsAsync(bool? aktifMi)
         {
-            var result = await _repositoryManager.UserRepository.UserDetailsAsync();
+            var result = await _repositoryManager
+                .UserRepository
+                .UserDetailsAsync(aktifMi);
 
-            if (result == null)
+            if (!result.Any())
                 throw new NotFoundException("Kullanıcı bilgileri bulunamadı.");
 
             return result;

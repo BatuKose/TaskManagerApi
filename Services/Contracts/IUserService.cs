@@ -21,7 +21,7 @@ namespace Services.Contracts
         public Task<UserIzinDetayEkleDTO> UserIzinDetayEkleAsync(UserIzinDetayEkleDTO dto);
         public Task<UserIzınDto> UserIzınGuncelle(int id, int izin);
         Task DeleteUserIzinAsync(int izinId);
-        Task<IEnumerable<UserDetailsDTO>> UserDetailsAsync();
+        Task<IEnumerable<UserDetailsDTO>> UserDetailsAsync(bool? aktifMi);
 
 
     }

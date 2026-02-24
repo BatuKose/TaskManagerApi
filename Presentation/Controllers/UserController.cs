@@ -17,7 +17,7 @@ namespace Presentation.Controllers
 {
     [ApiController]
     [Route("api/users")]
-      [Authorize]
+    //[Authorize]
     public class UserController : ControllerBase
     {
         private readonly IServiceManager _ServiceManager;
@@ -103,11 +103,11 @@ namespace Presentation.Controllers
 
             return NoContent();
         }
-        [Authorize(Policy = "Worker-Manager")]
+        //  [Authorize(Policy = "Worker-Manager")]
         [HttpGet("userDetails")]
-        public async Task<IActionResult> UserDetailsAsync()
+        public async Task<IActionResult> UserDetailsAsync([FromQuery] bool? aktifMi)
         {
-            var result = await _ServiceManager.UserService.UserDetailsAsync();
+            var result = await _ServiceManager.UserService.UserDetailsAsync(aktifMi);
             return Ok(result);
         }
     }

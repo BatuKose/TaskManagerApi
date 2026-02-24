@@ -97,20 +97,26 @@ namespace Repositories.EFCore
             return user;
         }
 
-        public async Task<IEnumerable<UserDetailsDTO>> UserDetailsAsync()
+        public async Task<IEnumerable<UserDetailsDTO>> UserDetailsAsync(bool? aktifMi)
         {
-            var result = await _context.users
-                .Where(u => u.aktifMi)
+            var query = _context.users.AsQueryable();
+
+            if (aktifMi.HasValue)
+            {
+                query = query.Where(u => u.aktifMi == aktifMi.Value);
+            }
+
+            var result = await query
                 .Select(u => new UserDetailsDTO
                 {
                     Id = u.Id,
                     UserName = u.UserName,
                     Email = u.Email,
                     RoleId = u.RoleId,
-                    RoleName = u.Role.RoleName,
-                    
+                    RoleName = u.Role.RoleName
                 })
                 .ToListAsync();
+
             return result;
         }
     }
