@@ -50,11 +50,12 @@ namespace Presentation.Controllers
         {
             if (!ModelState.IsValid) return BadRequest(ModelState);
             var updated = await serviceManager.RoleManager.UpdateRoleAsync(id, dto);
-            return Ok(new
-            {
-                Message = "Rol başarıyla güncellendi.",
-                Data = updated
-            });
+            //return Ok(new
+            //{
+            //    Message = "Rol başarıyla güncellendi.",
+            //    Data = updated
+            //});
+            return StatusCode(204);
         }
         [HttpGet("GetRoles")]
         public async Task<IActionResult> GetRoles()
