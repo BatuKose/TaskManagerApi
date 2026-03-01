@@ -25,7 +25,7 @@ namespace Presentation.Controllers
         {
             _ServiceManager = serviceManager;
         }
-        [Authorize(Policy = "Admin")]
+     //   [Authorize(Policy = "Admin")]
         [HttpPost]
         public async Task<IActionResult> CreateUserAsync([FromBody] CreateUserDto userDto)
         {
@@ -33,29 +33,29 @@ namespace Presentation.Controllers
             await _ServiceManager.UserService.CreateUserAsync(userDto);
             return StatusCode(201);
         }
-        [Authorize(Policy = "Admin-Manage")]
+       // [Authorize(Policy = "Admin-Manage")]
         [HttpPost("GetUserWithRole")]
         public async Task<IActionResult> GetUserWithRole([FromBody] string dto)
         {
             var result = await _ServiceManager.UserService.getUsersAndRoleAsync(dto);
             return Ok(result);
         }
-        [Authorize(Policy = "Admin-Manage")]
-        [HttpGet("id:int")]
-        public async Task<IActionResult> GetUserByid([FromQuery(Name = "id")] int id)
+        //   [Authorize(Policy = "Admin-Manage")]
+        [HttpGet("getUserById")]        
+        public async Task<IActionResult> GetUserByid([FromQuery] int id)
         {
             if (!ModelState.IsValid) return BadRequest(ModelState);
             var result = await _ServiceManager.UserService.getUserByIdAsync(id);
             return Ok(result);
         }
-        [Authorize(Policy = "Admin")]
+        //  [Authorize(Policy = "Admin")]
         [HttpPatch("softdelete")]
         public async Task<IActionResult> UserSoftDelete([FromQuery(Name = "id")] int id)
         {
             await _ServiceManager.UserService.UserSoftDeleteAsync(id);
             return NoContent();
         }
-        [Authorize(Policy = "Admin")]
+     //   [Authorize(Policy = "Admin")]
         [HttpPatch("updateUser")]
         public async Task<IActionResult> UpdateUserAsync([FromQuery] int id, [FromBody] UpdateUserDto userDto)
         {
@@ -64,7 +64,7 @@ namespace Presentation.Controllers
             return Ok(userDto);
         }
 
-        [Authorize(Policy = "Admin-Manage")]
+    //    [Authorize(Policy = "Admin-Manage")]
         [HttpPost("izinEkle")]
         public async Task<IActionResult> IzınEkleAsync([FromQuery(Name = "id")] int id)
         {
@@ -73,7 +73,7 @@ namespace Presentation.Controllers
             return Ok("izin eklendi");
         }
 
-        [Authorize(Policy = "Worker-Manager")]
+     //   [Authorize(Policy = "Worker-Manager")]
         [HttpPut("{id}/izin")]
         public async Task<IActionResult> UserIzinGuncelleAsync(int id, [FromBody] int izin)
         {
@@ -82,8 +82,8 @@ namespace Presentation.Controllers
         }
 
 
-        [AllowAnonymous]
-        [Authorize(Policy = "Worker-Manager")]
+      //  [AllowAnonymous]
+      //  [Authorize(Policy = "Worker-Manager")]
         [HttpPost("izinDetayEkle")]
         public async Task<IActionResult> UserDetayIzinEkleAsync([FromBody] UserIzinDetayEkleDTO userIzinDetayEkle)
         {
@@ -91,8 +91,8 @@ namespace Presentation.Controllers
             await _ServiceManager.UserService.UserIzinDetayEkleAsync(userIzinDetayEkle);
             return Ok("İzin Detay Eklendi");
         }
-        [AllowAnonymous]
-        [Authorize(Policy = "Worker-Manager")]
+      //  [AllowAnonymous]
+       // [Authorize(Policy = "Worker-Manager")]
         [HttpDelete("izin-sil")]
         public async Task<IActionResult> DeleteUserIzin([FromQuery] userIzınDetaySılDTO dto)
         {

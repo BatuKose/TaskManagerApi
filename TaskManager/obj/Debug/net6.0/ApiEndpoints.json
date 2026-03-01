@@ -186,6 +186,22 @@
   },
   {
     "ContainingType": "Presentation.Controllers.UserController",
+    "Method": "GetUserByid",
+    "RelativePath": "api/users/getUserById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.UserController",
     "Method": "GetUserWithRole",
     "RelativePath": "api/users/GetUserWithRole",
     "HttpMethod": "POST",
@@ -196,22 +212,6 @@
         "Name": "dto",
         "Type": "System.String",
         "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Presentation.Controllers.UserController",
-    "Method": "GetUserByid",
-    "RelativePath": "api/users/id:int",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -411,6 +411,16 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "Presentation.Controllers.RoleController",
+    "Method": "GetRoles",
+    "RelativePath": "Role/GetRoles",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "Presentation.Controllers.ZimmetDemirbasController",

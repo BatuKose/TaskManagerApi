@@ -12,8 +12,8 @@ namespace Presentation.Controllers
 {
     [ApiController]
     [Route("Role")]
-    [Authorize(Policy = "Admin")]
-    public class RoleController:ControllerBase
+  //  [Authorize(Policy = "Admin")]
+    public class RoleController : ControllerBase
     {
         private readonly IServiceManager serviceManager;
 
@@ -21,13 +21,13 @@ namespace Presentation.Controllers
         {
             this.serviceManager=serviceManager;
         }
-        
+
         [HttpPost]
         public async Task<IActionResult> InserDto([FromBody] InsertOrUpdateRoleDTO insertRoleDTO)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
-            var result= await serviceManager.RoleManager.InsertRoleAsync(insertRoleDTO);
+            var result = await serviceManager.RoleManager.InsertRoleAsync(insertRoleDTO);
             return Ok(result);
         }
         [HttpGet]
@@ -35,7 +35,7 @@ namespace Presentation.Controllers
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
-            var result=await serviceManager.RoleManager.GetRoleByİdAsync(id);
+            var result = await serviceManager.RoleManager.GetRoleByİdAsync(id);
             return StatusCode(201);
         }
         [HttpDelete]
@@ -46,7 +46,7 @@ namespace Presentation.Controllers
             return NoContent();
         }
         [HttpPut("{id:int}")]
-        public async Task<ActionResult<InsertOrUpdateRoleDTO>> UpdateRoleAsync([FromRoute] int id,[FromBody] InsertOrUpdateRoleDTO dto)
+        public async Task<ActionResult<InsertOrUpdateRoleDTO>> UpdateRoleAsync([FromRoute] int id, [FromBody] InsertOrUpdateRoleDTO dto)
         {
             if (!ModelState.IsValid) return BadRequest(ModelState);
             var updated = await serviceManager.RoleManager.UpdateRoleAsync(id, dto);
@@ -56,6 +56,12 @@ namespace Presentation.Controllers
                 Data = updated
             });
         }
+        [HttpGet("GetRoles")]
+        public async Task<IActionResult> GetRoles()
+        {
+            var result = await serviceManager.RoleManager.GetRolesAsync();
+            return Ok(result);
 
+        }
     }
 }

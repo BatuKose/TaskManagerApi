@@ -391,6 +391,18 @@
         }
       }
     },
+    "/Role/GetRoles": {
+      "get": {
+        "tags": [
+          "Role"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/api/users": {
       "post": {
         "tags": [
@@ -453,7 +465,7 @@
         }
       }
     },
-    "/api/users/id:int": {
+    "/api/users/getUserById": {
       "get": {
         "tags": [
           "User"

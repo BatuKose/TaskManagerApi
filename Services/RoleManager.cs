@@ -1,4 +1,5 @@
-﻿using Entites.Data_Transfer_object.Role;
+﻿using DocumentFormat.OpenXml.Office2010.ExcelAc;
+using Entites.Data_Transfer_object.Role;
 using Entites.Exceptions.CustomExceptions;
 using Entites.Models;
 using Repositories.Contracts;
@@ -89,6 +90,16 @@ namespace Services
                 RoleName = role.RoleName
             };
         }
-
+        public async Task<List<GetRoleDto>> GetRolesAsync()
+        {
+            var roles = await _Manager.RoleRepository.GetRolesAsync();
+            if(roles == null || roles.Count == 0) throw new NotFoundException("Rol bilgileri bulunamadı");
+            var roleDtos = roles.Select(role => new GetRoleDto
+            {
+                Id = role.Id,
+                RoleName = role.RoleName
+            }).ToList();
+            return roleDtos;
+        }
     }
 }

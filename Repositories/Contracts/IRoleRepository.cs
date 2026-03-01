@@ -14,5 +14,6 @@ namespace Repositories.Contracts
         Task<Role>DeleteRoleAsync(Role role);
         Task<Role>UpdateRoleAsync(Role role);
         Task<bool> RoleExistsAsync(string name);
+        Task<List<Role>> GetRolesAsync();
     }
 }

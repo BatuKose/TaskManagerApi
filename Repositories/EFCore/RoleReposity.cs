@@ -48,5 +48,10 @@ namespace Repositories.EFCore
             await _Context.SaveChangesAsync();
             return role;
         }
+        public async Task<List<Role>> GetRolesAsync()
+        {
+            var roles = await _Context.roles.ToListAsync(); 
+            return roles;
+        }
     }
 }

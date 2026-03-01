@@ -75,7 +75,7 @@ namespace Repositories.EFCore
         {
 
             var user = await _context.users.FindAsync(id);
-            if (user is null) throw new NotFoundException("Kullanıcı bilgileri bulunamadı.");
+            if (user is null) throw new NotFoundException("kullanici bilgileri bulunamadi.");
             if (user.aktifMi)
             {
                 user.aktifMi=false;

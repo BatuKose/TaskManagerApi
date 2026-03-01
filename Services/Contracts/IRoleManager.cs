@@ -15,5 +15,6 @@ namespace Services.Contracts
         Task<GetRoleDto> GetRoleByİdAsync(int id);
         Task<Role> DeleteRoleAsync(int id);
         Task<InsertOrUpdateRoleDTO> UpdateRoleAsync(int id,InsertOrUpdateRoleDTO dto);
+        Task<List<GetRoleDto>> GetRolesAsync();
     }
 }
