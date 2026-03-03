@@ -12,7 +12,7 @@ namespace Presentation.Controllers
 {
     [ApiController]
     [Route("Role")]
-  //  [Authorize(Policy = "Admin")]
+    [Authorize(Policy = "Admin")]
     public class RoleController : ControllerBase
     {
         private readonly IServiceManager serviceManager;
