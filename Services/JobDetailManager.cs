@@ -90,7 +90,7 @@ namespace Services
         public async Task<List<JobDetayStatusWithHeaderDTO>>BütünİsleriGetirAsync()
         {
             var isler = await _repositoryManager.JobDetailRepository.BütünisleriGetir();
-            if (isler is null) throw new NotFoundException("Geçerli iş bulunamadı");
+            if (isler is null || !isler.Any()) throw new NotFoundException("Geçerli iş bulunamadı");
             return isler;
         }
     }
