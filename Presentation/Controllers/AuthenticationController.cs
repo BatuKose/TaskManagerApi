@@ -28,7 +28,7 @@ namespace Presentation.Controllers
         public async Task<IActionResult> Login([FromBody] LoginDTO login)
         {
             if (!ModelState.IsValid) return BadRequest(ModelState);
-            var token=serviceManager.authenticationService.LoginAsync(login);
+            var token= await serviceManager.authenticationService.LoginAsync(login);
             return Ok(new {token=token});
         }
     }

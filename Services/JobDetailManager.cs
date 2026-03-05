@@ -87,5 +87,11 @@ namespace Services
             var result = _repositoryManager.JobDetailRepository.JobStatusWithHedaer(id);
             return result;
         }
+        public async Task<List<JobDetayStatusWithHeaderDTO>>BütünİsleriGetirAsync()
+        {
+            var isler = await _repositoryManager.JobDetailRepository.BütünisleriGetir();
+            if (isler is null) throw new NotFoundException("Geçerli iş bulunamadı");
+            return isler;
+        }
     }
 }

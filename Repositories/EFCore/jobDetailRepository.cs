@@ -111,5 +111,33 @@ namespace Repositories.EFCore
                         };
             return query;
         }
+        public async  Task<List<JobDetayStatusWithHeaderDTO>> BütünisleriGetir()
+        {
+           
+            var query =  from j in _Context.jobHeaders
+                        join jd in _Context.jobDetail on j.Id equals jd.HeaderId
+                        join u in _Context.users on j.AssignedUserId equals u.Id
+                        join u1 in _Context.users on j.ManagerId equals u1.Id
+                        join r in _Context.roles on u.RoleId equals r.Id
+                        join r1 in _Context.roles on u1.RoleId equals r1.Id
+                        
+
+                        select new JobDetayStatusWithHeaderDTO()
+                        {
+                            JobHeaderId=j.Id,
+                            JobHeaderName=j.Title,
+                            WorkCreateTıme=j.CreatedDate,
+                            Deadline=j.Deadline,
+                            ManagerUserName=u1.UserName,
+                            ManagerRole=r1.RoleName,
+                            JobDetayName=jd.Detail,
+                            WorkerUserName=u.UserName,
+                            workerRole=r.RoleName,
+                            jobHeaderStatus=j.Status,
+                            jobDetayStatus=jd.jobDetayStatus
+                        };
+            return await query.ToListAsync();
+           
+        }
     }
 }

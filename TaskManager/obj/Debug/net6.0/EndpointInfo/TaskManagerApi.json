@@ -261,6 +261,18 @@
         }
       }
     },
+    "/api/Job/Bütünisler": {
+      "get": {
+        "tags": [
+          "Job"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/Role": {
       "post": {
         "tags": [

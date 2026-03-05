@@ -10,6 +10,7 @@ namespace Entites.Data_Transfer_object.JobDetail
 {
     public class JobDetayStatusWithHeaderDTO
     {
+        public int JobHeaderId { get; set; }
         public string JobHeaderName { get; set; }
         public string JobDetayName { get; set; }
         public string ManagerUserName { get; set; }
