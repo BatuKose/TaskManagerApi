@@ -19,6 +19,6 @@ namespace Repositories.Contracts
         public bool HeaderVarmi(int id);
         public bool DetailVarmi(int id);
         public List<CezalıIslerView> GetCezalıİsler();
-        Task<List<JobDetayStatusWithHeaderDTO>> BütünisleriGetir();
+        Task<List<JobDetayStatusWithHeaderDTO>> BütünisleriGetir(bool? active);
     }
 }

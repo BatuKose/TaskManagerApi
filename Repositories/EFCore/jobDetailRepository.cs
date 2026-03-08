@@ -111,34 +111,43 @@ namespace Repositories.EFCore
                         };
             return query;
         }
-        public async  Task<List<JobDetayStatusWithHeaderDTO>> BütünisleriGetir()
+        public async Task<List<JobDetayStatusWithHeaderDTO>> BütünisleriGetir(bool? active)
         {
+            var baseQuery = from j in _Context.jobHeaders
+                            join jd in _Context.jobDetail on j.Id equals jd.HeaderId
+                            join u in _Context.users on j.AssignedUserId equals u.Id
+                            join u1 in _Context.users on j.ManagerId equals u1.Id
+                            join r in _Context.roles on u.RoleId equals r.Id
+                            join r1 in _Context.roles on u1.RoleId equals r1.Id
+                            select new { j, jd, u, u1, r, r1 };
 
-            var query = from j in _Context.jobHeaders
-                        join jd in _Context.jobDetail on j.Id equals jd.HeaderId
-                        join u in _Context.users on j.AssignedUserId equals u.Id
-                        join u1 in _Context.users on j.ManagerId equals u1.Id
-                        join r in _Context.roles on u.RoleId equals r.Id
-                        join r1 in _Context.roles on u1.RoleId equals r1.Id
-                        where j.Status ==JobStatusEnum.JobStatus.Done
 
-                        select new JobDetayStatusWithHeaderDTO()
-                        {
-                            JobHeaderId=j.Id,
-                            JobHeaderName=j.Title,
-                            WorkCreateTıme=j.CreatedDate,
-                            Deadline=j.Deadline,
-                            ManagerUserName=u1.UserName,
-                            ManagerRole=r1.RoleName,
-                            JobDetayName=jd.Detail,
-                            WorkerUserName=u.UserName,
-                            workerRole=r.RoleName,
-                            jobHeaderStatus=j.Status,
-                            jobDetayStatus=jd.jobDetayStatus,
-                            JobFinishedTime=jd.JobFinishTime
-                        };
-            return await query.ToListAsync();
-           
+            if (active == true)
+            {
+                baseQuery = baseQuery.Where(x => x.j.Status != JobStatusEnum.JobStatus.Done);
+            }
+            else if (active == false)
+            {
+                baseQuery = baseQuery.Where(x => x.j.Status == JobStatusEnum.JobStatus.Done);
+            }
+
+            var result = await baseQuery.Select(x => new JobDetayStatusWithHeaderDTO
+            {
+                JobHeaderId = x.j.Id,
+                JobHeaderName = x.j.Title,
+                WorkCreateTıme = x.j.CreatedDate,
+                Deadline = x.j.Deadline,
+                ManagerUserName = x.u1.UserName,
+                ManagerRole = x.r1.RoleName,
+                JobDetayName = x.jd.Detail,
+                WorkerUserName = x.u.UserName,
+                workerRole = x.r.RoleName,
+                jobHeaderStatus = x.j.Status,
+                jobDetayStatus = x.jd.jobDetayStatus,
+                JobFinishedTime = x.jd.JobFinishTime
+            }).ToListAsync();
+
+            return result;
         }
     }
 }

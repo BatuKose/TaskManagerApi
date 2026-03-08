@@ -20,7 +20,7 @@ namespace Repositories.Contracts
        Task< JobHeader> IsKarsila(JobHeader job);
        Task<JobHeader> FindJobWithUser(int jobid, int userId);
        Task<JobHeader> SelectJobHeaderById(int id);
-        Task<JobHeader> UpdateJobHeader(JobHeader jobHeader);
-
+       Task<JobHeader> UpdateJobHeader(JobHeader jobHeader);
+       Task<List<SelectJobHeaderDTO>> SelectJobHeaderAll();
     }
 }

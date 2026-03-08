@@ -52,6 +52,12 @@ namespace Presentation.Controllers
           var result=  _ServiceManager.JobHeaderService.SelectJobHeader(id);
             return Ok(result);
         }
+        [HttpGet("Bütün is Baslık")]
+        public async Task<IActionResult> SelectJobAll()
+        {
+            var result = await _ServiceManager.JobHeaderService.SelectJobHeaderAll();
+            return Ok(result);
+        }
 
         //[Authorize(Policy = "Worker")]
         [HttpPost("karsila")]
@@ -108,9 +114,9 @@ namespace Presentation.Controllers
             return Ok(result);
         }
         [HttpGet("Bütünisler")]
-        public async Task<IActionResult> BütünIsleriGetirAsync()
+        public async Task<IActionResult> BütünIsleriGetirAsync([FromQuery] bool? isActive)
         {
-            var result = await _ServiceManager.JobDetailService.BütünİsleriGetirAsync();
+            var result = await _ServiceManager.JobDetailService.BütünİsleriGetirAsync(isActive);
             return Ok(result);
         }
     }

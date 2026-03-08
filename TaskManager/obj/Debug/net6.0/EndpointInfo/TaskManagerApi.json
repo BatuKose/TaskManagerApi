@@ -146,6 +146,18 @@
         }
       }
     },
+    "/api/Job/Bütün is Baslık": {
+      "get": {
+        "tags": [
+          "Job"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/api/Job/karsila": {
       "post": {
         "tags": [
@@ -265,6 +277,15 @@
       "get": {
         "tags": [
           "Job"
+        ],
+        "parameters": [
+          {
+            "name": "isActive",
+            "in": "query",
+            "schema": {
+              "type": "boolean"
+            }
+          }
         ],
         "responses": {
           "200": {

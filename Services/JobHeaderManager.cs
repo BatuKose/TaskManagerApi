@@ -94,6 +94,13 @@ namespace Services
             var result= _repositoryManager.JobHeaderRepository.SelectJobHeader(id);
             return result;
         }
+        public async Task<List<SelectJobHeaderDTO>> SelectJobHeaderAll()
+        { 
+            
+            var result = await _repositoryManager.JobHeaderRepository.SelectJobHeaderAll();
+            if(result is null) throw new NotFoundException("İş bilgileri bulunamadı");
+            return result;
+        }
 
         public async Task<updateJobHeaderDTO> updatejobHeader(int id, updateJobHeaderDTO dto)
         {

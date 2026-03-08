@@ -15,7 +15,7 @@ namespace Services.Contracts
         Task<JobDetail>DeleteJobDetailAsync(int id);
         public IQueryable<JobDetayStatusWithHeaderDTO> SelectJobDetaiAllDetail(int id);
         public List<CezalıIslerView> GetCezalıİsler();
-        Task<List<JobDetayStatusWithHeaderDTO>> BütünİsleriGetirAsync();
+        Task<List<JobDetayStatusWithHeaderDTO>> BütünİsleriGetirAsync(bool? isActive);
 
     }
 }

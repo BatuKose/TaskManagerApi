@@ -15,5 +15,6 @@ namespace Services.Contracts
         SelectJobHeaderDTO SelectJobHeader(int id);
         Task<JobHeader> Iskarsila(int userId, int jobId);
         Task<updateJobHeaderDTO> updatejobHeader(int id,updateJobHeaderDTO dto);
+        Task<List<SelectJobHeaderDTO>> SelectJobHeaderAll();
     }
 }
