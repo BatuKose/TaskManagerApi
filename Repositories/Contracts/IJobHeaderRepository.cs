@@ -21,6 +21,6 @@ namespace Repositories.Contracts
        Task<JobHeader> FindJobWithUser(int jobid, int userId);
        Task<JobHeader> SelectJobHeaderById(int id);
        Task<JobHeader> UpdateJobHeader(JobHeader jobHeader);
-       Task<List<SelectJobHeaderDTO>> SelectJobHeaderAll();
+       Task<List<SelectJobHeaderDTO>> SelectJobHeaderAll(bool? bitmisMi);
     }
 }

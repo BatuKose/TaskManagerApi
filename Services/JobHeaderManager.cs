@@ -94,10 +94,10 @@ namespace Services
             var result= _repositoryManager.JobHeaderRepository.SelectJobHeader(id);
             return result;
         }
-        public async Task<List<SelectJobHeaderDTO>> SelectJobHeaderAll()
+        public async Task<List<SelectJobHeaderDTO>> SelectJobHeaderAll(bool? bitmisMi)
         { 
             
-            var result = await _repositoryManager.JobHeaderRepository.SelectJobHeaderAll();
+            var result = await _repositoryManager.JobHeaderRepository.SelectJobHeaderAll(bitmisMi);
             if(result is null) throw new NotFoundException("İş bilgileri bulunamadı");
             return result;
         }

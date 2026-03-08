@@ -1,4 +1,6 @@
-﻿using Entites.Data_Transfer_object.JobHeader;
+﻿using Entites.Data_Transfer_object.JobDetail;
+using Entites.Data_Transfer_object.JobHeader;
+using Entites.Enums;
 using Entites.Models;
 using Microsoft.EntityFrameworkCore;
 using Repositories.Contracts;
@@ -103,27 +105,33 @@ namespace Repositories.EFCore
                 };
             return  query.SingleOrDefault();
         }
-        public async Task<List<SelectJobHeaderDTO>> SelectJobHeaderAll()
+        public async Task<List<SelectJobHeaderDTO>> SelectJobHeaderAll(bool? bitmisMi)
         {
-            var query =
+            var baseQuery =
                 from j in _Context.jobHeaders
                 join u in _Context.users on j.AssignedUserId equals u.Id
                 join u2 in _Context.users on j.ManagerId equals u2.Id
                 join r in _Context.roles on u.RoleId equals r.Id
                 join r2 in _Context.roles on u2.RoleId equals r2.Id
+                select new { j, u, u2, r, r2 };
 
-                select new SelectJobHeaderDTO
-                {
-                    Title= j.Title,
-                    ManagerName=u2.UserName,
-                    AssignedUser=u.UserName,
-                    Status=j.Status,
-                    Deadline=j.Deadline,
-                    CreatedDate=j.CreatedDate,
-                    userRoleName=r.RoleName,
-                    managerRoleName=r2.RoleName
-                };
-            return await query.ToListAsync();
+            if (bitmisMi == true)
+                baseQuery = baseQuery.Where(x => x.j.Status == JobStatusEnum.JobStatus.Done);
+            else
+                baseQuery = baseQuery.Where(x => x.j.Status != JobStatusEnum.JobStatus.Done);
+
+            return await baseQuery.Select(x => new SelectJobHeaderDTO
+            {
+                DosyaId = x.j.Id,
+                Title = x.j.Title,
+                ManagerName = x.u2.UserName,
+                AssignedUser = x.u.UserName,
+                Status = x.j.Status,
+                Deadline = x.j.Deadline,
+                CreatedDate = x.j.CreatedDate,
+                userRoleName = x.r.RoleName,
+                managerRoleName = x.r2.RoleName
+            }).ToListAsync();
         }
 
         public async Task<JobHeader> UpdateJobHeader(JobHeader jobHeader)

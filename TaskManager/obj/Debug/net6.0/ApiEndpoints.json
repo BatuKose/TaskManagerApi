@@ -2,11 +2,17 @@
   {
     "ContainingType": "Presentation.Controllers.JobController",
     "Method": "SelectJobAll",
-    "RelativePath": "api/Job/B\u00FCt\u00FCn is Basl\u0131k",
+    "RelativePath": "api/Job/B\u00FCt\u00FCnisBasl\u0131k",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "bitmisMi",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": []
   },
   {

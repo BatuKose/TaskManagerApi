@@ -146,10 +146,19 @@
         }
       }
     },
-    "/api/Job/Bütün is Baslık": {
+    "/api/Job/BütünisBaslık": {
       "get": {
         "tags": [
           "Job"
+        ],
+        "parameters": [
+          {
+            "name": "bitmisMi",
+            "in": "query",
+            "schema": {
+              "type": "boolean"
+            }
+          }
         ],
         "responses": {
           "200": {

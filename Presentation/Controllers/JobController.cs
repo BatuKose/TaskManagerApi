@@ -52,10 +52,10 @@ namespace Presentation.Controllers
           var result=  _ServiceManager.JobHeaderService.SelectJobHeader(id);
             return Ok(result);
         }
-        [HttpGet("Bütün is Baslık")]
-        public async Task<IActionResult> SelectJobAll()
+        [HttpGet("BütünisBaslık")]
+        public async Task<IActionResult> SelectJobAll([FromQuery] bool? bitmisMi)
         {
-            var result = await _ServiceManager.JobHeaderService.SelectJobHeaderAll();
+            var result = await _ServiceManager.JobHeaderService.SelectJobHeaderAll(bitmisMi);
             return Ok(result);
         }
 

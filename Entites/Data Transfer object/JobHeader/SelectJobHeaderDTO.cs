@@ -9,6 +9,7 @@ namespace Entites.Data_Transfer_object.JobHeader
 {
     public class SelectJobHeaderDTO
     {
+        public int DosyaId { get; set; }
         public string Title { get; set; }
         public string ManagerName { get; set; }
         public string AssignedUser { get; set; }
