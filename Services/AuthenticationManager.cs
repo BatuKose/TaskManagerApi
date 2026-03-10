@@ -1,4 +1,5 @@
-﻿using Entites.Data_Transfer_object.User;
+﻿using DocumentFormat.OpenXml.Spreadsheet;
+using Entites.Data_Transfer_object.User;
 using Entites.Exceptions.CustomExceptions;
 using Entites.Models;
 using Microsoft.AspNetCore.Http;
@@ -60,12 +61,12 @@ namespace Services
                     isSuccess=true
                 };
                 await _repositoryManager.authenticationRepository.InsertLog(logFile);
-                return await GenerateToken(user.UserName, user.RoleId);
+                return await GenerateToken(user.UserName, user.RoleId,user.Id);
             }
                
         }
 
-        public async Task<string> GenerateToken(string username,int roleId )
+        public async Task<string> GenerateToken(string username,int roleId,int userId )
         {
             var key = new SymmetricSecurityKey(
             Encoding.UTF8.GetBytes(_configuration["Jwt:Key"])
@@ -75,7 +76,8 @@ namespace Services
             var claims = new List<Claim>
         {
             new Claim(ClaimTypes.Name, username),
-            new Claim("RoleId", roleId.ToString())  
+            new Claim("RoleId", roleId.ToString()),
+            new Claim("UserId", userId.ToString())
         };
 
             var token = new JwtSecurityToken(
