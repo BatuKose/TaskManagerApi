@@ -129,7 +129,13 @@ namespace Services
                 };
             }
         }
-               
+        public async Task<List<SelectJobHeaderDTO>> FindJobHeaderAsync(int id)
+        {
+            if (id < 0) throw new BadRequestException("Kullanıcı bilgisine ulaşılmadı");
+            var result = await _repositoryManager.JobHeaderRepository.KendiİsBasliklarim(id);
+            if(result is null) throw new NotFoundException("İş bilgilerine ulaşılamadı");
+            return result;
+        }
     }
 
 }

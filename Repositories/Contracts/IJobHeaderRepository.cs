@@ -22,5 +22,6 @@ namespace Repositories.Contracts
        Task<JobHeader> SelectJobHeaderById(int id);
        Task<JobHeader> UpdateJobHeader(JobHeader jobHeader);
        Task<List<SelectJobHeaderDTO>> SelectJobHeaderAll(bool? bitmisMi);
+        Task<List<SelectJobHeaderDTO>> KendiİsBasliklarim(int id);
     }
 }

@@ -180,6 +180,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Presentation.Controllers.JobController",
+    "Method": "KendiIslerimAsync",
+    "RelativePath": "api/Job/Kendi\u0130slerim",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Presentation.Controllers.UserController",
     "Method": "CreateUserAsync",
     "RelativePath": "api/users",

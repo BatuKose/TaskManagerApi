@@ -19,7 +19,7 @@ namespace Presentation.Controllers
     [ApiController]
     [Route("api/Job")]
     //[Authorize]
-    public class JobController :ControllerBase
+    public class JobController : ControllerBase
     {
         private readonly IServiceManager _ServiceManager;
         public JobController(IServiceManager serviceManager)
@@ -27,7 +27,7 @@ namespace Presentation.Controllers
             _ServiceManager = serviceManager;
         }
 
-      //  [Authorize(Policy = "Manager")]
+        //  [Authorize(Policy = "Manager")]
         [HttpPost("iş başlık")]
 
         public async Task<IActionResult> CreateJobAsync([FromBody] CreateJobHeaderDTO jobDto)
@@ -49,7 +49,7 @@ namespace Presentation.Controllers
         [HttpGet("iş başlık")]
         public IActionResult SelectJob([FromQuery] int id)
         {
-          var result=  _ServiceManager.JobHeaderService.SelectJobHeader(id);
+            var result = _ServiceManager.JobHeaderService.SelectJobHeader(id);
             return Ok(result);
         }
         [HttpGet("BütünisBaslık")]
@@ -81,7 +81,7 @@ namespace Presentation.Controllers
             return Ok(result);
         }
 
-       // [Authorize(Policy = "Worker")]
+        // [Authorize(Policy = "Worker")]
         [HttpPost("iş detay")]
         public async Task<IActionResult> InsertJobAsync([FromBody] InsertJobDetailDTO jobDto)
         {
@@ -90,19 +90,19 @@ namespace Presentation.Controllers
             return StatusCode(201);
         }
 
-     //   [Authorize(Policy = "Worker")]
+        //   [Authorize(Policy = "Worker")]
         [HttpDelete("iş detay")]
         public async Task<IActionResult> DeleteJobDetail([FromQuery] int jobDetayId)
         {
-         var result= await  _ServiceManager.JobDetailService.DeleteJobDetailAsync(jobDetayId);
+            var result = await _ServiceManager.JobDetailService.DeleteJobDetailAsync(jobDetayId);
             return NoContent();
         }
 
-       // [Authorize(Policy = "Worker-Manager")]
+        // [Authorize(Policy = "Worker-Manager")]
         [HttpGet("jobAllDetails")]
         public IActionResult GetJobWithAllDetails([FromQuery] int jobHeaderId)
         {
-            var result= _ServiceManager.JobDetailService.SelectJobDetaiAllDetail(jobHeaderId);
+            var result = _ServiceManager.JobDetailService.SelectJobDetaiAllDetail(jobHeaderId);
             return Ok(result);
         }
 
@@ -110,13 +110,21 @@ namespace Presentation.Controllers
         [HttpGet("Cezalıİsler")]
         public IActionResult GetCezaliIsler()
         {
-            var result=_ServiceManager.JobDetailService.GetCezalıİsler();
+            var result = _ServiceManager.JobDetailService.GetCezalıİsler();
             return Ok(result);
         }
+        // [Authorize(Policy = "Worker-Manager")]
         [HttpGet("Bütünisler")]
         public async Task<IActionResult> BütünIsleriGetirAsync([FromQuery] bool? isActive)
         {
             var result = await _ServiceManager.JobDetailService.BütünİsleriGetirAsync(isActive);
+            return Ok(result);
+        }
+        // [Authorize(Policy = "Worker-Manager")]
+        [HttpGet("Kendiİslerim")]
+        public async Task<IActionResult> KendiIslerimAsync([FromQuery] int userId)
+        {
+            var result = await _ServiceManager.JobHeaderService.FindJobHeaderAsync(userId);
             return Ok(result);
         }
     }
