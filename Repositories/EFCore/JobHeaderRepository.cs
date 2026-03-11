@@ -116,6 +116,7 @@ namespace Repositories.EFCore
                 where j.AssignedUserId == id
                 select new SelectJobHeaderDTO
                 {
+                    DosyaId = j.Id,
                     Title = j.Title,
                     ManagerName = u2.UserName,
                     AssignedUser = u.UserName,
