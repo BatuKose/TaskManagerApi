@@ -133,10 +133,14 @@ namespace Repositories.EFCore
         {
             var baseQuery =
                 from j in _Context.jobHeaders
-                join u in _Context.users on j.AssignedUserId equals u.Id
                 join u2 in _Context.users on j.ManagerId equals u2.Id
-                join r in _Context.roles on u.RoleId equals r.Id
                 join r2 in _Context.roles on u2.RoleId equals r2.Id
+                from u in _Context.users                                   
+                    .Where(u => u.Id == j.AssignedUserId)
+                    .DefaultIfEmpty()
+                from r in _Context.roles                                    
+                    .Where(r => r.Id == (u != null ? u.RoleId : 0))
+                    .DefaultIfEmpty()
                 select new { j, u, u2, r, r2 };
 
             if (bitmisMi == true)
@@ -149,11 +153,11 @@ namespace Repositories.EFCore
                 DosyaId = x.j.Id,
                 Title = x.j.Title,
                 ManagerName = x.u2.UserName,
-                AssignedUser = x.u.UserName,
+                AssignedUser = x.u != null ? x.u.UserName : "Atanmadı",   
                 Status = x.j.Status,
                 Deadline = x.j.Deadline,
                 CreatedDate = x.j.CreatedDate,
-                userRoleName = x.r.RoleName,
+                userRoleName = x.r != null ? x.r.RoleName : "Rol Yok",   
                 managerRoleName = x.r2.RoleName
             }).ToListAsync();
         }

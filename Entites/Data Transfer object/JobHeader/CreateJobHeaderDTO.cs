@@ -16,7 +16,7 @@ namespace Entites.Data_Transfer_object.JobHeader
             public string Title { get; set; }
             [Required(ErrorMessage = "Yönetici bilgileri boş geçilemez")]
             public int ManagerId { get; set; }
-            [Required(ErrorMessage = "çalışan bilgileri boş geçilemez")]
+          //  [Required(ErrorMessage = "çalışan bilgileri boş geçilemez")]
             public int AssignedUserId { get; set; }
             [Required(ErrorMessage = "görev bitiş zaman bilgileri boş geçilemez")]
             public DateTime Deadline { get; set; }

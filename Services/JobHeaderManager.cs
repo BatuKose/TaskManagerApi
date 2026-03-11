@@ -38,7 +38,7 @@ namespace Services
         {
             if (jobHeaderDTO is null) throw new NotFoundException("Başlık bilgileri bulunamadı");
             if (jobHeaderDTO.ManagerId<=0) throw new NotFoundException("Yönetici bilgileri bulunamadı");
-            if (jobHeaderDTO.AssignedUserId<=0) throw new NotFoundException("çalışan bilgileri bulunamadı");
+         //   if (jobHeaderDTO.AssignedUserId<=0) throw new NotFoundException("çalışan bilgileri bulunamadı");
             bool ManagerExits = await _repositoryManager.JobHeaderRepository.FındAdminOrManagerWorkersAsync(jobHeaderDTO.ManagerId);
             if (!ManagerExits) throw new BadRequestException("Sadece yönetici rolündekiler iş açabilir");
             bool isActiveManager = await _repositoryManager.JobHeaderRepository.isUserActive(jobHeaderDTO.ManagerId);
@@ -46,10 +46,15 @@ namespace Services
             bool isActiveWorker = await _repositoryManager.JobHeaderRepository.isUserActive(jobHeaderDTO.ManagerId);
             if (!isActiveWorker) throw new BadRequestException("çalışan rolündeki kullanıcı aktif değil.");
             bool WorkerExist = await _repositoryManager.JobHeaderRepository.FındWorkersAsync(jobHeaderDTO.AssignedUserId);
-            if (!WorkerExist) throw new BadRequestException("yönetici rolündeki kullanıcılara iş açılamaz");
+            
             if (jobHeaderDTO.ManagerId==jobHeaderDTO.AssignedUserId) throw new BadRequestException("İşi açanla karşılayan aynı personel olamaz");
+            if (jobHeaderDTO.AssignedUserId<=0)
+            {
+                jobHeaderDTO.AssignedUserId = 0;
+            }
             var jobHeader = new JobHeader()
             {
+          
                 Title=jobHeaderDTO.Title,
                 ManagerId=jobHeaderDTO.ManagerId,
                 AssignedUserId=jobHeaderDTO.AssignedUserId,
