@@ -46,7 +46,7 @@ namespace Services
             bool isActiveWorker = await _repositoryManager.JobHeaderRepository.isUserActive(jobHeaderDTO.ManagerId);
             if (!isActiveWorker) throw new BadRequestException("çalışan rolündeki kullanıcı aktif değil.");
             bool WorkerExist = await _repositoryManager.JobHeaderRepository.FındWorkersAsync(jobHeaderDTO.AssignedUserId);
-            
+
             if (jobHeaderDTO.ManagerId==jobHeaderDTO.AssignedUserId) throw new BadRequestException("İşi açanla karşılayan aynı personel olamaz");
             if (jobHeaderDTO.AssignedUserId<=0)
             {
@@ -80,14 +80,19 @@ namespace Services
         {
             if (userId <= 0 || jobId <= 0)
                 throw new BadRequestException("Parametrelerde eksik bilgiler var");
-            var findJob = await _repositoryManager.JobHeaderRepository.FindJobWithUser(jobId, userId);
+            var findJob = await _repositoryManager.JobHeaderRepository.FindJobHeaderAsync(jobId);
             if (findJob is null)
                 throw new NotFoundException("İş bilgisi bulunamadı");
 
-            if (findJob.AssignedUserId != userId)
-                throw new BadRequestException("Bu iş bu personele atanmış değil. Karşılayamazsın.");
+            if(findJob.AssignedUserId>0)
+            {
+                 if (findJob.AssignedUserId != userId)
+                 throw new BadRequestException("Bu iş bu personele atanmış değil. Karşılayamazsın.");
+            }
+           
 
             findJob.Status = JobStatusEnum.JobStatus.Karşılandı;
+            findJob.AssignedUserId=userId;
             await _repositoryManager.JobHeaderRepository.IsKarsila(findJob);
            return findJob;
         }
