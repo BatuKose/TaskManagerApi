@@ -8,6 +8,7 @@ using Services.Contracts;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
@@ -81,6 +82,8 @@ namespace Services
             if (userId <= 0 || jobId <= 0)
                 throw new BadRequestException("Parametrelerde eksik bilgiler var");
             var findJob = await _repositoryManager.JobHeaderRepository.FindJobHeaderAsync(jobId);
+            var findUser = await _repositoryManager.UserRepository.GetUserByidAsync(userId);
+            if (findUser is null) throw new NotFoundException("Kullanıcı bulunamadı");
             if (findJob is null)
                 throw new NotFoundException("İş bilgisi bulunamadı");
 
@@ -90,7 +93,8 @@ namespace Services
                  throw new BadRequestException("Bu iş bu personele atanmış değil. Karşılayamazsın.");
             }
            
-
+            if(findJob.Status!=JobStatus.Bekleniyor)
+                throw new BadRequestException("Bu iş zaten karşılanmış veya tamamlanmış durumda. Karşılayamazsın.");
             findJob.Status = JobStatusEnum.JobStatus.Karşılandı;
             findJob.AssignedUserId=userId;
             await _repositoryManager.JobHeaderRepository.IsKarsila(findJob);
