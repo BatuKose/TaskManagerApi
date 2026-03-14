@@ -78,7 +78,7 @@ namespace Presentation.Controllers
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
             var result = await _ServiceManager.JobHeaderService.updatejobHeader(id, dto);
-            return Ok(result);
+            return NoContent();
         }
 
         // [Authorize(Policy = "Worker")]
