@@ -213,5 +213,15 @@ namespace Services
 
             return result;
         }
+        public async Task<IEnumerable<UserDetailsDTO>> calisanGetir()
+        {
+            var result = await _repositoryManager
+                .UserRepository.CalisanlarıGetir();      
+
+            if (!result.Any())
+                throw new NotFoundException("Çalışan bilgileri bulunamadı.");
+
+            return result;
+        }
     }
 }

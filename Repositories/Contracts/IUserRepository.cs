@@ -22,6 +22,7 @@ namespace Repositories.Contracts
         Task<User>UpdateUserAsync(User user);
         Task<bool> UserExistsAsync(int id);
         Task<IEnumerable<UserDetailsDTO>> UserDetailsAsync(bool? aktifMi);
+        Task<IEnumerable<UserDetailsDTO>> CalisanlarıGetir();
 
 
 

@@ -110,5 +110,11 @@ namespace Presentation.Controllers
             var result = await _ServiceManager.UserService.UserDetailsAsync(aktifMi);
             return Ok(result);
         }
+        [HttpGet("calisanlar")]
+        public async Task<IActionResult> calisanlariGetirAsync()
+        {
+            var result = await _ServiceManager.UserService.calisanGetir();
+            return Ok(result);
+        }
     }
 }

@@ -234,6 +234,16 @@
   },
   {
     "ContainingType": "Presentation.Controllers.UserController",
+    "Method": "calisanlariGetirAsync",
+    "RelativePath": "api/users/calisanlar",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.UserController",
     "Method": "GetUserByid",
     "RelativePath": "api/users/getUserById",
     "HttpMethod": "GET",

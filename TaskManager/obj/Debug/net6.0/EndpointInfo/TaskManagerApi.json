@@ -758,6 +758,18 @@
         }
       }
     },
+    "/api/users/calisanlar": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/ZimmetDemirbas/InsertCategory": {
       "post": {
         "tags": [

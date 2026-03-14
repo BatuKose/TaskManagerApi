@@ -10,6 +10,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace Repositories.EFCore
 {
@@ -106,6 +107,26 @@ namespace Repositories.EFCore
                 query = query.Where(u => u.aktifMi == aktifMi.Value);
             }
 
+            var result = await query
+                .Select(u => new UserDetailsDTO
+                {
+                    Id = u.Id,
+                    UserName = u.UserName,
+                    Email = u.Email,
+                    RoleId = u.RoleId,
+                    RoleName = u.Role.RoleName
+                })
+                .ToListAsync();
+
+            return result;
+        }
+        public async Task<IEnumerable<UserDetailsDTO>> CalisanlarıGetir()
+        {
+            var query = _context.users.AsQueryable();
+
+
+             
+            query = query.Where(u => u.RoleId != 1 && u.RoleId != 2 && u.aktifMi == true);
             var result = await query
                 .Select(u => new UserDetailsDTO
                 {
