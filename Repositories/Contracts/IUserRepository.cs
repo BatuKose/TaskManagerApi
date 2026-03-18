@@ -23,7 +23,7 @@ namespace Repositories.Contracts
         Task<bool> UserExistsAsync(int id);
         Task<IEnumerable<UserDetailsDTO>> UserDetailsAsync(bool? aktifMi);
         Task<IEnumerable<UserDetailsDTO>> CalisanlarıGetir();
-
+        Task<IEnumerable<UserDetailsDTO>> yoneticiGetir();
 
 
     }

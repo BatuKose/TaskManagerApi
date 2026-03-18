@@ -116,5 +116,11 @@ namespace Presentation.Controllers
             var result = await _ServiceManager.UserService.calisanGetir();
             return Ok(result);
         }
+        [HttpGet("yoneticiler")]
+        public async Task<IActionResult> yoneticileriGetirAsync()
+        {
+            var result = await _ServiceManager.UserService.yoneticGetir();
+            return Ok(result);
+        }
     }
 }

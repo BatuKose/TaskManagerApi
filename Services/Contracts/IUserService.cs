@@ -23,7 +23,7 @@ namespace Services.Contracts
         Task DeleteUserIzinAsync(int izinId);
         Task<IEnumerable<UserDetailsDTO>> UserDetailsAsync(bool? aktifMi);
         Task<IEnumerable<UserDetailsDTO>> calisanGetir();
-
+        Task<IEnumerable<UserDetailsDTO>> yoneticGetir();
 
     }
 }

@@ -223,5 +223,15 @@ namespace Services
 
             return result;
         }
+        public async Task<IEnumerable<UserDetailsDTO>> yoneticGetir()
+        {
+            var result = await _repositoryManager
+                .UserRepository.yoneticiGetir();
+
+            if (!result.Any())
+                throw new NotFoundException("yönetici bilgileri bulunamadı.");
+
+            return result;
+        }
     }
 }

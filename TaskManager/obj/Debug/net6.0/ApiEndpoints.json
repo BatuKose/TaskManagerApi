@@ -44,7 +44,7 @@
   {
     "ContainingType": "Presentation.Controllers.JobController",
     "Method": "CreateJobAsync",
-    "RelativePath": "api/Job/i\u015F ba\u015Fl\u0131k",
+    "RelativePath": "api/Job/isbaslik",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -373,6 +373,16 @@
         "IsRequired": false
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.UserController",
+    "Method": "yoneticileriGetirAsync",
+    "RelativePath": "api/users/yoneticiler",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {

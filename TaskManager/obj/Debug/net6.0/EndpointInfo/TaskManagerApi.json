@@ -36,7 +36,7 @@
         }
       }
     },
-    "/api/Job/iş başlık": {
+    "/api/Job/isbaslik": {
       "post": {
         "tags": [
           "Job"
@@ -65,7 +65,9 @@
             "description": "Success"
           }
         }
-      },
+      }
+    },
+    "/api/Job/iş başlık": {
       "delete": {
         "tags": [
           "Job"
@@ -759,6 +761,18 @@
       }
     },
     "/api/users/calisanlar": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/users/yoneticiler": {
       "get": {
         "tags": [
           "User"

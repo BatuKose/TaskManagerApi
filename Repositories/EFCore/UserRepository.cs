@@ -140,5 +140,25 @@ namespace Repositories.EFCore
 
             return result;
         }
+        public async Task<IEnumerable<UserDetailsDTO>> yoneticiGetir()
+        {
+            var query = _context.users.AsQueryable();
+
+
+
+            query = query.Where(u => u.RoleId == 1 || u.RoleId == 2 && u.aktifMi == true);
+            var result = await query
+                .Select(u => new UserDetailsDTO
+                {
+                    Id = u.Id,
+                    UserName = u.UserName,
+                    Email = u.Email,
+                    RoleId = u.RoleId,
+                    RoleName = u.Role.RoleName
+                })
+                .ToListAsync();
+
+            return result;
+        }
     }
 }

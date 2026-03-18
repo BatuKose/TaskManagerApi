@@ -28,7 +28,7 @@ namespace Presentation.Controllers
         }
 
         //  [Authorize(Policy = "Manager")]
-        [HttpPost("iş başlık")]
+        [HttpPost("isbaslik")]
 
         public async Task<IActionResult> CreateJobAsync([FromBody] CreateJobHeaderDTO jobDto)
         {
