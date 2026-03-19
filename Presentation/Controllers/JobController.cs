@@ -87,7 +87,7 @@ namespace Presentation.Controllers
         {
             if (!ModelState.IsValid) return BadRequest(ModelState);
             await _ServiceManager.JobDetailService.InsertJobDetailAsync(jobDto);
-            return StatusCode(201);
+            return NoContent();
         }
 
         //   [Authorize(Policy = "Worker")]

@@ -13,7 +13,6 @@ namespace Entites.Enums
            mühadaleEdiliyor=1,
            analizde=2,
            yapıldı=3
-
         }
     }
 }
