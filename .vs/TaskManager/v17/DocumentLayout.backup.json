@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CDC29FC0-ACB9-48EB-880C-24AAAFB03053}|Presentation\\Presentation.csproj|c:\\users\\batuhan\\desktop\\desktop\\itsoftware\\asp.net web api\\projeler\\taskmanagerapi\\presentation\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CDC29FC0-ACB9-48EB-880C-24AAAFB03053}|Presentation\\Presentation.csproj|solutionrelative:presentation\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{97C5EDCF-476D-4C0B-9352-4D9F488FCF9F}|Repositories\\Repositories.csproj|c:\\users\\batuhan\\desktop\\desktop\\itsoftware\\asp.net web api\\projeler\\taskmanagerapi\\repositories\\efcore\\jobdetailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97C5EDCF-476D-4C0B-9352-4D9F488FCF9F}|Repositories\\Repositories.csproj|solutionrelative:repositories\\efcore\\jobdetailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBF95191-984E-4693-8E5D-587F32E99A1A}|Services\\Services.csproj|c:\\users\\batuhan\\desktop\\desktop\\itsoftware\\asp.net web api\\projeler\\taskmanagerapi\\services\\jobdetailmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBF95191-984E-4693-8E5D-587F32E99A1A}|Services\\Services.csproj|solutionrelative:services\\jobdetailmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CDC29FC0-ACB9-48EB-880C-24AAAFB03053}|Presentation\\Presentation.csproj|c:\\users\\batuhan\\desktop\\desktop\\itsoftware\\asp.net web api\\projeler\\taskmanagerapi\\presentation\\controllers\\jobcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CDC29FC0-ACB9-48EB-880C-24AAAFB03053}|Presentation\\Presentation.csproj|solutionrelative:presentation\\controllers\\jobcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDC29FC0-ACB9-48EB-880C-24AAAFB03053}|Presentation\\Presentation.csproj|c:\\users\\batuhan\\desktop\\desktop\\itsoftware\\asp.net web api\\projeler\\taskmanagerapi\\presentation\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDC29FC0-ACB9-48EB-880C-24AAAFB03053}|Presentation\\Presentation.csproj|solutionrelative:presentation\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DBF95191-984E-4693-8E5D-587F32E99A1A}|Services\\Services.csproj|c:\\users\\batuhan\\desktop\\desktop\\itsoftware\\asp.net web api\\projeler\\taskmanagerapi\\services\\jobheadermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -41,14 +49,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{9CBDA63E-0020-4886-A5B7-1CBBE8403DD3}|TaskManager\\TaskManagerApi.csproj|c:\\users\\batuhan\\desktop\\desktop\\itsoftware\\asp.net web api\\projeler\\taskmanagerapi\\taskmanager\\logs\\log-20260314.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{9CBDA63E-0020-4886-A5B7-1CBBE8403DD3}|TaskManager\\TaskManagerApi.csproj|solutionrelative:taskmanager\\logs\\log-20260314.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DBF95191-984E-4693-8E5D-587F32E99A1A}|Services\\Services.csproj|c:\\users\\batuhan\\desktop\\desktop\\itsoftware\\asp.net web api\\projeler\\taskmanagerapi\\services\\jobdetailmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DBF95191-984E-4693-8E5D-587F32E99A1A}|Services\\Services.csproj|solutionrelative:services\\jobdetailmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97C5EDCF-476D-4C0B-9352-4D9F488FCF9F}|Repositories\\Repositories.csproj|c:\\users\\batuhan\\desktop\\desktop\\itsoftware\\asp.net web api\\projeler\\taskmanagerapi\\repositories\\efcore\\jobdetailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97C5EDCF-476D-4C0B-9352-4D9F488FCF9F}|Repositories\\Repositories.csproj|solutionrelative:repositories\\efcore\\jobdetailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{97C5EDCF-476D-4C0B-9352-4D9F488FCF9F}|Repositories\\Repositories.csproj|c:\\users\\batuhan\\desktop\\desktop\\itsoftware\\asp.net web api\\projeler\\taskmanagerapi\\repositories\\contracts\\ijobheaderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -109,11 +109,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 40,
+          "SelectedChildIndex": 26,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "JobHeaderRepository.cs",
               "DocumentMoniker": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\Repositories\\EFCore\\JobHeaderRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\EFCore\\JobHeaderRepository.cs",
@@ -122,8 +122,7 @@
               "ViewState": "AgIAAC0AAAAAAAAAAAASwEAAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-08T18:03:16.33Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -140,7 +139,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "JobHeaderManager.cs",
               "DocumentMoniker": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\Services\\JobHeaderManager.cs",
               "RelativeDocumentMoniker": "Services\\JobHeaderManager.cs",
@@ -149,8 +148,7 @@
               "ViewState": "AgIAABsAAAAAAAAAAAArwCEAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-08T18:05:26.145Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -167,13 +165,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "JobController.cs",
               "DocumentMoniker": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\Presentation\\Controllers\\JobController.cs",
               "RelativeDocumentMoniker": "Presentation\\Controllers\\JobController.cs",
-              "ToolTip": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\Presentation\\Controllers\\JobController.cs",
-              "RelativeToolTip": "Presentation\\Controllers\\JobController.cs",
-              "ViewState": "AgIAAGsAAAAAAAAAAAAAAGwAAAApAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\Presentation\\Controllers\\JobController.cs*",
+              "RelativeToolTip": "Presentation\\Controllers\\JobController.cs*",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAUwGgAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-05T18:07:15.754Z",
               "IsPinned": true,
@@ -245,15 +243,77 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "log-20260314.txt",
-              "DocumentMoniker": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\TaskManager\\logs\\log-20260314.txt",
-              "RelativeDocumentMoniker": "TaskManager\\logs\\log-20260314.txt",
-              "ToolTip": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\TaskManager\\logs\\log-20260314.txt",
-              "RelativeToolTip": "TaskManager\\logs\\log-20260314.txt",
-              "ViewState": "AgIAAHABAAAAAAAAAAAMwHoBAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2026-03-18T19:51:21.609Z",
+              "DocumentIndex": 15,
+              "Title": "TaskManagerApi.csproj",
+              "DocumentMoniker": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\TaskManager\\TaskManagerApi.csproj",
+              "RelativeDocumentMoniker": "TaskManager\\TaskManagerApi.csproj",
+              "ToolTip": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\TaskManager\\TaskManagerApi.csproj",
+              "RelativeToolTip": "TaskManager\\TaskManagerApi.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-14T16:01:07.977Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\Services\\Contracts\\IUserService.cs",
+              "RelativeDocumentMoniker": "Services\\Contracts\\IUserService.cs",
+              "ToolTip": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\Services\\Contracts\\IUserService.cs",
+              "RelativeToolTip": "Services\\Contracts\\IUserService.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABcAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-14T14:28:26.417Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\Repositories\\Contracts\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Contracts\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\Repositories\\Contracts\\IUserRepository.cs",
+              "RelativeToolTip": "Repositories\\Contracts\\IUserRepository.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAASwBkAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-14T14:27:13.593Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "JobHeaderManager.cs",
+              "DocumentMoniker": "C:\\Users\\batuhan\\AppData\\Local\\SourceServer\\299642c6cde32c3267505bc5834dcb3cb21951434fb25abf786abce2255691f1\\Services\\JobHeaderManager.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\AppData\\Local\\SourceServer\\299642c6cde32c3267505bc5834dcb3cb21951434fb25abf786abce2255691f1\\Services\\JobHeaderManager.cs",
+              "ToolTip": "C:\\Users\\batuhan\\AppData\\Local\\SourceServer\\299642c6cde32c3267505bc5834dcb3cb21951434fb25abf786abce2255691f1\\Services\\JobHeaderManager.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\AppData\\Local\\SourceServer\\299642c6cde32c3267505bc5834dcb3cb21951434fb25abf786abce2255691f1\\Services\\JobHeaderManager.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAqwCUAAAAIAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-11T18:58:41.827Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "JobDetailManager.cs",
+              "DocumentMoniker": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\Services\\JobDetailManager.cs",
+              "RelativeDocumentMoniker": "Services\\JobDetailManager.cs",
+              "ToolTip": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\Services\\JobDetailManager.cs",
+              "RelativeToolTip": "Services\\JobDetailManager.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAAAFYAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T18:14:21.918Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "jobDetailRepository.cs",
+              "DocumentMoniker": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\Repositories\\EFCore\\jobDetailRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\EFCore\\jobDetailRepository.cs",
+              "ToolTip": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\Repositories\\EFCore\\jobDetailRepository.cs*",
+              "RelativeToolTip": "Repositories\\EFCore\\jobDetailRepository.cs*",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAmwGIAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-08T18:46:31.104Z",
               "EditorCaption": ""
             },
             {
@@ -270,54 +330,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "TaskManagerApi.csproj",
-              "DocumentMoniker": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\TaskManager\\TaskManagerApi.csproj",
-              "RelativeDocumentMoniker": "TaskManager\\TaskManagerApi.csproj",
-              "ToolTip": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\TaskManager\\TaskManagerApi.csproj",
-              "RelativeToolTip": "TaskManager\\TaskManagerApi.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-03-14T16:01:07.977Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "IUserService.cs",
-              "DocumentMoniker": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\Services\\Contracts\\IUserService.cs",
-              "RelativeDocumentMoniker": "Services\\Contracts\\IUserService.cs",
-              "ToolTip": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\Services\\Contracts\\IUserService.cs",
-              "RelativeToolTip": "Services\\Contracts\\IUserService.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABcAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-14T14:28:26.417Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IUserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\Repositories\\Contracts\\IUserRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\Contracts\\IUserRepository.cs",
-              "ToolTip": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\Repositories\\Contracts\\IUserRepository.cs",
-              "RelativeToolTip": "Repositories\\Contracts\\IUserRepository.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAASwBkAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-14T14:27:13.593Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "JobHeaderManager.cs",
-              "DocumentMoniker": "C:\\Users\\batuhan\\AppData\\Local\\SourceServer\\299642c6cde32c3267505bc5834dcb3cb21951434fb25abf786abce2255691f1\\Services\\JobHeaderManager.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\AppData\\Local\\SourceServer\\299642c6cde32c3267505bc5834dcb3cb21951434fb25abf786abce2255691f1\\Services\\JobHeaderManager.cs",
-              "ToolTip": "C:\\Users\\batuhan\\AppData\\Local\\SourceServer\\299642c6cde32c3267505bc5834dcb3cb21951434fb25abf786abce2255691f1\\Services\\JobHeaderManager.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\AppData\\Local\\SourceServer\\299642c6cde32c3267505bc5834dcb3cb21951434fb25abf786abce2255691f1\\Services\\JobHeaderManager.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAqwCUAAAAIAAAAAQAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-11T18:58:41.827Z",
-              "EditorCaption": ""
+              "DocumentIndex": 11,
+              "Title": "log-20260314.txt",
+              "DocumentMoniker": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\TaskManager\\logs\\log-20260314.txt",
+              "RelativeDocumentMoniker": "TaskManager\\logs\\log-20260314.txt",
+              "ToolTip": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\TaskManager\\logs\\log-20260314.txt",
+              "RelativeToolTip": "TaskManager\\logs\\log-20260314.txt",
+              "ViewState": "AgIAAHABAAAAAAAAAAAMwHoBAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-03-18T19:51:21.609Z"
             },
             {
               "$type": "Document",
@@ -353,21 +374,7 @@
               "RelativeToolTip": "Presentation\\Controllers\\AuthenticationController.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAAAB4AAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-10T18:31:05.045Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "jobDetailRepository.cs",
-              "DocumentMoniker": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\Repositories\\EFCore\\jobDetailRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\EFCore\\jobDetailRepository.cs",
-              "ToolTip": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\Repositories\\EFCore\\jobDetailRepository.cs",
-              "RelativeToolTip": "Repositories\\EFCore\\jobDetailRepository.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAArwEQAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-08T18:46:31.104Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-10T18:31:05.045Z"
             },
             {
               "$type": "Document",
@@ -383,7 +390,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\Repositories\\EFCore\\UserRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\EFCore\\UserRepository.cs",
@@ -391,12 +398,11 @@
               "RelativeToolTip": "Repositories\\EFCore\\UserRepository.cs",
               "ViewState": "AgIAAIAAAAAAAAAAAAAUwJUAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-08T17:22:11.594Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-08T17:22:11.594Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "UserManager.cs",
               "DocumentMoniker": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\Services\\UserManager.cs",
               "RelativeDocumentMoniker": "Services\\UserManager.cs",
@@ -404,12 +410,11 @@
               "RelativeToolTip": "Services\\UserManager.cs",
               "ViewState": "AgIAAJ8AAAAAAAAAAAAAAOIAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-08T17:11:18.564Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-08T17:11:18.564Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "GlobalExceptionMiddleware.cs",
               "DocumentMoniker": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\Entites\\Exceptions\\GlobalExceptionMiddleware.cs",
               "RelativeDocumentMoniker": "Entites\\Exceptions\\GlobalExceptionMiddleware.cs",
@@ -417,8 +422,7 @@
               "RelativeToolTip": "Entites\\Exceptions\\GlobalExceptionMiddleware.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAASwBQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-05T19:24:15.233Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-05T19:24:15.233Z"
             },
             {
               "$type": "Document",
@@ -454,7 +458,8 @@
               "RelativeToolTip": "Entites\\Data Transfer object\\JobDetail\\JobDetayStatusWithHeaderDTO.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAAABcAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-05T18:35:59.228Z"
+              "WhenOpened": "2026-03-05T18:35:59.228Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -470,26 +475,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "JobDetailManager.cs",
-              "DocumentMoniker": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\Services\\JobDetailManager.cs",
-              "RelativeDocumentMoniker": "Services\\JobDetailManager.cs",
-              "ToolTip": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\Services\\JobDetailManager.cs",
-              "RelativeToolTip": "Services\\JobDetailManager.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAwwFMAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-05T18:14:21.918Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\Presentation\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "Presentation\\Controllers\\UserController.cs",
               "ToolTip": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\Presentation\\Controllers\\UserController.cs",
               "RelativeToolTip": "Presentation\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAFsAAAAAAAAAAAAAAHYAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAADIAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-08T17:15:48.01Z",
               "EditorCaption": ""

@@ -98,6 +98,8 @@ namespace Repositories.EFCore
 
                         select new JobDetayStatusWithHeaderDTO()
                         {
+                            JobHeaderId=j.Id,
+                            JobDetailId =jd.Id,
                             JobHeaderName=j.Title,
                             WorkCreateTıme=j.CreatedDate,
                             Deadline=j.Deadline,

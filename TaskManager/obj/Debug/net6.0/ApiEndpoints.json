@@ -59,6 +59,22 @@
   },
   {
     "ContainingType": "Presentation.Controllers.JobController",
+    "Method": "DeleteJobDetail",
+    "RelativePath": "api/Job/isdetay",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "jobDetayId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.JobController",
     "Method": "DeleteJobHeaderAsync",
     "RelativePath": "api/Job/i\u015F ba\u015Fl\u0131k",
     "HttpMethod": "DELETE",
@@ -122,22 +138,6 @@
         "Name": "jobDto",
         "Type": "Entites.Data_Transfer_object.JobDetail.InsertJobDetailDTO",
         "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Presentation.Controllers.JobController",
-    "Method": "DeleteJobDetail",
-    "RelativePath": "api/Job/i\u015F detay",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "jobDetayId",
-        "Type": "System.Int32",
-        "IsRequired": false
       }
     ],
     "ReturnTypes": []

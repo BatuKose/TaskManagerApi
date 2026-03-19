@@ -228,7 +228,9 @@
             "description": "Success"
           }
         }
-      },
+      }
+    },
+    "/api/Job/isdetay": {
       "delete": {
         "tags": [
           "Job"

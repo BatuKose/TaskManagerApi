@@ -91,7 +91,7 @@ namespace Presentation.Controllers
         }
 
         //   [Authorize(Policy = "Worker")]
-        [HttpDelete("iş detay")]
+        [HttpDelete("isdetay")]
         public async Task<IActionResult> DeleteJobDetail([FromQuery] int jobDetayId)
         {
             var result = await _ServiceManager.JobDetailService.DeleteJobDetailAsync(jobDetayId);
