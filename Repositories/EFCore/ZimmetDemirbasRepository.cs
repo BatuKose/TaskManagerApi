@@ -54,6 +54,7 @@ namespace Repositories.EFCore
                         where p.isActive==true && c.isActive==true
                         select new UrünBilgileriDTO
                         {
+                            Dosyaid=p.id,
                             urunAd=p.name,
                             urunMarka=p.brand,
                             urunModel=p.model,

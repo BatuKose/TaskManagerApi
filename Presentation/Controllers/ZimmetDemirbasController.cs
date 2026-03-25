@@ -13,7 +13,7 @@ namespace Presentation.Controllers
 {
     [ApiController]
     [Route("ZimmetDemirbas")]
-    [Authorize]
+//    [Authorize]
     public class ZimmetDemirbasController : ControllerBase
     {
         private readonly IServiceManager _serviceManager;

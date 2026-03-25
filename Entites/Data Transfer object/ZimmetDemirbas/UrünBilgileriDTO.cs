@@ -8,6 +8,7 @@ namespace Entites.Data_Transfer_object.ZimmetDemirbas
 {
     public class UrünBilgileriDTO
     {
+        public int Dosyaid { get; set; }
         public string urunAd { get; set; }
         public string urunMarka { get; set; }
         public string urunModel { get; set; }
