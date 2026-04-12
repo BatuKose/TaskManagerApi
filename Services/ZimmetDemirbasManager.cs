@@ -218,7 +218,12 @@ namespace Services
             await _repositoryManager.zimmetDemirbasRepository.SaveAsync();
             return zimmet;
         }
-        //todo
 
+        public async Task<List<Category>> GetGategorty()
+        {
+            var result = await _repositoryManager.zimmetDemirbasRepository.GetCategorysync();
+            if (result is null) throw new NotFoundException("Aktif Kategori bulunamadı");
+            return result;
+        }
     }
 }

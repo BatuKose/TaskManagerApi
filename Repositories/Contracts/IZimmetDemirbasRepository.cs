@@ -21,7 +21,7 @@ namespace Repositories.Contracts
         ZımmetliKisiler InsertZımmetKisiler(ZımmetliKisiler zımmetliKisiler);
         Task<List<SelectZimmetDetailListDTO>> SelectZimmetDetailsListAsync();
         Task<ZımmetliKisiler> GetByIdAsync(int id);
-
+        Task<List<Category>> GetCategorysync();
 
 
     }

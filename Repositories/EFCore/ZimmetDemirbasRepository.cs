@@ -102,5 +102,10 @@ namespace Repositories.EFCore
                 .SingleOrDefaultAsync(x => x.Id == id);
         }
 
+        public async Task<List<Category>>GetCategorysync()
+        {
+            var category = await _context.Categories.Where(c=>c.isActive==true).ToListAsync();
+            return category.ToList();
+        }
     }
 }

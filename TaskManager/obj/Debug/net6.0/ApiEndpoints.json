@@ -502,6 +502,16 @@
   },
   {
     "ContainingType": "Presentation.Controllers.ZimmetDemirbasController",
+    "Method": "AktifZimmetleriKategorileriGetir",
+    "RelativePath": "ZimmetDemirbas/GetCategories",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.ZimmetDemirbasController",
     "Method": "InsertCategoryAsync",
     "RelativePath": "ZimmetDemirbas/InsertCategory",
     "HttpMethod": "POST",

@@ -21,5 +21,6 @@ namespace Services.Contracts
         Task<List<SelectZimmetDetailListDTO>> SelectZimmetDetailsListAsync();
         Task<byte[]> ExportZimmetToExcelAsync();
         Task<ZımmetliKisiler> ZımmetDurumDegisikligiAsync(int id, int managerid, ZimmetDurum durum);
+        Task<List<Category>> GetGategorty();
     }
 }

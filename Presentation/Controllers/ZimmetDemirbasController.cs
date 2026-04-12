@@ -89,5 +89,11 @@ namespace Presentation.Controllers
             await _serviceManager.ZimmetDemirbasService.ZımmetDurumDegisikligiAsync(id, managerid, durum);
             return Ok("Zimmet durumu başarıyla değiştirildi.");
         }
+        [HttpGet("GetCategories")]
+        public async Task<IActionResult>AktifZimmetleriKategorileriGetir()
+        {
+            var result= await _serviceManager.ZimmetDemirbasService.GetGategorty();
+            return Ok(result);
+        }
     }
 }
