@@ -88,6 +88,13 @@ namespace Services
                 unit = dto.unit
 
             };
+            if (product.categoryId<=0) throw new BadRequestException("Ürün kategori seçiniz");
+            if (product.name is null) throw new BadRequestException("Ürün ismi giriniz");
+            if (product.brand is null) throw new BadRequestException("Ürün markası giriniz");
+            if (product.model is null) throw new BadRequestException("Ürün model giriniz");
+            if (product.description is null) throw new BadRequestException("Ürün açıklama giriniz");
+            if (product.unit<0) throw new BadRequestException("Ürün adeti giriniz");
+
             var categoryİsExist= await _repositoryManager.zimmetDemirbasRepository.SelectCategoryById(product.categoryId);
             if (categoryİsExist is null) throw new NotFoundException("Kategori bulunamadı");
 

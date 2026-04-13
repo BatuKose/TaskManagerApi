@@ -48,7 +48,7 @@ namespace Presentation.Controllers
         {
             if (!ModelState.IsValid) return BadRequest(ModelState);
             await _serviceManager.ZimmetDemirbasService.InsertProductAsync(product);
-            return Ok("Ürün başarıyla eklendi.");
+            return Ok(new { message = "Ürün başarıyla eklendi." });
         }
         [HttpPut("soft-delete-product/{id}")]
         public async Task<IActionResult> SoftDeleteProductAsync(int id)
