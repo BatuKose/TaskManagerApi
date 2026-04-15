@@ -68,7 +68,7 @@ namespace Presentation.Controllers
         {
             if (!ModelState.IsValid) return BadRequest(ModelState);
             await _serviceManager.ZimmetDemirbasService.InsertZimmetKisilerAsync(dto);
-            return Ok("Zimmetleme işlemi başarıyla gerçekleştirildi.");
+            return Ok();
         }
         [HttpGet("ZimmetDetayListesi")]
         public async Task<IActionResult> GetZimmetDetailsListAsync()
