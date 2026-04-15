@@ -1051,6 +1051,18 @@
           }
         }
       }
+    },
+    "/ZimmetDemirbas/getuserforzimmet": {
+      "get": {
+        "tags": [
+          "ZimmetDemirbas"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
     }
   },
   "components": {

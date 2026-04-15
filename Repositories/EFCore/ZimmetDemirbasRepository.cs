@@ -107,5 +107,20 @@ namespace Repositories.EFCore
             var category = await _context.Categories.Where(c=>c.isActive==true).ToListAsync();
             return category.ToList();
         }
+        public async Task<List<UserDetailsDTO>>GetUserForZimmet()
+        {
+            var sql = await (
+                from u in _context.users.AsNoTracking()
+                join r in _context.roles.AsNoTracking() on u.RoleId equals r.Id
+                where u.aktifMi==true
+           select new UserDetailsDTO
+                {
+                    userId=u.Id,
+                    userName=u.UserName,
+                    userRole=r.RoleName
+           }).ToListAsync();
+            return sql;
+        }
+
     }
 }

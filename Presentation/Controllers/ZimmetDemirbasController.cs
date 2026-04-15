@@ -54,7 +54,7 @@ namespace Presentation.Controllers
         public async Task<IActionResult> SoftDeleteProductAsync(int id)
         {
             await _serviceManager.ZimmetDemirbasService.SoftDeleteProductAsync(id);
-            return Ok("Ürün başarıyla silindi.");
+            return Ok();
         }
         [HttpGet("ürün-listesi")]
         public async Task<IActionResult> GetAllProductsAsync()
@@ -94,6 +94,12 @@ namespace Presentation.Controllers
         {
             var result= await _serviceManager.ZimmetDemirbasService.GetGategorty();
             return Ok(result);
+        }
+        [HttpGet("getuserforzimmet")]
+        public async Task<IActionResult>getUserForZimmet()
+        {
+            var user = await _serviceManager.ZimmetDemirbasService.GetUserForZimmet();
+            return Ok(user);
         }
     }
 }

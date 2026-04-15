@@ -22,6 +22,7 @@ namespace Repositories.Contracts
         Task<List<SelectZimmetDetailListDTO>> SelectZimmetDetailsListAsync();
         Task<ZımmetliKisiler> GetByIdAsync(int id);
         Task<List<Category>> GetCategorysync();
+        Task<List<UserDetailsDTO>> GetUserForZimmet();
 
 
     }

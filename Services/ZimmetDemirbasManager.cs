@@ -232,5 +232,11 @@ namespace Services
             if (result is null) throw new NotFoundException("Aktif Kategori bulunamadı");
             return result;
         }
+        public async Task<List<UserDetailsDTO>>GetUserForZimmet()
+        {
+            var result = await _repositoryManager.zimmetDemirbasRepository.GetUserForZimmet();
+            if (result is null) throw new BadRequestException("Aktif kullanıcı bulunamadı");
+            return result;
+        }
     }
 }

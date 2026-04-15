@@ -512,6 +512,16 @@
   },
   {
     "ContainingType": "Presentation.Controllers.ZimmetDemirbasController",
+    "Method": "getUserForZimmet",
+    "RelativePath": "ZimmetDemirbas/getuserforzimmet",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.ZimmetDemirbasController",
     "Method": "InsertCategoryAsync",
     "RelativePath": "ZimmetDemirbas/InsertCategory",
     "HttpMethod": "POST",
