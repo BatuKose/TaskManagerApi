@@ -9,6 +9,7 @@ namespace Entites.Data_Transfer_object.ZimmetDemirbas
 {
     public class SelectZimmetDetailListDTO
     {
+        public int dosyaId { get; set; }
         public string ZimmetKisiAd { get; set; }
         public string ZimmetKisiEmail { get; set; }
         

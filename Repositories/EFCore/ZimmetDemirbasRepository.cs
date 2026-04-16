@@ -85,6 +85,7 @@ namespace Repositories.EFCore
                 join c in _context.Categories.AsNoTracking() on p.categoryId equals c.Id
                 select new SelectZimmetDetailListDTO
                 {
+                    dosyaId=z.Id,
                     ZimmetKisiAd=u.UserName,
                     ZimmetKisiEmail=u.Email,
                     KisiRol=r.RoleName,
