@@ -13,5 +13,6 @@ namespace Entites.Data_Transfer_object.ZimmetDemirbas
         public string urunMarka { get; set; }
         public string urunModel { get; set; }
         public string urunKategori { get; set; }
+        public int unit { get; set; }
     }
 }

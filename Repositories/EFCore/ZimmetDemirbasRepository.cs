@@ -58,7 +58,8 @@ namespace Repositories.EFCore
                             urunAd=p.name,
                             urunMarka=p.brand,
                             urunModel=p.model,
-                            urunKategori=c.Name
+                            urunKategori=c.Name,
+                            unit=p.unit
 
                         }).ToListAsync();
             return  query;
