@@ -102,7 +102,7 @@ namespace Presentation.Controllers
             return Ok(user);
         }
         [HttpPatch("zimmetiade")]
-        public async Task<IActionResult> ZimmetIade([FromQuery] int dosyaid,[FromBody]int miktar)
+        public async Task<IActionResult> ZimmetIade([FromQuery] int dosyaid, [FromQuery] int miktar)
         {
             var result = await _serviceManager.ZimmetDemirbasService.ZimmetIadeAsync(dosyaid, miktar);
             return NoContent();
