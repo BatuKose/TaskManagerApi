@@ -653,6 +653,27 @@
   },
   {
     "ContainingType": "Presentation.Controllers.ZimmetDemirbasController",
+    "Method": "ZimmetIade",
+    "RelativePath": "ZimmetDemirbas/zimmetiade",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dosyaid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "miktar",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.ZimmetDemirbasController",
     "Method": "zimmetKisilerInsertAsync",
     "RelativePath": "ZimmetDemirbas/ZimmetKisiler",
     "HttpMethod": "POST",

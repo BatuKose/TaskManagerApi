@@ -123,6 +123,10 @@ namespace Repositories.EFCore
            }).ToListAsync();
             return sql;
         }
-
+        public async Task<ZımmetliKisiler>ZimmetKisileriGetir(int dosyaid)
+        {
+            var result = await _context.zımmetliKisiler.SingleOrDefaultAsync(x => x.Id==dosyaid);
+            return  result;
+        }
     }
 }

@@ -238,5 +238,17 @@ namespace Services
             if (result is null) throw new BadRequestException("Aktif kullanıcı bulunamadı");
             return result;
         }
+        public async Task<ZımmetliKisiler> ZimmetIadeAsync(int dosyaid,int miktar)
+
+        {
+            if (miktar<=0) throw new BadRequestException("Zimmet iade mikrarı sıfırdan büyük olmalıdır");
+            var zimmmet = await _repositoryManager.zimmetDemirbasRepository.ZimmetKisileriGetir(dosyaid);
+            if (zimmmet is null) throw new BadRequestException("Zimmet bilgilerine ulaşılmadı");
+            int mevcutMiktar = (zimmmet.Unit-miktar);
+            if (mevcutMiktar < 0) throw new BadRequestException("İade miktarı mevcut zimmetten fazla olamaz"); // silme metoduna gidicek
+            zimmmet.Unit=mevcutMiktar;
+            await _repositoryManager.saveAsyc();
+            return zimmmet;
+        }
     }
 }

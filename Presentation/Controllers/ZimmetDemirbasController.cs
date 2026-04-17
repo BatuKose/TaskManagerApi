@@ -81,7 +81,7 @@ namespace Presentation.Controllers
         {
             var file = await _serviceManager.ZimmetDemirbasService.ExportZimmetToExcelAsync();
             return File(file, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", $"Zimmetler_{DateTime.Now:yyyyMMdd}.xlsx"
-);
+            );
         }
         [HttpPatch("zimmetDurumDegisikligi")]
         public async Task<IActionResult> ZimmetDurumDegistirAsync(int id, int managerid, ZimmetDurum durum)
@@ -100,6 +100,12 @@ namespace Presentation.Controllers
         {
             var user = await _serviceManager.ZimmetDemirbasService.GetUserForZimmet();
             return Ok(user);
+        }
+        [HttpPatch("zimmetiade")]
+        public async Task<IActionResult> ZimmetIade([FromQuery] int dosyaid,[FromBody]int miktar)
+        {
+            var result = await _serviceManager.ZimmetDemirbasService.ZimmetIadeAsync(dosyaid, miktar);
+            return NoContent();
         }
     }
 }

@@ -23,7 +23,7 @@ namespace Repositories.Contracts
         Task<ZımmetliKisiler> GetByIdAsync(int id);
         Task<List<Category>> GetCategorysync();
         Task<List<UserDetailsDTO>> GetUserForZimmet();
-
+        Task<ZımmetliKisiler> ZimmetKisileriGetir(int dosyaid);
 
     }
 }
