@@ -24,6 +24,6 @@ namespace Repositories.Contracts
         Task<List<Category>> GetCategorysync();
         Task<List<UserDetailsDTO>> GetUserForZimmet();
         Task<ZımmetliKisiler> ZimmetKisileriGetir(int dosyaid);
-
+        Task<ZımmetliKisiler> ZimmetKisileriSil(ZımmetliKisiler zımmet);
     }
 }

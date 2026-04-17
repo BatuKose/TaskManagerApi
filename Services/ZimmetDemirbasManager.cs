@@ -244,10 +244,18 @@ namespace Services
             if (miktar<=0) throw new BadRequestException("Zimmet iade mikrarı sıfırdan büyük olmalıdır");
             var zimmmet = await _repositoryManager.zimmetDemirbasRepository.ZimmetKisileriGetir(dosyaid);
             if (zimmmet is null) throw new BadRequestException("Zimmet bilgilerine ulaşılmadı");
+            if (zimmmet.zimmetDurum==ZimmetDurum.Onaylandı) throw new BadRequestException("Onaylanmış zimmetlerde iade yapılmaz");
+            if (miktar>zimmmet.Unit) throw new BadRequestException("İade miktarı zimmet miktarından büyük olamaz");
             int mevcutMiktar = (zimmmet.Unit-miktar);
-            if (mevcutMiktar < 0) throw new BadRequestException("İade miktarı mevcut zimmetten fazla olamaz"); // silme metoduna gidicek
-            zimmmet.Unit=mevcutMiktar;
-            await _repositoryManager.saveAsyc();
+            if (mevcutMiktar == 0)
+            {
+                await _repositoryManager.zimmetDemirbasRepository.ZimmetKisileriSil(zimmmet);
+            }
+            else
+            {
+                zimmmet.Unit=mevcutMiktar;
+                await _repositoryManager.saveAsyc();
+            }  
             return zimmmet;
         }
     }

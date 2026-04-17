@@ -667,7 +667,7 @@
       {
         "Name": "miktar",
         "Type": "System.Int32",
-        "IsRequired": true
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

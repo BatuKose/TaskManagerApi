@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using Repositories.Contracts;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -127,6 +128,13 @@ namespace Repositories.EFCore
         {
             var result = await _context.zımmetliKisiler.SingleOrDefaultAsync(x => x.Id==dosyaid);
             return  result;
+        }
+        public async Task<ZımmetliKisiler> ZimmetKisileriSil(ZımmetliKisiler zımmet)
+        {
+            _context.zımmetliKisiler.Remove(zımmet);
+            await _context.SaveChangesAsync();
+            return zımmet;
+            
         }
     }
 }
