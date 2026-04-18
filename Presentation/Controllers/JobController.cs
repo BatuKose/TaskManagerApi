@@ -18,7 +18,7 @@ namespace Presentation.Controllers
 {
     [ApiController]
     [Route("api/Job")]
-    //[Authorize]
+    [Authorize]
     public class JobController : ControllerBase
     {
         private readonly IServiceManager _ServiceManager;
@@ -27,7 +27,7 @@ namespace Presentation.Controllers
             _ServiceManager = serviceManager;
         }
 
-        //  [Authorize(Policy = "Manager")]
+        [Authorize(Policy = "Manager")]
         [HttpPost("isbaslik")]
 
         public async Task<IActionResult> CreateJobAsync([FromBody] CreateJobHeaderDTO jobDto)
@@ -37,7 +37,7 @@ namespace Presentation.Controllers
             return StatusCode(201);
         }
 
-        //[Authorize(Policy = "Manager")]
+        [Authorize(Policy = "Manager")]
         [HttpDelete("iş başlık")]
         public async Task<IActionResult> DeleteJobHeaderAsync([FromQuery] int id)
         {
@@ -45,7 +45,7 @@ namespace Presentation.Controllers
             return NoContent();
         }
 
-        //[Authorize(Policy = "Worker-Manager")]
+        [Authorize(Policy = "Worker-Manager")]
         [HttpGet("iş başlık")]
         public IActionResult SelectJob([FromQuery] int id)
         {
@@ -59,7 +59,7 @@ namespace Presentation.Controllers
             return Ok(result);
         }
 
-        //[Authorize(Policy = "Worker")]
+        [Authorize(Policy = "Worker")]
         [HttpPost("karsila")]
         public async Task<IActionResult> IsKarsila(int userId, int jobId)
         {
@@ -71,7 +71,7 @@ namespace Presentation.Controllers
             });
         }
 
-        //[Authorize(Policy = "Manager")]
+        [Authorize(Policy = "Manager")]
         [HttpPut("iş başlık")]
         public async Task<IActionResult> JobHeaderGuncelle([FromQuery] int id, [FromBody] updateJobHeaderDTO dto)
         {
@@ -81,7 +81,7 @@ namespace Presentation.Controllers
             return NoContent();
         }
 
-        // [Authorize(Policy = "Worker")]
+        [Authorize(Policy = "Worker")]
         [HttpPost("iş detay")]
         public async Task<IActionResult> InsertJobAsync([FromBody] InsertJobDetailDTO jobDto)
         {
@@ -90,7 +90,7 @@ namespace Presentation.Controllers
             return NoContent();
         }
 
-        //   [Authorize(Policy = "Worker")]
+        [Authorize(Policy = "Worker")]
         [HttpDelete("isdetay")]
         public async Task<IActionResult> DeleteJobDetail([FromQuery] int jobDetayId)
         {
@@ -98,7 +98,7 @@ namespace Presentation.Controllers
             return NoContent();
         }
 
-        // [Authorize(Policy = "Worker-Manager")]
+        [Authorize(Policy = "Worker-Manager")]
         [HttpGet("jobAllDetails")]
         public IActionResult GetJobWithAllDetails([FromQuery] int jobHeaderId)
         {
@@ -106,21 +106,21 @@ namespace Presentation.Controllers
             return Ok(result);
         }
 
-        //[Authorize(Policy = "Manager")]
+        [Authorize(Policy = "Manager")]
         [HttpGet("Cezalıİsler")]
         public IActionResult GetCezaliIsler()
         {
             var result = _ServiceManager.JobDetailService.GetCezalıİsler();
             return Ok(result);
         }
-        // [Authorize(Policy = "Worker-Manager")]
+        [Authorize(Policy = "Worker-Manager")]
         [HttpGet("Bütünisler")]
         public async Task<IActionResult> BütünIsleriGetirAsync([FromQuery] bool? isActive)
         {
             var result = await _ServiceManager.JobDetailService.BütünİsleriGetirAsync(isActive);
             return Ok(result);
         }
-        // [Authorize(Policy = "Worker-Manager")]
+        [Authorize(Policy = "Worker-Manager")]
         [HttpGet("Kendiİslerim")]
         public async Task<IActionResult> KendiIslerimAsync([FromQuery] int userId)
         {

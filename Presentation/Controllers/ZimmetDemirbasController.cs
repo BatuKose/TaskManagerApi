@@ -13,7 +13,7 @@ namespace Presentation.Controllers
 {
     [ApiController]
     [Route("ZimmetDemirbas")]
-//    [Authorize]
+    [Authorize]
     public class ZimmetDemirbasController : ControllerBase
     {
         private readonly IServiceManager _serviceManager;
@@ -22,7 +22,7 @@ namespace Presentation.Controllers
         {
             _serviceManager=serviceManager;
         }
-
+        [Authorize(Policy = "Manager")]
         [HttpPost("InsertCategory")]
         public async Task<IActionResult> InsertCategoryAsync([FromBody] CreateCategoryDTO categoryDTO)
         {
@@ -30,6 +30,7 @@ namespace Presentation.Controllers
             await _serviceManager.ZimmetDemirbasService.CreateCategoryAsync(categoryDTO);
             return Ok("Kategori başarıyla eklendi.");
         }
+        [Authorize(Policy = "Manager")]
         [HttpPut("UpdateCategory/{id}")]
         public async Task<IActionResult> UpdateCategoryAsync([FromBody] UpdateCategoryDTO updateCategoryDTO, int id)
         {
@@ -37,12 +38,14 @@ namespace Presentation.Controllers
             await _serviceManager.ZimmetDemirbasService.UpdateCategoryAsync(updateCategoryDTO, id);
             return Ok("Kategori başarıyla güncellendi.");
         }
+        [Authorize(Policy = "Manager")]
         [HttpPut("soft-delete/{id}")]
         public async Task<IActionResult> SoftDeleteCategoryAsync(int id)
         {
             await _serviceManager.ZimmetDemirbasService.SoftDeleteCategoryAsync(id);
             return Ok("Kategori başarıyla silindi.");
         }
+        [Authorize(Policy = "Worker-Manager")]
         [HttpPost("InsertProduct")]
         public async Task<IActionResult> InsertProductAsync([FromBody] CreateProductDto product)
         {
@@ -50,19 +53,21 @@ namespace Presentation.Controllers
             await _serviceManager.ZimmetDemirbasService.InsertProductAsync(product);
             return Ok("Ürün başarıyla eklendi.");
         }
+        [Authorize(Policy = "Worker-Manager")]
         [HttpPut("soft-delete-product/{id}")]
         public async Task<IActionResult> SoftDeleteProductAsync(int id)
         {
             await _serviceManager.ZimmetDemirbasService.SoftDeleteProductAsync(id);
             return Ok();
         }
+        [Authorize(Policy = "Worker-Manager")]
         [HttpGet("ürün-listesi")]
         public async Task<IActionResult> GetAllProductsAsync()
         {
             var products = await _serviceManager.ZimmetDemirbasService.GetProductsWithCategoryAsync();
             return Ok(products);
         }
-
+        [Authorize(Policy = "Worker-Manager")]
         [HttpPost("ZimmetKisiler")]
         public async Task<IActionResult> zimmetKisilerInsertAsync([FromBody] zimmetKisilerInsertDto dto)
         {
@@ -70,12 +75,14 @@ namespace Presentation.Controllers
             await _serviceManager.ZimmetDemirbasService.InsertZimmetKisilerAsync(dto);
             return Ok();
         }
+        [Authorize(Policy = "Worker-Manager")]
         [HttpGet("ZimmetDetayListesi")]
         public async Task<IActionResult> GetZimmetDetailsListAsync()
         {
             var zimmetDetails = await _serviceManager.ZimmetDemirbasService.SelectZimmetDetailsListAsync();
             return Ok(zimmetDetails);
         }
+        [Authorize(Policy = "Worker-Manager")]
         [HttpGet("export-excel-zimmetkisiler")]
         public async Task<IActionResult> ExportZimmetKisilerToExcelAsync()
         {
@@ -83,24 +90,28 @@ namespace Presentation.Controllers
             return File(file, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", $"Zimmetler_{DateTime.Now:yyyyMMdd}.xlsx"
             );
         }
+        [Authorize(Policy = "Manager")]
         [HttpPatch("zimmetDurumDegisikligi")]
         public async Task<IActionResult> ZimmetDurumDegistirAsync([FromQuery]int id, int managerid, ZimmetDurum durum)
         {
             await _serviceManager.ZimmetDemirbasService.ZımmetDurumDegisikligiAsync(id, managerid, durum);
             return Ok("Zimmet durumu başarıyla değiştirildi.");
         }
+        [Authorize(Policy = "Worker-Manager")]
         [HttpGet("GetCategories")]
         public async Task<IActionResult>AktifZimmetleriKategorileriGetir()
         {
             var result= await _serviceManager.ZimmetDemirbasService.GetGategorty();
             return Ok(result);
         }
+        [Authorize(Policy = "Worker-Manager")]
         [HttpGet("getuserforzimmet")]
         public async Task<IActionResult>getUserForZimmet()
         {
             var user = await _serviceManager.ZimmetDemirbasService.GetUserForZimmet();
             return Ok(user);
         }
+        [Authorize(Policy = "Worker-Manager")]
         [HttpPatch("zimmetiade")]
         public async Task<IActionResult> ZimmetIade([FromQuery] int dosyaid, [FromQuery] int miktar)
         {
