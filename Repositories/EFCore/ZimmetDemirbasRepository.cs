@@ -94,7 +94,8 @@ namespace Repositories.EFCore
                     Model=p.model,
                     UrunKategoriAd=c.Name,
                     ZimmetMiktar=z.Unit,
-                    ZimmetTarih=z.ZimmetAlisTarihi
+                    ZimmetTarih=z.ZimmetAlisTarihi,
+                    durum=z.zimmetDurum
                 }
                 ).ToListAsync();
             return query;

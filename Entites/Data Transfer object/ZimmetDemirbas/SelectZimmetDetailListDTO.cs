@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Entites.Enums;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics.Contracts;
 using System.Linq;
@@ -19,6 +20,7 @@ namespace Entites.Data_Transfer_object.ZimmetDemirbas
         public string UrunKategoriAd { get; set; }
         public int ZimmetMiktar { get; set; }
         public DateTime ZimmetTarih { get; set; }
+        public ZimmetDurumEnums.ZimmetDurum durum { get; set; }
 
     }
 }

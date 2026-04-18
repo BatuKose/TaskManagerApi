@@ -84,7 +84,7 @@ namespace Presentation.Controllers
             );
         }
         [HttpPatch("zimmetDurumDegisikligi")]
-        public async Task<IActionResult> ZimmetDurumDegistirAsync(int id, int managerid, ZimmetDurum durum)
+        public async Task<IActionResult> ZimmetDurumDegistirAsync([FromQuery]int id, int managerid, ZimmetDurum durum)
         {
             await _serviceManager.ZimmetDemirbasService.ZımmetDurumDegisikligiAsync(id, managerid, durum);
             return Ok("Zimmet durumu başarıyla değiştirildi.");

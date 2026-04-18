@@ -3,28 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DBF95191-984E-4693-8E5D-587F32E99A1A}|Services\\Services.csproj|c:\\users\\batuhan\\desktop\\desktop\\itsoftware\\asp.net web api\\projeler\\taskmanagerapi\\services\\zimmetdemirbasmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DBF95191-984E-4693-8E5D-587F32E99A1A}|Services\\Services.csproj|solutionrelative:services\\zimmetdemirbasmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{97C5EDCF-476D-4C0B-9352-4D9F488FCF9F}|Repositories\\Repositories.csproj|c:\\users\\batuhan\\desktop\\desktop\\itsoftware\\asp.net web api\\projeler\\taskmanagerapi\\repositories\\efcore\\zimmetdemirbasrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{97C5EDCF-476D-4C0B-9352-4D9F488FCF9F}|Repositories\\Repositories.csproj|solutionrelative:repositories\\efcore\\zimmetdemirbasrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A5756DC-7FE5-433A-8F8C-31E1E54017B0}|Entites\\Entites.csproj|c:\\users\\batuhan\\desktop\\desktop\\itsoftware\\asp.net web api\\projeler\\taskmanagerapi\\entites\\data transfer object\\zimmetdemirbas\\selectzimmetdetaillistdto.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{4A5756DC-7FE5-433A-8F8C-31E1E54017B0}|Entites\\Entites.csproj|solutionrelative:entites\\data transfer object\\zimmetdemirbas\\selectzimmetdetaillistdto.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A5756DC-7FE5-433A-8F8C-31E1E54017B0}|Entites\\Entites.csproj|c:\\users\\batuhan\\desktop\\desktop\\itsoftware\\asp.net web api\\projeler\\taskmanagerapi\\entites\\models\\z\u0131mmetlikisiler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A5756DC-7FE5-433A-8F8C-31E1E54017B0}|Entites\\Entites.csproj|solutionrelative:entites\\models\\z\u0131mmetlikisiler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{97C5EDCF-476D-4C0B-9352-4D9F488FCF9F}|Repositories\\Repositories.csproj|c:\\users\\batuhan\\desktop\\desktop\\itsoftware\\asp.net web api\\projeler\\taskmanagerapi\\repositories\\contracts\\izimmetdemirbasrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{97C5EDCF-476D-4C0B-9352-4D9F488FCF9F}|Repositories\\Repositories.csproj|solutionrelative:repositories\\contracts\\izimmetdemirbasrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{DBF95191-984E-4693-8E5D-587F32E99A1A}|Services\\Services.csproj|c:\\users\\batuhan\\desktop\\desktop\\itsoftware\\asp.net web api\\projeler\\taskmanagerapi\\services\\zimmetdemirbasmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBF95191-984E-4693-8E5D-587F32E99A1A}|Services\\Services.csproj|solutionrelative:services\\zimmetdemirbasmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CDC29FC0-ACB9-48EB-880C-24AAAFB03053}|Presentation\\Presentation.csproj|c:\\users\\batuhan\\desktop\\desktop\\itsoftware\\asp.net web api\\projeler\\taskmanagerapi\\presentation\\controllers\\zimmetdemirbascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CDC29FC0-ACB9-48EB-880C-24AAAFB03053}|Presentation\\Presentation.csproj|solutionrelative:presentation\\controllers\\zimmetdemirbascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DBF95191-984E-4693-8E5D-587F32E99A1A}|Services\\Services.csproj|c:\\users\\batuhan\\desktop\\desktop\\itsoftware\\asp.net web api\\projeler\\taskmanagerapi\\services\\contracts\\izimmetdemirbasservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DBF95191-984E-4693-8E5D-587F32E99A1A}|Services\\Services.csproj|solutionrelative:services\\contracts\\izimmetdemirbasservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4A5756DC-7FE5-433A-8F8C-31E1E54017B0}|Entites\\Entites.csproj|c:\\users\\batuhan\\desktop\\desktop\\itsoftware\\asp.net web api\\projeler\\taskmanagerapi\\entites\\data transfer object\\zimmetdemirbas\\ur\u00FCnbilgileridto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A5756DC-7FE5-433A-8F8C-31E1E54017B0}|Entites\\Entites.csproj|solutionrelative:entites\\data transfer object\\zimmetdemirbas\\ur\u00FCnbilgileridto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A5756DC-7FE5-433A-8F8C-31E1E54017B0}|Entites\\Entites.csproj|c:\\users\\batuhan\\desktop\\desktop\\itsoftware\\asp.net web api\\projeler\\taskmanagerapi\\entites\\models\\z\u0131mmetlikisiler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A5756DC-7FE5-433A-8F8C-31E1E54017B0}|Entites\\Entites.csproj|solutionrelative:entites\\models\\z\u0131mmetlikisiler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DBF95191-984E-4693-8E5D-587F32E99A1A}|Services\\Services.csproj|c:\\users\\batuhan\\desktop\\desktop\\itsoftware\\asp.net web api\\projeler\\taskmanagerapi\\services\\contracts\\izimmetdemirbasservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBF95191-984E-4693-8E5D-587F32E99A1A}|Services\\Services.csproj|solutionrelative:services\\contracts\\izimmetdemirbasservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4A5756DC-7FE5-433A-8F8C-31E1E54017B0}|Entites\\Entites.csproj|c:\\users\\batuhan\\desktop\\desktop\\itsoftware\\asp.net web api\\projeler\\taskmanagerapi\\entites\\data transfer object\\zimmetdemirbas\\createcategorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,15 +43,7 @@
       "RelativeMoniker": "D:0:0:{4A5756DC-7FE5-433A-8F8C-31E1E54017B0}|Entites\\Entites.csproj|solutionrelative:entites\\data transfer object\\zimmetdemirbas\\userdetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A5756DC-7FE5-433A-8F8C-31E1E54017B0}|Entites\\Entites.csproj|c:\\users\\batuhan\\desktop\\desktop\\itsoftware\\asp.net web api\\projeler\\taskmanagerapi\\entites\\data transfer object\\zimmetdemirbas\\selectzimmetdetaillistdto.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{4A5756DC-7FE5-433A-8F8C-31E1E54017B0}|Entites\\Entites.csproj|solutionrelative:entites\\data transfer object\\zimmetdemirbas\\selectzimmetdetaillistdto.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\batuhan\\AppData\\Local\\SourceServer\\d1ea445b8bea66a4c0521f16de564f3720c51523a8d7ae017ec6bc487e367939\\src\\libraries\\System.Private.CoreLib\\src\\System\\Threading\\ExecutionContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A5756DC-7FE5-433A-8F8C-31E1E54017B0}|Entites\\Entites.csproj|c:\\users\\batuhan\\desktop\\desktop\\itsoftware\\asp.net web api\\projeler\\taskmanagerapi\\entites\\data transfer object\\zimmetdemirbas\\ur\u00FCnbilgileridto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A5756DC-7FE5-433A-8F8C-31E1E54017B0}|Entites\\Entites.csproj|solutionrelative:entites\\data transfer object\\zimmetdemirbas\\ur\u00FCnbilgileridto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4A5756DC-7FE5-433A-8F8C-31E1E54017B0}|Entites\\Entites.csproj|c:\\users\\batuhan\\desktop\\desktop\\itsoftware\\asp.net web api\\projeler\\taskmanagerapi\\entites\\exceptions\\globalexceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -152,31 +152,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "ZimmetDemirbasController.cs",
               "DocumentMoniker": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\Presentation\\Controllers\\ZimmetDemirbasController.cs",
               "RelativeDocumentMoniker": "Presentation\\Controllers\\ZimmetDemirbasController.cs",
               "ToolTip": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\Presentation\\Controllers\\ZimmetDemirbasController.cs",
               "RelativeToolTip": "Presentation\\Controllers\\ZimmetDemirbasController.cs",
-              "ViewState": "AgIAAFMAAAAAAAAAAAAAwGwAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAEsAAABZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-23T17:54:17.895Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "ZimmetDemirbasRepository.cs",
               "DocumentMoniker": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\Repositories\\EFCore\\ZimmetDemirbasRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\EFCore\\ZimmetDemirbasRepository.cs",
               "ToolTip": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\Repositories\\EFCore\\ZimmetDemirbasRepository.cs",
               "RelativeToolTip": "Repositories\\EFCore\\ZimmetDemirbasRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA6AAAAAAAAAA==",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAGEAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-23T17:54:38.264Z",
               "IsPinned": true,
@@ -184,7 +183,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "IZimmetDemirbasRepository.cs",
               "DocumentMoniker": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\Repositories\\Contracts\\IZimmetDemirbasRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\Contracts\\IZimmetDemirbasRepository.cs",
@@ -193,26 +192,24 @@
               "ViewState": "AgIAAAwAAAAAAAAAAAAUwBkAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-23T17:54:47.494Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "ZimmetDemirbasManager.cs",
               "DocumentMoniker": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\Services\\ZimmetDemirbasManager.cs",
               "RelativeDocumentMoniker": "Services\\ZimmetDemirbasManager.cs",
               "ToolTip": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\Services\\ZimmetDemirbasManager.cs",
               "RelativeToolTip": "Services\\ZimmetDemirbasManager.cs",
-              "ViewState": "AgIAAOoAAAAAAAAAAAAcwP8AAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAI0AAAAAAAAAAAAowJ4AAABaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-23T17:54:54.134Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "IZimmetDemirbasService.cs",
               "DocumentMoniker": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\Services\\Contracts\\IZimmetDemirbasService.cs",
               "RelativeDocumentMoniker": "Services\\Contracts\\IZimmetDemirbasService.cs",
@@ -221,8 +218,7 @@
               "ViewState": "AgIAAA4AAAAAAAAAAAAAABkAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-23T17:55:03.293Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -290,20 +286,43 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
+              "Title": "SelectZimmetDetailListDTO.cs",
+              "DocumentMoniker": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\Entites\\Data Transfer object\\ZimmetDemirbas\\SelectZimmetDetailListDTO.cs",
+              "RelativeDocumentMoniker": "Entites\\Data Transfer object\\ZimmetDemirbas\\SelectZimmetDetailListDTO.cs",
+              "ToolTip": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\Entites\\Data Transfer object\\ZimmetDemirbas\\SelectZimmetDetailListDTO.cs",
+              "RelativeToolTip": "Entites\\Data Transfer object\\ZimmetDemirbas\\SelectZimmetDetailListDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAUwBYAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T16:42:59.434Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UserDetailsDTO.cs",
+              "DocumentMoniker": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\Entites\\Data Transfer object\\ZimmetDemirbas\\UserDetailsDTO.cs",
+              "RelativeDocumentMoniker": "Entites\\Data Transfer object\\ZimmetDemirbas\\UserDetailsDTO.cs",
+              "ToolTip": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\Entites\\Data Transfer object\\ZimmetDemirbas\\UserDetailsDTO.cs",
+              "RelativeToolTip": "Entites\\Data Transfer object\\ZimmetDemirbas\\UserDetailsDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T18:15:14.406Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Z\u0131mmetliKisiler.cs",
               "DocumentMoniker": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\Entites\\Models\\Z\u0131mmetliKisiler.cs",
               "RelativeDocumentMoniker": "Entites\\Models\\Z\u0131mmetliKisiler.cs",
               "ToolTip": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\Entites\\Models\\Z\u0131mmetliKisiler.cs",
               "RelativeToolTip": "Entites\\Models\\Z\u0131mmetliKisiler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAwwBQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-17T18:00:53.495Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-17T18:00:53.495Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "ExecutionContext.cs",
               "DocumentMoniker": "C:\\Users\\batuhan\\AppData\\Local\\SourceServer\\d1ea445b8bea66a4c0521f16de564f3720c51523a8d7ae017ec6bc487e367939\\src\\libraries\\System.Private.CoreLib\\src\\System\\Threading\\ExecutionContext.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\AppData\\Local\\SourceServer\\d1ea445b8bea66a4c0521f16de564f3720c51523a8d7ae017ec6bc487e367939\\src\\libraries\\System.Private.CoreLib\\src\\System\\Threading\\ExecutionContext.cs",
@@ -316,31 +335,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "SelectZimmetDetailListDTO.cs",
-              "DocumentMoniker": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\Entites\\Data Transfer object\\ZimmetDemirbas\\SelectZimmetDetailListDTO.cs",
-              "RelativeDocumentMoniker": "Entites\\Data Transfer object\\ZimmetDemirbas\\SelectZimmetDetailListDTO.cs",
-              "ToolTip": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\Entites\\Data Transfer object\\ZimmetDemirbas\\SelectZimmetDetailListDTO.cs",
-              "RelativeToolTip": "Entites\\Data Transfer object\\ZimmetDemirbas\\SelectZimmetDetailListDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T16:42:59.434Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "UserDetailsDTO.cs",
-              "DocumentMoniker": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\Entites\\Data Transfer object\\ZimmetDemirbas\\UserDetailsDTO.cs",
-              "RelativeDocumentMoniker": "Entites\\Data Transfer object\\ZimmetDemirbas\\UserDetailsDTO.cs",
-              "ToolTip": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\Entites\\Data Transfer object\\ZimmetDemirbas\\UserDetailsDTO.cs",
-              "RelativeToolTip": "Entites\\Data Transfer object\\ZimmetDemirbas\\UserDetailsDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T18:15:14.406Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "Ur\u00FCnBilgileriDTO.cs",
+              "DocumentMoniker": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\Entites\\Data Transfer object\\ZimmetDemirbas\\Ur\u00FCnBilgileriDTO.cs",
+              "RelativeDocumentMoniker": "Entites\\Data Transfer object\\ZimmetDemirbas\\Ur\u00FCnBilgileriDTO.cs",
+              "ToolTip": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\Entites\\Data Transfer object\\ZimmetDemirbas\\Ur\u00FCnBilgileriDTO.cs",
+              "RelativeToolTip": "Entites\\Data Transfer object\\ZimmetDemirbas\\Ur\u00FCnBilgileriDTO.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAABAAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T18:12:39.58Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "CreateCategoryDTO.CS",
               "DocumentMoniker": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\Entites\\Data Transfer object\\ZimmetDemirbas\\CreateCategoryDTO.CS",
               "RelativeDocumentMoniker": "Entites\\Data Transfer object\\ZimmetDemirbas\\CreateCategoryDTO.CS",
@@ -352,18 +359,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Ur\u00FCnBilgileriDTO.cs",
-              "DocumentMoniker": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\Entites\\Data Transfer object\\ZimmetDemirbas\\Ur\u00FCnBilgileriDTO.cs",
-              "RelativeDocumentMoniker": "Entites\\Data Transfer object\\ZimmetDemirbas\\Ur\u00FCnBilgileriDTO.cs",
-              "ToolTip": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\Entites\\Data Transfer object\\ZimmetDemirbas\\Ur\u00FCnBilgileriDTO.cs",
-              "RelativeToolTip": "Entites\\Data Transfer object\\ZimmetDemirbas\\Ur\u00FCnBilgileriDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-23T18:12:39.58Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 19,
               "Title": "IJobHeaderService.cs",
               "DocumentMoniker": "C:\\Users\\batuhan\\Desktop\\Desktop\\ITSoftware\\Asp.Net Web Api\\Projeler\\TaskManagerApi\\Services\\Contracts\\IJobHeaderService.cs",
@@ -372,8 +367,7 @@
               "RelativeToolTip": "Services\\Contracts\\IJobHeaderService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-08T18:05:21.88Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-08T18:05:21.88Z"
             },
             {
               "$type": "Document",
@@ -385,8 +379,7 @@
               "RelativeToolTip": "Repositories\\Contracts\\IJobHeaderRepository.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAAABcAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-08T18:04:54.808Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-08T18:04:54.808Z"
             },
             {
               "$type": "Document",
@@ -410,8 +403,7 @@
               "RelativeToolTip": "Presentation\\Controllers\\JobController.cs",
               "ViewState": "AgIAAEcAAAAAAAAAAAArwFYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-05T18:07:15.754Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-05T18:07:15.754Z"
             },
             {
               "$type": "Document",
@@ -423,8 +415,7 @@
               "RelativeToolTip": "Services\\JobDetailManager.cs",
               "ViewState": "AgIAADgAAAAAAAAAAAAUwEEAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-05T18:14:21.918Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-05T18:14:21.918Z"
             },
             {
               "$type": "Document",
@@ -436,8 +427,7 @@
               "RelativeToolTip": "Services\\JobHeaderManager.cs",
               "ViewState": "AgIAABsAAAAAAAAAAIA6wCMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-08T18:05:26.145Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-08T18:05:26.145Z"
             },
             {
               "$type": "Document",
@@ -449,8 +439,7 @@
               "RelativeToolTip": "Repositories\\EFCore\\JobHeaderRepository.cs",
               "ViewState": "AgIAAJ0AAAAAAAAAAAArwK8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-08T18:03:16.33Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-08T18:03:16.33Z"
             },
             {
               "$type": "Document",
@@ -498,8 +487,7 @@
               "RelativeToolTip": "Repositories\\EFCore\\jobDetailRepository.cs",
               "ViewState": "AgIAADoAAAAAAAAAAAAjwEgAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-08T18:46:31.104Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-08T18:46:31.104Z"
             },
             {
               "$type": "Document",
@@ -655,8 +643,7 @@
               "RelativeToolTip": "Services\\Contracts\\IJobDetailService.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAtwBUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-05T18:16:09.718Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-05T18:16:09.718Z"
             },
             {
               "$type": "Document",

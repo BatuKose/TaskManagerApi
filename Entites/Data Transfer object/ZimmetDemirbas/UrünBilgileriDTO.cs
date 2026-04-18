@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Entites.Enums;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,5 +15,6 @@ namespace Entites.Data_Transfer_object.ZimmetDemirbas
         public string urunModel { get; set; }
         public string urunKategori { get; set; }
         public int unit { get; set; }
+
     }
 }
